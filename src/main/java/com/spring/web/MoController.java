@@ -1,4 +1,4 @@
-package com.spring.mo;
+package com.spring.web;
 
 public class MoController {
 
