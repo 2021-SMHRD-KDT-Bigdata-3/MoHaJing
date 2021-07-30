@@ -7,7 +7,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -36,7 +35,6 @@
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
-=======
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,7 +53,6 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 </head>
 
 <body>
@@ -63,12 +60,9 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-<<<<<<< HEAD
 			<a href="index.html"> <img src="${cpath}/img/logo.png" alt="">
-=======
 			<a href="index.html">
 				<img src="${cpath}/resources/img/logo.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 			</a>
 		</div>
 		<!-- 		<ul class="list menu-left"> -->
@@ -100,37 +94,6 @@
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-	<!-- 로그인 -->
-	<form>
-		<table>
-			<tr>
-				<td>아이디</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>비밀번호</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>
-				<button>
-				<a href="#" class="main_btn">
-						로그인
-					<img src="${cpath}/img/next.png" alt="">
-				</a>
-				</button>
-				</td>
-				<td>
-				<button>
-				<a href="#" class="main_btn">
-						회원가입
-					<img src="${cpath}/img/next.png" alt="">
-				</a>
-				</button>
-				</td>
-			</tr>
-		</table>
-	</form>
 	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
@@ -145,14 +108,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-<<<<<<< HEAD
 					<a href="#" class="main_btn"> book a table <img
 						src="${cpath}/img/next.png" alt="">
-=======
 					<a href="#" class="main_btn">
 						book a table
 						<img src="${cpath}/resources/img/next.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 					</a>
 				</div>
 			</div>
@@ -164,21 +124,11 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<h1>
-<<<<<<< HEAD
-						Santorini Island <br> in Greece
-=======
-						毛어때 <br>
-						in CGI
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
-					</h1>
-<<<<<<< HEAD
 					<p class="pt-20">If you are looking at blank cassettes on the
 						web, you may be very confused at the difference in price. You may
 						see some for as low as $.17 each.</p>
 					<a href="#" class="main_btn"> Get Started <img
 						src="${cpath}/img/next.png" alt="">
-=======
 					<p class="pt-20">
 						머리빠지고 고민될 땐? <br>
 						毛어때
@@ -186,7 +136,6 @@
 					<a href="#" class="main_btn">
 						자가진단 Start
 						<img src="${cpath}/resources/img/next.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 					</a>
 				</div>
 
@@ -218,16 +167,13 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
-<<<<<<< HEAD
 						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
 							alt=""> <img class="img2 img-fluid"
 							src="${cpath}/img/popular/img2.jpg" alt=""> <img
 							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
-=======
 						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
 						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
 						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -300,7 +246,6 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
 					<div class="main_title">
-<<<<<<< HEAD
 						<h1>
 							Best <br>Tour Plans <br>Recently
 						</h1>
@@ -312,7 +257,6 @@
 							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
 						<a href="#" class="main_btn"> Browse all Packages <img
 							src="${cpath}/img/next.png" alt="">
-=======
 						<h1>Best <br>Tour Plans <br>Recently</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
@@ -321,7 +265,6 @@
 						<a href="#" class="main_btn">
 							Browse all Packages
 							<img src="${cpath}/resources/img/next.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						</a>
 					</div>
 				</div>
@@ -349,13 +292,10 @@
 								</div>
 							</div>
 							<div class="light-box">
-<<<<<<< HEAD
 								<a href="img/pac1.jpg" class="img-popup"> <span
 									class="lnr lnr-pushpin"></span>
-=======
 								<a href="${cpath}/resources/img/pac1.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 								</a>
 							</div>
 						</div>
@@ -381,13 +321,10 @@
 								</div>
 							</div>
 							<div class="light-box">
-<<<<<<< HEAD
 								<a href="img/pac2.jpg" class="img-popup"> <span
 									class="lnr lnr-pushpin"></span>
-=======
 								<a href="${cpath}/resources/img/pac2.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 								</a>
 							</div>
 						</div>
@@ -413,13 +350,10 @@
 								</div>
 							</div>
 							<div class="light-box">
-<<<<<<< HEAD
 								<a href="img/pac2.jpg" class="img-popup"> <span
 									class="lnr lnr-pushpin"></span>
-=======
 								<a href="${cpath}/resources/img/pac2.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 								</a>
 							</div>
 						</div>
@@ -572,12 +506,9 @@
 							</div>
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
-<<<<<<< HEAD
 									Browse all Packages <img src="${cpath}/img/next.png" alt="">
-=======
 									Browse all Packages
 									<img src="${cpath}/resources/img/next.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 								</button>
 							</div>
 						</form>
@@ -667,12 +598,9 @@
 										onblur="this.placeholder = 'Email Address '" required=""
 										type="email">
 									<button class="main_btn">
-<<<<<<< HEAD
 										Subscribe <img src="${cpath}/img/next.png" alt="">
-=======
 										Subscribe
 										<img src="${cpath}/resources/img/next.png" alt="">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 									</button>
 								</div>
 								<div class="mt-10 info"></div>
