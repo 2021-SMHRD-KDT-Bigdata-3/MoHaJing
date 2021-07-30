@@ -33,7 +33,7 @@
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="img/logo.png" alt="">
+				<img src="${cpath}/img/logo.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
@@ -89,7 +89,7 @@
 				<div class="col-lg-12">
 					<a href="#" class="main_btn">
 						book a table
-						<img src="img/next.png" alt="">
+						<img src="${cpath}/img/next.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -111,13 +111,13 @@
 					</p>
 					<a href="#" class="main_btn">
 						Get Started
-						<img src="img/next.png" alt="">
+						<img src="${cpath}/img/next.png" alt="">
 					</a>
 				</div>
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
-						<img class="img-fluid w-100" src="img/banner/banner-img.jpg" alt="">
+						<img class="img-fluid w-100" src="${cpath}/img/banner/banner-img.jpg" alt="">
 					</div>
 					<div class="video-popup d-flex align-items-center">
 						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
@@ -141,9 +141,9 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
-						<img class="img1 img-fluid" src="img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="img/popular/img3.jpg" alt="">
+						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg" alt="">
+						<img class="img2 img-fluid" src="${cpath}/img/popular/img2.jpg" alt="">
+						<img class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -158,7 +158,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon1.png" alt="">
+										<img src="${cpath}/img/popular/icon1.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>London</h4>
@@ -168,7 +168,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon2.png" alt="">
+										<img src="${cpath}/img/popular/icon2.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Turkey</h4>
@@ -181,7 +181,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon3.png" alt="">
+										<img src="${cpath}/img/popular/icon3.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Paris</h4>
@@ -191,7 +191,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon4.png" alt="">
+										<img src="${cpath}/img/popular/icon4.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Thailand</h4>
@@ -220,7 +220,7 @@
 							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
 						<a href="#" class="main_btn">
 							Browse all Packages
-							<img src="img/next.png" alt="">
+							<img src="${cpath}/img/next.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -331,7 +331,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="img/ame1.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/img/ame1.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -348,7 +348,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="img/ame2.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/img/ame2.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -365,7 +365,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="img/ame3.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/img/ame3.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -437,7 +437,7 @@
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
 									Browse all Packages
-									<img src="img/next.png" alt="">
+									<img src="${cpath}/img/next.png" alt="">
 								</button>
 							</div>
 						</form>
@@ -454,7 +454,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="testi_img">
-						<img class="img-fluid" src="img/testi-img.jpg" alt="">
+						<img class="img-fluid" src="${cpath}/img/testi-img.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -462,7 +462,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="img/quote.png" alt="">
+								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -479,7 +479,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="img/quote.png" alt="">
+								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -519,7 +519,7 @@
 									 required="" type="email">
 									<button class="main_btn">
 										Subscribe
-										<img src="img/next.png" alt="">
+										<img src="${cpath}/img/next.png" alt="">
 									</button>
 								</div>
 								<div class="mt-10 info"></div>
@@ -528,7 +528,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6 offset-lg-1">
-					<img class="img-fluid nw-img" src="img/nwl-img.png" alt="">
+					<img class="img-fluid nw-img" src="${cpath}/img/nwl-img.png" alt="">
 				</div>
 			</div>
 	</section>
@@ -551,7 +551,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-blog">
 						<div class="blog-thumb">
-							<img class="img-fluid" src="img/blog/h-blog1.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/img/blog/h-blog1.jpg" alt="">
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
@@ -589,7 +589,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-blog">
 						<div class="blog-thumb">
-							<img class="img-fluid" src="img/blog/h-blog3.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/img/blog/h-blog3.jpg" alt="">
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
@@ -671,14 +671,14 @@
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instafeed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="img/instagram/i1.jpg" alt=""></li>
-							<li><img src="img/instagram/i2.jpg" alt=""></li>
-							<li><img src="img/instagram/i3.jpg" alt=""></li>
-							<li><img src="img/instagram/i4.jpg" alt=""></li>
-							<li><img src="img/instagram/i5.jpg" alt=""></li>
-							<li><img src="img/instagram/i6.jpg" alt=""></li>
-							<li><img src="img/instagram/i7.jpg" alt=""></li>
-							<li><img src="img/instagram/i8.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i1.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i2.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i3.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i4.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i5.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i6.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i7.jpg" alt=""></li>
+							<li><img src="${cpath}/img/instagram/i8.jpg" alt=""></li>
 						</ul>
 					</div>
 				</div>
