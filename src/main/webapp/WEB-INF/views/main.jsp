@@ -102,15 +102,15 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<h1>
-						Santorini Island <br>
-						in Greece
+						毛어때 <br>
+						in CGI
 					</h1>
 					<p class="pt-20">
-						If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may
-						see some for as low as $.17 each.
+						머리빠지고 고민될 땐? <br>
+						毛어때
 					</p>
 					<a href="#" class="main_btn">
-						Get Started
+						자가진단 Start
 						<img src="${cpath}/resources/img/next.png" alt="">
 					</a>
 				</div>
