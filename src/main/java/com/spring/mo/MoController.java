@@ -13,4 +13,9 @@ public class MoController {
 		public String main() {
 			return "main";
 		}
+		
+		@RequestMapping("/community.do")
+		public String community() {
+			return "community";
+		}
 }

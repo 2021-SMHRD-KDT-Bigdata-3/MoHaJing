@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -79,137 +80,34 @@
 	</section>
 
 	<!--================ Start banner section =================-->
-	<form>
-		<table>
-			<tr>
-				<th>제목</th>
-				<th>날짜</th>
-				<th>작성자</th>
-			</tr>
-		</table>
-	</form>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
 						<h1 align="center">Community</h1>
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="password" class="form-control" id="name" name="pw" placeholder="PASSWARD"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
-							</div>
-							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase">
-									로그인
-								</button>
-								<button class="main_btn text-uppercase">
-									회원가입
-								</button>
-							</div>
-						</form>
-					
-				</div>
-
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
-					</div>
-					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
-							<span></span>
-						</a>
-					</div>
+						<table>
+							<thead>
+								<tr>
+									<th>제목</th>
+									<th>날짜</th>
+									<th>작성자</th>
+								</tr>
+								<c:forEach var="vo" items="${list}">
+									<tr>
+										<td>${vo.title }</td>
+										<td>${vo.date }</td>
+										<td>${vo.writer }</td>
+									</tr>
+								</c:forEach>
+							</thead>
+						</table>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--================ End banner section =================-->
-
-	<!--================ Start Popular Place Area =================-->
-	<div class="popular-place-area section_gap">
-		<div class="container">
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-5 offset-lg-1">
-					<div class="left-content">
-						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
-							alt=""> <img class="img2 img-fluid"
-							src="${cpath}/img/popular/img2.jpg" alt=""> <img
-							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
-						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<div class="right-content">
-						<div class="main_title">
-							<h1>프로그램설명</h1>
-							<p>대충 프로그램 설명하는 내용들</p>
-						</div>
-						<div class="counter_area">
-							<div class="top-two">
-								<!-- single counter -->
-								<div class="single_counter">
-									<div class="thumb">
-										<img src="${cpath}/resources/img/popular/icon1.png" alt="">
-									</div>
-									<div class="info-content">
-										<h4>관리기록</h4>
-									</div>
-								</div>
-								<!-- single counter -->
-								<div class="single_counter">
-									<div class="thumb">
-										<img src="${cpath}/resources/img/popular/icon2.png" alt="">
-									</div>
-									<div class="info-content">
-										<h4>커뮤니티</h4>
-									</div>
-								</div>
-							</div>
-
-							<div class="bottom-two">
-								<!-- single counter -->
-								<div class="single_counter">
-									<div class="thumb">
-										<img src="${cpath}/resources/img/popular/icon3.png" alt="">
-									</div>
-									<div class="info-content">
-										<h4>1대1 상담</h4>
-									</div>
-								</div>
-								<!-- single counter -->
-								<div class="single_counter">
-									<div class="thumb">
-										<img src="${cpath}/resources/img/popular/icon4.png" alt="">
-									</div>
-									<div class="info-content">
-										<h4>마이페이지</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Popular Place Area =================-->
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area">

@@ -33,18 +33,18 @@
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="${cpath}/resources/img/logo.png" alt="">
+				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="index.html">메인</a>
+				<a href="${capth}/main.do">메인</a>
 			</li>
 			<li>
-				<a href="packages.html">진단관리기록</a>
+				<a href="">진단관리기록</a>
 			</li>
 			<li>
-				<a href="packages.html">커뮤니티</a>
+				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
 				<a href="packages.html">1대1 상담</a>
@@ -71,7 +71,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<a href="#" class="main_btn">
-						메인
+						<img src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -84,7 +84,9 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
-						<h1 align="center">毛어때</h1>
+						<h1 align="center">
+							<img src="${cpath}/resources/img/logo3.png" alt="">
+						</h1>
 							<div class="form-group col-md-12">
 								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
