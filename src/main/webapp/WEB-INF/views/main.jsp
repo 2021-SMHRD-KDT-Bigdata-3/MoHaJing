@@ -10,7 +10,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="${cpath}/img/favicon.png" type="image/png">
+	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
 	<title>129 Beyond Travel Agency</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
@@ -33,7 +33,7 @@
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="${cpath}/img/logo.png" alt="">
+				<img src="${cpath}/resources/img/logo.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
@@ -89,7 +89,7 @@
 				<div class="col-lg-12">
 					<a href="#" class="main_btn">
 						book a table
-						<img src="${cpath}/img/next.png" alt="">
+						<img src="${cpath}/resources/img/next.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 					</p>
 					<a href="#" class="main_btn">
 						Get Started
-						<img src="${cpath}/img/next.png" alt="">
+						<img src="${cpath}/resources/img/next.png" alt="">
 					</a>
 				</div>
 
@@ -141,9 +141,9 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
-						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="${cpath}/img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
+						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
+						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
+						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -158,7 +158,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="${cpath}/img/popular/icon1.png" alt="">
+										<img src="${cpath}/resources/img/popular/icon1.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>London</h4>
@@ -168,7 +168,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="${cpath}/img/popular/icon2.png" alt="">
+										<img src="${cpath}/resources/img/popular/icon2.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Turkey</h4>
@@ -181,7 +181,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="${cpath}/img/popular/icon3.png" alt="">
+										<img src="${cpath}/resources/img/popular/icon3.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Paris</h4>
@@ -191,7 +191,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="${cpath}/img/popular/icon4.png" alt="">
+										<img src="${cpath}/resources/img/popular/icon4.png" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Thailand</h4>
@@ -220,7 +220,7 @@
 							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
 						<a href="#" class="main_btn">
 							Browse all Packages
-							<img src="${cpath}/img/next.png" alt="">
+							<img src="${cpath}/resources/img/next.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -228,7 +228,7 @@
 					<div class="owl-carousel active-gallery-carousel">
 						<!-- single gallery -->
 						<div class="single-gallery">
-							<img class="img-fluid" src="img/pac1.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/pac1.jpg" alt="">
 							<div class="gallery-content">
 								<div class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
@@ -248,14 +248,14 @@
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac1.jpg" class="img-popup">
+								<a href="${cpath}/resources/img/pac1.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
 						</div>
 						<!-- single gallery -->
 						<div class="single-gallery">
-							<img class="img-fluid" src="img/pac2.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/pac2.jpg" alt="">
 							<div class="gallery-content">
 								<div class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
@@ -275,14 +275,14 @@
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac2.jpg" class="img-popup">
+								<a href="${cpath}/resources/img/pac2.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
 						</div>
 						<!-- single gallery -->
 						<div class="single-gallery">
-							<img class="img-fluid" src="img/pac2.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/pac2.jpg" alt="">
 							<div class="gallery-content">
 								<div class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
@@ -302,7 +302,7 @@
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac2.jpg" class="img-popup">
+								<a href="${cpath}/resources/img/pac2.jpg" class="img-popup">
 									<span class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
@@ -331,7 +331,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="${cpath}/img/ame1.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/ame1.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -348,7 +348,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="${cpath}/img/ame2.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/ame2.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -365,7 +365,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-amenities">
 						<div class="amenities-thumb">
-							<img class="img-fluid" src="${cpath}/img/ame3.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/ame3.jpg" alt="">
 						</div>
 						<div class="amenities-details">
 							<div class="amenities-meta">
@@ -437,7 +437,7 @@
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
 									Browse all Packages
-									<img src="${cpath}/img/next.png" alt="">
+									<img src="${cpath}/resources/img/next.png" alt="">
 								</button>
 							</div>
 						</form>
@@ -454,7 +454,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="testi_img">
-						<img class="img-fluid" src="${cpath}/img/testi-img.jpg" alt="">
+						<img class="img-fluid" src="${cpath}/resources/img/testi-img.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -462,7 +462,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -479,7 +479,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -519,7 +519,7 @@
 									 required="" type="email">
 									<button class="main_btn">
 										Subscribe
-										<img src="${cpath}/img/next.png" alt="">
+										<img src="${cpath}/resources/img/next.png" alt="">
 									</button>
 								</div>
 								<div class="mt-10 info"></div>
@@ -528,7 +528,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6 offset-lg-1">
-					<img class="img-fluid nw-img" src="${cpath}/img/nwl-img.png" alt="">
+					<img class="img-fluid nw-img" src="${cpath}/resources/img/nwl-img.png" alt="">
 				</div>
 			</div>
 	</section>
@@ -551,7 +551,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-blog">
 						<div class="blog-thumb">
-							<img class="img-fluid" src="${cpath}/img/blog/h-blog1.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/blog/h-blog1.jpg" alt="">
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
@@ -570,7 +570,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-blog">
 						<div class="blog-thumb">
-							<img class="img-fluid" src="img/blog/h-blog2.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/blog/h-blog2.jpg" alt="">
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
@@ -589,7 +589,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6">
 					<div class="single-blog">
 						<div class="blog-thumb">
-							<img class="img-fluid" src="${cpath}/img/blog/h-blog3.jpg" alt="">
+							<img class="img-fluid" src="${cpath}/resources/img/blog/h-blog3.jpg" alt="">
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
@@ -671,14 +671,14 @@
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instafeed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="${cpath}/img/instagram/i1.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i2.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i3.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i4.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i5.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i6.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i7.jpg" alt=""></li>
-							<li><img src="${cpath}/img/instagram/i8.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i1.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i2.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i3.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i4.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i5.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i6.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i7.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i8.jpg" alt=""></li>
 						</ul>
 					</div>
 				</div>
@@ -707,21 +707,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="${cpath}/js/jquery-3.2.1.min.js"></script>
-	<script src="${cpath}/js/popper.js"></script>
-	<script src="${cpath}/js/bootstrap.min.js"></script>
-	<script src="${cpath}/js/stellar.js"></script>
-	<script src="${cpath}/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="${cpath}/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="${cpath}/vendors/isotope/isotope-min.js"></script>
-	<script src="${cpath}/vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="${cpath}/vendors/jquery-ui/jquery-ui.js"></script>
-	<script src="${cpath}/js/jquery.ajaxchimp.min.js"></script>
-	<script src="${cpath}/js/mail-script.js"></script>
-	<script src="${cpath}/vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="${cpath}/vendors/swiper/js/swiper.min.js"></script>
-	<script src="${cpath}/vendors/scroll/jquery.mCustomScrollbar.js"></script>
-	<script src="${cpath}/js/theme.js"></script>
+	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
+	<script src="${cpath}/resources/js/popper.js"></script>
+	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
+	<script src="${cpath}/resources/js/stellar.js"></script>
+	<script src="${cpath}/resources/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="${cpath}/resources/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="${cpath}/resources/vendors/isotope/isotope-min.js"></script>
+	<script src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="${cpath}/resources/vendors/jquery-ui/jquery-ui.js"></script>
+	<script src="${cpath}/resources/js/jquery.ajaxchimp.min.js"></script>
+	<script src="${cpath}/resources/js/mail-script.js"></script>
+	<script src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
+	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
+	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
+	<script src="${cpath}/resources/js/theme.js"></script>
 </body>
 
 </html>
