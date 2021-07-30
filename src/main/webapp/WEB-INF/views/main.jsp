@@ -1,30 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}"/>
+<c:set var="cpath" value="${pageContext.request.contextPath}" />
 
 <!doctype html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="${cpath}/img/favicon.png" type="image/png">
-	<title>129 Beyond Travel Agency</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
-	<link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="${cpath}/img/favicon.png" type="image/png">
+<title>129 Beyond Travel Agency</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/linericon/style.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/animate-css/animate.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/popup/magnific-popup.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
+<!-- main css -->
+<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 </head>
 
 <body>
@@ -32,47 +42,69 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
-				<img src="${cpath}/img/logo.png" alt="">
+			<a href="index.html"> <img src="${cpath}/img/logo.png" alt="">
 			</a>
 		</div>
-		<ul class="list menu-left">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="packages.html">Packages</a>
-			</li>
-			<li>
-				<div class="dropdown">
-					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
-						Pages
-					</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="about-us.html">About-us</a>
-						<a class="dropdown-item" href="amenities.html">Amenities</a>
-						<a class="dropdown-item" href="elements.html">Elements</a>
-					</div>
+		<!-- 		<ul class="list menu-left"> -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="packages.html">Packages</a></li>
+		<li>
+			<div class="dropdown">
+				<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+					Pages</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="about-us.html">About-us</a> <a
+						class="dropdown-item" href="amenities.html">Amenities</a> <a
+						class="dropdown-item" href="elements.html">Elements</a>
 				</div>
-			</li>
-			<li>
-				<div class="dropdown">
-					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
-						Blog
-					</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="blog.html">Blog</a>
-						<a class="dropdown-item" href="single-blog.html">Blog Details</a>
-					</div>
+			</div>
+		</li>
+		<li>
+			<div class="dropdown">
+				<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+					Blog</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="blog.html">Blog</a> <a
+						class="dropdown-item" href="single-blog.html">Blog Details</a>
 				</div>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
+			</div>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
+	<!-- 로그인 -->
+	<form>
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>
+				<button>
+				<a href="#" class="main_btn">
+						로그인
+					<img src="${cpath}/img/next.png" alt="">
+				</a>
+				</button>
+				</td>
+				<td>
+				<button>
+				<a href="#" class="main_btn">
+						회원가입
+					<img src="${cpath}/img/next.png" alt="">
+				</a>
+				</button>
+				</td>
+			</tr>
+		</table>
+	</form>
 	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
@@ -87,9 +119,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="#" class="main_btn">
-						book a table
-						<img src="${cpath}/img/next.png" alt="">
+					<a href="#" class="main_btn"> book a table <img
+						src="${cpath}/img/next.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -102,26 +133,25 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<h1>
-						Santorini Island <br>
-						in Greece
+						Santorini Island <br> in Greece
 					</h1>
-					<p class="pt-20">
-						If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may
-						see some for as low as $.17 each.
-					</p>
-					<a href="#" class="main_btn">
-						Get Started
-						<img src="${cpath}/img/next.png" alt="">
+					<p class="pt-20">If you are looking at blank cassettes on the
+						web, you may be very confused at the difference in price. You may
+						see some for as low as $.17 each.</p>
+					<a href="#" class="main_btn"> Get Started <img
+						src="${cpath}/img/next.png" alt="">
 					</a>
 				</div>
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/img/banner/banner-img.jpg" alt="">
+						<img class="img-fluid w-100"
+							src="${cpath}/img/banner/banner-img.jpg" alt="">
 					</div>
 					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
+						<a class="play-video video-play-button animate"
+							href="https://www.youtube.com/watch?v=KUln2DXU5VE"
+							data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s">
 							<span></span>
 						</a>
 						<div class="watch">
@@ -141,17 +171,21 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
-						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="${cpath}/img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
+						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
+							alt=""> <img class="img2 img-fluid"
+							src="${cpath}/img/popular/img2.jpg" alt=""> <img
+							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="right-content">
 						<div class="main_title">
-							<h1>Popular <br>Places Around <br>The World</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h1>
+								Popular <br>Places Around <br>The World
+							</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 						<div class="counter_area">
 							<div class="top-two">
@@ -213,14 +247,17 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
 					<div class="main_title">
-						<h1>Best <br>Tour Plans <br>Recently</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-						<a href="#" class="main_btn">
-							Browse all Packages
-							<img src="${cpath}/img/next.png" alt="">
+						<h1>
+							Best <br>Tour Plans <br>Recently
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<a href="#" class="main_btn"> Browse all Packages <img
+							src="${cpath}/img/next.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -230,26 +267,26 @@
 						<div class="single-gallery">
 							<img class="img-fluid" src="img/pac1.jpg" alt="">
 							<div class="gallery-content">
-								<div class="title align-items-center justify-content-between d-flex">
+								<div
+									class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
-									<h4>$56<span>/day</span></h4>
+									<h4>
+										$56<span>/day</span>
+									</h4>
 								</div>
-								<h4>Santorini Island Dream Holiday
-									and Fun package</h4>
+								<h4>Santorini Island Dream Holiday and Fun package</h4>
 								<div class="review-title justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
 									<div class="review">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i>
 									</div>
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac1.jpg" class="img-popup">
-									<span class="lnr lnr-pushpin"></span>
+								<a href="img/pac1.jpg" class="img-popup"> <span
+									class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
 						</div>
@@ -257,26 +294,26 @@
 						<div class="single-gallery">
 							<img class="img-fluid" src="img/pac2.jpg" alt="">
 							<div class="gallery-content">
-								<div class="title align-items-center justify-content-between d-flex">
+								<div
+									class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
-									<h4>$56<span>/day</span></h4>
+									<h4>
+										$56<span>/day</span>
+									</h4>
 								</div>
-								<h4>Santorini Island Dream Holiday
-									and Fun package</h4>
+								<h4>Santorini Island Dream Holiday and Fun package</h4>
 								<div class="review-title justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
 									<div class="review">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i>
 									</div>
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac2.jpg" class="img-popup">
-									<span class="lnr lnr-pushpin"></span>
+								<a href="img/pac2.jpg" class="img-popup"> <span
+									class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
 						</div>
@@ -284,26 +321,26 @@
 						<div class="single-gallery">
 							<img class="img-fluid" src="img/pac2.jpg" alt="">
 							<div class="gallery-content">
-								<div class="title align-items-center justify-content-between d-flex">
+								<div
+									class="title align-items-center justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
-									<h4>$56<span>/day</span></h4>
+									<h4>
+										$56<span>/day</span>
+									</h4>
 								</div>
-								<h4>Santorini Island Dream Holiday
-									and Fun package</h4>
+								<h4>Santorini Island Dream Holiday and Fun package</h4>
 								<div class="review-title justify-content-between d-flex">
 									<p>Proper Guided Tour</p>
 									<div class="review">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+											class="fa fa-star"></i>
 									</div>
 								</div>
 							</div>
 							<div class="light-box">
-								<a href="img/pac2.jpg" class="img-popup">
-									<span class="lnr lnr-pushpin"></span>
+								<a href="img/pac2.jpg" class="img-popup"> <span
+									class="lnr lnr-pushpin"></span>
 								</a>
 							</div>
 						</div>
@@ -320,9 +357,12 @@
 			<div class="row align-items-end justify-content-left">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h1>Benifits Get <br>Our Customers</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<h1>
+							Benifits Get <br>Our Customers
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 					</div>
 				</div>
 			</div>
@@ -337,10 +377,12 @@
 							<div class="amenities-meta">
 								<span>Within a Shor Time</span>
 							</div>
-							<h5><a href="#">Luxerious Car
-									Rental Service Available</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Luxerious Car Rental Service Available</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -354,10 +396,12 @@
 							<div class="amenities-meta">
 								<span>Within a Shor Time</span>
 							</div>
-							<h5><a href="#">Cruise Private Party
-									Booking Available</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Cruise Private Party Booking Available</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -371,10 +415,12 @@
 							<div class="amenities-meta">
 								<span>Within a Shor Time</span>
 							</div>
-							<h5><a href="#">Tremendous Options
-									for Food Lovers</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Tremendous Options for Food Lovers</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -389,28 +435,39 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h1>Search <br>Suitable & Desired <br>Package for You</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<h1>
+							Search <br>Suitable & Desired <br>Package for You
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
 					</div>
 				</div>
 				<div class="col-lg-6 offset-lg-1">
 					<div class="contact-form-section">
 						<h4>Package Search</h4>
-						<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+						<form
+							class="contact-form-area contact-page-form contact-form text-right"
+							id="myForm" action="mail.html" method="post">
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Destination" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Destination'">
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Destination" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Destination'">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="datepicker" name="text" placeholder="Check in Date" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Check in Date'">
+								<input type="text" class="form-control" id="datepicker"
+									name="text" placeholder="Check in Date"
+									onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Check in Date'">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="datepicker1" name="text" placeholder="Check Out Date" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Check Out Date'">
+								<input type="text" class="form-control" id="datepicker1"
+									name="text" placeholder="Check Out Date"
+									onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Check Out Date'">
 							</div>
 							<div class="form-group col-md-12">
 								<div class="form-select">
@@ -436,8 +493,7 @@
 							</div>
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
-									Browse all Packages
-									<img src="${cpath}/img/next.png" alt="">
+									Browse all Packages <img src="${cpath}/img/next.png" alt="">
 								</button>
 							</div>
 						</form>
@@ -465,9 +521,10 @@
 								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-									commodo consequat.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+									ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 							<div class="testi_author">
 								<div class="a-desc">
@@ -482,9 +539,10 @@
 								<img class="img-fluid" src="${cpath}/img/quote.png" alt="">
 							</div>
 							<div class="testi_content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-									commodo consequat.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna
+									aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+									ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 							<div class="testi_author">
 								<div class="a-desc">
@@ -506,20 +564,26 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h1>Subscribe <br>to Get Updated for <br>Our Newsletter</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<h1>
+							Subscribe <br>to Get Updated for <br>Our Newsletter
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
 						<div id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="subscribe_form relative">
+							<form target="_blank"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="subscribe_form relative">
 								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
-									 required="" type="email">
+									<input name="EMAIL" placeholder="Enter email address"
+										onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Email Address '" required=""
+										type="email">
 									<button class="main_btn">
-										Subscribe
-										<img src="${cpath}/img/next.png" alt="">
+										Subscribe <img src="${cpath}/img/next.png" alt="">
 									</button>
 								</div>
 								<div class="mt-10 info"></div>
@@ -540,9 +604,12 @@
 			<div class="row align-items-end justify-content-left">
 				<div class="col-lg-5">
 					<div class="main_title">
-						<h1>Benifits Get <br>Our Customers</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<h1>
+							Benifits Get <br>Our Customers
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 					</div>
 				</div>
 			</div>
@@ -555,14 +622,17 @@
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
-								<a href="#" class="m-gap"><span class="lnr lnr-calendar-full"></span>13th Dec</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-heart"></span>15</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
+								<a href="#" class="m-gap"><span
+									class="lnr lnr-calendar-full"></span>13th Dec</a> <a href="#"
+									class="m-gap"><span class="lnr lnr-heart"></span>15</a> <a
+									href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
 							</div>
-							<h5><a href="#">Luxerious Car
-									Rental Service Available</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Luxerious Car Rental Service Available</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -574,14 +644,17 @@
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
-								<a href="#" class="m-gap"><span class="lnr lnr-calendar-full"></span>13th Dec</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-heart"></span>15</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
+								<a href="#" class="m-gap"><span
+									class="lnr lnr-calendar-full"></span>13th Dec</a> <a href="#"
+									class="m-gap"><span class="lnr lnr-heart"></span>15</a> <a
+									href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
 							</div>
-							<h5><a href="#">Cruise Private Party
-									Booking Available</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Cruise Private Party Booking Available</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -593,14 +666,17 @@
 						</div>
 						<div class="blog-details">
 							<div class="blog-meta">
-								<a href="#" class="m-gap"><span class="lnr lnr-calendar-full"></span>13th Dec</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-heart"></span>15</a>
-								<a href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
+								<a href="#" class="m-gap"><span
+									class="lnr lnr-calendar-full"></span>13th Dec</a> <a href="#"
+									class="m-gap"><span class="lnr lnr-heart"></span>15</a> <a
+									href="#" class="m-gap"><span class="lnr lnr-bubble"></span>04</span></a>
 							</div>
-							<h5><a href="#">Tremendous Options
-									for Food Lovers</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h5>
+								<a href="#">Tremendous Options for Food Lovers</a>
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna
+								aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 						</div>
 					</div>
 				</div>
@@ -616,10 +692,9 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>About Crafted</h6>
-						<p>
-							The world has become so fast paced that people don’t want to stand by reading a page of information, they would
-							much rather look.
-						</p>
+						<p>The world has become so fast paced that people don’t want
+							to stand by reading a page of information, they would much rather
+							look.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
@@ -643,23 +718,28 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price mediocre print and graphic.</p>
+						<p>For business professionals caught between high OEM price
+							mediocre print and graphic.</p>
 						<div class="" id="mc_embed_signup">
 
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
+							<form target="_blank" novalidate="true"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="form-inline">
 
 								<div class="d-flex flex-row">
 
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
+									<input class="form-control" name="EMAIL"
+										placeholder="Enter Email" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter Email '" required=""
+										type="email">
 
 
 									<button class="click-btn btn btn-default">
 										<i class="fa fa-paper-plane" aria-hidden="true"></i>
 									</button>
 									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+										<input name="b_36c4fd991d266f23781ded980_aefe40901a"
+											tabindex="-1" value="" type="text">
 									</div>
 								</div>
 								<div class="info"></div>
@@ -684,19 +764,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+		<div
+			class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div>
-						<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						<p class="footer-text m-0">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 					</div>
 					<div class="footer-social d-flex align-items-center">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+							class="fa fa-twitter"></i></a> <a href="#"><i
+							class="fa fa-dribbble"></i></a> <a href="#"><i
+							class="fa fa-behance"></i></a>
 					</div>
 				</div>
 			</div>
