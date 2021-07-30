@@ -85,24 +85,26 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
-						<h1 align="center">Community</h1>
-						<table>
-							<thead>
-								<tr>
-									<th>제목</th>
-									<th>날짜</th>
-									<th>작성자</th>
-								</tr>
-								<c:forEach var="vo" items="${list}">
-									<tr>
-										<td>${vo.title}</td>
-										<td>${vo.date}</td>
-										<td>${vo.writer}</td>
-									</tr>
-								</c:forEach>
-							</thead>
-						</table>
-						<button class="main_btn text-uppercase">글쓰기
+						<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+							<div class="form-group col-md-12">
+								<input type="text" class="form-control" id="name" name="name" placeholder="제목" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Destination'">
+							</div>
+							 <div class="col-md-6">
+    	                        <div class="form-group">
+                           	     	<textarea class="form-control" name="message" id="message" rows="1" placeholder="글 내용"></textarea>
+                          	  	</div>
+                       		 </div>
+							<div class="form-group col-md-12">
+								<input type="text" class="form-control" id="name" name="text" placeholder="Check Out Date" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Check Out Date'">
+							</div>
+							<div class="col-lg-12 text-center">
+								<button class="main_btn text-uppercase">
+									댓글쓰기
+								</button>
+							</div>
+						</form>
 					</form>
 				</div>
 			</div>
