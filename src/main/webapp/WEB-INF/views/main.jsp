@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}"/>
+<c:set var="cpath" value="${pageContext.request.contextPath}" />
 
 <!doctype html>
 <html lang="en">
@@ -88,7 +88,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<a href="#" class="main_btn">
-						이건 쓸까 말까 고민중
+						book a table
 						<img src="${cpath}/resources/img/next.png" alt="">
 					</a>
 				</div>
@@ -108,7 +108,7 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="password" class="form-control" id="name" name="pw" placeholder="PASSWARD"
+								<input type="password" class="form-control" id="datepicker" name="pw" placeholder="PASSWARD"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="col-lg-12 text-center">
@@ -151,6 +151,10 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
+						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
+							alt=""> <img class="img2 img-fluid"
+							src="${cpath}/img/popular/img2.jpg" alt=""> <img
+							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
 						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
 						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
 						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
@@ -223,10 +227,9 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>About Crafted</h6>
-						<p>
-							The world has become so fast paced that people don’t want to stand by reading a page of information, they would
-							much rather look.
-						</p>
+						<p>The world has become so fast paced that people don’t want
+							to stand by reading a page of information, they would much rather
+							look.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
@@ -250,23 +253,28 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price mediocre print and graphic.</p>
+						<p>For business professionals caught between high OEM price
+							mediocre print and graphic.</p>
 						<div class="" id="mc_embed_signup">
 
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
+							<form target="_blank" novalidate="true"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="form-inline">
 
 								<div class="d-flex flex-row">
 
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
+									<input class="form-control" name="EMAIL"
+										placeholder="Enter Email" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter Email '" required=""
+										type="email">
 
 
 									<button class="click-btn btn btn-default">
 										<i class="fa fa-paper-plane" aria-hidden="true"></i>
 									</button>
 									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+										<input name="b_36c4fd991d266f23781ded980_aefe40901a"
+											tabindex="-1" value="" type="text">
 									</div>
 								</div>
 								<div class="info"></div>
@@ -291,19 +299,28 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+		<div
+			class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div>
-						<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						<p class="footer-text m-0">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | This template is made with <i
+								class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
 					</div>
 					<div class="footer-social d-flex align-items-center">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+							class="fa fa-twitter"></i></a> <a href="#"><i
+							class="fa fa-dribbble"></i></a> <a href="#"><i
+							class="fa fa-behance"></i></a>
 					</div>
 				</div>
 			</div>
