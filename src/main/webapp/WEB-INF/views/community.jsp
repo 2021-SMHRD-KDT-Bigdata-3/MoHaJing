@@ -79,12 +79,31 @@
 	</section>
 
 	<!--================ Start banner section =================-->
+	<form>
+		<table>
+			<tr>
+				<th>제목</th>
+				<th>날짜</th>
+				<th>작성자</th>
+			</tr>
+		</table>
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
-						<h1 align="center">毛어때</h1>
+						<h1 align="center">Community</h1>
 							<div class="form-group col-md-12">
 								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
