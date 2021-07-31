@@ -28,4 +28,9 @@ public class MoController {
 		public String mypage() {
 			return "mypage";
 		}	
+
+		@RequestMapping("/execution.do")
+		public String execution() {
+			return "execution";
+		}	
 }
