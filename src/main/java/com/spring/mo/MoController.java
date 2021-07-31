@@ -98,7 +98,7 @@ public class MoController {
 		memberMapper.insertBoard(vo);
 		return "redirect:/community.do";
 	}
-
+		
 	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
 	public String consulting() {
@@ -119,4 +119,8 @@ public class MoController {
 		memberMapper.updateMypage(vo);
 		return "redirect:/mypage.do";
 	}
+	@RequestMapping("/mypage.do")
+	public String mypage() {
+		return "mypage";
+	}	
 }

@@ -28,7 +28,11 @@
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
 		function goWrite(){
+<<<<<<< HEAD
 			location.href="${cpath}/community_writer.do?id="+id;
+=======
+			location.href="${cpath}/writeBoard.do"
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 		}
 	</script>
 </head>
