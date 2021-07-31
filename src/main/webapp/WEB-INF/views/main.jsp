@@ -28,11 +28,8 @@
 	<script type="text/javascript">
 		
 		function goJoin(){
-<<<<<<< HEAD
 			location.href="${capth}/mo/join.do"
-=======
-			location.href="${cpath}/join.do"
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
+			//location.href="${cpath}/join.do"
 		}
 	</script>
 </head>
