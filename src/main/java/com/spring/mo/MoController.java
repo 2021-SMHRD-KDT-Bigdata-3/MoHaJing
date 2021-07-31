@@ -20,6 +20,7 @@ public class MoController {
 	@Autowired
 	private MemberMapper memberMapper;
 
+	// 첫화면
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";
@@ -38,12 +39,6 @@ public class MoController {
 		return "redirect:/main.do";
 	}
 
-	// 로그인 페이지로 가기
-	@RequestMapping("/login.do")
-	public String login() {
-		return "login";
-	}
-
 	// 로그인 시도
 	@RequestMapping("/loginTry.do")
 	public String loginTry(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
@@ -55,8 +50,8 @@ public class MoController {
 			model.addAttribute("vo", vo);
 			return "logmain";
 		} else {
-			// 로그인실패 --> 로그인창으로 다시 go
-			return "redirect:/login.do";
+			// 로그인실패 --> 메인창으로 다시 go
+			return "redirect:/main.do";
 		}
 	}
 

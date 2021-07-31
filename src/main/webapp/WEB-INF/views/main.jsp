@@ -26,9 +26,6 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goLogMain(){
-	  		location.href="${cpath}/loginTry.do";
-	  	}
 		
 		function goJoin(){
 			location.href="${capth}/join.do"
@@ -105,7 +102,7 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase" onclick="goLogMain()">
+								<button type="submit" class="main_btn text-uppercase">
 									로그인
 								</button>
 								<button class="main_btn text-uppercase" onclick="goJoin()">
