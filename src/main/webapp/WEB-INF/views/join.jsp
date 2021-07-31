@@ -1,4 +1,3 @@
-<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -26,32 +25,34 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<script type="text/javascript">
+	</script>
 </head>
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+		<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="${cpath}/resources/img/logo.png" alt="">
+				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="index.html">메인</a>
+				<a href="${cpath}/main.do">메인</a>
 			</li>
 			<li>
-				<a href="packages.html">진단관리기록</a>
+				<a href="">진단관리기록</a>
 			</li>
 			<li>
-				<a href="packages.html">커뮤니티</a>
+				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
@@ -71,8 +72,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="#" class="main_btn">
-						메인
+					<a href="${cpath}/main.do" class="main_btn">
+						<img src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -84,32 +85,135 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
-						<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
+						<h1 align="center">
+							<img src="${cpath}/resources/img/logo3.png" alt="">
+						</h1>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="제목" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Destination'">
+								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
 							</div>
-							 <div class="col-md-6">
-    	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="message" id="message" rows="1" placeholder="글 내용"></textarea>
-                          	  	</div>
-                       		 </div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="text" placeholder="Check Out Date" onfocus="this.placeholder = ''"
-								 onblur="this.placeholder = 'Check Out Date'">
+								<input type="password" class="form-control" id="name" name="pw" placeholder="PASSWARD"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
+							</div>
+							<div class="form-group col-md-12">
+								<input type="text" class="form-control" id="name" name="name" placeholder="이름"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = '이름'">
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>남성</p>
+								<div class="confirm-radio">
+									<input type="checkbox" id="confirm-radio" name="gender" value="man">
+									<label for="confirm-radio"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>여성</p>
+								<div class="confirm-radio">
+									<input type="checkbox" id="confirm-radio" name="gender" value="woman">
+									<label for="confirm-radio"></label>
+								</div>
+							</div>
+							<div class="form-group col-md-12">
+								<input type="text" class="form-control" id="name" name="age" placeholder="나이"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = '나이'">
+							</div>
+							<div class="form-group col-md-12"></div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>01. 이마가 점점 넓어지는 느낌이다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="1">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>02. 가늘고 힘없는 머리가 많이 빠진다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="2">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>03. 하루에 80개 이상 모발이 빠진다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="3">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>04. 비듬이 많아지거나 두피가 가렵다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="4">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>05. 모발이 가늘고 부드러워진다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="5">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="6">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="7">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>08. 몸의 털이 갑자기 굵어진다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="8">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>09. 이마와 정수리 부분이 유난히 번들거린다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="9">
+									<label for="disabled-checkbox-active"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
+								<div class="disabled-checkbox">
+									<input type="checkbox" id="disabled-checkbox-active" name="checknum" value="10">
+									<label for="disabled-checkbox-active"></label>
+								</div>
 							</div>
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
-									댓글쓰기
+									회원가입
 								</button>
 							</div>
 						</form>
-					</form>
+					
+				</div>
+
+				<div class="col-lg-6 col-md-6 header-left">
+					<div class="">
+						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
+					</div>
+					<div class="video-popup d-flex align-items-center">
+						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
+						 data-duration="1.5s" data-delay="0.1s">
+							<span></span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
 	<!--================ End banner section =================-->
 
 	<!--================ start footer Area  =================-->

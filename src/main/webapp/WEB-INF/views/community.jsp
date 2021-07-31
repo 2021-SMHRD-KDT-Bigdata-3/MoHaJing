@@ -26,6 +26,11 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<script type="text/javascript">
+		function goWrite(){
+			location.href="${cpath}/writeBoard.do"
+		}
+	</script>
 </head>
 
 <body>
@@ -34,18 +39,18 @@
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="${cpath}/resources/img/logo.png" alt="">
+				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="index.html">메인</a>
+				<a href="${cpath}/main.do">메인</a>
 			</li>
 			<li>
-				<a href="packages.html">진단관리기록</a>
+				<a href="">진단관리기록</a>
 			</li>
 			<li>
-				<a href="packages.html">커뮤니티</a>
+				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
 				<a href="packages.html">1대1 상담</a>
@@ -71,8 +76,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="#" class="main_btn">
-						메인
+					<a href="${cpath}/main.do" class="main_btn">
+						<img src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -90,19 +95,19 @@
 							<thead>
 								<tr>
 									<th>제목</th>
-									<th>날짜</th>
 									<th>작성자</th>
+									<th>날짜</th>
 								</tr>
 								<c:forEach var="vo" items="${list}">
 									<tr>
-										<td>${vo.title}</td>
-										<td>${vo.date}</td>
-										<td>${vo.writer}</td>
+										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</td>
+										<td>${vo.id}</td>
+										<td>${vo.day}</td>
 									</tr>
 								</c:forEach>
 							</thead>
 						</table>
-						<button class="main_btn text-uppercase">글쓰기
+						<button class="main_btn text-uppercase" onclick="goWrite()">글쓰기</button>
 					</form>
 				</div>
 			</div>
