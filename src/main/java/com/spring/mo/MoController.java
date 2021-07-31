@@ -58,6 +58,7 @@ public class MoController {
 			// 로그인실패 --> 로그인창으로 다시 go
 			return "redirect:/login.do";
 		}
+<<<<<<< HEAD
 	}
 
 	// 게시글 전체 목록 보기
@@ -99,4 +100,19 @@ public class MoController {
 		return "redirect:/community.do";
 	}
 	
+		
+		@RequestMapping("/community.do")
+		public String community() {
+			return "community";
+		}
+		
+		@RequestMapping("/consulting.do")
+		public String consulting() {
+			return "consulting";
+		}	
+
+		@RequestMapping("/mypage.do")
+		public String mypage() {
+			return "mypage";
+		}	
 }
