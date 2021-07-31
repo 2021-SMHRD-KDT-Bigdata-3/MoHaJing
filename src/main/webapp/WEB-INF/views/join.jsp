@@ -85,7 +85,7 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/mo/joinTry.do" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
 						<h1 align="center">
 							<img src="${cpath}/resources/img/logo3.png" alt="">
 						</h1>
@@ -154,7 +154,7 @@
 							</div>
 							
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase">
+								<button type="submit" class="main_btn text-uppercase">
 									회원가입
 								</button>
 							</div>
