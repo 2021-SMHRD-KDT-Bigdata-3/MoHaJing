@@ -24,5 +24,11 @@ public interface MemberMapper {
 	
 	// 게시글 입력
 	public void insertBoard(BoardVO vo);
+	
+	// 마이페이지 정보 출력
+	public MemberVO mypage(String id);
+	
+	// 마이페이지 정보 수정
+	public void updateMypage(MemberVO vo);
 
 }
