@@ -23,4 +23,9 @@ public class MoController {
 		public String consulting() {
 			return "consulting";
 		}	
+
+		@RequestMapping("/mypage.do")
+		public String mypage() {
+			return "mypage";
+		}	
 }
