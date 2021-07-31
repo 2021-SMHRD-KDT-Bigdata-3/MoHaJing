@@ -93,7 +93,7 @@ public class MoController {
 		memberMapper.insertBoard(vo);
 		return "redirect:/community.do";
 	}
-		
+
 	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
 	public String consulting() {
@@ -103,19 +103,17 @@ public class MoController {
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
 	public String mypage(String id, Model model) {
-		//MemberVO vo = memberMapper.mypage(id);
-		//model.addAttribute("vo", vo);
+		// MemberVO vo = memberMapper.mypage(id);
+		// model.addAttribute("vo", vo);
 		return "mypage";
 	}
-	
+
 	// 마이페이지 정보 수정 기능
 	@RequestMapping("/updateMypage.do")
 	public String updateMypage(MemberVO vo) {
 		memberMapper.updateMypage(vo);
 		return "redirect:/mypage.do";
 	}
-	@RequestMapping("/mypage.do")
-	public String mypage() {
-		return "mypage";
-	}	
+
+
 }
