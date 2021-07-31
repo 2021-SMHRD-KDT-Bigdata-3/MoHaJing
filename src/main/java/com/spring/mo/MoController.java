@@ -114,6 +114,9 @@ public class MoController {
 	public String consulting() {
 		return "consulting";
 	}	
-
+	@RequestMapping("/execution2.do")
+	public String execution2() {
+		return "execution2";
+	}	
 	
 }
