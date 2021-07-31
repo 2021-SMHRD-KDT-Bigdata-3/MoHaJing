@@ -48,10 +48,10 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>

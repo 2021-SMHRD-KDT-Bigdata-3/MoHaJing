@@ -38,7 +38,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
@@ -53,10 +53,10 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
