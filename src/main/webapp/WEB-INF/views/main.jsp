@@ -25,6 +25,15 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<script type="text/javascript">
+		function goLogin(){
+	  		location.href="${cpath}/login.do";
+	  	}
+		
+		function goJoin(){
+			location.href="${capth}/join.do"
+		}
+	</script>
 </head>
 
 <body>
@@ -38,7 +47,7 @@
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="${capth}/main.do">메인</a>
+				<a href="${cpath}/main.do">메인</a>
 			</li>
 			<li>
 				<a href="">진단관리기록</a>
@@ -70,7 +79,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="#" class="main_btn">
+					<a href="${cpath}/main.do" class="main_btn">
 						<img src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
@@ -96,10 +105,10 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase">
+								<button class="main_btn text-uppercase" onclick="goLogin()">
 									로그인
 								</button>
-								<button class="main_btn text-uppercase">
+								<button class="main_btn text-uppercase" onclick="goJoin()">
 									회원가입
 								</button>
 							</div>
