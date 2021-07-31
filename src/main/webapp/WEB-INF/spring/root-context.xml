@@ -7,6 +7,8 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	
+	<!-- DB접속 → 5개의 api 필요 → pom.xml 에서 하기 -->
+	<!-- 3개의 api 설정 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mysql"/>
@@ -17,10 +19,12 @@
 		<constructor-arg ref="hikariConfig" />
 	</bean>
 	
+	<!-- mybatis 연결해주는 객체 생성 -->
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean">
 	    <property name="dataSource" ref="dataSource"/>
 	</bean>
 	
+	<!-- BoardMapper.java 스캔하기 -->
 	<mybatis-spring:scan base-package="com.spring.mapper"/>
 	
 </beans>

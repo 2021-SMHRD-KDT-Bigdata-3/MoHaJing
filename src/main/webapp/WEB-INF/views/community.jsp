@@ -95,14 +95,14 @@
 							<thead>
 								<tr>
 									<th>제목</th>
-									<th>날짜</th>
 									<th>작성자</th>
+									<th>날짜</th>
 								</tr>
 								<c:forEach var="vo" items="${list}">
 									<tr>
-										<td>${vo.title}</td>
-										<td>${vo.date}</td>
-										<td>${vo.writer}</td>
+										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</td>
+										<td>${vo.id}</td>
+										<td>${vo.day}</td>
 									</tr>
 								</c:forEach>
 							</thead>
