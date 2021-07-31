@@ -51,7 +51,7 @@
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="${capth}/main.do">메인</a>
+				<a href="${cpath}/main.do">메인</a>
 			</li>
 			<li>
 				<a href="">진단관리기록</a>
@@ -60,16 +60,16 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-<!--================ Canvus Menu Area =================-->
+	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -83,7 +83,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
+					<a href="${cpath}/main.do" class="main_btn">
+						<img src="${cpath}/resources/img/logo3.png" alt="">
+					</a>
 				</div>
 			</div>
 		</div>

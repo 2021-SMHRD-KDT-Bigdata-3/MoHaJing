@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
 		function goWrite(){
-			location.href="${cpath}/community_writer.do"
+			location.href="${cpath}/writeBoard.do"
 		}
 	</script>
 </head>

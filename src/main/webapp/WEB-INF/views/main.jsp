@@ -26,8 +26,8 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goLogin(){
-	  		location.href="${cpath}/login.do";
+		function goLogMain(){
+	  		location.href="${cpath}/loginTry.do";
 	  	}
 		
 		function goJoin(){
@@ -56,10 +56,10 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
@@ -92,7 +92,7 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/loginTry.do" method="post">
 						<h1 align="center">
 							<img src="${cpath}/resources/img/logo3.png" alt="">
 						</h1>
@@ -105,7 +105,7 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase" onclick="goLogin()">
+								<button class="main_btn text-uppercase" onclick="goLogMain()">
 									로그인
 								</button>
 								<button class="main_btn text-uppercase" onclick="goJoin()">

@@ -98,20 +98,14 @@ public class MoController {
 		memberMapper.insertBoard(vo);
 		return "redirect:/community.do";
 	}
-	
 		
-		@RequestMapping("/community.do")
-		public String community() {
-			return "community";
-		}
-		
-		@RequestMapping("/consulting.do")
-		public String consulting() {
-			return "consulting";
-		}	
+	@RequestMapping("/consulting.do")
+	public String consulting() {
+		return "consulting";
+	}	
 
-		@RequestMapping("/mypage.do")
-		public String mypage() {
-			return "mypage";
-		}	
+	@RequestMapping("/mypage.do")
+	public String mypage() {
+		return "mypage";
+	}	
 }
