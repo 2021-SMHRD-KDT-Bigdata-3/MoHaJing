@@ -25,16 +25,17 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<style>
-	.comment-form{
-
+	
+<style>
+ .row,.title_color{
 	max-width:80%;
 	margin : auto;
-	}
 	
+ }
+
+</style>
 	
-	</style>
-	
+</head>	
 </head>
 
 <body>
@@ -42,13 +43,13 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do">
+			<a href="index.html">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="${cpath}/main.do">메인</a>
+				<a href="${capth}/main.do">메인</a>
 			</li>
 			<li>
 				<a href="">진단관리기록</a>
@@ -57,16 +58,16 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
+				<a href="packages.html">1대1 상담</a>
 			</li>
 			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
+				<a href="contact.html">마이페이지</a>
 			</li>
 		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-	<!--================ Canvus Menu Area =================-->
+<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -80,49 +81,55 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					
 				</div>
 			</div>
 		</div>
 	</section>
-
+	
+	
 	<!--================ Start banner section =================-->
-	
-<div class="comment-form">
-                       <h4><img src="${cpath}/resources/img/blog/popular-post/mypage.png" alt=""></h4>
-                        <form class="form_area" action="${cpath}/updateMypage.do" method="post">
-                        
-                            <!-- 기능구현되면 ${vo.}해서 회원정보 출력 해야됨 -->
-                            
-                            <div class="form-group form-inline">
-                                <div class="form-group col-lg-6 col-md-6 name">
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter Name'">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 email">
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email address"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Subject'">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                            </div>
-                            <a href="#" class="main_btn">
-                               	정보수정하기
-                                <img src="img/next.png" alt="">
-                            </a>
-                        </form>
-                    </div>
-                </div>
-	
-	
+	<section class="home-banner-area common-banner relative">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="header-right col-lg-6 col-md-6">
+					<h1>
+						Image Uplode
+					</h1>
+					<p class="pt-20">
+						이 사진으로 저장할까요?
+					</p>
+					<div class="page-link-wrap">
+						<div class="page_link">
+							<a href="index.html">New</a>
+							<a href="elements.html">Image</a>
+						</div>
+						<img src="img/next.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 header-left">
+					<div class="">
+						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End banner section =================-->
+
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading title_color">진단시작</h3>
+			<p class="sample-text">
+				움짤에니메이션~~~~~~~~~~
+
+			</p>
+		</div>
+	</section>
+	<!-- End Sample Area -->
 	
 	
 <!--================ start footer Area  =================-->

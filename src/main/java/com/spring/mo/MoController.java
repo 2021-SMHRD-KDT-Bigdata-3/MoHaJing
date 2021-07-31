@@ -20,7 +20,21 @@ public class MoController {
 	@Autowired
 	private MemberMapper memberMapper;
 
+
+
+		@RequestMapping("/mypage.do")
+		public String mypage() {
+			return "mypage";
+		}	
+
+		@RequestMapping("/execution.do")
+		public String execution() {
+			return "execution";
+		}	
+
+
 	// 첫화면
+
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";
@@ -98,7 +112,14 @@ public class MoController {
 	@RequestMapping("/consulting.do")
 	public String consulting() {
 		return "consulting";
-	}
+
+	}	
+	@RequestMapping("/execution2.do")
+	public String execution2() {
+		return "execution2";
+	}	
+	
+
 
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
@@ -122,5 +143,6 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "info";
 	}
+
 
 }

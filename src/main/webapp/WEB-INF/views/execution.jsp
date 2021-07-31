@@ -25,16 +25,17 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<style>
-	.comment-form{
-
+	
+<style>
+ .row,.title_color{
 	max-width:80%;
 	margin : auto;
-	}
 	
+ }
+
+</style>
 	
-	</style>
-	
+</head>	
 </head>
 
 <body>
@@ -42,13 +43,13 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do">
+			<a href="index.html">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="${cpath}/main.do">메인</a>
+				<a href="${capth}/main.do">메인</a>
 			</li>
 			<li>
 				<a href="">진단관리기록</a>
@@ -57,16 +58,16 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
+				<a href="packages.html">1대1 상담</a>
 			</li>
 			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
+				<a href="contact.html">마이페이지</a>
 			</li>
 		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-	<!--================ Canvus Menu Area =================-->
+<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -80,49 +81,118 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					
 				</div>
 			</div>
 		</div>
 	</section>
-
+	
+	
 	<!--================ Start banner section =================-->
+	<section class="home-banner-area common-banner relative">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="header-right col-lg-6 col-md-6">
+					<h1>
+						
+					Take Pictures
+					</h1>
+					<p class="pt-20">
+						We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to day also
+						asks us to remain physically young. Young at heart.
+					</p>
+					<div class="page-link-wrap">
+						<div class="page_link">
+							<a href="index.html">New</a>
+							<a href="elements.html">Image</a>
+						</div>
+						<img src="img/next.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 header-left">
+					<div class="">
+						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End banner section =================-->
+
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading title_color">사진 촬영 가이드</h3>
+			<p class="sample-text">
+				Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short
+				film
+				to show off their creative prowess. Many have great ideas and want to “wow” the<sup>Superscript</sup> scene, or
+				video
+				renters with their big project. But once you have the<sub>Subscript</sub> “in the can” (no easy feat), how do you
+				move
+				from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked hand-written title inside a
+				secondhand
+				CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting
+				on
+				your doorstep? You need to create eye-popping artwork and have your project replicated. Using a reputable full
+				service
+				DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a
+				professional
+				end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication
+				results:
+
+			</p>
+		</div>
+	</section>
+	<!-- End Sample Area -->
 	
-<div class="comment-form">
-                       <h4><img src="${cpath}/resources/img/blog/popular-post/mypage.png" alt=""></h4>
-                        <form class="form_area" action="${cpath}/updateMypage.do" method="post">
-                        
-                            <!-- 기능구현되면 ${vo.}해서 회원정보 출력 해야됨 -->
-                            
-                            <div class="form-group form-inline">
-                                <div class="form-group col-lg-6 col-md-6 name">
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter Name'">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 email">
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email address"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Subject'">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                            </div>
-                            <a href="#" class="main_btn">
-                               	정보수정하기
-                                <img src="img/next.png" alt="">
-                            </a>
-                        </form>
-                    </div>
-                </div>
-	
-	
+	<div class="section-top-border">
+				<h3 class="title_color">Image Gallery</h3>
+				<div class="row gallery-item">
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g1.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g1.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g2.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g2.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g3.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g3.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="${cpath}/resources/img/elements/g4.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g4.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="${cpath}/resources/img/elements/g5.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g5.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g6.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g6.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g7.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g7.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="${cpath}/resources/img/elements/g8.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g8.jpg);"></div>
+						</a>
+					</div>
+				</div>
+			</div>
 	
 	
 <!--================ start footer Area  =================-->
