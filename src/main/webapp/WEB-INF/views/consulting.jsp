@@ -45,7 +45,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
@@ -90,7 +90,8 @@
 			</div>
 		</div>
 	</section>
-	
+
+	<!--================ Start banner section =================-->
 	
 	  <div class="comments-area">
                         <h4><img src="${cpath}/resources/img/popular/con_title.png" alt=""></h4>

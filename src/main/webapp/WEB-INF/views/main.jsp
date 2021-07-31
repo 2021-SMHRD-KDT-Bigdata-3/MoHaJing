@@ -28,7 +28,11 @@
 	<script type="text/javascript">
 		
 		function goJoin(){
+<<<<<<< HEAD
 			location.href="${capth}/mo/join.do"
+=======
+			location.href="${cpath}/join.do"
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 		}
 	</script>
 </head>
@@ -38,7 +42,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
