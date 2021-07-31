@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
 		function goWrite(){
-			location.href="${cpath}/community_writer.do"
+			location.href="${cpath}/community_writer.do?id="+id;
 		}
 	</script>
 </head>
@@ -100,7 +100,7 @@
 								</tr>
 								<c:forEach var="vo" items="${list}">
 									<tr>
-										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</td>
+										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</a></td>
 										<td>${vo.id}</td>
 										<td>${vo.day}</td>
 									</tr>
