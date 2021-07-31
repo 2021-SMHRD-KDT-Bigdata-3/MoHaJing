@@ -27,12 +27,8 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goWrite(){
-<<<<<<< HEAD
-			location.href="${cpath}/community_writer.do?id="+id;
-=======
-			location.href="${cpath}/writeBoard.do"
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
+		function goWrite(id){
+			location.href="${cpath}/writeBoard.do?id="+id;
 		}
 	</script>
 </head>
@@ -111,7 +107,8 @@
 								</c:forEach>
 							</thead>
 						</table>
-						<button class="main_btn text-uppercase" onclick="goWrite()">글쓰기</button>
+						<!-- 현재 로그인한 사용자의 아이디값 넘기기 -->
+						<button class="main_btn text-uppercase" onclick="goWrite(${vo.id})">글쓰기</button>
 					</form>
 				</div>
 			</div>

@@ -81,10 +81,10 @@ public class MoController {
 	}
 
 	// 게시글 입력 페이지 보기
-	@RequestMapping("/community_writer.do")
-	public String community_writer(String id, Model model) {
+	@RequestMapping("/writeBoard.do")
+	public String writeBoard(String id, Model model) {
 		model.addAttribute("id", id);
-		return "community_writer";
+		return "writeBoard";
 	}
 
 	// 게시글 입력 기능
