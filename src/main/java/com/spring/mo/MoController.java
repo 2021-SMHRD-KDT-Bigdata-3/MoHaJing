@@ -22,10 +22,6 @@ public class MoController {
 
 
 
-		@RequestMapping("/mypage.do")
-		public String mypage() {
-			return "mypage";
-		}	
 
 		@RequestMapping("/execution.do")
 		public String execution() {
