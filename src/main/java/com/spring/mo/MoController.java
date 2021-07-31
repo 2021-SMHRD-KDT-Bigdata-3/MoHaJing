@@ -18,4 +18,9 @@ public class MoController {
 		public String community() {
 			return "community";
 		}
+		
+		@RequestMapping("/consulting.do")
+		public String consulting() {
+			return "consulting";
+		}	
 }
