@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
+import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 
@@ -19,6 +20,7 @@ public class MoController {
 
 	@Autowired
 	private MemberMapper memberMapper;
+
 
 
 		@RequestMapping("/mypage.do")
@@ -30,6 +32,9 @@ public class MoController {
 		public String execution() {
 			return "execution";
 		}	
+
+
+	// 첫화면
 
 	@RequestMapping("/main.do")
 	public String main() {
@@ -49,12 +54,6 @@ public class MoController {
 		return "redirect:/main.do";
 	}
 
-	// 로그인 페이지로 가기
-	@RequestMapping("/login.do")
-	public String login() {
-		return "login";
-	}
-
 	// 로그인 시도
 	@RequestMapping("/loginTry.do")
 	public String loginTry(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
@@ -66,19 +65,19 @@ public class MoController {
 			model.addAttribute("vo", vo);
 			return "logmain";
 		} else {
-			// 로그인실패 --> 로그인창으로 다시 go
-			return "redirect:/login.do";
+			// 로그인실패 --> 메인창으로 다시 go
+			return "redirect:/main.do";
 		}
 	}
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
 	public String community(Model model) {
-		//List<BoardVO> list = memberMapper.community();
-		//model.addAttribute("list", list);
+		// List<BoardVO> list = memberMapper.community();
+		// model.addAttribute("list", list);
 		return "community";
 	}
-	
+
 	// 게시글 하나 보기 + 댓글보기
 	@RequestMapping("/community_view.do")
 	public String community_view(int no, Model model) {
@@ -88,35 +87,63 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "community_view";
 	}
-	
+
 	// 댓글입력
 	@RequestMapping("/writeComment.do")
 	public String writeComment(int no) {
 		memberMapper.writeComment(no);
 		return "redirect:/community_view.do";
 	}
-	
+
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {
 		model.addAttribute("id", id);
 		return "writeBoard";
 	}
-	
+
 	// 게시글 입력 기능
 	@RequestMapping("/insertBoard.do")
 	public String insertBoard(BoardVO vo) {
 		memberMapper.insertBoard(vo);
 		return "redirect:/community.do";
 	}
-		
+
+	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
 	public String consulting() {
 		return "consulting";
+
 	}	
 	@RequestMapping("/execution2.do")
 	public String execution2() {
 		return "execution2";
 	}	
 	
+
+
+	// 마이페이지 정보 출력
+	@RequestMapping("/mypage.do")
+	public String mypage(String id, Model model) {
+		// MemberVO vo = memberMapper.mypage(id);
+		// model.addAttribute("vo", vo);
+		return "mypage";
+	}
+
+	// 마이페이지 정보 수정 기능
+	@RequestMapping("/updateMypage.do")
+	public String updateMypage(MemberVO vo) {
+		memberMapper.updateMypage(vo);
+		return "redirect:/mypage.do";
+	}
+
+	// 탈모 기본정보 출력
+	@RequestMapping("/info.do")
+	public String info(Model model) {
+		List<InfoVO> list = memberMapper.info();
+		model.addAttribute("list", list);
+		return "info";
+	}
+
+
 }

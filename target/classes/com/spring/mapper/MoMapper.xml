@@ -42,5 +42,18 @@
         values(#{id}, #{title}, #{content}, #{file}, datetime())
     </insert>
     
+    <!-- 마이페이지 정보 출력 -->
+    <select id="mypage" parameterType="String" resultType="com.spring.mapper.MemberVO">
+        select * from mo_member where id = #{id}
+    </select>
     
+    <!-- 마이페이지 정보 수정 -->
+    <update id="updateMypage" parameterType="com.spring.mapper.MemberVO">
+     	update mo_member set pw = #{pw}, checknum = #{checknum} where id = #{id}
+    </update>
+    
+    <!-- 탈모 기본정보 출력 -->
+    <select id="info" resultType="com.spring.mapper.InfoVO">
+        select * from mo_info
+    </select>
 </mapper>

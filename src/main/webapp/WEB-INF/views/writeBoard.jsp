@@ -48,10 +48,10 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
@@ -84,17 +84,22 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+				
+					<!-- 왜 form태그가 2개? -->
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post">
 						<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+							<!-- 로그인한 사용자의 아이디 -->
+							<input type="hidden" name="id" value="${id}">
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="제목" onfocus="this.placeholder = ''"
+								<input type="text" class="form-control" id="name" name="title" placeholder="제목" onfocus="this.placeholder = ''"
 								 onblur="this.placeholder = '제목'">
 							</div>
 							 <div class="col-md-6">
     	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="message" id="message" rows="6" placeholder="글 내용"></textarea>
+                           	     	<textarea class="form-control" name="content" id="message" rows="6" placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
+                       		 <!-- 첨부파일 공간 필요 name="file" -->
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
 									작성완료

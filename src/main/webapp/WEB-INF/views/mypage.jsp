@@ -39,10 +39,10 @@
 
 <body>
 
-		<!--================ Offcanvus Menu Area =================-->
+	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
@@ -87,11 +87,15 @@
 			</div>
 		</div>
 	</section>
-	
+
+	<!--================ Start banner section =================-->
 	
 <div class="comment-form">
                        <h4><img src="${cpath}/resources/img/blog/popular-post/mypage.png" alt=""></h4>
-                        <form class="form_area">
+                        <form class="form_area" action="${cpath}/updateMypage.do" method="post">
+                        
+                            <!-- 기능구현되면 ${vo.}해서 회원정보 출력 해야됨 -->
+                            
                             <div class="form-group form-inline">
                                 <div class="form-group col-lg-6 col-md-6 name">
                                     <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''"
@@ -111,7 +115,7 @@
                                     onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
                             </div>
                             <a href="#" class="main_btn">
-                                Post Comment
+                               	정보수정하기
                                 <img src="img/next.png" alt="">
                             </a>
                         </form>

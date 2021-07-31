@@ -27,8 +27,8 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goWrite(){
-			location.href="${cpath}/writeBoard.do"
+		function goWrite(id){
+			location.href="${cpath}/writeBoard.do?id="+id;
 		}
 	</script>
 </head>
@@ -38,7 +38,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
@@ -53,10 +53,10 @@
 				<a href="${cpath}/community.do">커뮤니티</a>
 			</li>
 			<li>
-				<a href="packages.html">1대1 상담</a>
+				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="contact.html">마이페이지</a>
+				<a href="${cpath}/mypage.do">마이페이지</a>
 			</li>
 		</ul>
 	</div>
@@ -100,14 +100,15 @@
 								</tr>
 								<c:forEach var="vo" items="${list}">
 									<tr>
-										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</td>
+										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</a></td>
 										<td>${vo.id}</td>
 										<td>${vo.day}</td>
 									</tr>
 								</c:forEach>
 							</thead>
 						</table>
-						<button class="main_btn text-uppercase" onclick="goWrite()">글쓰기</button>
+						<!-- 현재 로그인한 사용자의 아이디값 넘기기 -->
+						<button class="main_btn text-uppercase" onclick="goWrite(${vo.id})">글쓰기</button>
 					</form>
 				</div>
 			</div>

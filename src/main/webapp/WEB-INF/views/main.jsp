@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}" />
+<c:set var="cpath" value="${pageContext.request.contextPath}"/>
 
 <!doctype html>
 <html lang="en">
@@ -26,12 +26,9 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goLogMain(){
-	  		location.href="${cpath}/loginTry.do";
-	  	}
 		
 		function goJoin(){
-			location.href="${capth}/join.do"
+			location.href="${cpath}/join.do"
 		}
 	</script>
 </head>
@@ -41,7 +38,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
+			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
@@ -105,7 +102,7 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase" onclick="goLogMain()">
+								<button type="submit" class="main_btn text-uppercase">
 									로그인
 								</button>
 								<button class="main_btn text-uppercase" onclick="goJoin()">
