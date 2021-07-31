@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
+import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 
@@ -115,5 +116,12 @@ public class MoController {
 		return "redirect:/mypage.do";
 	}
 
+	// 탈모 기본정보 출력
+	@RequestMapping("/info.do")
+	public String info(Model model) {
+		List<InfoVO> list = memberMapper.info();
+		model.addAttribute("list", list);
+		return "info";
+	}
 
 }
