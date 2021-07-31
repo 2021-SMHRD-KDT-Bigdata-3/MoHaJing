@@ -58,7 +58,6 @@ public class MoController {
 			// 로그인실패 --> 로그인창으로 다시 go
 			return "redirect:/login.do";
 		}
-<<<<<<< HEAD
 	}
 
 	// 게시글 전체 목록 보기
