@@ -31,7 +31,7 @@
 	  	}
 		
 		function goJoin(){
-			location.href="${capth}/join.do"
+			location.href="${cpath}/join.do"
 		}
 	</script>
 </head>
