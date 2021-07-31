@@ -15,4 +15,32 @@
     	select * from mo_member where id = #{id}
     </select>
     
+    <!-- 게시글 전체검색 -->
+    <select id="community" resultType="com.spring.mapper.BoardVO">
+        select * from mo_board
+    </select>
+    
+    <!-- 게시글 하나 보기 -->
+    <select id="community_view" parameterType="int" resultType="com.spring.mapper.BoardVO">
+        select * from mo_board where no = #{no}
+    </select>
+    
+    <!-- 댓글보기 -->
+    <select id="viewComment" parameterType="int" resultType="com.spring.mapper.CommentVO">
+        select * from mo_comment where no = #{no}
+    </select>
+    
+    <!-- 댓글입력 -->
+    <insert id="writeComment" parameterType="int">
+        insert into mo_comment(no, id, content, day)
+        values(#{no}, #{id}, #{content}, datatime())
+    </insert>
+    
+    <!-- 게시글 입력 -->
+    <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
+        insert into mo_board(id, title, content, file, day)
+        values(#{id}, #{title}, #{content}, #{file}, datetime())
+    </insert>
+    
+    
 </mapper>
