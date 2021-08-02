@@ -568,8 +568,8 @@ button:focus {
     .header-right {
       position: relative;
       
-      <!--백그라운드 이미지 수정하는 곳(div)-->
-      <!--background: url(../img/banner/banner-img.jpg) center no-repeat;-->
+      /*백그라운드 이미지 수정하는 곳(div)
+      background: url(../img/banner/banner-img.jpg) center no-repeat;*/
       
       background-size: cover;
       padding: 100px 120px;
@@ -2566,7 +2566,7 @@ h6 {
   .progress-table-wrap {
     overflow-x: scroll; } }
 .progress-table {
-  background: #fff;
+  background: #ffffff;
   padding: 15px 0px 30px 0px;
   min-width: 800px; }
 

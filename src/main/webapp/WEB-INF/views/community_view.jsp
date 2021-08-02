@@ -1,7 +1,8 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}"/>
+<c:set var="cpath" value="${pageContext.request.contextPath}" />
 
 <!doctype html>
 <html lang="en">
@@ -25,9 +26,9 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script>
-		function goJoin(){
-			location.href="${cpath}/join.do";
+	<script type="text/javascript">
+		function goComm(){
+			location.href="${cpath}/community.do";
 		}
 	</script>
 </head>
@@ -87,71 +88,37 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/logmain.do" method="post">
-						<h1 align="center">
-							<img src="${cpath}/resources/img/logo3.png" alt="">
-						</h1>
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="password" class="form-control" id="name" name="pw" placeholder="PASSWARD"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
-							</div>
-							<div class="col-lg-12 text-center">
-								<button type="submit" class="main_btn text-uppercase">
-									로그인
+				<div class="header-right col-lg-6 col-md-6">
+				
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
+							<!-- 로그인한 사용자의 아이디 -->
+							<input type="hidden" name="id" value="${id}">
+								<div class="progress-table">
+									<div class="table-head" align="left">
+										<div class="serial">제목</div>
+										<div class="country">제목입니다</div>
+									</div>
+									<div class="table-head" align="left">
+										<div class="serial">내용</div>
+										<div class="country">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</div>
+									</div>
+									<div class="table-head" align="left">
+										<div class="serial">댓글</div>
+										<div class="country">댓글내용입니다댓글내용입니다</div>
+									</div>
+								</div>
+                       		 <!-- 첨부파일 공간 필요 name="file" -->
+                       		 <div class="col-lg-12 text-center">
+								<button class="main_btn text-uppercase" onclick="">
+									댓글달기
 								</button>
-								<button type="button" class="main_btn text-uppercase" onclick="goJoin()">
-									회원가입
-								</button>
 							</div>
-						</form>
-
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
-					</div>
-					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
-							<span></span>
-						</a>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--================ End banner section =================-->
-
-	<!--================ Start Popular Place Area =================-->
-	<div class="popular-place-area section_gap">
-		<div class="container">
-			<div class="row align-items-center justify-content-center">
-				<div class="col-lg-5 offset-lg-1">
-					<div class="left-content">
-						<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
-							alt=""> <img class="img2 img-fluid"
-							src="${cpath}/img/popular/img2.jpg" alt=""> <img
-							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
-						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<div class="right-content">
-						<div class="main_title">
-							<h1>프로그램설명</h1>
-							<p>대충 프로그램 설명하는 내용들</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Popular Place Area =================-->
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
@@ -274,7 +241,7 @@
 	<script src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="${cpath}/resources/vendors/jquery-ui/jquery-ui.js"></script>
 	<script src="${cpath}/resources/js/jquery.ajaxchimp.min.js"></script>
-	<!--  <script src="${cpath}/resources/js/mail-script.js"></script> -->
+	<script src="${cpath}/resources/js/mail-script.js"></script>
 	<script src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
