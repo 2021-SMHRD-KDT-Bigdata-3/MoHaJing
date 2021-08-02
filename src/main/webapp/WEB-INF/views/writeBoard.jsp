@@ -26,9 +26,9 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script type="text/javascript">
-		function goComm(){
-			location.href="${cpath}/community.do";
+	<script>
+		function goComm(id){
+			location.href="${cpath}/community.do?id="+id;
 		}
 	</script>
 </head>
@@ -90,7 +90,7 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 				
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${id}">
 							<div class="form-group col-md-12">
@@ -105,7 +105,12 @@
                        		 <!-- 첨부파일 공간 필요 name="file" -->
                        		 <div class="col-lg-12 text-center">
                        		 	<input type="file" name="file">
-								<button class="main_btn text-uppercase" onclick="goComm()">
+                       		 	<button class="main_btn text-uppercase">
+                       		 	<a href="${cpath}/community.do?id=${id}">
+                       		 		돌아가기
+                       		 	</a>
+                       		 	</button>
+								<button type="submit" class="main_btn text-uppercase">
 									작성완료
 								</button>
 							</div>
@@ -225,8 +230,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- 
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -242,6 +246,7 @@
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
+	-->
 </body>
 
 </html>

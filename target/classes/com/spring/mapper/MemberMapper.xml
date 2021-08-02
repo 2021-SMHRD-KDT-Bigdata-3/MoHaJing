@@ -11,7 +11,7 @@
     </insert>
     
  	<!-- 로그인 -->
-    <select id="loginTry" parameterType="String" resultType="com.spring.mapper.MemberVO">
+    <select id="logmain" parameterType="String" resultType="com.spring.mapper.MemberVO">
     	select * from mo_member where id = #{id}
     </select>
     
@@ -39,7 +39,7 @@
     <!-- 게시글 입력 -->
     <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
         insert into mo_board(id, title, content, file, day)
-        values(#{id}, #{title}, #{content}, #{file}, datetime())
+        values(#{id}, #{title}, #{content}, #{file}, now())
     </insert>
     
     <!-- 마이페이지 정보 출력 -->
@@ -49,7 +49,7 @@
     
     <!-- 마이페이지 정보 수정 -->
     <update id="updateMypage" parameterType="com.spring.mapper.MemberVO">
-     	update mo_member set pw = #{pw}, checknum = #{checknum} where id = #{id}
+     	update mo_member set pw = #{pw}, age = #{age}, checknum = #{checknum} where id = #{id}
     </update>
     
     <!-- 탈모 기본정보 출력 -->

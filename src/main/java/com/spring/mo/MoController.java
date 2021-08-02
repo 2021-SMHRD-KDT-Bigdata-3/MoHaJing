@@ -1,6 +1,5 @@
 package com.spring.mo;
 
-import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +19,6 @@ public class MoController {
 
 	@Autowired
 	private MemberMapper memberMapper;
-	
-	//진단실행화면
 	@RequestMapping("/execution.do")
 	public String execution() {
 		return "execution";
@@ -47,11 +44,9 @@ public class MoController {
 	}
 
 	// 로그인 시도
-	@RequestMapping("/loginTry.do")
-	public String loginTry(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
-
-		MemberVO vo = memberMapper.loginTry(id);
-
+	@RequestMapping("/logmain.do")
+	public String logmain(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
 		if (pw.equals(vo.getPw())) {
 			// 로그인성공 --> 회원정보 전달
 			model.addAttribute("vo", vo);
@@ -64,9 +59,10 @@ public class MoController {
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
-	public String community(Model model) {
-		// List<BoardVO> list = memberMapper.community();
-		// model.addAttribute("list", list);
+	public String community(String id, Model model) {
+		List<BoardVO> list = memberMapper.community();
+		model.addAttribute("id", id); // 현재 로그인한 아이디
+		model.addAttribute("list", list);
 		return "community";
 	}
 
@@ -90,15 +86,17 @@ public class MoController {
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {
-		model.addAttribute("id", id);
+		model.addAttribute("id", id); // 현재 로그인한 아이디
 		return "writeBoard";
 	}
 
 	// 게시글 입력 기능
 	@RequestMapping("/insertBoard.do")
 	public String insertBoard(BoardVO vo) {
+		System.out.println(vo.getTitle());
+		System.out.println(vo.getContent());
 		memberMapper.insertBoard(vo);
-		return "redirect:/community.do";
+		return "redirect:/community.do?id="+vo.getId();
 	}
 
 	// 1:1대화창 보기
@@ -128,8 +126,8 @@ public class MoController {
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
 	public String mypage(String id, Model model) {
-		// MemberVO vo = memberMapper.mypage(id);
-		// model.addAttribute("vo", vo);
+		MemberVO vo = memberMapper.mypage(id);
+		model.addAttribute("vo", vo);
 		return "mypage";
 	}
 
@@ -137,7 +135,7 @@ public class MoController {
 	@RequestMapping("/updateMypage.do")
 	public String updateMypage(MemberVO vo) {
 		memberMapper.updateMypage(vo);
-		return "redirect:/mypage.do";
+		return "redirect:/mypage.do?id="+vo.getId();
 	}
 
 	// 탈모 기본정보 출력
