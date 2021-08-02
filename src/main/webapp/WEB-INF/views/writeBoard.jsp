@@ -27,7 +27,9 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goComm
+		function goComm(){
+			location.href="${cpath}/community.do";
+		}
 	</script>
 </head>
 
@@ -103,7 +105,7 @@
                        		 <!-- 첨부파일 공간 필요 name="file" -->
                        		 <div class="col-lg-12 text-center">
                        		 	<input type="file" name="file">
-								<button class="main_btn text-uppercase">
+								<button class="main_btn text-uppercase" onclick="goComm()">
 									작성완료
 								</button>
 							</div>

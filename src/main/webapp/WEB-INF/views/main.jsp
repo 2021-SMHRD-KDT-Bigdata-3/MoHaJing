@@ -28,7 +28,7 @@
 	<script type="text/javascript">
 		
 		function goJoin(){
-			location.href="${cpath}/join.do"
+			location.href="${cpath}/join.do";
 		}
 	</script>
 </head>
