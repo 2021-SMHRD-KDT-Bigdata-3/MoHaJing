@@ -25,8 +25,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script type="text/javascript">
-		
+	<script>
 		function goJoin(){
 			location.href="${cpath}/join.do";
 		}
@@ -88,7 +87,7 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/loginTry.do" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/logmain.do" method="post">
 						<h1 align="center">
 							<img src="${cpath}/resources/img/logo3.png" alt="">
 						</h1>
@@ -104,7 +103,7 @@
 								<button type="submit" class="main_btn text-uppercase">
 									로그인
 								</button>
-								<button class="main_btn text-uppercase" onclick="goJoin()">
+								<button type="button" class="main_btn text-uppercase" onclick="goJoin()">
 									회원가입
 								</button>
 							</div>

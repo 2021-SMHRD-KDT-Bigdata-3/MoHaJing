@@ -9,7 +9,7 @@ public interface MemberMapper {
 	public void joinTry(MemberVO vo);
 	
 	// 로그인
-	public MemberVO loginTry(String id);
+	public MemberVO logmain(String id);
 	
 	// 게시글 전체검색
 	public List<BoardVO> community();

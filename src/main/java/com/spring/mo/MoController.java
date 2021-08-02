@@ -49,12 +49,9 @@ public class MoController {
 	}
 
 	// 로그인 시도
-	@RequestMapping("/loginTry.do")
-	public String loginTry(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
-		System.out.println(id);
-		System.out.println(pw);
-		MemberVO vo = memberMapper.loginTry(id);
-		System.out.println(vo.getPw());
+	@RequestMapping("/logmain.do")
+	public String logmain(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
 		if (pw.equals(vo.getPw())) {
 			// 로그인성공 --> 회원정보 전달
 			model.addAttribute("vo", vo);
@@ -120,8 +117,8 @@ public class MoController {
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
 	public String mypage(String id, Model model) {
-		// MemberVO vo = memberMapper.mypage(id);
-		// model.addAttribute("vo", vo);
+		MemberVO vo = memberMapper.mypage(id);
+		model.addAttribute("vo", vo);
 		return "mypage";
 	}
 
@@ -129,7 +126,7 @@ public class MoController {
 	@RequestMapping("/updateMypage.do")
 	public String updateMypage(MemberVO vo) {
 		memberMapper.updateMypage(vo);
-		return "redirect:/mypage.do";
+		return "redirect:/mypage.do?id="+vo.getId();
 	}
 
 	// 탈모 기본정보 출력

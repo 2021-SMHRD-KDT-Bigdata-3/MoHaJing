@@ -24,7 +24,6 @@
 	    <property name="dataSource" ref="dataSource"/>
 	</bean>
 	
-	<!-- BoardMapper.java 스캔하기 -->
 	<mybatis-spring:scan base-package="com.spring.mapper"/>
 	
 </beans>

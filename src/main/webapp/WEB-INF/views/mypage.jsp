@@ -94,33 +94,74 @@
                        <h4><img src="${cpath}/resources/img/blog/popular-post/mypage.png" alt=""></h4>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
                         
-                            <!-- 기능구현되면 ${vo.}해서 회원정보 출력 해야됨 -->
                             
                             <div class="form-group form-inline">
                                 <div class="form-group col-lg-6 col-md-6 name">
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Enter Name'">
+                                	아이디 : ${vo.id}
+                                    <input type="hidden" name="id" value="${vo.id}">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 email">
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email address"
+                                	비밀번호 : 
+                                    <input type="password" class="form-control" name="pw" value="${vo.pw}"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
                                 </div>
+                                <div class="form-group col-lg-6 col-md-6 email">
+                                	이름 : ${vo.name}
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 email">
+                                	나이 : 
+                                    <input type="text" class="form-control" name="age" value="${vo.age}"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 email">
+                                	성별 : ${vo.gender}
+                                </div>
+                                
                             </div>
+                            
                             <div class="form-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = 'Subject'">
+                            
+                            <div class="switch-wrap d-flex justify-content-between">
+								<p>01. 이마가 점점 넓어지는 느낌이다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>02. 가늘고 힘없는 머리가 많이 빠진다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>03. 하루에 80개 이상 모발이 빠진다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>04. 비듬이 많아지거나 두피가 가렵다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>05. 모발이 가늘고 부드러워진다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>08. 몸의 털이 갑자기 굵어진다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>09. 이마와 정수리 부분이 유난히 번들거린다</p>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
+							</div>
+							<div class="form-group col-md-12">
+								<input type="text" class="form-control" name="checknum" value="${vo.checknum}"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
+							</div>
+                            
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                            </div>
-                            <a href="#" class="main_btn">
+                            <button type="submit" class="main_btn">
                                	정보수정하기
-                                <img src="img/next.png" alt="">
-                            </a>
+                            </button>
                         </form>
                     </div>
-                </div>
 	
 	
 	

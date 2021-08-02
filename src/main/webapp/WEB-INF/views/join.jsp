@@ -157,7 +157,7 @@
 							</div>
 							
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase" onclick="goMain()">
+								<button type="submit" class="main_btn text-uppercase">
 									회원가입
 								</button>
 							</div>
@@ -291,8 +291,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- 
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -308,6 +307,7 @@
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
+ -->
 </body>
 
 </html>

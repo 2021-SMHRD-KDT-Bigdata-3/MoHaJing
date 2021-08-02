@@ -52,7 +52,7 @@
 				<a href="${cpath}/consulting.do">1대1 상담</a>
 			</li>
 			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
+				<a href="${cpath}/mypage.do?id=${vo.id}">마이페이지</a>
 			</li>
 		</ul>
 	</div>

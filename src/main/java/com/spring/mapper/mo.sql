@@ -54,4 +54,4 @@ commit;
 
 insert into mo_member(id, pw, name, gender, age, checknum)
 values("test", "test", "test", "여", 20, 5);
-select * from mo_member where id = "test";
+select * from mo_member;
