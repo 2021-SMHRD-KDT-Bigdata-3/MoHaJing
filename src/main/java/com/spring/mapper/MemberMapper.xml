@@ -39,7 +39,7 @@
     <!-- 게시글 입력 -->
     <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
         insert into mo_board(id, title, content, file, day)
-        values(#{id}, #{title}, #{content}, #{file}, datetime())
+        values(#{id}, #{title}, #{content}, #{file}, now())
     </insert>
     
     <!-- 마이페이지 정보 출력 -->

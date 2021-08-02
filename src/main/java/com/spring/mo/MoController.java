@@ -64,9 +64,10 @@ public class MoController {
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
-	public String community(Model model) {
-		// List<BoardVO> list = memberMapper.community();
-		// model.addAttribute("list", list);
+	public String community(String id, Model model) {
+		List<BoardVO> list = memberMapper.community();
+		model.addAttribute("id", id); // 현재 로그인한 아이디
+		model.addAttribute("list", list);
 		return "community";
 	}
 
@@ -90,15 +91,17 @@ public class MoController {
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {
-		model.addAttribute("id", id);
+		model.addAttribute("id", id); // 현재 로그인한 아이디
 		return "writeBoard";
 	}
 
 	// 게시글 입력 기능
 	@RequestMapping("/insertBoard.do")
 	public String insertBoard(BoardVO vo) {
+		System.out.println(vo.getTitle());
+		System.out.println(vo.getContent());
 		memberMapper.insertBoard(vo);
-		return "redirect:/community.do";
+		return "redirect:/community.do?id="+vo.getId();
 	}
 
 	// 1:1대화창 보기

@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script type="text/javascript">
+	<script>
 		function goWrite(id){
 			location.href="${cpath}/writeBoard.do?id="+id;
 		}
@@ -91,20 +91,22 @@
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-							<div class="serial">#</div>
 							<div class="country">제목</div>
 							<div class="visit">작성자</div>
 							<div class="percentage">날짜</div>
 						</div>
 						<c:forEach var="vo" items="${list}">
 						<div class="table-row">
-							<div class="serial">${vo.no}</div>
 							<div class="country"><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</a></div>
-							<div class="visit">%{vo.id}</div>
+							<div class="visit">${vo.id}</div>
 							<div class="percentage">${vo.day}</div>
 						</div>
 						</c:forEach>
-						<button class="main_btn text-uppercase" onclick="goWrite(${vo.id})">글쓰기</button>
+						<button class="main_btn text-uppercase" onclick="goWrite(${id})">
+						<a href="${cpath}/writeBoard.do?id=${id}">
+						글쓰기
+						</a>
+						</button>
 					</div>
 				</div>
 			</div>

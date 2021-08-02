@@ -55,3 +55,8 @@ commit;
 insert into mo_member(id, pw, name, gender, age, checknum)
 values("test", "test", "test", "여", 20, 5);
 select * from mo_member;
+
+
+insert into mo_board(id, title, content, file, day)
+values("test", "테스트제목", "테스트내용", "파일", now());
+select * from mo_board;
