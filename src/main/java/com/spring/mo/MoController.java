@@ -21,21 +21,12 @@ public class MoController {
 	@Autowired
 	private MemberMapper memberMapper;
 
-
-
-		@RequestMapping("/mypage.do")
-		public String mypage() {
-			return "mypage";
-		}	
-
-		@RequestMapping("/execution.do")
-		public String execution() {
-			return "execution";
-		}	
-
+	@RequestMapping("/execution.do")
+	public String execution() {
+		return "execution";
+	}	
 
 	// 첫화면
-
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";
