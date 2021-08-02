@@ -155,6 +155,7 @@
 								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
+							
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase" onclick="goMain()">
 									회원가입
