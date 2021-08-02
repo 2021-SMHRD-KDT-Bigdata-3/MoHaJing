@@ -28,7 +28,7 @@
 	<script type="text/javascript">
 		
 		function goJoin(){
-			location.href="${cpath}/join.do"
+			location.href="${cpath}/join.do";
 		}
 	</script>
 </head>
@@ -88,7 +88,6 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/loginTry.do" method="post">
 						<h1 align="center">
 							<img src="${cpath}/resources/img/logo3.png" alt="">
@@ -110,8 +109,6 @@
 								</button>
 							</div>
 						</form>
-					
-				</div>
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">

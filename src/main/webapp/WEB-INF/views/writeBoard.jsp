@@ -26,6 +26,11 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<script type="text/javascript">
+		function goComm(){
+			location.href="${cpath}/community.do";
+		}
+	</script>
 </head>
 
 <body>
@@ -85,9 +90,7 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 				
-					<!-- 왜 form태그가 2개? -->
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post">
-						<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${id}">
 							<div class="form-group col-md-12">
@@ -96,16 +99,16 @@
 							</div>
 							 <div class="col-md-6">
     	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="content" id="message" rows="6" placeholder="글 내용"></textarea>
+                           	     	<textarea class="form-control" name="content" id="message" rows="8" placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
-							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase">
+                       		 <div class="col-lg-12 text-center">
+                       		 	<input type="file" name="file">
+								<button class="main_btn text-uppercase" onclick="goComm()">
 									작성완료
 								</button>
 							</div>
-						</form>
 					</form>
 				</div>
 			</div>

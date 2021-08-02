@@ -23,11 +23,11 @@ public class MoController {
 
 
 
-		@RequestMapping("/execution.do")
-		public String execution() {
-			return "execution";
-		}	
 
+	@RequestMapping("/execution.do")
+	public String execution() {
+		return "execution";
+	}	
 
 	// 첫화면
 	@RequestMapping("/main.do")
