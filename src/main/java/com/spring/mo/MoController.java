@@ -30,7 +30,6 @@ public class MoController {
 
 
 	// 첫화면
-
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";
@@ -52,9 +51,10 @@ public class MoController {
 	// 로그인 시도
 	@RequestMapping("/loginTry.do")
 	public String loginTry(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
-
+		System.out.println(id);
+		System.out.println(pw);
 		MemberVO vo = memberMapper.loginTry(id);
-
+		System.out.println(vo.getPw());
 		if (pw.equals(vo.getPw())) {
 			// 로그인성공 --> 회원정보 전달
 			model.addAttribute("vo", vo);
