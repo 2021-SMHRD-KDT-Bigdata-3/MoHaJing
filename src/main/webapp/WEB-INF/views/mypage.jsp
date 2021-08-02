@@ -48,13 +48,13 @@
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="${cpath}/main.do">메인</a>
+				<a href="${cpath}/logmain.do?id=${vo.id}&pw=${vo.pw}">메인</a> <!-- 비번숨기기 필요함 -->
 			</li>
 			<li>
 				<a href="">진단관리기록</a>
 			</li>
 			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
+				<a href="${cpath}/community.do?id=${vo.id}">커뮤니티</a>
 			</li>
 			<li>
 				<a href="${cpath}/consulting.do">1대1 상담</a>
