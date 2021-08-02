@@ -20,7 +20,8 @@ public class MoController {
 
 	@Autowired
 	private MemberMapper memberMapper;
-
+	
+	//진단실행화면
 	@RequestMapping("/execution.do")
 	public String execution() {
 		return "execution";
@@ -106,12 +107,23 @@ public class MoController {
 		return "consulting";
 
 	}	
+	//진단실행화면2
 	@RequestMapping("/execution2.do")
 	public String execution2() {
 		return "execution2";
 	}	
 	
+	//진단결과화면
+	@RequestMapping("/result.do")
+	public String result() {
+		return "result";
+	}	
 
+	//진단기록화면
+		@RequestMapping("/record.do")
+		public String record() {
+			return "record";
+		}	
 
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
