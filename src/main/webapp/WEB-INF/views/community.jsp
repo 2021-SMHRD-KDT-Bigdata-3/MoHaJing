@@ -86,33 +86,30 @@
 
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
-		<div class="container-fluid">
-			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="mail.html" method="post">
-						<h1 align="center">Community</h1>
-						<table>
-							<thead>
-								<tr>
-									<th>제목</th>
-									<th>작성자</th>
-									<th>날짜</th>
-								</tr>
-								<c:forEach var="vo" items="${list}">
-									<tr>
-										<td><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</td>
-										<td>${vo.id}</td>
-										<td>${vo.day}</td>
-									</tr>
-								</c:forEach>
-							</thead>
-						</table>
+	<div class="section-top-border">
+				<h3 class="mb-30 title_color">커뮤니티</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">#</div>
+							<div class="country">제목</div>
+							<div class="visit">날짜</div>
+							<div class="percentage">내용</div>
+						</div>
+						<c:forEach var="vo" items="${list}">
+						<div class="table-row">
+							<div class="serial">${vo.no}</div>
+							<div class="country">%{vo.title}</div>
+							<div class="visit">%{vo.day}</div>
+							<div class="percentage">${vo.content}</div>
+						</div>
+						</c:forEach>
 						<button class="main_btn text-uppercase" onclick="goWrite()">글쓰기</button>
-					</form>
+					</div>
 				</div>
 			</div>
-		</div>
 	</section>
+	
 	<!--================ End banner section =================-->
 
 	<!--================ start footer Area  =================-->

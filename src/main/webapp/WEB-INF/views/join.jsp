@@ -26,6 +26,9 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
+	function goMain(){
+  		location.href="${cpath}/main.do";
+  	}
 	</script>
 </head>
 
@@ -153,7 +156,7 @@
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
 							<div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase">
+								<button class="main_btn text-uppercase" onclick="goMain()">
 									회원가입
 								</button>
 							</div>
