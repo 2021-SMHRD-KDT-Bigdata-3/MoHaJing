@@ -140,16 +140,7 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-
-
 						<img id="blah" src="#" alt="진단할 사진을 넣어주세요" />
-
-
-
-
-					
-					
-					
 				</div>
 				<div class="button-group-area mt-40">
 						<input type='file' onchange="readURL(this);" name="img" class="genric-btn disable circle" />
