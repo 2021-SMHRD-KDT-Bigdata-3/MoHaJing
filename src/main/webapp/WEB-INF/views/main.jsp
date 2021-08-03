@@ -30,6 +30,8 @@
 			location.href="${cpath}/join.do";
 		}
 	</script>
+	
+	
 </head>
 
 <body>
@@ -109,17 +111,19 @@
 							</div>
 						</form>
 
+				
+				
+
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
 						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
 					</div>
-					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
-							<span></span>
-						</a>
-					</div>
+					
 				</div>
+
+				
+				
+				
 			</div>
 		</div>
 	</section>

@@ -112,9 +112,9 @@
 	<!--================ Start banner section =================-->
 	
 	  <div class="comments-area">
-                     <img class = "comment_title"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
+            <img class = "comment_title``````````````"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
 		</div>
-	<div class="section-top-border">
+		<div class="section-top-border">
 				
 				<div class="progress-table-wrap">
 					<div class="progress-table">
@@ -125,7 +125,6 @@
 							<div class="percentage"><h5>상담 신청하기</h5></div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="${cpath}/resources/img/blog/c1.jpg" alt="">Emilly Blunt</div>
 							<div class="visit">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</div>
 							<div class="reply-btn">
@@ -133,7 +132,6 @@
                                 </div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
@@ -143,7 +141,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
 							<div class="visit"></div>
 							<div class="percentage">
@@ -153,7 +150,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
@@ -163,7 +159,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
@@ -173,7 +168,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
@@ -183,7 +177,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">
@@ -193,7 +186,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							
 							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
 							<div class="visit">645032</div>
 							<div class="percentage">

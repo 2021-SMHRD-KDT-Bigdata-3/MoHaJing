@@ -38,7 +38,7 @@
     
     <!-- 게시글 입력 -->
     <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
-        insert into mo_board(id, title, content, file, day)
+        insert into mo_board(id, title, content, file, day)rm
         values(#{id}, #{title}, #{content}, #{file}, now())
     </insert>
     

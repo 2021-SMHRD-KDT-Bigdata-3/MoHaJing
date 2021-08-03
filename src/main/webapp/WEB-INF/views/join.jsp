@@ -30,6 +30,15 @@
   		location.href="${cpath}/main.do";
   	}
 	</script>
+	<style>
+	.checkList1{
+	border: 1px solid ;
+	padding:10px;
+	border-radius:2%;
+	background-color:#F7D358;
+
+	}
+	</style>
 </head>
 
 <body>
@@ -93,18 +102,18 @@
 							<img src="${cpath}/resources/img/logo3.png" alt="">
 						</h1>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" name="id" placeholder="ID"
+								<input  style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="password" class="form-control" name="pw" placeholder="PASSWARD"
+								<input style="width:250px;" type="password" class="form-control" name="pw" placeholder="PASSWARD"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" name="name" placeholder="이름"
+								<input style="width:250px;" type="text" class="form-control" name="name" placeholder="이름"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '이름'">
 							</div>
-							<div class="switch-wrap d-flex justify-content-between">
+							<div class="switch-wrap d-flex justify-content-between col-md-12">
 								<p>남성</p>
 								<div class="primary-radio">
 									<input type="radio" id="primary-radio" name="gender" value="man">
@@ -117,10 +126,12 @@
 								</div>
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="age" placeholder="나이"
+								<input style="width:250px; type="text" class="form-control" id="name" name="age" placeholder="나이"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '나이'">
 							</div>
 							<div class="form-group col-md-12"></div>
+							<h4 style="padding-left:10px;"align="left">checkList</h4>
+						<div class="checkList1">
 							<div class="switch-wrap d-flex justify-content-between">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
@@ -151,35 +162,35 @@
 							<div class="switch-wrap d-flex justify-content-between">
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
+							
+								
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
+								<input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
-							
+						</div>	
 							<div class="col-lg-12 text-center">
 								<button type="submit" class="main_btn text-uppercase">
 									회원가입
 								</button>
 							</div>
 						</form>
-					
 				</div>
 
-				<div class="col-lg-6 col-md-6 header-left">
+			<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
+					<video src="${cpath}/resources/img/banner/infov.mp4" controls loop="" autoplay  muted ></video>
+						
 					</div>
 					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
-							<span></span>
-						</a>
 					</div>
 				</div>
+				
+				
 			</div>
 		</div>
 	</section>
-	
+	<br><br>
 	<!--================ End banner section =================-->
 
 	<!--================ start footer Area  =================-->
