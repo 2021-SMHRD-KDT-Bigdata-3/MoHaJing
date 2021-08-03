@@ -98,19 +98,14 @@
 									<div class="table-head" align="left">
 										<div class="serial">제목</div>
 										<div class="country">${vo.title}</div>
-<<<<<<< HEAD
-=======
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">작성자</div>
 										<div class="country">${vo.id}</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">내용</div>
 										<div class="country">${vo.content}</div>
-<<<<<<< HEAD
-=======
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">첨부파일</div>
@@ -119,7 +114,6 @@
 									<div class="table-head" align="left">
 										<div class="serial">작성일</div>
 										<div class="country">${vo.day}</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">댓글</div>
