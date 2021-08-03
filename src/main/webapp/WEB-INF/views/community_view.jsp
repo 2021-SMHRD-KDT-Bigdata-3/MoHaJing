@@ -96,11 +96,11 @@
 								<div class="progress-table">
 									<div class="table-head" align="left">
 										<div class="serial">제목</div>
-										<div class="country">제목입니다</div>
+										<div class="country">${vo.title}</div>
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">내용</div>
-										<div class="country">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</div>
+										<div class="country">${vo.content}</div>
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">댓글</div>
