@@ -20,21 +20,34 @@
         select * from mo_board
     </select>
     
+    <!-- 게시글 검색 -->
+    <select id="community_search" parameterType="String" resultType="com.spring.mapper.BoardVO">
+        select * from mo_board where title like concat('%',#{search},'%') or content like concat('%',#{search},'%')
+    </select>
+    
     <!-- 게시글 하나 보기 -->
     <select id="community_view" parameterType="int" resultType="com.spring.mapper.BoardVO">
         select * from mo_board where no = #{no}
     </select>
     
-    <!-- 댓글보기 -->
-    <select id="viewComment" parameterType="int" resultType="com.spring.mapper.CommentVO">
-        select * from mo_comment where no = #{no}
+    <!-- 댓글목록보기 -->
+    <select id="viewComment" resultType="com.spring.mapper.CommentVO">
+        select no, id, content day
+        from mo_comment
+        where no = #{no}
+        order by no asc
     </select>
     
     <!-- 댓글입력 -->
-    <insert id="writeComment" parameterType="int">
+    <insert id="writeComment" parameterType="com.spring.mapper.CommentVO">
         insert into mo_comment(no, id, content, day)
-        values(#{no}, #{id}, #{content}, datatime())
+        values(#{no}, #{id}, #{content}, now())
     </insert>
+    
+    <!-- 댓글삭제 -->
+    <delete id="delete" parameterType="int">
+        delete from mo_comment where no = #{no}
+    </delete>
     
     <!-- 게시글 입력 -->
     <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
