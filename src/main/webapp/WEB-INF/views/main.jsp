@@ -1,35 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="cpath" value="${pageContext.request.contextPath}"/>
+<c:set var="cpath" value="${pageContext.request.contextPath}" />
 
 <!doctype html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
-	<title>毛어떄</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
-	<link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
-	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script>
-		function goJoin(){
-			location.href="${cpath}/join.do";
-		}
-	</script>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="${cpath}/resources/img/favicon.png"
+	type="image/png">
+<title>毛어떄</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/linericon/style.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/animate-css/animate.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/popup/magnific-popup.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
+<link rel="stylesheet"
+	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
+<!-- main css -->
+<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<script>
+	function goJoin() {
+		location.href = "${cpath}/join.do";
+	}
+</script>
 </head>
 
 <body>
@@ -37,26 +48,16 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do">
-				<img src="${cpath}/resources/img/logo3.png" alt="">
+			<a href="${cpath}/main.do"> <img
+				src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
-			<li>
-				<a href="${cpath}/main.do">메인</a>
-			</li>
-			<li>
-				<a href="">진단관리기록</a>
-			</li>
-			<li>
-				<a href="">커뮤니티</a>
-			</li>
-			<li>
-				<a href="o">1대1 상담</a>
-			</li>
-			<li>
-				<a href="">마이페이지</a>
-			</li>
+			<li><a href="${cpath}/main.do">메인</a></li>
+			<li><a href="">진단관리기록</a></li>
+			<li><a href="">커뮤니티</a></li>
+			<li><a href="o">1대1 상담</a></li>
+			<li><a href="">마이페이지</a></li>
 		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
@@ -75,8 +76,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
+					<a href="${cpath}/main.do" class="main_btn"> <img
+						src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -87,35 +88,39 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/logmain.do" method="post">
-						<h1 align="center">
-							<img src="${cpath}/resources/img/logo3.png" alt="">
-						</h1>
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="id" placeholder="ID"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="password" class="form-control" id="name" name="pw" placeholder="PASSWARD"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
-							</div>
-							<div class="col-lg-12 text-center">
-								<button type="submit" class="main_btn text-uppercase">
-									로그인
-								</button>
-								<button type="button" class="main_btn text-uppercase" onclick="goJoin()">
-									회원가입
-								</button>
-							</div>
-						</form>
+				<form
+					class="contact-form-area contact-page-form contact-form text-right"
+					id="myForm" action="${cpath}/logmain.do" method="post">
+					<h1 align="center">
+						<img src="${cpath}/resources/img/logo3.png" alt="">
+					</h1>
+					<div class="form-group col-md-12">
+						<input type="text" class="form-control" id="name" name="id"
+							placeholder="ID" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'ID'">
+					</div>
+					<div class="form-group col-md-12">
+						<input type="password" class="form-control" id="name" name="pw"
+							placeholder="PASSWARD" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'PASSWARD'">
+					</div>
+					<div class="col-lg-12 text-center">
+						<button type="submit" class="main_btn text-uppercase">
+							로그인</button>
+						<button type="button" class="main_btn text-uppercase"
+							onclick="goJoin()">회원가입</button>
+					</div>
+				</form>
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
+						<img class="img-fluid w-100"
+							src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
 					</div>
 					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
-						 data-duration="1.5s" data-delay="0.1s">
+						<a class="play-video video-play-button animate"
+							href="https://www.youtube.com/watch?v=KUln2DXU5VE"
+							data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s">
 							<span></span>
 						</a>
 					</div>
@@ -135,16 +140,20 @@
 							alt=""> <img class="img2 img-fluid"
 							src="${cpath}/img/popular/img2.jpg" alt=""> <img
 							class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg" alt="">
-						<img class="img1 img-fluid" src="${cpath}/resources/img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="${cpath}/resources/img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="${cpath}/resources/img/popular/img3.jpg" alt="">
+						<img class="img1 img-fluid"
+							src="${cpath}/resources/img/popular/img1.jpg" alt=""> <img
+							class="img2 img-fluid"
+							src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
+							class="img3 img-fluid"
+							src="${cpath}/resources/img/popular/img3.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="right-content">
 						<div class="main_title">
 							<h1>프로그램설명</h1>
-							<p>대충 프로그램 설명하는 내용들</p>
+							<p>바쁜 현대인을 위한 탈모 자가진단 서비스</p>
+							<p>탈모 고민하지 말고 毛어떄와 함께!</p>
 						</div>
 					</div>
 				</div>
@@ -219,14 +228,22 @@
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instafeed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="${cpath}/resources/img/instagram/i1.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i2.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i3.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i4.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i5.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i6.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i7.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i8.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i1.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i2.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i3.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i4.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i5.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i6.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i7.jpg"
+								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i8.jpg"
+								alt=""></li>
 						</ul>
 					</div>
 				</div>
@@ -268,16 +285,21 @@
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
 	<script src="${cpath}/resources/js/stellar.js"></script>
-	<script src="${cpath}/resources/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="${cpath}/resources/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script
+		src="${cpath}/resources/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script
+		src="${cpath}/resources/vendors/isotope/imagesloaded.pkgd.min.js"></script>
 	<script src="${cpath}/resources/vendors/isotope/isotope-min.js"></script>
-	<script src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script
+		src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="${cpath}/resources/vendors/jquery-ui/jquery-ui.js"></script>
 	<script src="${cpath}/resources/js/jquery.ajaxchimp.min.js"></script>
 	<!--  <script src="${cpath}/resources/js/mail-script.js"></script> -->
-	<script src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
+	<script
+		src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
-	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
+	<script
+		src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
 </body>
 
