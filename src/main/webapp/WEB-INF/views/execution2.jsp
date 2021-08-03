@@ -151,8 +151,9 @@
 					
 					
 				</div>
-						<input type='file' onchange="readURL(this);" name="img" />
-
+				<div class="button-group-area mt-40">
+						<input type='file' onchange="readURL(this);" name="img" class="genric-btn disable circle" />
+				</div>
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
 						<img class="img-fluid w-100"
