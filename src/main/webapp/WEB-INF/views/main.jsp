@@ -49,13 +49,13 @@
 				<a href="">진단관리기록</a>
 			</li>
 			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
+				<a href="">커뮤니티</a>
 			</li>
 			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
+				<a href="o">1대1 상담</a>
 			</li>
 			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
+				<a href="">마이페이지</a>
 			</li>
 		</ul>
 	</div>

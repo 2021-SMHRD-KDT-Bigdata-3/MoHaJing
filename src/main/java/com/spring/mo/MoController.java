@@ -172,8 +172,10 @@ public class MoController {
 
 	// 탈모 기본정보 출력
 	@RequestMapping("/info.do")
-	public String info(Model model) {
+	public String info(String id, Model model) {
+		MemberVO vo = memberMapper.mypage(id); // 현재 로그인한 아이디
 		List<InfoVO> list = memberMapper.info();
+		model.addAttribute("vo", vo);
 		model.addAttribute("list", list);
 		return "info";
 	}

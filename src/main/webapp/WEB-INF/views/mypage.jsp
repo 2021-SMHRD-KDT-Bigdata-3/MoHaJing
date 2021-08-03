@@ -73,11 +73,19 @@
 								type="submit" class="genric-btn default-border" value="1대1 상담">
 						</form>
 				</a></li>
+								<li><a href="${cpath}/info.do">
+						<form action="info.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="탈모정보">
+						</form>
+				</a></li>
 				<li><a href="${cpath}/mypage.do">
 						<form action="mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="마이페이지">
 						</form>
+				</a></li>
+				<li><a href="${cpath}/main.do" class="genric-btn default-border">로그아웃
 				</a></li>
 			</ul>
 		</div>
