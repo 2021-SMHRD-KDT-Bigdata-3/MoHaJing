@@ -23,7 +23,6 @@ public interface MemberMapper {
 	public List<CommentVO> viewComment(@Param("no") int no);
 	
 	// 댓글입력
-<<<<<<< HEAD
 	public int writeComment(int no);
 	
 	// 특정 댓글 읽기
@@ -31,9 +30,8 @@ public interface MemberMapper {
 	
 	// 댓글 삭제
 	public int delete(int no);
-=======
+	
 	public void writeComment(CommentVO vo);
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 	
 	// 게시글 입력
 	public void insertBoard(BoardVO vo);
