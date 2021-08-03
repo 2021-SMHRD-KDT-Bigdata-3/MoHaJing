@@ -31,6 +31,7 @@ public class MoController {
 	@Setter(onMethod_ = @Autowired)
 	private MemberMapper memberMapper;
 
+	// 분석1
 	@RequestMapping("/execution.do")
 	public String execution() {
 		return "execution";
@@ -147,11 +148,23 @@ public class MoController {
 	public String consulting() {
 		return "consulting";
 
-	}	
+	}
+	
+	// 분석2 : 파일 업로드하고 진단시작 버튼있는 페이지로 가는거임
 	@RequestMapping("/execution2.do")
-	public String execution2() {
+	public String execution2(String id, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		model.addAttribute("vo", vo);
 		return "execution2";
-	}	
+	}
+	
+	// 진단용 이미지 업로드 넘어가는 페이지
+	@RequestMapping("/fileTest.do")
+	public String fileTest(String id, String img, Model model) {
+		model.addAttribute("id", id);
+		model.addAttribute("img", img);
+		return "fileTest";
+	}
 	
 
 
