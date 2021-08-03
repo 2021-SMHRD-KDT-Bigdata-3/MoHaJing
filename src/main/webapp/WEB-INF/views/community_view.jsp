@@ -27,8 +27,8 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
-		function goComm(){
-			location.href="${cpath}/community.do";
+		function goComm(id){
+			location.href="${cpath}/community.do?id="+id;
 		}
 	</script>
 </head>
@@ -90,28 +90,42 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 				
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/writeComment.do" method="post">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${id}">
+							<input type="hidden" name="no" value="${vo.no}">
 								<div class="progress-table">
 									<div class="table-head" align="left">
 										<div class="serial">제목</div>
-										<div class="country">제목입니다</div>
+										<div class="country">${vo.title}</div>
+									</div>
+									<div class="table-head" align="left">
+										<div class="serial">작성자</div>
+										<div class="country">${vo.id}</div>
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">내용</div>
-										<div class="country">내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다</div>
+										<div class="country">${vo.content}</div>
+									</div>
+									<div class="table-head" align="left">
+										<div class="serial">첨부파일</div>
+										<div class="country">${vo.file}</div>
+									</div>
+									<div class="table-head" align="left">
+										<div class="serial">작성일</div>
+										<div class="country">${vo.day}</div>
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">댓글</div>
-										<div class="country">댓글내용입니다댓글내용입니다</div>
+										<div class="country">댓글출력공간~</div>
 									</div>
 								</div>
-                       		 <!-- 첨부파일 공간 필요 name="file" -->
                        		 <div class="col-lg-12 text-center">
-								<button class="main_btn text-uppercase" onclick="">
+                       		<input type="text" name="content">
+								<button type="submit" class="main_btn text-uppercase">
 									댓글달기
 								</button>
+								<button class="main_btn text-uppercase" onclick="goComm(${id})"><a href="${cpath}/community.do?id=${id}">목록</a></button>
 							</div>
 					</form>
 				</div>
@@ -229,8 +243,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- 
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -246,6 +259,7 @@
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
+	-->
 </body>
 
 </html>

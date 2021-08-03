@@ -97,12 +97,12 @@
 						</div>
 						<c:forEach var="vo" items="${list}">
 						<div class="table-row">
-							<div class="country"><a href="${cpath}/community_view.do?no=${vo.no}">${vo.title}</a></div>
+							<div class="country"><a href="${cpath}/community_view.do?no=${vo.no}&id=${id}">${vo.title}</a></div>
 							<div class="visit">${vo.id}</div>
 							<div class="percentage">${vo.day}</div>
 						</div>
 						</c:forEach>
-						<button class="main_btn text-uppercase" onclick="goWrite(${id})">
+						<button class="main_btn text-uppercase">
 						<a href="${cpath}/writeBoard.do?id=${id}">
 						글쓰기
 						</a>

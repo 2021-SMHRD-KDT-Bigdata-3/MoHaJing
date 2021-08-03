@@ -31,9 +31,9 @@
     </select>
     
     <!-- 댓글입력 -->
-    <insert id="writeComment" parameterType="int">
+    <insert id="writeComment" parameterType="com.spring.mapper.CommentVO">
         insert into mo_comment(no, id, content, day)
-        values(#{no}, #{id}, #{content}, datatime())
+        values(#{no}, #{id}, #{content}, now())
     </insert>
     
     <!-- 게시글 입력 -->

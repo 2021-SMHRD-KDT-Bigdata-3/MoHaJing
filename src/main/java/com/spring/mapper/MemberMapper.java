@@ -21,7 +21,7 @@ public interface MemberMapper {
 	public List<CommentVO> viewComment(int no);
 	
 	// 댓글입력
-	public void writeComment(int no);
+	public void writeComment(CommentVO vo);
 	
 	// 게시글 입력
 	public void insertBoard(BoardVO vo);
