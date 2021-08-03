@@ -16,8 +16,6 @@ title varchar(50) not null,
 content varchar(1000) not null,
 file varchar(100),
 day datetime,
-primary key (no),
-foreign key (id) references mo_member (id)
 );
 
 CREATE TABLE mo_comment(
@@ -25,8 +23,6 @@ no int not null,
 id varchar(50) not null,
 content varchar(1000) not null,
 day datetime,
-foreign key (no) references mo_board (no),
-foreign key (id) references mo_member (id)
 );
 
 CREATE TABLE mo_info(
@@ -49,16 +45,19 @@ category varchar(30) not null,
 step varchar(30) not null,
 percent float(10) not null,
 date datetime,
-foreign key (id) references mo_member (id)
 );
 
 commit;
 
 insert into mo_member(id, pw, name, gender, age, checknum)
-values("test", "test", "test", "여", 20, 5);
+values("test", "test", "테스트", "여", 20, 5);
 select * from mo_member;
 
 
 insert into mo_board(id, title, content, file, day)
 values("test", "테스트제목", "테스트내용", "파일", now());
 select * from mo_board;
+
+select * from mo_comment;
+select * from information_schema.table_constraints where table_name = 'mo_comment';
+alter table mo_comment drop foreign key mo_comment_ibfk_2;
