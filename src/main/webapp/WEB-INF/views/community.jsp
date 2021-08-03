@@ -35,30 +35,48 @@
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+		<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<a href="${cpath}/main.do">
 				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
-		<ul class="list menu-left">
-			<li>
-				<a href="${cpath}/main.do">메인</a>
-			</li>
-			<li>
-				<a href="">진단관리기록</a>
-			</li>
-			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
-			</li>
-			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
-			</li>
-			<li>
-				<a href="${cpath}/mypage.do?id=${id}">마이페이지</a>
-			</li>
-		</ul>
+		<div class="button-group-area mt-10">
+			<ul class="list menu-left">
+				<li><a href="${cpath}/logmain.do">
+						<form action="logmain.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="submit" class="genric-btn default-border" value="메인">
+						</form>
+				</a></li>
+				<li><a href="">
+						<form action="" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="진단기록관리">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/community.do">
+						<form action="community.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="커뮤니티">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
+						<form action="" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="1대1 상담">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
+						<form action="mypage.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="마이페이지">
+						</form>
+				</a></li>
+			</ul>
+		</div>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
@@ -95,15 +113,15 @@
 							<div class="visit">작성자</div>
 							<div class="percentage">날짜</div>
 						</div>
-						<c:forEach var="vo" items="${list}">
+						<c:forEach var="vo2" items="${list}">
 						<div class="table-row">
-							<div class="country"><a href="${cpath}/community_view.do?no=${vo.no}&id=${id}">${vo.title}</a></div>
-							<div class="visit">${vo.id}</div>
-							<div class="percentage">${vo.day}</div>
+							<div class="country"><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></div>
+							<div class="visit">${vo2.id}</div>
+							<div class="percentage">${vo2.day}</div>
 						</div>
 						</c:forEach>
 						<button class="main_btn text-uppercase">
-						<a href="${cpath}/writeBoard.do?id=${id}">
+						<a href="${cpath}/writeBoard.do?id=${vo.id}">
 						글쓰기
 						</a>
 						</button>

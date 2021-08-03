@@ -66,7 +66,8 @@ public class MoController {
 	@RequestMapping("/community.do")
 	public String community(String id, Model model) {
 		List<BoardVO> list = memberMapper.community();
-		model.addAttribute("id", id); // 현재 로그인한 아이디
+		MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
+		model.addAttribute("vo", vo);
 		model.addAttribute("list", list);
 		return "community";
 	}
