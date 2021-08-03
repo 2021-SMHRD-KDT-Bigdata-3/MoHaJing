@@ -64,12 +64,22 @@ public class MoController {
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
-	public String community(String id, Model model) {
-		List<BoardVO> list = memberMapper.community();
-		MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
-		model.addAttribute("vo", vo);
-		model.addAttribute("list", list);
-		return "community";
+	public String community(String id, String search, Model model) {
+		System.out.println(search);
+		
+		if(search==null) {
+			List<BoardVO> list = memberMapper.community();
+			model.addAttribute("list", list);
+			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
+			model.addAttribute("vo", vo);
+			return "community";
+		}else {
+			List<BoardVO> list = memberMapper.community_search(search);
+			model.addAttribute("list", list);
+			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
+			model.addAttribute("vo", vo);
+			return "community";
+		}
 	}
 
 	// 게시글 하나 보기 + 댓글보기

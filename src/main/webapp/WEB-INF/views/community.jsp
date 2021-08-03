@@ -120,6 +120,13 @@
 							<div class="percentage">${vo2.day}</div>
 						</div>
 						</c:forEach>
+						<div class="button-group-area mt-10">
+						<form action="${cpath}/community.do" method="post">
+						<input type="text" name="search">
+						<input type="hidden" name="id" value="${vo.id}">
+						<input type="submit" value="검색" class="genric-btn info-border radius">
+						</form>
+						</div>
 						<button class="main_btn text-uppercase">
 						<a href="${cpath}/writeBoard.do?id=${vo.id}">
 						글쓰기

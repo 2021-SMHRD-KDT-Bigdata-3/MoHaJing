@@ -20,6 +20,11 @@
         select * from mo_board
     </select>
     
+    <!-- 게시글 검색 -->
+    <select id="community_search" parameterType="String" resultType="com.spring.mapper.BoardVO">
+        select * from mo_board where title like concat('%',#{search},'%') or content like concat('%',#{search},'%')
+    </select>
+    
     <!-- 게시글 하나 보기 -->
     <select id="community_view" parameterType="int" resultType="com.spring.mapper.BoardVO">
         select * from mo_board where no = #{no}

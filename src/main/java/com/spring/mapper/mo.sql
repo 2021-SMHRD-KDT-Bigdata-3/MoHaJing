@@ -59,3 +59,11 @@ select * from mo_board;
 select * from mo_comment;
 select * from information_schema.table_constraints where table_name = 'mo_comment';
 alter table mo_comment drop foreign key mo_comment_ibfk_2;
+
+select * from mo_board;
+select * from mo_board where title like '%test%' or content like '%test%';
+
+
+
+
+
