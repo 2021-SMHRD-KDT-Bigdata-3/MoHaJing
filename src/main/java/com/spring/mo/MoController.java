@@ -3,26 +3,33 @@ package com.spring.mo;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
+import com.spring.service.CommentService;
+
+import lombok.Setter;
+import lombok.extern.log4j.Log4j;
 
 @Controller
+@Log4j
 public class MoController {
 
-	@Autowired
+	@Setter(onMethod_ = @Autowired)
 	private MemberMapper memberMapper;
-
-
-
-
 
 	@RequestMapping("/execution.do")
 	public String execution() {
@@ -99,7 +106,26 @@ public class MoController {
 		memberMapper.writeComment(vo);
 		return "redirect:/community_view.do?no="+vo.getNo()+"&id="+vo.getId();
 	}
-
+	
+	// 댓글 컨트롤러(서비스)
+	@RequestMapping("/replies.do")
+	@RestController
+	public class CommentController {
+		private CommentService service;
+		
+		@PostMapping(value = "/new", consumes = "application/json", produces = { MediaType.TEXT_PLAIN_VALUE })
+		public ResponseEntity<String> create(@RequestBody CommentVO vo) {
+			log.info("CommentVO: " + vo);
+			int insertCount = service.register(vo);
+			log.info("Reply INSERT COUNT: " + insertCount);
+			return insertCount == 1
+			? new ResponseEntity<>("success", HttpStatus.OK)
+			: new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+			//삼항 연산자 처리
+		}
+	}
+	
+	
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {

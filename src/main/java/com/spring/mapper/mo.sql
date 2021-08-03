@@ -1,3 +1,5 @@
+select * from mo_board;
+
 CREATE TABLE mo_member (
 id varchar(50) primary key,
 pw varchar(30) not null,
