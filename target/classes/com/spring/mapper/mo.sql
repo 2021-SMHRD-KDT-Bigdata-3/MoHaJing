@@ -49,6 +49,12 @@ percent float(10) not null,
 date datetime,
 );
 
+CREATE table mo_test(
+id varchar(50),
+img varchar(100)
+);
+select * from mo_test;
+
 commit;
 
 insert into mo_member(id, pw, name, gender, age, checknum)
