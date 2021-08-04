@@ -1,10 +1,14 @@
 package com.spring.mo;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
@@ -139,9 +144,19 @@ public class MoController {
 
 	// 게시글 입력 기능
 	@RequestMapping("/insertBoard.do")
-	public String insertBoard(BoardVO vo) {
-		System.out.println(vo.getTitle());
-		System.out.println(vo.getContent());
+	public String insertBoard(BoardVO vo) throws IOException {
+		
+		// 파일 업로드 처리
+		String file = null;
+		MultipartFile uploadFile = vo.getUploadFile();
+		if (!uploadFile.isEmpty()) {
+			String originalFileName = uploadFile.getOriginalFilename();
+			String ext = FilenameUtils.getExtension(originalFileName);	//확장자 구하기
+			UUID uuid = UUID.randomUUID();	//UUID 구하기
+			file=uuid+"."+ext;
+			uploadFile.transferTo(new File("C:\\upload\\" + file));
+		}
+		vo.setFile(file);
 		memberMapper.insertBoard(vo);
 		return "redirect:/community.do?id="+vo.getId();
 	}

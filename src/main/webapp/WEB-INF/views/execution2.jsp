@@ -150,6 +150,7 @@
 						<img class="img-fluid w-100"
 							src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
 					</div>
+					<%=request.getRealPath("/") %>
 				</div>
 			</div>
 		</div>

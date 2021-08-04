@@ -1,4 +1,6 @@
 package com.spring.mapper;
+import org.springframework.web.multipart.MultipartFile;
+
 import lombok.Data;
 @Data
 public class BoardVO {
@@ -8,5 +10,6 @@ public class BoardVO {
 	private String content;
 	private String file;
 	private String day;
+	private MultipartFile uploadFile;
 
 }
