@@ -120,7 +120,7 @@ font-size: 60px;
 		</div>
 	</section>
 	
-	<h1>Records</h1>
+	
 	
     <!--================Blog Area =================-->
     <section class="blog_area section_gap">
