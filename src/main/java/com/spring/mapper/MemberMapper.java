@@ -23,7 +23,7 @@ public interface MemberMapper {
 	public BoardVO community_view(int no);
 	
 	// 댓글목록
-	public List<CommentVO> viewComment(@Param("no") int no);
+	public List<CommentVO> viewComment(int no);
 	
 	// 댓글입력
 	public int writeComment(int no);
@@ -31,9 +31,7 @@ public interface MemberMapper {
 	// 특정 댓글 읽기
 	public CommentVO read(int no); 
 	
-	// 댓글 삭제
-	public int delete(int no);
-	
+	// 댓글 작성
 	public void writeComment(CommentVO vo);
 	
 	// 게시글 입력

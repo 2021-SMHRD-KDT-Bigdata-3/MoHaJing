@@ -25,7 +25,6 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 		    /WEB-INF/spring/root-context.xml
-		    /WEB-INF/spring/context-common.xml
 		</param-value>
 		
 
@@ -49,7 +48,7 @@
 		
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 
 </web-app>

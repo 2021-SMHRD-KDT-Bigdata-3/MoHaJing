@@ -1,4 +1,6 @@
-select * from mo_board;
+select * from mo_comment;
+
+drop table mo_comment
 
 CREATE TABLE mo_member (
 id varchar(50) primary key,
@@ -22,7 +24,7 @@ CREATE TABLE mo_comment(
 no int not null,
 id varchar(50) not null,
 content varchar(1000) not null,
-day datetime,
+day datetime
 );
 
 CREATE TABLE mo_info(
@@ -56,6 +58,10 @@ select * from mo_member;
 
 insert into mo_board(id, title, content, file, day)
 values("test", "테스트제목", "테스트내용", "파일", now());
+
+insert into mo_comment(no, id, content, day)
+values("1", "test", "테스트내용입니다", now());
+
 select * from mo_board;
 
 select * from mo_comment;
