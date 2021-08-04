@@ -126,7 +126,7 @@
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">첨부파일</div>
-										<div class="country">${vo.file}</div>
+										<div class="country"><img src="/img/${vo.file}" /></div>
 									</div>
 									<div class="table-head" align="left">
 										<div class="serial">작성일</div>

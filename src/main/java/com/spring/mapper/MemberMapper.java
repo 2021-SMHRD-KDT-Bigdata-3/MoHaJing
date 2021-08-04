@@ -45,5 +45,10 @@ public interface MemberMapper {
 	
 	// 탈모 기본정보 출력
 	public List<InfoVO> info();
-
+	
+	// 테스트중1
+	public void fileTest(TestVO vo);
+	
+	// 테스트중2
+	public TestVO fileTest2(String id);
 }

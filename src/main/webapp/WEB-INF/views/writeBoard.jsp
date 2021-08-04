@@ -116,7 +116,7 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
 				
-					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post">
+					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${id}">
 							<div class="form-group col-md-12">
@@ -130,7 +130,7 @@
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
                        		 <div class="col-lg-12 text-center">
-                       		 	<input type="file" name="file">
+                       		 	<input type="file" name="uploadFile">
                        		 	<button class="main_btn text-uppercase">
                        		 	<a href="${cpath}/community.do?id=${id}">
                        		 		돌아가기
@@ -257,7 +257,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	
+	<!-- 
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -273,7 +273,7 @@
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
-	
+	 -->
 </body>
 
 </html>

@@ -77,4 +77,15 @@
     <select id="info" resultType="com.spring.mapper.InfoVO">
         select * from mo_info
     </select>
+    
+    <!-- 테스트중1 -->
+    <insert id="fileTest" parameterType="com.spring.mapper.TestVO">
+        insert into mo_test(id, img)
+        values(#{id}, #{img})
+    </insert>
+    
+    <!-- 테스트중2 -->
+    <select id="fileTest2" parameterType="String" resultType="com.spring.mapper.TestVO">
+        select * from mo_test where id = #{id}
+    </select>
 </mapper>
