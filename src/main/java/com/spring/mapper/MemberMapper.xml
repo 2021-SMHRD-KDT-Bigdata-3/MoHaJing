@@ -25,12 +25,20 @@
         select * from mo_board where no = #{no}
     </select>
     
-    <!-- 댓글목록보기 -->
+    <!-- 댓글목록보기 
     <select id="viewComment" resultType="com.spring.mapper.CommentVO">
         select no, id, content day
         from mo_comment
         where no = #{no}
         order by no asc
+    </select>-->
+    
+    <!-- 댓글 조회 -->
+    <select id="viewComment" resultType="com.spring.mapper.CommentVO">
+		select no, id, content, day
+		from mo_comment
+		where no = #{no}
+		order by no asc
     </select>
     
     <!-- 댓글입력 -->

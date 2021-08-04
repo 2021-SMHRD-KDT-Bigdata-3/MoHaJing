@@ -1,6 +1,9 @@
 package com.spring.mo;
 
 import java.util.List;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,9 +11,13 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,11 +31,14 @@ import com.spring.service.CommentService;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
-@Controller
 @Log4j
+@Controller
 public class MoController {
-
-	@Setter(onMethod_ = @Autowired)
+	
+	@Autowired
+	private CommentService service;
+	
+	@Autowired
 	private MemberMapper memberMapper;
 
 	@RequestMapping("/execution.do")
@@ -79,6 +89,7 @@ public class MoController {
 		return "community";
 	}
 
+	
 	// 게시글 하나 보기 + 댓글보기
 	@RequestMapping("/community_view.do")
 	public String community_view(int no, String id, Model model) {
@@ -89,6 +100,18 @@ public class MoController {
 		model.addAttribute("list", list); // 해당 게시글의 댓글
 		return "community_view";
 	}
+	
+	
+	// 게시판 조회
+	@RequestMapping("/viewComment.do")
+	public String read(CommentVO vo, Model model) throws Exception {
+		log.info("read");
+		model.addAttribute("read", memberMapper.read(vo.getNo()));
+		List<CommentVO> commentList = service.viewComment(vo.getNo());
+		model.addAttribute("commentList", commentList);
+		
+		return "viewComment";
+	}
 
 	// 댓글입력
 	@RequestMapping("/writeComment.do")
@@ -96,25 +119,6 @@ public class MoController {
 		memberMapper.writeComment(vo);
 		return "redirect:/community_view.do?no="+vo.getNo()+"&id="+vo.getId();
 	}
-	
-	// 댓글 컨트롤러(서비스)
-	@RequestMapping("/replies.do")
-	@RestController
-	public class CommentController {
-		private CommentService service;
-		
-		@PostMapping(value = "/new", consumes = "application/json", produces = { MediaType.TEXT_PLAIN_VALUE })
-		public ResponseEntity<String> create(@RequestBody CommentVO vo) {
-			log.info("CommentVO: " + vo);
-			int insertCount = service.register(vo);
-			log.info("Reply INSERT COUNT: " + insertCount);
-			return insertCount == 1
-			? new ResponseEntity<>("success", HttpStatus.OK)
-			: new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-			//삼항 연산자 처리
-		}
-	}
-	
 	
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
