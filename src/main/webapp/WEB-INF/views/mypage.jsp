@@ -52,8 +52,8 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do">
-				<img src="${cpath}/resources/img/logo3.png" alt="">
+			<a href="${cpath}/main.do"> <img
+				src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
 		<div class="button-group-area mt-10">
@@ -65,8 +65,8 @@
 								type="submit" class="genric-btn default-border" value="메인">
 						</form>
 				</a></li>
-				<li><a href="">
-						<form action="" method="post">
+				<li><a href="execution.do">
+						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="진단기록관리">
 						</form>
@@ -78,12 +78,12 @@
 						</form>
 				</a></li>
 				<li><a href="${cpath}/consulting.do">
-						<form action="" method="post">
+						<form action="consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="1대1 상담">
 						</form>
 				</a></li>
-								<li><a href="${cpath}/info.do">
+				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="탈모정보">
@@ -95,8 +95,8 @@
 								type="submit" class="genric-btn default-border" value="마이페이지">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/main.do" class="genric-btn default-border">로그아웃
-				</a></li>
+				<li><a href="${cpath}/main.do"
+					class="genric-btn default-border">로그아웃 </a></li>
 			</ul>
 		</div>
 	</div>

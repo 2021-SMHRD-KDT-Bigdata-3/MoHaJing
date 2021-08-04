@@ -43,27 +43,53 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="index.html">
-				<img src="${cpath}/resources/img/logo3.png" alt="">
+			<a href="${cpath}/main.do"> <img
+				src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
-		<ul class="list menu-left">
-			<li>
-				<a href="${capth}/main.do">메인</a>
-			</li>
-			<li>
-				<a href="">진단관리기록</a>
-			</li>
-			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
-			</li>
-			<li>
-				<a href="packages.html">1대1 상담</a>
-			</li>
-			<li>
-				<a href="contact.html">마이페이지</a>
-			</li>
-		</ul>
+		<div class="button-group-area mt-10">
+			<ul class="list menu-left">
+				<li><a href="${cpath}/logmain.do">
+						<form action="logmain.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="submit" class="genric-btn default-border" value="메인">
+						</form>
+				</a></li>
+				<li><a href="execution.do">
+						<form action="execution.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="진단기록관리">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/community.do">
+						<form action="community.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="커뮤니티">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
+						<form action="consulting.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="1대1 상담">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/info.do">
+						<form action="info.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="탈모정보">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
+						<form action="mypage.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="마이페이지">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/main.do"
+					class="genric-btn default-border">로그아웃 </a></li>
+			</ul>
+		</div>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
