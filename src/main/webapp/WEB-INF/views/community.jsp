@@ -62,8 +62,8 @@
 								type="submit" class="genric-btn default-border" value="메인">
 						</form>
 				</a></li>
-				<li><a href="">
-						<form action="" method="post">
+				<li><a href="execution.do">
+						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="진단기록관리">
 						</form>
@@ -75,7 +75,7 @@
 						</form>
 				</a></li>
 				<li><a href="${cpath}/consulting.do">
-						<form action="" method="post">
+						<form action="consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="1대1 상담">
 						</form>
@@ -148,8 +148,8 @@
 								value="검색" class="genric-btn info-border radius">
 						</form>
 					</div>
-					<button class="main_btn text-uppercase">
-						<a href="${cpath}/writeBoard.do?id=${vo.id}"> 글쓰기 </a>
+					<button class="main_btn text-uppercase" onclick="goWrite(${id})">
+						 글쓰기
 					</button>
 				</div>
 			</div>
