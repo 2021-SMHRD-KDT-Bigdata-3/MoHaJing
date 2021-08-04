@@ -34,10 +34,14 @@
 	border:1px solid white;
 	}
 	.form-check{
-	border:1px solid #6c757d;
+	border:1px solid #E6E6E6;
+	background-color: #E6E6E6;
 	width:400px;
 	padding-top:30px;
 	border-radius:2%;
+	}
+	.name{
+	margin-left:15px;
 	}
 	</style>
 	
@@ -129,25 +133,27 @@
                             
                             <div class="form-group form-inline">
                                 <div class="form-group col-lg-12 col-md-12 name">
-                                	아이디 : ${vo.id}
-                                    <input type="hidden" name="id" value="${vo.id}"placeholder="ID"
+                                	  ${vo.id}
+                                    <input style="width:250px; margin-bottom:10px;" type="text" name="id" value="${vo.id}"placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
-                                	비밀번호 : 
-                                    <input type="password" class="form-control" name="pw" value="${vo.pw}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                                	 
+                                    <input style="width:250px; margin-bottom:10px;" type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
-                                	이름 : ${vo.name}
+                                	 ${vo.name}<input style="width:250px; margin-bottom:10px;" type="text" value=" ${vo.name}"  placeholder="NAME" class=""
+                                	 name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+                          
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
-                                	나이 : 
-                                    <input type="text" class="form-control" name="age" value="${vo.age}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                                	
+                                    <input style="width:250px; margin-bottom:10px;" type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+                                         onblur="this.placeholder = ''">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
-                                	성별 : ${vo.gender}
+                                	성별  ${vo.gender}
                                 </div>
                                 
                             </div>
