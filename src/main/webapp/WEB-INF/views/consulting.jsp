@@ -26,34 +26,35 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<style>
-	.progress-table{
-		margin : auto;
-		max-width: 60%;
+.comment_title{
+	width : 200px;
+ }
+.comments-area{
+    margin: auto;
+    /* max-width: 90%; */
+    width: 270px;
+    background-color: white;
+    border:1px solid white;
 	}
-	.section-top-border{
-	display: inline;
-	aligh: center;
-	}
-	
-	.comment_title{
-		width : 200px;
-	}
-	.comments-area{
-	    margin: auto;
-	    /* max-width: 90%; */
-	    width: 270px;
-	    background-color: white;
-	    border:1px solid white;
-	}
-	.btn-reply{
+.btn-reply{
 	margin-left:20px;
-	}
-	.btn-reply:hover{
-	background-color: orange;
+	border:1px solid blue;
+	border-radius:10%;
+	padding:5px;
+ }
+.btn-reply:hover{
 	padding: 6px;
+	background-color: #ffc107;
+ }
 	
-	}
+.table1{
+margin : auto;
 
+border:1px solid #6c757d;
+border-left:0px;
+border-right:0px;
+
+}
 	</style>
 	
 </head>
@@ -114,92 +115,43 @@
 	  <div class="comments-area">
             <img class = "comment_title``````````````"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
 		</div>
-		<div class="section-top-border">
-				
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							
-							<div class="country"><h5>상담사</h5></div>
-							<div class="visit"><h5>약력</h5></div>
-							<div class="percentage"><h5>상담 신청하기</h5></div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="${cpath}/resources/img/blog/c1.jpg" alt="">Emilly Blunt</div>
-							<div class="visit">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</div>
-							<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase"><butten>reply</butten></a>
-                                </div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
-							<div class="visit"></div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
-							<div class="visit">645032</div>
-							<div class="percentage">
-								<div class="reply-btn">
-                                    <a href="" class="btn-reply text-uppercase">reply</a>
-                                </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
+	
+
+	<table class="table1">
+	<tr >
+	<td style="padding-top:20px;"><h5>상담사</h5></td>
+	<td style="padding-top:20px;"><h5>약력</h5></td>
+	<td style="padding-top:20px;"><h5>상담신청하기</h5></td>
+	</tr>
+	<tr height="100px">
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
+	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	</tr>
+	<tr height="100px">
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
+	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	</tr>
+	<tr height="100px">
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
+	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	</tr>
+	<tr height="100px">
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
+	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	</tr>
+	<tr height="100px">
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
+	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	</tr>
 	
 	
+	</table>
+	<br><br>
 <!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
