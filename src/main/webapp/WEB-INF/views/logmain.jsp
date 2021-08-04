@@ -42,7 +42,7 @@
 </head>
 
 <body>
-
+	
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
@@ -59,8 +59,8 @@
 								type="submit" class="genric-btn default-border" value="메인">
 						</form>
 				</a></li>
-				<li><a href="">
-						<form action="" method="post">
+				<li><a href="execution.do">
+						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="진단기록관리">
 						</form>
@@ -72,7 +72,7 @@
 						</form>
 				</a></li>
 				<li><a href="${cpath}/consulting.do">
-						<form action="" method="post">
+						<form action="consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="1대1 상담">
 						</form>

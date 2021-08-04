@@ -8,12 +8,10 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
 	<title>毛어떄</title>
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
 	<link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
@@ -24,7 +22,6 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<script type="text/javascript">
 		function goComm(id){
@@ -39,34 +36,54 @@
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do">
-				<img src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
-		<ul class="list menu-left">
-			<li>
-				<a href="${cpath}/main.do">메인</a>
-			</li>
-			<li>
-				<a href="">진단관리기록</a>
-			</li>
-			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
-			</li>
-			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
-			</li>
-			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
-			</li>
-		</ul>
+		<div class="button-group-area mt-10">
+			<ul class="list menu-left">
+				<li><a href="${cpath}/logmain.do">
+						<form action="logmain.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="메인">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/execution.do">
+						<form action="execution.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="진단기록관리">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/community.do">
+						<form action="community.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="커뮤니티">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
+						<form action="consulting.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="1대1 상담">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/info.do">
+						<form action="info.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="탈모정보">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
+						<form action="mypage.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="마이페이지">
+						</form>
+				</a></li>
+				<li><a href="${cpath}/main.do"
+					class="genric-btn default-border">로그아웃 </a></li>
+			</ul>
+		</div>
 	</div>
-	<!--================ End Offcanvus Menu Area =================-->
 
-	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -74,21 +91,17 @@
 			</div>
 		</div>
 	</div>
-	<!--================ End Canvus Menu Area =================-->
 
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
 						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
@@ -96,7 +109,7 @@
 				
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/writeComment.do" method="post">
 							<!-- 로그인한 사용자의 아이디 -->
-							<input type="hidden" name="id" value="${id}">
+							<input type="hidden" name="id" value="${vo.id}">
 							<input type="hidden" name="no" value="${vo.no}">
 								<div class="progress-table">
 									<div class="table-head" align="left">
@@ -127,20 +140,18 @@
 									</div>
 								</div>
                        		 <div class="col-lg-12 text-center">
-                       		<input type="text" name="content">
-								<button type="submit" class="main_btn text-uppercase" onclick="goViewComm(${id)}"><a href="${cpath}/viewComment.do?id=${id}">
-									댓글달기
-								</a></button>
-								<button class="main_btn text-uppercase" onclick="goComm(${id})"><a href="${cpath}/community.do?id=${id}">목록</a></button>
+                       			<input type="text" name="content">
+									<button type="submit" class="main_btn text-uppercase" onclick="goViewComm(${id})">
+										댓글달기
+									</button>
+									<button class="main_btn text-uppercase" onclick="goComm(${id})">목록</button>
 							</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End banner section =================-->
 
-	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
@@ -249,7 +260,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	<!-- 
+	
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -265,7 +276,7 @@
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
-	-->
+	
 </body>
 
 </html>
