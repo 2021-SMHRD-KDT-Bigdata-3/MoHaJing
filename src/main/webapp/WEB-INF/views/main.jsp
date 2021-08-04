@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
-	<title>毛어떄</title>
+	<title>毛어때</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
