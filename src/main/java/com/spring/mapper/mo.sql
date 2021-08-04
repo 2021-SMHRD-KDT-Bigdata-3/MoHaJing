@@ -71,8 +71,8 @@ values("1", "test", "테스트내용입니다", now());
 select * from mo_board;
 
 select * from mo_comment;
-select * from information_schema.table_constraints where table_name = 'mo_comment';
-alter table mo_comment drop foreign key mo_comment_ibfk_2;
+select * from information_schema.table_constraints where table_name = 'mo_board';
+alter table mo_board drop foreign key mo_board_ibfk_1;
 
 select * from mo_board;
 select * from mo_board where title like '%test%' or content like '%test%';

@@ -97,13 +97,13 @@ public class MoController {
 			List<BoardVO> list = memberMapper.community();
 			model.addAttribute("list", list);
 			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
-			model.addAttribute("vo", vo);
+			model.addAttribute("vo", vo); // 현재 로그인한 사용자 정보
 			return "community";
 		} else {
 			List<BoardVO> list = memberMapper.community_search(search);
 			model.addAttribute("list", list);
 			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
-			model.addAttribute("vo", vo);
+			model.addAttribute("vo", vo); // 현재 로그인한 사용자 정보
 			return "community";
 		}
 	}
