@@ -35,7 +35,7 @@
 	border: 1px solid ;
 	padding:10px;
 	border-radius:2%;
-	background-color:#E6E6E6;
+	background-color:#FAFAFA;
 
 	}
 	</style>
@@ -68,15 +68,15 @@
 							<img src="${cpath}/resources/img/logo3.png" alt="">
 						</h1>
 							<div class="form-group col-md-12">
-								<input  style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
+								<input   type="text" class="form-control" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
 							</div>
 							<div class="form-group col-md-12">
-								<input style="width:250px;" type="password" class="form-control" name="pw" placeholder="PASSWARD"
+								<input  type="password" class="form-control" name="pw" placeholder="PASSWARD"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
 							</div>
 							<div class="form-group col-md-12">
-								<input style="width:250px;" type="text" class="form-control" name="name" placeholder="이름"
+								<input  type="text" class="form-control" name="name" placeholder="이름"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '이름'">
 							</div>
 							<div class="switch-wrap d-flex justify-content-between col-md-12">
@@ -92,7 +92,7 @@
 								</div>
 							</div>
 							<div class="form-group col-md-12">
-								<input style="width:250px; type="text" class="form-control" id="name" name="age" placeholder="나이"
+								<input  type="text" class="form-control" id="name" name="age" placeholder="나이"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '나이'">
 							</div>
 							<div class="form-group col-md-12"></div>
@@ -131,7 +131,7 @@
 							
 								
 							<div class="form-group col-md-12">
-								<input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
+								<input  type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
 						</div>	
@@ -144,12 +144,9 @@
 				</div>
 
 			<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-					<video src="${cpath}/resources/img/banner/infov.mp4" controls loop="" autoplay  muted ></video>
-						
-					</div>
-					<div class="video-popup d-flex align-items-center">
-					</div>
+					<img  src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
+					
+					
 				</div>
 				
 				

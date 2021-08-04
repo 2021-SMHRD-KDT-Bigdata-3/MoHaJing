@@ -42,6 +42,16 @@
 		location.href = "${cpath}/writeBoard.do?id=" + id;
 	}
 </script>
+
+<style>
+.progress-table{
+max-width:80%;
+margin:auto;
+}
+.mb-30{
+text-align:center;
+}
+</style>
 </head>
 
 <body>
@@ -124,7 +134,7 @@
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="section-top-border">
-			<h3 class="mb-30 title_color">커뮤니티</h3>
+			<h2 class="mb-30 title_color">커뮤니티</h2>
 			<div class="progress-table-wrap">
 				<div class="progress-table">
 					<div class="table-head">

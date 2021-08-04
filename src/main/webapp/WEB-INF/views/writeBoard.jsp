@@ -125,7 +125,7 @@
 							</div>
 							 <div class="col-md-6">
     	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="content" id="message" rows="8" placeholder="글 내용"></textarea>
+                           	     	<textarea class="form-control" name="content" id="message" rows="8"  style="width:360px;"placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
@@ -145,6 +145,7 @@
 			</div>
 		</div>
 	</section>
+	<br><br>
 	<!--================ End banner section =================-->
 
 	<!--================ start footer Area  =================-->

@@ -137,12 +137,12 @@
 				<div class="row align-items-center justify-content-center">
 					<div class="col-lg-5 offset-lg-1">
 						<div class="left-content">
-							<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
+							<img class="img1 img-fluid" src="${cpath}/img/popular/img_1.png"
 								alt=""> <img class="img2 img-fluid"
 								src="${cpath}/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg"
 								alt=""> <img class="img1 img-fluid"
-								src="${cpath}/resources/img/popular/img1.jpg" alt=""> <img
+								src="${cpath}/resources/img/popular/img_1.png" alt=""> <img
 								class="img2 img-fluid"
 								src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid"

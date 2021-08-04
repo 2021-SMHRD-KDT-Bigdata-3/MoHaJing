@@ -37,12 +37,23 @@
 	border:1px solid #E6E6E6;
 	background-color: #E6E6E6;
 	width:400px;
-	padding-top:30px;
+	padding-top:10px;
 	border-radius:2%;
 	}
 	.name{
 	margin-left:15px;
 	}
+	.mytitle{
+	margin:auto;
+	}
+	.form-inline{
+
+	top:200px;
+	left:0px;
+	}
+	
+	
+	
 	</style>
 	
 </head>
@@ -117,7 +128,6 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -127,14 +137,14 @@
 	<!--================ Start banner section =================-->
 	
 <div class="comment-form">
-                       <h4><img src="${cpath}/resources/img/blog/popular-post/mypage2.png" alt=""></h4>
+                       <h1 class="my-title">마이페이지</h1><br><br>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
                         
                             
                             <div class="form-group form-inline">
                                 <div class="form-group col-lg-12 col-md-12 name">
-                                	  ${vo.id}
-                                    <input style="width:250px; margin-bottom:10px;" type="text" name="id" value="${vo.id}"placeholder="ID"
+                                	 
+                                    <input style="width:250px; margin-bottom:10px;" type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
@@ -143,7 +153,7 @@
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
                                 </div>
                                 <div class="form-group col-lg-12 col-md-12 email">
-                                	 ${vo.name}<input style="width:250px; margin-bottom:10px;" type="text" value=" ${vo.name}"  placeholder="NAME" class=""
+                                	 <input style="width:250px; margin-bottom:10px;" type="text" value=" ${vo.name}"  placeholder="${vo.name}" class=""
                                 	 name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
                           
                                 </div>
@@ -158,9 +168,9 @@
                                 
                             </div>
                             
-                            <div class="form-group form-check">
-                            
-                            <div class="switch-wrap d-flex justify-content-between">
+                            <div class="form-group form-check ">
+                            <h4 class="check-align">✔ 체크리스트</h4><br>
+                            <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
