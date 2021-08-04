@@ -161,14 +161,10 @@
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<a href="${cpath}/execution2.do">
-										<form action="${cpath}/execution2.do" method="post">
-											<input type="hidden" name="id" value="${vo.id}"> <input
-												type="submit" class="genric-btn default-border"
-												value="M자탈모 분석">
-										</form>
-
-									</a>
+									<form action="${cpath}/execution2.do" method="post">
+										<input type="hidden" name="id" value="${vo.id}">
+										<input type="submit" class="genric-btn default-border" value="M자탈모 분석">
+									</form>
 								</h5>
 								<p>M자 탈모 분석에 대한 설명</p>
 							</div>
@@ -186,7 +182,10 @@
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<a href="${cpath}/execution2.do">남성형 탈모 분석</a>
+									<form action="${cpath}/execution3.do" method="post">
+										<input type="hidden" name="id" value="${vo.id}">
+										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
+									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
 							</div>

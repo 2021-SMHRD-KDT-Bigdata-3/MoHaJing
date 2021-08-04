@@ -471,7 +471,7 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home-banner-area {
-  background: #ffffff;
+  background: #f9f9ff;
   position: relative; }
   .home-banner-area .owl-nav {
     right: 58%;
@@ -1052,7 +1052,7 @@ button:focus {
 
 .contact-form-section {
   position: relative;
-  background: url(../img/pac-search-bg.jpg) no-repeat center;
+  background: #f9f9ff;
   background-size: cover;
   text-align: center;
   padding: 70px 50px;
@@ -1067,7 +1067,7 @@ button:focus {
     height: 100%;
     width: 100%;
     content: "";
-    background: #000;
+    background: #f9f9ff;
     opacity: .5;
     z-index: -1; }
   .contact-form-section h4 {
@@ -2297,6 +2297,7 @@ button:focus {
 
 .section-top-border {
   padding: 50px 0;
+  background: #e8e8e8;
   border-top: 1px dotted #eee; }
 
 .switch-wrap {
