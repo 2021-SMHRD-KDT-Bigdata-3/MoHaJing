@@ -144,7 +144,6 @@
 			</div>
 		</div>
 	</section>
-
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
@@ -172,9 +171,6 @@
 							onclick="goJoin()">회원가입</button>
 					</div>
 				</form>
-
-				
-				
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">

@@ -36,8 +36,17 @@
 	padding:10px;
 	border-radius:2%;
 	background-color:#F7D358;
-
 	}
+	
+	.contact-form-section {
+  	position: relative;
+  	background: #f9f9ff;
+  	background: url("");
+  	background-size: cover;
+  	text-align: center;
+  	padding: 70px 50px;
+  	z-index: 1; }
+	
 	</style>
 </head>
 
@@ -62,13 +71,13 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
+				<div class="contact-form-section">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
 						<h1 align="center">
 							<img src="${cpath}/resources/img/logo3.png" alt="">
-						</h1>
+						</h1><br><br>
 							<div class="form-group col-md-12">
-								<input  style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
+								<input style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
 							</div>
 							<div class="form-group col-md-12">
@@ -128,13 +137,13 @@
 							<div class="switch-wrap d-flex justify-content-between">
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
-							
 								
 							<div class="form-group col-md-12">
 								<input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
 						</div>	
+						<br>
 							<div class="col-lg-12 text-center">
 								<button type="submit" class="main_btn text-uppercase">
 									회원가입

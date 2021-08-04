@@ -77,7 +77,7 @@ border-right:0px;
 								type="submit" class="genric-btn default-border" value="메인">
 						</form>
 				</a></li>
-				<li><a href="execution.do">
+				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" value="진단기록관리">
