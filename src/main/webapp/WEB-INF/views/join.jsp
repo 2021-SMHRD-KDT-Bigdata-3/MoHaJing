@@ -43,41 +43,7 @@
 
 <body>
 
-		<!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
-		<div class="logo">
-			<a href="${cpath}/main.do">
-				<img src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
-		</div>
-		<ul class="list menu-left">
-			<li>
-				<a href="${cpath}/main.do">메인</a>
-			</li>
-			<li>
-				<a href="">진단관리기록</a>
-			</li>
-			<li>
-				<a href="${cpath}/community.do">커뮤니티</a>
-			</li>
-			<li>
-				<a href="${cpath}/consulting.do">1대1 상담</a>
-			</li>
-			<li>
-				<a href="${cpath}/mypage.do">마이페이지</a>
-			</li>
-		</ul>
-	</div>
-	<!--================ End Offcanvus Menu Area =================-->
-
 	<!--================ Canvus Menu Area =================-->
-	<div class="canvus_menu">
-		<div class="container">
-			<div class="toggle_icon" title="Menu Bar">
-				<span></span>
-			</div>
-		</div>
-	</div>
 	<!--================ End Canvus Menu Area =================-->
 
 	<section class="top-btn-area">
