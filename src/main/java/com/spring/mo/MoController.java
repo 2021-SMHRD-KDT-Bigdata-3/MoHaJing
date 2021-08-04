@@ -198,7 +198,7 @@ public class MoController {
 			String ext = FilenameUtils.getExtension(originalFileName); // 확장자 구하기
 			UUID uuid = UUID.randomUUID(); // UUID 구하기
 			img = uuid + "." + ext;
-			uploadFile.transferTo(new File("C:\\Users\\smhrd\\git\\3rd\\MoHaJing\\src\\main\\webapp\\resources\\deepImg\\" + img));
+			uploadFile.transferTo(new File("C:\\upload\\" + img));
 		}
 		vo.setImg(img);
 		memberMapper.fileTest(vo);

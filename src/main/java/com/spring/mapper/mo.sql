@@ -54,7 +54,7 @@ id varchar(50),
 img varchar(100)
 );
 select * from mo_test;
-
+delete from mo_test;
 commit;
 
 insert into mo_member(id, pw, name, gender, age, checknum)
