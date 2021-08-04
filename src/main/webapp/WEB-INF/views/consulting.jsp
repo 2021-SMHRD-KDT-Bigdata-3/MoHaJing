@@ -26,16 +26,34 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<style>
-	.comments-area{
+	.progress-table{
+		margin : auto;
+		max-width: 60%;
+	}
+	.section-top-border{
 	display: inline;
 	aligh: center;
 	}
-	.user{
-		margin: auto;
+	
+	.comment_title{
+		width : 200px;
 	}
-	.reply-btn{
-		margin: auto;
+	.comments-area{
+	    margin: auto;
+	    /* max-width: 90%; */
+	    width: 270px;
+	    background-color: white;
+	    border:1px solid white;
 	}
+	.btn-reply{
+	margin-left:20px;
+	}
+	.btn-reply:hover{
+	background-color: orange;
+	padding: 6px;
+	
+	}
+
 	</style>
 	
 </head>
@@ -94,107 +112,92 @@
 	<!--================ Start banner section =================-->
 	
 	  <div class="comments-area">
-                        <h4><img src="${cpath}/resources/img/popular/con_title.png" alt=""></h4>
-                        <div class="comment-list">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="${cpath}/resources/img/blog/c1.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">Emilly Blunt</a></h5>
-                                        <p class="date">December 4, 2017 at 3:12 pm </p>
-                                        <p class="comment">
-                                            Never say goodbye till the end comes!
-                                        </p>
-                                    </div>
-                                <div class="reply-btn">
+            <img class = "comment_title``````````````"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
+		</div>
+		<div class="section-top-border">
+				
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							
+							<div class="country"><h5>상담사</h5></div>
+							<div class="visit"><h5>약력</h5></div>
+							<div class="percentage"><h5>상담 신청하기</h5></div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="${cpath}/resources/img/blog/c1.jpg" alt="">Emilly Blunt</div>
+							<div class="visit">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</div>
+							<div class="reply-btn">
+                                    <a href="" class="btn-reply text-uppercase"><butten>reply</butten></a>
+                                </div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
                                     <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-list left-padding">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="${cpath}/resources/img/blog/c2.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">Elsie Cunningham</a></h5>
-                                        <p class="date">December 4, 2017 at 3:12 pm </p>
-                                        <p class="comment">
-                                            Never say goodbye till the end comes!
-                                        </p>
-                                    </div>
-                                <div class="reply-btn">
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
+							<div class="visit"></div>
+							<div class="percentage">
+								<div class="reply-btn">
                                     <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-list left-padding">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="${cpath}/resources/img/blog/c3.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">Annie Stephens</a></h5>
-                                        <p class="date">December 4, 2017 at 3:12 pm </p>
-                                        <p class="comment">
-                                            Never say goodbye till the end comes!
-                                        </p>
-                                    </div>
-                                <div class="reply-btn">
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
                                     <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-list">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="${cpath}/resources/img/blog/c4.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">Maria Luna</a></h5>
-                                        <p class="date">December 4, 2017 at 3:12 pm </p>
-                                        <p class="comment">
-                                            Never say goodbye till the end comes!
-                                        </p>
-                                    </div>
-                                <div class="reply-btn">
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
                                     <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment-list">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="${cpath}/resources/img/blog/c5.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">Ina Hayes</a></h5>
-                                        <p class="date">December 4, 2017 at 3:12 pm </p>
-                                        <p class="comment">
-                                            Never say goodbye till the end comes!
-                                        </p>
-                                    </div>
-                                <div class="reply-btn">
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
                                     <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
+                                    <a href="" class="btn-reply text-uppercase">reply</a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-	
-	
-	
-	
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="reply-btn">
+                                    <a href="" class="btn-reply text-uppercase">reply</a>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 	
 	
 <!--================ start footer Area  =================-->

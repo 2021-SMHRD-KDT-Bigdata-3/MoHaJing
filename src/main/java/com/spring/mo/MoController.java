@@ -81,12 +81,22 @@ public class MoController {
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
-	public String community(String id, Model model) {
-		List<BoardVO> list = memberMapper.community();
-		MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
-		model.addAttribute("vo", vo);
-		model.addAttribute("list", list);
-		return "community";
+	public String community(String id, String search, Model model) {
+		System.out.println(search);
+		
+		if(search==null) {
+			List<BoardVO> list = memberMapper.community();
+			model.addAttribute("list", list);
+			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
+			model.addAttribute("vo", vo);
+			return "community";
+		}else {
+			List<BoardVO> list = memberMapper.community_search(search);
+			model.addAttribute("list", list);
+			MemberVO vo = memberMapper.logmain(id); // 현재 로그인한 사용자 정보
+			model.addAttribute("vo", vo);
+			return "community";
+		}
 	}
 
 	
@@ -141,13 +151,39 @@ public class MoController {
 	public String consulting() {
 		return "consulting";
 
+
 	}	
+	//진단실행화면2
+
+	
+	// 분석2 : 파일 업로드하고 진단시작 버튼있는 페이지로 가는거임
 	@RequestMapping("/execution2.do")
-	public String execution2() {
+	public String execution2(String id, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		model.addAttribute("vo", vo);
 		return "execution2";
 	}	
 	
+	//진단결과화면
+	@RequestMapping("/result.do")
+	public String result() {
+		return "result";
+	}	
+	
+	// 진단용 이미지 업로드 넘어가는 페이지
+	@RequestMapping("/fileTest.do")
+	public String fileTest(String id, String img, Model model) {
+		model.addAttribute("id", id);
+		model.addAttribute("img", img);
+		return "fileTest";
+	}
+	
 
+	//진단기록화면
+		@RequestMapping("/record.do")
+		public String record() {
+			return "record";
+		}	
 
 	// 마이페이지 정보 출력
 	@RequestMapping("/mypage.do")
@@ -166,8 +202,10 @@ public class MoController {
 
 	// 탈모 기본정보 출력
 	@RequestMapping("/info.do")
-	public String info(Model model) {
+	public String info(String id, Model model) {
+		MemberVO vo = memberMapper.mypage(id); // 현재 로그인한 아이디
 		List<InfoVO> list = memberMapper.info();
+		model.addAttribute("vo", vo);
 		model.addAttribute("list", list);
 		return "info";
 	}

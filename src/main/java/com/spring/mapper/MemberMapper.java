@@ -16,6 +16,9 @@ public interface MemberMapper {
 	// 게시글 전체검색
 	public List<BoardVO> community();
 	
+	// 게시글 검색
+	public List<BoardVO> community_search(String search);
+	
 	// 게시글 하나 보기
 	public BoardVO community_view(int no);
 	
