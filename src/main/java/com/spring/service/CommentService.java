@@ -6,5 +6,5 @@ import com.spring.mapper.CommentVO;
 
 public interface CommentService {
 	
-	public List<CommentVO> viewComment(int bno) throws Exception;
+	public List<CommentVO> viewComment(int no) throws Exception;
 }

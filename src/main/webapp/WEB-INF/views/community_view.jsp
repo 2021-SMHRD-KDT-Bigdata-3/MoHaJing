@@ -30,6 +30,10 @@
 		function goComm(id){
 			location.href="${cpath}/community.do?id="+id;
 		}
+		
+		function goViewComm(id){
+			location.href="${cpath}/viewComment.do?id="+id;
+		}
 	</script>
 </head>
 
@@ -124,9 +128,9 @@
 								</div>
                        		 <div class="col-lg-12 text-center">
                        		<input type="text" name="content">
-								<button type="submit" class="main_btn text-uppercase">
+								<button type="submit" class="main_btn text-uppercase" onclick="goViewComm(${id)}"><a href="${cpath}/viewComment.do?id=${id}">
 									댓글달기
-								</button>
+								</a></button>
 								<button class="main_btn text-uppercase" onclick="goComm(${id})"><a href="${cpath}/community.do?id=${id}">목록</a></button>
 							</div>
 					</form>
