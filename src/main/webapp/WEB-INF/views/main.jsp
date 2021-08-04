@@ -7,7 +7,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +32,6 @@
 	</script>
 	
 	
-=======
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -68,7 +66,6 @@
 		location.href = "${cpath}/join.do";
 	}
 </script>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 </head>
 
 <body>
@@ -148,9 +145,7 @@
 						<img class="img-fluid w-100"
 							src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
 					</div>
-<<<<<<< HEAD
 					
-=======
 					<div class="video-popup d-flex align-items-center">
 						<a class="play-video video-play-button animate"
 							href="https://www.youtube.com/watch?v=KUln2DXU5VE"
@@ -158,7 +153,6 @@
 							<span></span>
 						</a>
 					</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 				</div>
 
 				
