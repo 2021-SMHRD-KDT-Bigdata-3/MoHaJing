@@ -187,10 +187,6 @@
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="submit" value="남성형 탈모 분석">
 										</div>
-									<form action="${cpath}/execution2.do" method="post">
-										<input type="hidden" name="id" value="${vo.id}">
-										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
-									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
 							</div>

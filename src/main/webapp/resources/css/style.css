@@ -571,10 +571,7 @@ button:focus {
   @media (max-width: 767px) {
     .header-right {
       position: relative;
-      
-      /*백그라운드 이미지 수정하는 곳(div)
-      background: url(../img/banner/banner-img.jpg) center no-repeat;*/
-      
+      background: #ffffff;
       background-size: cover;
       padding: 100px 120px;
       z-index: 1; }
@@ -584,17 +581,17 @@ button:focus {
         top: 0;
         height: 100%;
         width: 100%;
-        background: #000;
+        background: #ffffff;
         content: "";
         opacity: .2;
         z-index: -1; }
       .header-right h1 {
-        color: #fff;
+        color: #38a4ff;
         margin-bottom: 30px; }
       .header-right p {
-        color: #fff; }
+        color: #38a4ff; }
       .header-right .main_btn {
-        color: #fff;
+        color: #38a4ff;
         margin-top: 20px; }
         .header-right .main_btn img {
           -webkit-filter: invert(1);
