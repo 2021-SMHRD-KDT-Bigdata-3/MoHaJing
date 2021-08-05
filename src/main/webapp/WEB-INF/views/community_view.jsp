@@ -178,11 +178,9 @@
 								name="id" value="${vo.id}">
 							<button type="submit" class="main_btn text-uppercase">
 								댓글달기</button>
-							<button class="main_btn text-uppercase">
-							<a href="${cpath}/community.do?id=${vo.id}">
+							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">
 							목록
 							</a>
-							</button>
 						</div>
 					</form>
 				</div>

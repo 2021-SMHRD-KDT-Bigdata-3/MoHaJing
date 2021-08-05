@@ -134,9 +134,7 @@
 								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
 									작성완료
 								</button>
-                       		 	<button class="main_btn text-uppercase" style="border:0 solid black">
-                       		 		<a href="${cpath}/community.do?id=${id}">돌아가기</a>
-                       		 	</button>
+                       		 		<a href="${cpath}/community.do?id=${id}" class="main_btn text-uppercase" style="border:0 solid black">돌아가기</a>
 							</div>
 					</form>
 				</div>
