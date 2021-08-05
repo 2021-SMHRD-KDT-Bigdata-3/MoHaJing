@@ -161,9 +161,9 @@ margin: auto;
 						</div>
 						
 						<div class="table-row">
-							<div class="country"> ~~~~~</div>
-							<div class="visit">병원진료가 필요합니다!</div>
-							<div class="visit">철분제</div>
+							<div class="country"> ${deep1.id}</div>
+							<div class="visit"><img src="/img/${deep1.img}" /></div>
+							<div class="visit">${deep1.no}</div>
 						</div>
 						
 						</div>
