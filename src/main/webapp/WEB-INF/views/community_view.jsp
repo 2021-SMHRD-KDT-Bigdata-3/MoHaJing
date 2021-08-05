@@ -132,25 +132,25 @@
 					<div class="progress-table">
 						<div class="table-head" align="left">
 							<div class="serial">제목</div>
-							<div class="country">${vo.title}</div>
+							<div class="country">${vo2.title}</div>
 						</div>
 						<div class="table-head" align="left">
 							<div class="serial">작성자</div>
-							<div class="country">${vo.id}</div>
+							<div class="country">${vo2.id}</div>
 						</div>
 						<div class="table-head" align="left">
 							<div class="serial">내용</div>
-							<div class="country">${vo.content}</div>
+							<div class="country">${vo2.content}</div>
 						</div>
 						<div class="table-head" align="left">
 							<div class="serial">첨부파일</div>
 							<div class="country">
-								<img src="/img/${vo.file}" />
+								<img src="/img/${vo2.file}" />
 							</div>
 						</div>
 						<div class="table-head" align="left">
 							<div class="serial">작성일</div>
-							<div class="country">${vo.day}</div>
+							<div class="country">${vo2.day}</div>
 						</div>
 						<div class="table-head" align="left"></div>
 					</div>
@@ -174,11 +174,15 @@
 					<form action="${cpath}/writeComment.do" method="post">
 						<div class="col-lg-12 text-center">
 							<input type="text" name="content"> <input type="hidden"
-								name="no" value="${vo.no}"> <input type="hidden"
-								name="id" value="${id}">
+								name="no" value="${vo2.no}"> <input type="hidden"
+								name="id" value="${vo.id}">
 							<button type="submit" class="main_btn text-uppercase">
 								댓글달기</button>
-							<button class="main_btn text-uppercase" onclick="goComm(${id})">목록</button>
+							<button class="main_btn text-uppercase">
+							<a href="${cpath}/community.do?id=${vo.id}">
+							목록
+							</a>
+							</button>
 						</div>
 					</form>
 				</div>
