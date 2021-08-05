@@ -37,8 +37,16 @@
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
 <script type="text/javascript">
-	
+	function goMain() {
+		location.href = "${cpath}/logmain.do"
+	}
 </script>
+
+<style>
+.row d-flex {
+background-color: white;
+}
+</style>
 </head>
 
 <body>
@@ -56,7 +64,7 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="image" onclick="goMain()" src="${cpath}/resources/img/manu1.png" class="genric-btn default-border" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
