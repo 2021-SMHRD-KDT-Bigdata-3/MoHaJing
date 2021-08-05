@@ -37,8 +37,16 @@
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
 <script type="text/javascript">
-	
+	function goMain() {
+		location.href = "${cpath}/logmain.do"
+	}
 </script>
+
+<style>
+.row d-flex {
+background-color: white;
+}
+</style>
 </head>
 
 <body>
@@ -56,6 +64,7 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="image" onclick="goMain()" src="${cpath}/resources/img/manu1.png" class="genric-btn default-border" value="메인">
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
@@ -135,12 +144,12 @@
 				<div class="row align-items-center justify-content-center">
 					<div class="col-lg-5 offset-lg-1">
 						<div class="left-content">
-							<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
+							<img class="img1 img-fluid" src="${cpath}/img/popular/img_1.png"
 								alt=""> <img class="img2 img-fluid"
 								src="${cpath}/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg"
 								alt=""> <img class="img1 img-fluid"
-								src="${cpath}/resources/img/popular/img1.jpg" alt=""> <img
+								src="${cpath}/resources/img/popular/img_1.png" alt=""> <img
 								class="img2 img-fluid"
 								src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid"

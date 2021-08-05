@@ -112,10 +112,11 @@ public class MoController {
 	// 게시글 하나 보기 + 댓글보기
 	@RequestMapping("/community_view.do")
 	public String community_view(int no, String id, Model model) {
-		BoardVO vo = memberMapper.community_view(no); // 게시글
-		List<CommentVO> list = memberMapper.viewComment(no); // 댓글
-		model.addAttribute("id", id); // 현재 로그인한 아이디
-		model.addAttribute("vo", vo); // 게시글 내용
+		MemberVO member = memberMapper.logmain(id); // 현재 로그인한 아이디
+		BoardVO board = memberMapper.community_view(no); // 게시글 번호
+		List<CommentVO> list = memberMapper.viewComment(no); // 게시글 번호의 댓글
+		model.addAttribute("vo", member); // 현재 로그인한 정보
+		model.addAttribute("vo2", board); // 게시글 내용
 		model.addAttribute("list", list); // 해당 게시글의 댓글
 		return "community_view";
 	}

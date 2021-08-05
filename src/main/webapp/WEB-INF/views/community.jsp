@@ -42,6 +42,16 @@
 		location.href = "${cpath}/writeBoard.do?id=" + id;
 	}
 </script>
+
+<style>
+.progress-table{
+max-width:80%;
+margin:auto;
+}
+.mb-30{
+text-align:center;
+}
+</style>
 </head>
 
 <body>
@@ -125,7 +135,7 @@
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="section-top-border">
-			<h3 class="mb-30 title_color">커뮤니티</h3>
+			<h2 class="mb-30 title_color">커뮤니티</h2>
 			<div class="progress-table-wrap">
 				<div class="progress-table">
 					<div class="table-head">
@@ -147,10 +157,8 @@
 							<input type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
 							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
-							<button class="main_btn text-uppercase" onclick="goWrite()" style="border:0 solid black;">
-								<a href="${cpath}/writeBoard.do?id=${vo.id}">글쓰기</a>
+								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">글쓰기</a>
 						</form>
-						</button>
 					</div>
 				</div>
 			</div>

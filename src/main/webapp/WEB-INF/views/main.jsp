@@ -65,7 +65,15 @@
 	function goJoin() {
 		location.href = "${cpath}/join.do";
 	}
+	function goMain() {
+		location.href = "${cpath}/logmain.do"
+	}
 </script>
+<style>
+
+</style>
+
+
 </head>
 
 <body>
@@ -83,11 +91,14 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="image" onclick="goMain()" src="${cpath}/resources/img/manu2.png" class="genric-btn default-border" value="메인">
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
+							<input  type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="진단기록관리">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
@@ -117,10 +128,12 @@
 						</form>
 				</a></li>
 				<li><a href="${cpath}/main.do">
-					<form action="main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
-					</form>
+						<form action="main.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="로그아웃">
+						</form>
 				</a></li>
+				
 			</ul>
 		</div>
 	</div>
