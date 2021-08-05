@@ -44,6 +44,14 @@
 		}
 	</script>
 </head>
+<style>
+.comment1{
+text-align: center;
+border:1px solid #6c757d;
+border-left:0px;
+border-right:0px;
+}
+</style>
 
 <body>
 
@@ -154,17 +162,17 @@
 						</div>
 						<div class="table-head" align="left"></div>
 					</div>
-					<table>
-						<tr>
+					<table class="comment1" align="center">
+						<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
 							<th>댓글</th>
-							<th>작성자</th>
+							<th style="padding-left:160px; ">작성자</th>
 						</tr>
 						<c:forEach items="${list}" var="list">
 							<tr>
 								<td>
 									<div class="country">${list.content}</div>
 								</td>
-								<td>
+								<td style="padding-left:160px;">
 									<div class="country">${list.id}</div>
 								</td>
 							</tr>
