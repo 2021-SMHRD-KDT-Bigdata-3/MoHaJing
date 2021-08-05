@@ -59,7 +59,6 @@
 				<li><a href="${cpath}/logmain.do">
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
@@ -159,6 +158,17 @@
 							<th>댓글</th>
 							<th>작성자</th>
 						</tr>
+					<form action="${cpath}/writeComment.do" method="post">
+						<div class="col-lg-12 text-center">
+							<input type="text" name="content"> 
+							<input type="hidden" name="no" value="${vo.no}">
+							<input type="hidden" name="id" value="${id}">
+							<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
+								댓글달기
+							</button>
+							<button class="main_btn text-uppercase" onclick="goComm(${id})" style="border:0 solid black">목록</button>
+						</div>
+					</form>
 						<c:forEach items="${list}" var="list">
 							<tr>
 								<td>
@@ -171,16 +181,6 @@
 						</c:forEach>
 					</table>
 					<!-- 댓글insert -->
-					<form action="${cpath}/writeComment.do" method="post">
-						<div class="col-lg-12 text-center">
-							<input type="text" name="content"> <input type="hidden"
-								name="no" value="${vo.no}"> <input type="hidden"
-								name="id" value="${id}">
-							<button type="submit" class="main_btn text-uppercase">
-								댓글달기</button>
-							<button class="main_btn text-uppercase" onclick="goComm(${id})">목록</button>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>

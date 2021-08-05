@@ -187,6 +187,7 @@
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="submit" value="남성형 탈모 분석">
 										</div>
+									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
 							</div>
