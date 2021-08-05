@@ -133,7 +133,7 @@
 
 
 	<!--================ Start banner section =================-->
-	<form action="${cpath}/fileTest.do" method="post" id="form1" runat="server" enctype="multipart/form-data">
+	<form action="${cpath}/deep1.do" method="post" id="form1" runat="server" enctype="multipart/form-data">
 	<!-- form 액션속성 : 플라스크 연동하고 결과 창으로 이동 -->
 	<section class="home-banner-area common-banner relative">
 		<div class="container-fluid">
@@ -143,7 +143,7 @@
 						<img id="blah" src="#" alt="진단할 사진을 넣어주세요" />
 				</div>
 				<div class="button-group-area mt-40">
-						<input type='file' onchange="readURL(this);" name="uploadimg" class="genric-btn disable circle" />
+						<input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" />
 				</div>
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
@@ -160,9 +160,10 @@
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
-			<input type="submit" class="genric-btn info-border circle arrowr"
-				value="진단시작"> <input type="hidden" name="id"
+		<input type="hidden" name="id"
 				value="${vo.id}">
+			<input type="submit" class="genric-btn info-border circle arrowr"
+				value="진단시작"> 
 			<!-- 이거는 로그인한 사용자 id -->
 		</div>
 	</section>

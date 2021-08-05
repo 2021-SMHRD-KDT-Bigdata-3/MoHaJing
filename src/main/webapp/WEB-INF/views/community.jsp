@@ -69,41 +69,44 @@ text-align:center;
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/community.do">
 						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				<li><a href="${cpath}/main.do">
+					<form action="main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</a></li>
 			</ul>
 		</div>
 	</div>
@@ -155,14 +158,10 @@ text-align:center;
 						<form action="${cpath}/community.do" method="post">
 							<input type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
-							<input type="submit" value="검색" class="genric-btn info-border radius">
+							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
+								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">글쓰기</a>
 						</form>
 					</div>
-					<button class="main_btn text-uppercase" onclick="goWrite()">
-					<a href="${cpath}/writeBoard.do?id=${vo.id}">
-						 글쓰기
-					</a>
-					</button>
 				</div>
 			</div>
 		</div>

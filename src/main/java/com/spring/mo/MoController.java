@@ -31,6 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
+import com.spring.mapper.Deep1VO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
@@ -111,10 +112,11 @@ public class MoController {
 	// 게시글 하나 보기 + 댓글보기
 	@RequestMapping("/community_view.do")
 	public String community_view(int no, String id, Model model) {
-		BoardVO vo = memberMapper.community_view(no); // 게시글
-		List<CommentVO> list = memberMapper.viewComment(no); // 댓글
-		model.addAttribute("id", id); // 현재 로그인한 아이디
-		model.addAttribute("vo", vo); // 게시글 내용
+		MemberVO member = memberMapper.logmain(id); // 현재 로그인한 아이디
+		BoardVO board = memberMapper.community_view(no); // 게시글 번호
+		List<CommentVO> list = memberMapper.viewComment(no); // 게시글 번호의 댓글
+		model.addAttribute("vo", member); // 현재 로그인한 정보
+		model.addAttribute("vo2", board); // 게시글 내용
 		model.addAttribute("list", list); // 해당 게시글의 댓글
 		return "community_view";
 	}
@@ -178,21 +180,23 @@ public class MoController {
 		model.addAttribute("vo", vo);
 		return "execution2";
 	}
-
+	
+	/*
 	// 진단결과화면
 	@RequestMapping("/result.do")
-	public String result() {
+	public String result(Deep1VO deep1, Model model) {
+		// 사용자 아이디랑 머리사진 저장
+		model.addAttribute("deep1", deep1);
 		return "result";
 	}
+	*/
 
-	// 테스트중
 	// 진단용 이미지 업로드 넘어가는 페이지
-	@RequestMapping("/fileTest.do")
-	public String fileTest(TestVO vo) throws IOException {
-
+	@RequestMapping("/deep1.do")
+	public String deep1(Deep1VO deep1, Model model) throws IOException {
 		// 파일 업로드 처리
 		String img = null;
-		MultipartFile uploadFile = vo.getUploadimg();
+		MultipartFile uploadFile = deep1.getUploadImg();
 		if (!uploadFile.isEmpty()) {
 			String originalFileName = uploadFile.getOriginalFilename();
 			String ext = FilenameUtils.getExtension(originalFileName); // 확장자 구하기
@@ -200,9 +204,11 @@ public class MoController {
 			img = uuid + "." + ext;
 			uploadFile.transferTo(new File("C:\\upload\\" + img));
 		}
-		vo.setImg(img);
-		memberMapper.fileTest(vo);
-		return "redirect:/fileTest2.do?id="+vo.getId();
+		deep1.setImg(img);
+		memberMapper.deep1(deep1); // 사용자 아이디, 이미지 insert
+		Deep1VO deep1Result = memberMapper.deep1Select(deep1); // 사용자 아이디, 이미지, 시퀀스 select
+		model.addAttribute("deep1", deep1Result);
+		return "result";
 	}
 	
 	// 이미지 띄우기 테스트중

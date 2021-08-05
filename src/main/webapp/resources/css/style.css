@@ -51,11 +51,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #777777; }
-
+  
 h1,
 h2,
 h3,
-h4,
+h4 {
+	font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+},
 h5,
 h6 {
   font-family: "Playfair Display", serif;
@@ -471,7 +475,7 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home-banner-area {
-  background: #f9f9ff;
+  background: #ffffff;
   position: relative; }
   .home-banner-area .owl-nav {
     right: 58%;
@@ -567,10 +571,7 @@ button:focus {
   @media (max-width: 767px) {
     .header-right {
       position: relative;
-      
-      /*백그라운드 이미지 수정하는 곳(div)
-      background: url(../img/banner/banner-img.jpg) center no-repeat;*/
-      
+      background: #ffffff;
       background-size: cover;
       padding: 100px 120px;
       z-index: 1; }
@@ -580,17 +581,17 @@ button:focus {
         top: 0;
         height: 100%;
         width: 100%;
-        background: #000;
+        background: #ffffff;
         content: "";
         opacity: .2;
         z-index: -1; }
       .header-right h1 {
-        color: #fff;
+        color: #38a4ff;
         margin-bottom: 30px; }
       .header-right p {
-        color: #fff; }
+        color: #38a4ff; }
       .header-right .main_btn {
-        color: #fff;
+        color: #38a4ff;
         margin-top: 20px; }
         .header-right .main_btn img {
           -webkit-filter: invert(1);
@@ -982,7 +983,7 @@ button:focus {
     bottom: 0;
     width: 100%;
     height: 39.5%;
-    background: #f9f9ff;
+    background: #ffffff;
     content: ""; }
     @media (max-width: 1024px) {
       .amenities-area:before {
@@ -1052,7 +1053,7 @@ button:focus {
 
 .contact-form-section {
   position: relative;
-  background: #f9f9ff;
+  background: #ffffff;
   background-size: cover;
   text-align: center;
   padding: 70px 50px;
@@ -1067,13 +1068,13 @@ button:focus {
     height: 100%;
     width: 100%;
     content: "";
-    background: #f9f9ff;
+    background: #ffffff;
     opacity: .5;
     z-index: -1; }
   .contact-form-section h4 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff; }
+    color: #000000; }
   .contact-form-section .contact-form-area .form-group {
     position: relative; }
     .contact-form-section .contact-form-area .form-group .ui-datepicker-trigger {
@@ -1089,13 +1090,13 @@ button:focus {
     background: transparent;
     border-radius: 0; }
     .contact-form-section .contact-form-area .form-control.placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control:-moz-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control::-moz-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control::-webkit-input-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control:focus {
       outline: none;
       box-shadow: none; }
@@ -1109,18 +1110,18 @@ button:focus {
     font-size: 13px;
     height: 50px; }
     .contact-form-section .form-select .nice-select:after {
-      border-color: #fff; }
+      border-color: #000000; }
     .contact-form-section .form-select .nice-select span {
-      color: #fff; }
+      color: #000000; }
     .contact-form-section .form-select .nice-select .list {
       z-index: 999; }
       .contact-form-section .form-select .nice-select .list .option.selected {
-        color: #f8b600; }
+        color: #38a4ff; }
       .contact-form-section .form-select .nice-select .list .option:hover {
-        color: #f8b600; }
+        color: #38a4ff; }
   .contact-form-section .main_btn {
-    border-color: #4681ff;
-    color: #fff;
+    border-color: #38a4ff;
+    color: #38a4ff;
     cursor: pointer;
     margin-top: 30px; }
     .contact-form-section .main_btn img {
@@ -1133,9 +1134,9 @@ button:focus {
         .contact-form-section .main_btn img {
           display: none; } }
     .contact-form-section .main_btn:hover {
-      background: #4681ff;
-      border-color: #4681ff;
-      color: #fff; }
+      background: #38a4ff;
+      border-color: #38a4ff;
+      color: #ffffff; }
 
 /* Start Testimonial Area css
 ============================================================================================ */
@@ -2297,7 +2298,7 @@ button:focus {
 
 .section-top-border {
   padding: 50px 0;
-  background: #e8e8e8;
+  background: #ffffff;
   border-top: 1px dotted #eee; }
 
 .switch-wrap {
@@ -2568,7 +2569,7 @@ h6 {
     overflow-x: scroll; } }
 .progress-table {
   background: #ffffff;
-  padding: 15px 0px 30px 0px;
+  padding: 15px 50px 30px 50px;
   min-width: 800px; }
 
 .progress-table .serial {
@@ -3293,11 +3294,11 @@ h6 {
   z-index: 222;
   display: inline-block;
   text-align: center;
-  color: #222222;
+  color: #38a4ff;
   font-size: 12px;
   font-weight: 500;
   line-height: 48px;
-  border: 1px solid #f8b600;
+  border: 1px solid #38a4ff;
   border-radius: 0px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -3321,17 +3322,17 @@ h6 {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
   .main_btn:hover {
-    background: #f8b600;
-    color: #222222;
-    border: 1px solid #f8b600; }
+    background: #38a4ff;
+    color: #ffffff;
+    border: 1px solid #38a4ff; }
     .main_btn:hover img {
       right: -38px; }
 
 .main_btn2 {
   display: inline-block;
-  background: #f9f9ff;
+  background: 38a4ff;
   padding: 0px 45px;
-  color: #222222;
+  color: #38a4ff;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -3340,7 +3341,7 @@ h6 {
   outline: none !important;
   box-shadow: none !important;
   text-align: center;
-  border: 1px solid #dddddd;
+  border: 1px solid #38a4ff;
   cursor: pointer;
   transition: color 0ms linear; }
   .main_btn2:hover {
@@ -3348,14 +3349,14 @@ h6 {
     background-image: -webkit-linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);
     background-image: -ms-linear-gradient(0deg, #bc2bff 0%, #7249fb 100%);
     box-shadow: 0px 10px 30px 0px rgba(115, 73, 251, 0.3);
-    color: #fff; }
+    color: #ffffff; }
 
 .submit_btn {
   width: auto;
   display: inline-block;
-  background: #f8b600;
+  background: #38a4ff;
   padding: 0px 30px;
-  color: #fff;
+  color: #38a4ff;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -3363,7 +3364,7 @@ h6 {
   line-height: 50px;
   border-radius: 5px;
   outline: none !important;
-  border: 1px solid #f8b600;
+  border: 1px solid #38a4ff;
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
@@ -3372,15 +3373,15 @@ h6 {
   transition: all 0.3s ease 0s;
   box-shadow: -14px 14px 60px rgba(244, 47, 44, 0.32); }
   .submit_btn:hover {
-    color: #f8b600;
+    color: #ffffff;
     background: transparent;
     box-shadow: none; }
 
 .white_btn {
   display: inline-block;
-  background: #f9f9ff;
+  background: #38a4ff;
   padding: 0px 50px;
-  color: #222222;
+  color: #38a4ff;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -3395,16 +3396,16 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .white_btn:hover {
-    background: #f8b600;
+    background: #38a4ff;
     color: #fff; }
 
 .banner_btn {
   padding: 0px 40px;
   line-height: 48px;
-  background: #f8b600;
-  color: #fff;
+  background: #38a4ff;
+  color: #38a4ff;
   display: inline-block;
-  border: 1px solid #f8b600;
+  border: 1px solid #38a4ff;
   border-radius: 5px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -3414,16 +3415,16 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .banner_btn:hover {
-    color: #f8b600;
-    background: transparent; }
+    color: #ffffff;
+    background: 38a4ff; }
 
 .banner_btn2 {
   padding: 0px 35px;
   line-height: 48px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: 38a4ff;
+  color: #38a4ff;
   display: inline-block;
-  border: 1px solid #bebfc4;
+  border: 1px solid #38a4ff;
   border-radius: 5px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -3433,13 +3434,13 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .banner_btn2:hover {
-    color: #f8b600;
-    background: transparent; }
+    color: #ffffff;
+    background: 38a4ff; }
 
 .white_bg_btn {
-  background: #fff;
+  background: #38a4ff;
   display: inline-block;
-  color: #222222;
+  color: #38a4ff;
   line-height: 40px;
   padding: 0px 28px;
   font-size: 14px;
@@ -3452,23 +3453,23 @@ h6 {
   transition: all 0.3s ease 0s;
   border: none; }
   .white_bg_btn:hover {
-    background: #f8b600;
-    color: #fff; }
+    background: #38a4ff;
+    color: #ffffff; }
 
 .blog_btn {
   border: 1px solid #eeeeee;
-  background: #f9f9ff;
+  background: #38a4ff;
   padding: 0px 32px;
   font-size: 13px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
-  color: #222222;
+  color: #38a4ff;
   line-height: 34px;
   display: inline-block; }
   .blog_btn:hover {
-    background: #f8b600;
-    border-color: #f8b600;
+    background: #38a4ff;
+    border-color: #38a4ff;
     color: #fff; }
 
 /* End Main Button Area css

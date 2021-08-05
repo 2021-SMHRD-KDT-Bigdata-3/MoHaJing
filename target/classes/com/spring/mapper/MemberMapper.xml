@@ -39,7 +39,7 @@
     </select>-->
     
     <!-- 댓글 조회 -->
-    <select id="viewComment" resultType="com.spring.mapper.CommentVO">
+    <select id="viewComment" parameterType="int" resultType="com.spring.mapper.CommentVO">
 		select no, id, content, day
 		from mo_comment
 		where no = #{no}
@@ -78,11 +78,15 @@
         select * from mo_info
     </select>
     
-    <!-- 테스트중1 -->
-    <insert id="fileTest" parameterType="com.spring.mapper.TestVO">
-        insert into mo_test(id, img)
+    <!-- 사용자 아이디랑 머리사진 저장 -->
+    <insert id="deep1" parameterType="com.spring.mapper.Deep1VO">
+        insert into mo_deep1(id, img)
         values(#{id}, #{img})
     </insert>
+    
+    <select id="deep1Select" parameterType="com.spring.mapper.Deep1VO" resultType="com.spring.mapper.Deep1VO">
+        select * from mo_deep1 where id = #{id} and img = #{img}
+    </select>
     
     <!-- 테스트중2 -->
     <select id="fileTest2" parameterType="String" resultType="com.spring.mapper.TestVO">

@@ -65,40 +65,44 @@ background-color: white;
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="image" onclick="goMain()" src="${cpath}/resources/img/manu1.png" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/community.do">
 						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				<li><a href="${cpath}/main.do">
+					<form action="main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</a></li>
 			</ul>
 		</div>
 	</div>
@@ -118,9 +122,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn"> <img
-						src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -130,9 +132,6 @@ background-color: white;
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<h1 align="center">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
-				</h1>
 			</div>
 		</div>
 	</section>
@@ -164,14 +163,16 @@ background-color: white;
 					<div class="col-lg-4 col-md-6 col-sm-6">
 						<div class="single-amenities">
 							<div class="amenities-thumb">
-								<img class="img-fluid" src="img/ame1.jpg" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/ame1.jpg" alt="">
 							</div>
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form action="${cpath}/execution2.do" method="post">
-										<input type="hidden" name="id" value="${vo.id}">
-										<input type="submit" class="genric-btn default-border" value="M자탈모 분석">
+									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
+										<div class="form-group col-md-12">
+											<input type="hidden" name="id" value="${vo.id}">
+											<input class="form-control" type="submit" value="M자 탈모 분석">
+										</div>
 									</form>
 								</h5>
 								<p>M자 탈모 분석에 대한 설명</p>
@@ -185,15 +186,16 @@ background-color: white;
 					<div class="col-lg-4 col-md-6 col-sm-6">
 						<div class="single-amenities">
 							<div class="amenities-thumb">
-								<img class="img-fluid" src="img/ame2.jpg" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/ame2.jpg" alt="">
 							</div>
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form action="${cpath}/execution3.do" method="post">
-										<input type="hidden" name="id" value="${vo.id}">
-										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
-									</form>
+									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
+										<div class="form-group col-md-12">
+											<input class="form-control" type="hidden" name="id" value="${vo.id}">
+											<input class="form-control" type="submit" value="남성형 탈모 분석">
+										</div>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
 							</div>
