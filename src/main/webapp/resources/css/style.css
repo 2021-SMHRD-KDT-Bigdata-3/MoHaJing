@@ -471,7 +471,7 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home-banner-area {
-  background: #f9f9ff;
+  background: #ffffff;
   position: relative; }
   .home-banner-area .owl-nav {
     right: 58%;
@@ -982,7 +982,7 @@ button:focus {
     bottom: 0;
     width: 100%;
     height: 39.5%;
-    background: #f9f9ff;
+    background: #ffffff;
     content: ""; }
     @media (max-width: 1024px) {
       .amenities-area:before {
@@ -1052,7 +1052,7 @@ button:focus {
 
 .contact-form-section {
   position: relative;
-  background: #f9f9ff;
+  background: #ffffff;
   background-size: cover;
   text-align: center;
   padding: 70px 50px;
@@ -1067,7 +1067,7 @@ button:focus {
     height: 100%;
     width: 100%;
     content: "";
-    background: #f9f9ff;
+    background: #ffffff;
     opacity: .5;
     z-index: -1; }
   .contact-form-section h4 {
@@ -1089,13 +1089,13 @@ button:focus {
     background: transparent;
     border-radius: 0; }
     .contact-form-section .contact-form-area .form-control.placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control:-moz-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control::-moz-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control::-webkit-input-placeholder {
-      color: #fff !important; }
+      color: #000000 !important; }
     .contact-form-section .contact-form-area .form-control:focus {
       outline: none;
       box-shadow: none; }
@@ -1109,9 +1109,9 @@ button:focus {
     font-size: 13px;
     height: 50px; }
     .contact-form-section .form-select .nice-select:after {
-      border-color: #fff; }
+      border-color: #000000; }
     .contact-form-section .form-select .nice-select span {
-      color: #fff; }
+      color: #000000; }
     .contact-form-section .form-select .nice-select .list {
       z-index: 999; }
       .contact-form-section .form-select .nice-select .list .option.selected {
@@ -1120,7 +1120,7 @@ button:focus {
         color: #f8b600; }
   .contact-form-section .main_btn {
     border-color: #4681ff;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     margin-top: 30px; }
     .contact-form-section .main_btn img {
@@ -1135,7 +1135,7 @@ button:focus {
     .contact-form-section .main_btn:hover {
       background: #4681ff;
       border-color: #4681ff;
-      color: #fff; }
+      color: #ffffff; }
 
 /* Start Testimonial Area css
 ============================================================================================ */

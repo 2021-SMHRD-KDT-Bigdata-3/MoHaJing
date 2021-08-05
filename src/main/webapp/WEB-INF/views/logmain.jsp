@@ -110,9 +110,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn"> <img
-						src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -122,9 +120,6 @@
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<h1 align="center">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
-				</h1>
 			</div>
 		</div>
 	</section>
@@ -156,14 +151,16 @@
 					<div class="col-lg-4 col-md-6 col-sm-6">
 						<div class="single-amenities">
 							<div class="amenities-thumb">
-								<img class="img-fluid" src="img/ame1.jpg" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/ame1.jpg" alt="">
 							</div>
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form action="${cpath}/execution2.do" method="post">
-										<input type="hidden" name="id" value="${vo.id}">
-										<input type="submit" class="genric-btn default-border" value="M자탈모 분석">
+									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution.do" method="post">
+										<div class="form-group col-md-12">
+											<input type="hidden" name="id" value="${vo.id}">
+											<input class="form-control" type="submit" value="M자 탈모 분석">
+										</div>
 									</form>
 								</h5>
 								<p>M자 탈모 분석에 대한 설명</p>
@@ -177,14 +174,16 @@
 					<div class="col-lg-4 col-md-6 col-sm-6">
 						<div class="single-amenities">
 							<div class="amenities-thumb">
-								<img class="img-fluid" src="img/ame2.jpg" alt="">
+								<img class="img-fluid" src="${cpath}/resources/img/ame2.jpg" alt="">
 							</div>
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form action="${cpath}/execution3.do" method="post">
-										<input type="hidden" name="id" value="${vo.id}">
-										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
+									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
+										<div class="form-group col-md-12">
+											<input class="form-control" type="hidden" name="id" value="${vo.id}">
+											<input class="form-control" type="submit" value="남성형 탈모 분석">
+										</div>
 									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>

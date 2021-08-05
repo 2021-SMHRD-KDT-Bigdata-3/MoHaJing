@@ -137,9 +137,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn"> <img
-						src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
+					
 				</div>
 			</div>
 		</div>
@@ -151,9 +150,6 @@
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
 					id="myForm" action="${cpath}/logmain.do" method="post">
-					<h1 align="center">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</h1><br><br>
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"

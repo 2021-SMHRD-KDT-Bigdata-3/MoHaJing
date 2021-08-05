@@ -25,29 +25,19 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	<script type="text/javascript">
-	function goMain(){
-  		location.href="${cpath}/main.do";
-  	}
-	</script>
 	<style>
 	.checkList1{
 	border: 1px solid ;
 	padding:10px;
 	border-radius:2%;
-	background-color:#F7D358;
+	background-color:#ffffff;
 	}
-	
-	.contact-form-section {
-  	position: relative;
-  	background: #f9f9ff;
-  	background: url("");
-  	background-size: cover;
-  	text-align: center;
-  	padding: 70px 50px;
-  	z-index: 1; }
-	
 	</style>
+	<script type="text/javascript">
+	function goMain(){
+  		location.href="${cpath}/main.do";
+  	}
+	</script>
 </head>
 
 <body>
