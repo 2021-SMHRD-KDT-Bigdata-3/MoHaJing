@@ -39,7 +39,7 @@
     </select>-->
     
     <!-- 댓글 조회 -->
-    <select id="viewComment" resultType="com.spring.mapper.CommentVO">
+    <select id="viewComment" parameterType="int" resultType="com.spring.mapper.CommentVO">
 		select no, id, content, day
 		from mo_comment
 		where no = #{no}
