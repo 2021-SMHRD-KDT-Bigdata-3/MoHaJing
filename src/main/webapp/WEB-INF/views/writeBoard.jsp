@@ -48,42 +48,42 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="진단기록관리">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/community.do">
 						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="커뮤니티">
 						</form>
 				</a></li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="1대1 상담">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="탈모정보">
 						</form>
 				</a></li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black" value="마이페이지">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/main.do">
 					<form action="main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black" value="로그아웃">
 					</form>
 				</a></li>
 			</ul>
@@ -105,9 +105,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -118,7 +116,6 @@
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-				
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${id}">
@@ -133,15 +130,13 @@
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
                        		 <div class="col-lg-12 text-center">
-                       		 	<input type="file" name="uploadFile">
-                       		 	<button class="main_btn text-uppercase">
-                       		 	<a href="${cpath}/community.do?id=${id}">
-                       		 		돌아가기
-                       		 	</a>
-                       		 	</button>
-								<button type="submit" class="main_btn text-uppercase">
+                       		 	<input type="file" name="uploadFile" class="form-control" style="border:0 solid black">
+								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
 									작성완료
 								</button>
+                       		 	<button class="main_btn text-uppercase" style="border:0 solid black">
+                       		 		<a href="${cpath}/community.do?id=${id}">돌아가기</a>
+                       		 	</button>
 							</div>
 					</form>
 				</div>

@@ -149,11 +149,11 @@
 							<input type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
 							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
+							<button class="main_btn text-uppercase" onclick="goWrite()" style="border:0 solid black;">
+								<a href="${cpath}/writeBoard.do?id=${vo.id}">글쓰기</a>
 						</form>
+						</button>
 					</div>
-					<button class="main_btn text-uppercase" onclick="goWrite()" style="border:0 solid black;">
-						<a href="${cpath}/writeBoard.do?id=${vo.id}">글쓰기</a>
-					</button>
 				</div>
 			</div>
 		</div>
