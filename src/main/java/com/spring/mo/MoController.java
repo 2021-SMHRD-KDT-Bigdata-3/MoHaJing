@@ -31,6 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
+import com.spring.mapper.Deep1VO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
@@ -178,21 +179,23 @@ public class MoController {
 		model.addAttribute("vo", vo);
 		return "execution2";
 	}
-
+	
+	/*
 	// 진단결과화면
 	@RequestMapping("/result.do")
-	public String result() {
+	public String result(Deep1VO deep1, Model model) {
+		// 사용자 아이디랑 머리사진 저장
+		model.addAttribute("deep1", deep1);
 		return "result";
 	}
+	*/
 
-	// 테스트중
 	// 진단용 이미지 업로드 넘어가는 페이지
-	@RequestMapping("/fileTest.do")
-	public String fileTest(TestVO vo) throws IOException {
-
+	@RequestMapping("/deep1.do")
+	public String deep1(Deep1VO deep1, Model model) throws IOException {
 		// 파일 업로드 처리
 		String img = null;
-		MultipartFile uploadFile = vo.getUploadimg();
+		MultipartFile uploadFile = deep1.getUploadImg();
 		if (!uploadFile.isEmpty()) {
 			String originalFileName = uploadFile.getOriginalFilename();
 			String ext = FilenameUtils.getExtension(originalFileName); // 확장자 구하기
@@ -200,9 +203,11 @@ public class MoController {
 			img = uuid + "." + ext;
 			uploadFile.transferTo(new File("C:\\upload\\" + img));
 		}
-		vo.setImg(img);
-		memberMapper.fileTest(vo);
-		return "redirect:/fileTest2.do?id="+vo.getId();
+		deep1.setImg(img);
+		memberMapper.deep1(deep1); // 사용자 아이디, 이미지 insert
+		Deep1VO deep1Result = memberMapper.deep1Select(deep1); // 사용자 아이디, 이미지, 시퀀스 select
+		model.addAttribute("deep1", deep1Result);
+		return "result";
 	}
 	
 	// 이미지 띄우기 테스트중

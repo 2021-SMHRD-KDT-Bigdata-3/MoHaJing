@@ -46,8 +46,11 @@ public interface MemberMapper {
 	// 탈모 기본정보 출력
 	public List<InfoVO> info();
 	
-	// 테스트중1
-	public void fileTest(TestVO vo);
+	// 사용자 아이디랑 머리사진 저장
+	public void deep1(Deep1VO vo);
+	
+	// 사용자 아이다, 머리사진, 스퀀스 select
+	public Deep1VO deep1Select(Deep1VO vo);
 	
 	// 테스트중2
 	public TestVO fileTest2(String id);

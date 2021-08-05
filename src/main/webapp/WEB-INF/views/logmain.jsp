@@ -182,7 +182,7 @@
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form action="${cpath}/execution3.do" method="post">
+									<form action="${cpath}/execution2.do" method="post">
 										<input type="hidden" name="id" value="${vo.id}">
 										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
 									</form>
