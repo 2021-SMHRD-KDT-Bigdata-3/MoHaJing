@@ -155,27 +155,27 @@ border-right:0px;
 	<tr height="100px">
 	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
 	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
 	</tr>
 	<tr height="100px">
 	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
 	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
 	</tr>
 	<tr height="100px">
 	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
 	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
 	</tr>
 	<tr height="100px">
 	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
 	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
 	</tr>
 	<tr height="100px">
 	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
 	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>reply</butten></a></td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
 	</tr>
 	
 	

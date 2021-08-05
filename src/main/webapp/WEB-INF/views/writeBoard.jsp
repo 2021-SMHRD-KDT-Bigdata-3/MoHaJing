@@ -125,7 +125,7 @@
 							</div>
 							 <div class="col-md-6">
     	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="content" id="message" rows="8" placeholder="글 내용"></textarea>
+                           	     	<textarea class="form-control" name="content" id="message" rows="8"  style="width:360px;"placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
@@ -134,15 +134,14 @@
 								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
 									작성완료
 								</button>
-                       		 	<button class="main_btn text-uppercase" style="border:0 solid black">
-                       		 		<a href="${cpath}/community.do?id=${id}">돌아가기</a>
-                       		 	</button>
+                       		 		<a href="${cpath}/community.do?id=${id}" class="main_btn text-uppercase" style="border:0 solid black">돌아가기</a>
 							</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+	<br><br>
 	<!--================ End banner section =================-->
 
 	<!--================ start footer Area  =================-->

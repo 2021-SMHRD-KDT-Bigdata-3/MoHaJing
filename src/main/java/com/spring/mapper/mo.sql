@@ -82,5 +82,9 @@ alter table mo_board drop foreign key mo_board_ibfk_1;
 select * from mo_board;
 select * from mo_board where title like '%test%' or content like '%test%';
 
-
+CREATE TABLE mo_deep1 (
+no int not null auto_increment primary key,
+id varchar(50),
+img varchar(100) not null
+);
 
