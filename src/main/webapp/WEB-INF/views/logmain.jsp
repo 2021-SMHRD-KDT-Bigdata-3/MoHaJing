@@ -159,7 +159,7 @@
 							<div class="amenities-details">
 								<div class="amenities-meta"></div>
 								<h5>
-									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution.do" method="post">
+									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
 										<div class="form-group col-md-12">
 											<input type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="submit" value="M자 탈모 분석">
@@ -187,6 +187,12 @@
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="submit" value="남성형 탈모 분석">
 										</div>
+<<<<<<< HEAD
+=======
+									<form action="${cpath}/execution2.do" method="post">
+										<input type="hidden" name="id" value="${vo.id}">
+										<input type="submit" class="genric-btn default-border" value="남성형 탈모 분석">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
