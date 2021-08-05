@@ -83,41 +83,44 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/community.do">
 						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
 				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				<li><a href="${cpath}/main.do">
+					<form action="main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</a></li>
 			</ul>
 		</div>
 	</div>
@@ -150,6 +153,7 @@
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
 					id="myForm" action="${cpath}/logmain.do" method="post">
+			<br><br><br>
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
@@ -161,9 +165,9 @@
 							onblur="this.placeholder = 'PASSWARD'">
 					</div>
 					<div class="col-lg-12 text-center">
-						<button type="submit" class="main_btn text-uppercase">
+						<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">
 							로그인</button>
-						<button type="button" class="main_btn text-uppercase"
+						<button type="button" class="main_btn text-uppercase" style="border:0 solid black;"
 							onclick="goJoin()">회원가입</button>
 					</div>
 				</form>
@@ -182,10 +186,6 @@
 						</a>
 					</div>
 				</div>
-
-				
-				
-				
 			</div>
 		</div>
 	</section>
@@ -211,10 +211,10 @@
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="right-content">
-						<div class="main_title">
-							<h1>프로그램설명</h1>
+						<div class="main_title" align="center">
+							<h1>毛어때</h1>
 							<p>바쁜 현대인을 위한 탈모 자가진단 서비스</p>
-							<p>탈모 고민하지 말고 毛어떄와 함께!</p>
+							<p>탈모 고민하지 말고 毛어때와 함께!</p>
 						</div>
 					</div>
 				</div>

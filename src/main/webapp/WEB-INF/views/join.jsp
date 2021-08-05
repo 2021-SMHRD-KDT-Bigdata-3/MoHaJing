@@ -135,7 +135,7 @@
 						</div>	
 						<br>
 							<div class="col-lg-12 text-center">
-								<button type="submit" class="main_btn text-uppercase">
+								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">
 									회원가입
 								</button>
 							</div>
