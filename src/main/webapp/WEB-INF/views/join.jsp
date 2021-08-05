@@ -63,9 +63,6 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="contact-form-section">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
-						<h1 align="center">
-							<img src="${cpath}/resources/img/logo3.png" alt="">
-						</h1><br><br>
 							<div class="form-group col-md-12">
 								<input style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
@@ -135,7 +132,7 @@
 						</div>	
 						<br>
 							<div class="col-lg-12 text-center">
-								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">
+								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
 									회원가입
 								</button>
 							</div>

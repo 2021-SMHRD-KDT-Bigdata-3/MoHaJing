@@ -54,10 +54,11 @@ no int not null auto_increment primary key,
 id varchar(50),
 img varchar(100) not null
 );
-select * from mo_deep1;
+
 insert into mo_deep1(id, img)
 values("123", "123");
 
+select * from mo_deep1;
 
 commit;
 
@@ -80,8 +81,6 @@ alter table mo_board drop foreign key mo_board_ibfk_1;
 
 select * from mo_board;
 select * from mo_board where title like '%test%' or content like '%test%';
-
-
 
 
 
