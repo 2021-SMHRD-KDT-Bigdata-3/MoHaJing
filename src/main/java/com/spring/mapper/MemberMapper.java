@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-
 public interface MemberMapper {
 	
 	// 회원가입
@@ -54,4 +53,5 @@ public interface MemberMapper {
 	
 	// 테스트중2
 	public TestVO fileTest2(String id);
+	
 }

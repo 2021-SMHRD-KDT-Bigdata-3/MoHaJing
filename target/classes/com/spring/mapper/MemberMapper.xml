@@ -92,4 +92,5 @@
     <select id="fileTest2" parameterType="String" resultType="com.spring.mapper.TestVO">
         select * from mo_test where id = #{id}
     </select>
+    
 </mapper>

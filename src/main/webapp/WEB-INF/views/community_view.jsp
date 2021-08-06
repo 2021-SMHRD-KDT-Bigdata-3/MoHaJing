@@ -44,6 +44,14 @@
 		}
 	</script>
 </head>
+<style>
+.comment1{
+text-align: center;
+border:1px solid #6c757d;
+border-left:0px;
+border-right:0px;
+}
+</style>
 
 <body>
 
@@ -58,9 +66,9 @@
 			<ul class="list menu-left">
 				<li><a href="${cpath}/logmain.do">
 						<form action="logmain.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+							<input type="hidden" name="id" value="${vo.id}">
+							<input type="hidden" name="id" value="${vo.pw}">
+							 <input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
@@ -154,17 +162,17 @@
 						</div>
 						<div class="table-head" align="left"></div>
 					</div>
-					<table>
-						<tr>
+					<table class="comment1" align="center">
+						<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
 							<th>댓글</th>
-							<th>작성자</th>
+							<th style="padding-left:160px; ">작성자</th>
 						</tr>
 						<c:forEach items="${list}" var="list">
 							<tr>
 								<td>
 									<div class="country">${list.content}</div>
 								</td>
-								<td>
+								<td style="padding-left:160px;">
 									<div class="country">${list.id}</div>
 								</td>
 							</tr>
@@ -176,11 +184,8 @@
 							<input type="text" name="content"> <input type="hidden"
 								name="no" value="${vo2.no}"> <input type="hidden"
 								name="id" value="${vo.id}">
-							<button type="submit" class="main_btn text-uppercase">
-								댓글달기</button>
-							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">
-							목록
-							</a>
+							<button type="submit" class="main_btn text-uppercase">댓글달기</button>
+							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">목록</a>
 						</div>
 					</form>
 				</div>
