@@ -65,7 +65,7 @@ margin:auto;
 
 <body>
 
-		<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">
@@ -73,59 +73,44 @@ margin:auto;
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
 				<li>
-						<form action="logmain.do" method="post">
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-<<<<<<< HEAD
 				</li>
-				<li><a href="execution.do">
-=======
-				</a></li>
-				<li><a href="${cpath}/execution.do">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
-						<form action="execution.do" method="post">
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
+				</li>
 				<li>
-						<form action="community.do" method="post">
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-<<<<<<< HEAD
 				</li>
 				<li>
-=======
-				</a></li>
-				<li><a href="${cpath}/consulting.do">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
 				</li>
 				<li>
-						<form action="info.do" method="post">
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-<<<<<<< HEAD
 				</li>
 				<li>
-=======
-				</a></li>
-				<li><a href="${cpath}/mypage.do">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
 				</li>
 				<li>
-					<form action="main.do" method="post">
+					<form action="${cpath}/main.do" method="post">
 						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
 				</li>
@@ -170,9 +155,8 @@ margin:auto;
 			<td><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></td>
 			<td style="padding-left:100px;">${vo2.id}</td>
 			<td style="padding-left:100px;">${vo2.day}</td>
-			<br>
+			<tr>
 		</c:forEach>
-		</tr>
 	</table>	
 		<br>
 	
@@ -186,8 +170,6 @@ margin:auto;
 						</form>
 					</div>
 				</div>
-			</div>
-		</div>
 	</section>
 
 	<!--================ End banner section =================-->

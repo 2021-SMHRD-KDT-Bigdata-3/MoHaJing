@@ -143,7 +143,8 @@ public class MoController {
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {
-		model.addAttribute("id", id); // 현재 로그인한 아이디
+		MemberVO vo = memberMapper.logmain(id);
+		model.addAttribute("vo", vo);
 		return "writeBoard";
 	}
 

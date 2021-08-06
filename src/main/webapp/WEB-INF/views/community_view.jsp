@@ -55,7 +55,7 @@ border-right:0px;
 
 <body>
 
-		<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">
@@ -63,22 +63,20 @@ border-right:0px;
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
 				<li>
-						<form action="logmain.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}">
-							<input type="hidden" name="id" value="${vo.pw}">
-							 <input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+						<form action="${cpath}/logmain.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</li>
-				<li><a href="execution.do">
-				</a></li>
-				<li><a href="${cpath}/execution.do">
-						<form action="execution.do" method="post">
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
+				</li>
 				<li>
-						<form action="community.do" method="post">
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
@@ -90,7 +88,7 @@ border-right:0px;
 						</form>
 				</li>
 				<li>
-						<form action="info.do" method="post">
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
@@ -102,7 +100,7 @@ border-right:0px;
 						</form>
 				</li>
 				<li>
-					<form action="main.do" method="post">
+					<form action="${cpath}/main.do" method="post">
 						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
 				</li>
