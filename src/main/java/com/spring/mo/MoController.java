@@ -32,6 +32,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
+import com.spring.mapper.DeepVO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
@@ -190,7 +191,7 @@ public class MoController {
 		return "result";
 	}
 	*/
-
+	/*
 	// 진단용 이미지 업로드 넘어가는 페이지
 	@RequestMapping("/deep1.do")
 	public String deep1(Deep1VO deep1, Model model) throws IOException {
@@ -208,8 +209,40 @@ public class MoController {
 		memberMapper.deep1(deep1); // 사용자 아이디, 이미지 insert
 		Deep1VO deep1Result = memberMapper.deep1Select(deep1); // 사용자 아이디, 이미지, 시퀀스 select
 		model.addAttribute("deep1", deep1Result);
+		return "result2";
+	}*/
+	
+	@RequestMapping("/deep1.do")
+	public String deep1(String no, Model model) {
+		System.out.println(no);
+		int num = Integer.parseInt(no);
+		Deep1VO deep1 = memberMapper.deep1Select(num); // 딥러닝 분석 결과
+		MemberVO vo = memberMapper.logmain(deep1.getId()); // 회원정보
+		model.addAttribute("deep1", deep1);
+		model.addAttribute("vo", vo);
+		return "result2";
+	}
+	
+	
+	/*
+	// loading.jsp --> result.jsp 이동할거임
+	@RequestMapping("/result.jsp")
+	public String result(Deep1VO deep1, String category, String step, float percent, Model model) {
+		DeepVO deep = null;
+		deep.setNo(deep1.getNo());
+		deep.setId(deep1.getId());
+		deep.setImg(deep1.getImg());
+		deep.setCategory(category);
+		deep.setStep(step);
+		deep.setPercent(percent);
+		memberMapper.deepInsert(deep); // 고유번호, 아이디, 이미지이름, 탈모유형, 탈모단계, 확률 insert
+		DeepVO deepResult = memberMapper.deepSelect(deep1.getNo()); // 고유번호로 결과 select (이게 사용자에게 뿌려줄 결과)
+		MemberVO vo = memberMapper.logmain(deep1.getId()); // 로그인한 사용자 정보
+		model.addAttribute("vo", vo);
+		model.addAttribute("result", deepResult);
 		return "result";
 	}
+	*/
 	
 	// 이미지 띄우기 테스트중
 	@RequestMapping("/fileTest2.do")
@@ -250,5 +283,17 @@ public class MoController {
 		return "info";
 	}
 
+	// 플라스크 테스트
+	@RequestMapping("/flaskget.do")
+	public String flasktest(String id, Model model) {
+		model.addAttribute("id", id);
+		return "flasktest";
+	}
+
+
+	@RequestMapping("/result.do")
+	public String result() {
+		return "result";
+	}	
 
 }

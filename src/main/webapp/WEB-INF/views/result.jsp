@@ -1,10 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>분석 결과는?</h1><br><br>
+	<h3>${param.result}</h3>
+	<h3>${param.id}</h3>
+</body>
+	
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
 
-<!doctype html>
-<html lang="en">
 
 <head>
 	<!-- Required meta tags -->
@@ -59,60 +70,31 @@ margin: auto;
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
+			<a href="index.html">
+				<img src="${cpath}/resources/img/logo3.png" alt="">
 			</a>
 		</div>
-		<div class="button-group-area mt-10">
-			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
-						</form>
-				</a></li>
-				<li><a href="execution.do">
-						<form action="execution.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
-						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
-						</form>
-				</a></li>
-				<li>
-						<form action="${cpath}/consulting.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
-						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
-						</form>
-				</a></li>
-				<li>
-						<form action="${cpath}/mypage.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
-						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do">
-					<form action="main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
-					</form>
-				</a></li>
-			</ul>
-		</div>
+		<ul class="list menu-left">
+			<li>
+				<a href="${capth}/main.do">메인</a>
+			</li>
+			<li>
+				<a href="">진단관리기록</a>
+			</li>
+			<li>
+				<a href="${cpath}/community.do">커뮤니티</a>
+			</li>
+			<li>
+				<a href="packages.html">1대1 상담</a>
+			</li>
+			<li>
+				<a href="contact.html">마이페이지</a>
+			</li>
+		</ul>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-	<!--================ Canvus Menu Area =================-->
+<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -161,9 +143,9 @@ margin: auto;
 						</div>
 						
 						<div class="table-row">
-							<div class="country"> ${deep1.id}</div>
-							<div class="visit"><img src="/img/${deep1.img}" /></div>
-							<div class="visit">${deep1.no}</div>
+							<div class="country"> ~~~~~</div>
+							<div class="visit">병원진료가 필요합니다!</div>
+							<div class="visit">철분제</div>
 						</div>
 						
 						</div>

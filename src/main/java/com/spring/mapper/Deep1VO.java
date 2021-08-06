@@ -11,5 +11,6 @@ public class Deep1VO {
 	private String id;
 	private String img;
 	private MultipartFile uploadImg;
+	private String result;
 
 }
