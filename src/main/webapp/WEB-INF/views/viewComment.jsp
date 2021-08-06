@@ -31,6 +31,7 @@
 			location.href="${cpath}/community.do?id="+id;
 		}
 	</script>
+	
 </head>
 
 <body>
@@ -144,11 +145,21 @@
 										<div class="serial">작성일</div>
 										<div class="country">${vo.day}</div>
 									</div>
+									
 									<div class="table-head" align="left">
 										<div class="serial">댓글</div>
+										
+										<table >
 										<c:forEach items="${commentList}" var="commentList">
-											<div class="country">${commentList.content}</div>
+											<div class="country">${commentList.content}
+												<tr>
+													<td>${commentList.content}</td>
+													<td>${vo.id}</td>
+												</tr>
+											</div>
+										
 										</c:forEach>
+										</table>
 									</div>
 								</div>
                        		 <div class="col-lg-12 text-center">

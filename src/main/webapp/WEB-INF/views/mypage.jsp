@@ -29,13 +29,13 @@
 	<style>
 	.comment-form{
 	background-color: white;
-	max-width:60%;
 	margin : auto;
 	border:1px solid white;
+	
 	}
 	.form-check{
 	border:1px solid #E6E6E6;
-	background-color: #E6E6E6;
+	background-color:#FFFFFF;
 	width:400px;
 	padding-top:10px;
 	border-radius:2%;
@@ -46,13 +46,10 @@
 	.mytitle{
 	margin:auto;
 	}
-	.form-inline{
 
-	top:200px;
-	left:0px;
+	.mypageinfo{
+	margin:auto;
 	}
-	
-	
 	
 	</style>
 	
@@ -139,40 +136,43 @@
 
 	<!--================ Start banner section =================-->
 	
-<div class="comment-form">
-                       <h1 class="my-title">마이페이지</h1><br><br>
+	<div class="comment-form">
+                       <h1 class="my-title">myPage</h1><br><br>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
+	
+	
+	<table class="mypageinfo">
+	<tr>
+	<td>아이디</td>
+	<td><input  type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'"></td>
+	</tr>
+	<tr>
+	<td>패스워드</td>
+	<td><input  type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
+	</tr>
+	<tr>
+	<td>이름</td>
+	<td><input 
+ type="text" value=" ${vo.name}"  placeholder="${vo.name}" class=""
+                                	 name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
+	</tr>
+	<tr>
+	<td>나이</td>
+	<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+                                         onblur="this.placeholder = ''"></td>
+	</tr>
+	<tr>
+	<td>성별</td>
+	<td>${vo.gender}</td>
+	</tr>
+	
+	</table>
+	
                         
-                            
-                            <div class="form-group form-inline">
-                                <div class="form-group col-lg-12 col-md-12 name">
-                                	 
-                                    <input style="width:250px; margin-bottom:10px;" type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	 
-                                    <input style="width:250px; margin-bottom:10px;" type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	 <input style="width:250px; margin-bottom:10px;" type="text" value=" ${vo.name}"  placeholder="${vo.name}" class=""
-                                	 name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
-                          
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	
-                                    <input style="width:250px; margin-bottom:10px;" type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
-                                         onblur="this.placeholder = ''">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	성별  ${vo.gender}
-                                </div>
-                                
-                            </div>
-                            
-                            <div class="form-group form-check ">
-                            <h4 class="check-align">✔ 체크리스트</h4><br>
+                            <div class="form-group form-check " align=" center";>
+                            <h4 class="check-align">✔ 체크리스트</h4>
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
@@ -204,7 +204,7 @@
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
 							<div class="form-group col-md-12">
-								<input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
+								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
                             

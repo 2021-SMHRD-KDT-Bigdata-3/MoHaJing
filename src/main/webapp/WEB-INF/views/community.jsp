@@ -141,7 +141,7 @@ text-align:center;
 					<div class="table-head">
 						<div class="country">제목</div>
 						<div class="visit">작성자</div>
-						<div class="percentage">날짜</div>
+						<div class="percentage" >날짜</div>
 					</div>
 					<c:forEach var="vo2" items="${list}">
 						<div class="table-row">
