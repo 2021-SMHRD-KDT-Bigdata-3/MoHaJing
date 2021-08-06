@@ -46,42 +46,42 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/community.do">
 						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
 				</a></li>
-				<li>
+				<li><a href="${cpath}/consulting.do">
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/info.do">
 						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
 				</a></li>
-				<li>
+				<li><a href="${cpath}/mypage.do">
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
 				</a></li>
 				<li><a href="${cpath}/main.do">
 					<form action="main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
 				</a></li>
 			</ul>
@@ -98,6 +98,7 @@
 		</div>
 	</div>
 	<!--================ End Canvus Menu Area =================-->
+
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
@@ -107,6 +108,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="container-fluid">

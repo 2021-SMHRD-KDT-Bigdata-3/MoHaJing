@@ -58,9 +58,7 @@ border-right:0px;
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -71,7 +69,7 @@ border-right:0px;
 							 <input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
-				<li><a href="execution.do">
+				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">

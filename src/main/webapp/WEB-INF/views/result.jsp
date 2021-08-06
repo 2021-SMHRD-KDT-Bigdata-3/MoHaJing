@@ -59,9 +59,7 @@ margin: auto;
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -72,7 +70,7 @@ margin: auto;
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
-				<li><a href="execution.do">
+				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
@@ -84,7 +82,7 @@ margin: auto;
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
 				</a></li>
-				<li>
+				<li><a href="${cpath}/consulting.do">
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
@@ -96,7 +94,7 @@ margin: auto;
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
 				</a></li>
-				<li>
+				<li><a href="${cpath}/mypage.do">
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
@@ -126,13 +124,12 @@ margin: auto;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	
+
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area common-banner relative">
 		<div class="container-fluid">
