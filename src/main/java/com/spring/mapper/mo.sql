@@ -12,13 +12,14 @@ checknum int(5) not null
 );
 
 CREATE TABLE mo_board(
-no int not null auto_increment,
+no int not null auto_increment primary key,
 id varchar(50),
 title varchar(50) not null,
 content varchar(1000) not null,
 file varchar(100),
-day datetime,
+day datetime
 );
+select * from mo_board;
 
 CREATE TABLE mo_comment(
 no int not null,
