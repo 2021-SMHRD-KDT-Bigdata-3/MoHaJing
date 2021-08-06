@@ -58,8 +58,9 @@
 			<ul class="list menu-left">
 				<li><a href="${cpath}/logmain.do">
 						<form action="logmain.do" method="post">
-							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+							<input type="hidden" name="id" value="${vo.id}">
+							<input type="hidden" name="id" value="${vo.pw}">
+							 <input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
@@ -158,17 +159,6 @@
 							<th>댓글</th>
 							<th>작성자</th>
 						</tr>
-					<form action="${cpath}/writeComment.do" method="post">
-						<div class="col-lg-12 text-center">
-							<input type="text" name="content"> 
-							<input type="hidden" name="no" value="${vo.no}">
-							<input type="hidden" name="id" value="${id}">
-							<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
-								댓글달기
-							</button>
-							<button class="main_btn text-uppercase" onclick="goComm(${id})" style="border:0 solid black">목록</button>
-						</div>
-					</form>
 						<c:forEach items="${list}" var="list">
 							<tr>
 								<td>
@@ -181,21 +171,15 @@
 						</c:forEach>
 					</table>
 					<!-- 댓글insert -->
-<<<<<<< HEAD
-=======
 					<form action="${cpath}/writeComment.do" method="post">
 						<div class="col-lg-12 text-center">
 							<input type="text" name="content"> <input type="hidden"
 								name="no" value="${vo2.no}"> <input type="hidden"
 								name="id" value="${vo.id}">
-							<button type="submit" class="main_btn text-uppercase">
-								댓글달기</button>
-							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">
-							목록
-							</a>
+							<button type="submit" class="main_btn text-uppercase">댓글달기</button>
+							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">목록</a>
 						</div>
 					</form>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 				</div>
 			</div>
 		</div>

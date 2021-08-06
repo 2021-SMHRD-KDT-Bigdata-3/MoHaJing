@@ -1,4 +1,4 @@
-select * from mo_comment;
+select * from mo_info;
 
 drop table mo_comment
 
@@ -65,6 +65,9 @@ commit;
 insert into mo_member(id, pw, name, gender, age, checknum)
 values("test", "test", "테스트", "여", 20, 5);
 select * from mo_member;
+
+insert into mo_info(category, cause, sign, plan)
+values("test", "test", "test", "test")
 
 
 insert into mo_board(id, title, content, file, day)

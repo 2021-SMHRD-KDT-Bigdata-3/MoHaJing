@@ -146,17 +146,20 @@ text-align: center;
 	<!-- End Sample Area -->
 	
 	<div class="button-group-area mt-40" align="center">
-				<a href="${cpath}/infoList.do" class="genric-btn default circle" target="f1">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/main.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn default circle" onclick="getJson()">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn primary-border circle">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="#" class="genric-btn success-border circle">원형탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="#" class="genric-btn info-border circle">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="#" class="genric-btn warning-border circle">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="#" class="genric-btn danger-border circle">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="cneter" name="f1" display="block" vertical-align="bottom" width=650
-					height=300 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
-			
+			<a href="${cpath}/info.do" target="f1">식습관, 모발 관리 습관의 개선, 스트레스, 술, 담배 같은 <b>악화 요인</b>은 차단할 수 있어야 한다. 
+				음식은 단백질과 비타민, 미네랄이 풍부한 음식을 골고루 섭취하는 것이 좋고 <i>무리한 다이어트</i>는 하지 않아야 한다.
+				 또한 모발에 쌓인 먼지와 피지는 모공을 막아 탈모를 악화시킬 수 있으므로 외출 후 머리를 바로 감는 것이 좋다. 
+				 더불어 머리를 감을 때 화학 성분이 두피를 자극할 수 있으므로 거품을 낸 채 오랫동안 방치하면 안되고, 
+				 머리를 감은 후 선풍기나 드라이기 찬바람을 이용해 말리는 것이 중요하다. 머리는 매일 감아야 두피의 이물질을 제거할 수 있다. 
+				 하루 한번 감는다면 저녁에 감는 것이 낮동안 쌓인 먼지를 없앨 수 있기 때문에 좋다.</a>
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color">탈모 예방법</h1>
