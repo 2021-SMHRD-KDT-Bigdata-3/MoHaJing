@@ -29,16 +29,28 @@
 	<style>
 	.comment-form{
 	background-color: white;
-	max-width:60%;
 	margin : auto;
 	border:1px solid white;
+	
 	}
 	.form-check{
-	border:1px solid #6c757d;
+	border:1px solid #E6E6E6;
+	background-color:#FFFFFF;
 	width:400px;
-	padding-top:30px;
+	padding-top:10px;
 	border-radius:2%;
 	}
+	.name{
+	margin-left:15px;
+	}
+	.mytitle{
+	margin:auto;
+	}
+
+	.mypageinfo{
+	margin:auto;
+	}
+	
 	</style>
 	
 </head>
@@ -48,9 +60,7 @@
 		<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -62,6 +72,8 @@
 						</form>
 				</li>
 				<li><a href="execution.do">
+				</a></li>
+				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
@@ -74,6 +86,8 @@
 						</form>
 				</li>
 				<li>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
@@ -86,6 +100,8 @@
 						</form>
 				</li>
 				<li>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
@@ -115,9 +131,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -125,39 +139,41 @@
 
 	<!--================ Start banner section =================-->
 	
-<div class="comment-form">
-                       <h4><img src="${cpath}/resources/img/blog/popular-post/mypage2.png" alt=""></h4>
+	<div class="comment-form">
+                       <h1 class="my-title">
+					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
-                        
-                            
-                            <div class="form-group form-inline">
-                                <div class="form-group col-lg-12 col-md-12 name">
-                                	아이디 : ${vo.id}
-                                    <input type="hidden" name="id" value="${vo.id}"placeholder="ID"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	비밀번호 : 
-                                    <input type="password" class="form-control" name="pw" value="${vo.pw}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	이름 : ${vo.name}
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	나이 : 
-                                    <input type="text" class="form-control" name="age" value="${vo.age}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                                </div>
-                                <div class="form-group col-lg-12 col-md-12 email">
-                                	성별 : ${vo.gender}
-                                </div>
-                                
-                            </div>
-                            
-                            <div class="form-group form-check">
-                            
-                            <div class="switch-wrap d-flex justify-content-between">
+	
+	
+	<table class="mypageinfo">
+	<tr>
+	<td>아이디</td>
+	<td><input type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'"></td>
+	</tr>
+	<tr>
+	<td>패스워드</td>
+	<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
+	</tr>
+	<tr>
+	<td>이름</td>
+	<td> ${vo.name}</td>
+	</tr>
+	<tr>
+	<td>나이</td>
+	<td>${vo.age}</td>
+	</tr>
+	<tr>
+	<td>성별</td>
+	<td>${vo.gender}</td>
+	</tr>
+	
+	</table><br>
+	
+    						<div class="form-group form-check" align="center">
+                            <h4 class="check-align">✔ 체크리스트</h4>
+                            <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
@@ -188,10 +204,9 @@
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
 							<div class="form-group col-md-12">
-								<input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
+								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
-                            
                             </div>
                             <button type="submit" class="main_btn">
                                	정보수정하기

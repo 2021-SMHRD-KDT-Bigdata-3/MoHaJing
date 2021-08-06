@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -25,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -282,6 +282,11 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "info";
 	}
+	
+	@RequestMapping("/infoList.do")
+	public String infoList() {
+		return "infoList";
+	}
 
 	// 플라스크 테스트
 	@RequestMapping("/flaskget.do")
@@ -295,5 +300,29 @@ public class MoController {
 	public String result() {
 		return "result";
 	}	
+	@RequestMapping("/infoList2.do")
+	public String infoList2() {
+		return "infoList2";
+	}
+	
+	@RequestMapping("/infoList3.do")
+	public String infoList3() {
+		return "infoList3";
+	}
+	
+	@RequestMapping("/infoList4.do")
+	public String infoList4() {
+		return "infoList4";
+	}
+	
+	@RequestMapping("/infoList5.do")
+	public String infoList5() {
+		return "infoList5";
+	}
+	
+	@RequestMapping("/infoList6.do")
+	public String infoList6() {
+		return "infoList6";
+	}
 
 }

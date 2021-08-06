@@ -25,12 +25,20 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+		
 	<script>
 		function goJoin(){
 			location.href="${cpath}/join.do";
 		}
 	</script>
-	
+	<style>
+		.form-control:focus{
+			border-color : white !important;
+		}
+	</style>
 	
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -65,16 +73,98 @@
 	function goJoin() {
 		location.href = "${cpath}/join.do";
 	}
+	function goMain() {
+		location.href = "${cpath}/logmain.do"
+	}
 </script>
+<style>
+.class{
+	position: sticky;
+}
+
+.bg{
+	width: 100%;
+	height: 100%;
+	position : relative;
+	z-index : 1;
+}
+
+.bg::after{
+	width: 100%;
+	height: 100%;
+	background: url(${cpath}/resources/img/hair_bg.jpg);
+	content: "";
+	z-index : -1;
+	opacity : 0.2;
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0.5;
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover2:hover{
+	color : grey;
+	box-shadow:120px 0 0 0 rgba(255,255,255,0.2) inset,
+	-120px 0 0 0 rgba(255,255,255,0,2) inset;
+}
+</style>
+
+
 </head>
 
 <body>
-
+<div class="bg" style="background-image : url(${cpath}/resources/img/hair_bg.jpg)">
 	<!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
-		<div class="logo">
+	<!-- <div class="side_menu">
+		<div class="logo" style="position : fixed;">
 			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
+				src="${cpath}/resources/img/logo4.png" alt="">
 			</a>
 		</div>
 		<div class="button-group-area mt-10">
@@ -83,11 +173,14 @@
 						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="image" onclick="goMain()" src="${cpath}/resources/img/manu2.png" class="genric-btn default-border" value="메인">
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
 				</a></li>
 				<li><a href="execution.do">
 						<form action="execution.do" method="post">
+							<input  type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="진단기록관리">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
@@ -117,26 +210,28 @@
 						</form>
 				</a></li>
 				<li><a href="${cpath}/main.do">
-					<form action="main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
-					</form>
+						<form action="main.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" value="로그아웃">
+						</form>
 				</a></li>
+				
 			</ul>
 		</div>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
 	<!--================ Canvus Menu Area =================-->
-	<div class="canvus_menu">
+	<!-- <div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
 				<span></span>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!--================ End Canvus Menu Area =================-->
 
-	<section class="top-btn-area">
+	<!-- <section class="top-btn-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -145,30 +240,39 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
 	<!--================ Start banner section =================-->
-	<section class="home-banner-area relative">
+
+	-->
+	<div class="hair" align="center" style="margin-top : 100px;">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="">
+	</div>
+	<div class="logo" align="center">
+		<img src="${cpath}/resources/img/logo4.png" alt="">
+	</div>
+	
+	<section class="home-banner-area relative" style="background-color: rgba(255, 255, 255, 0.01)">
 		<div class="container-fluid">
-			<div class="row d-flex align-items-center justify-content-center">
+			<div class="row d-flex align-items-center justify-content-center" style="height: 300px;">
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
 					id="myForm" action="${cpath}/logmain.do" method="post">
-			<br><br><br>
+				
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'ID'">
+							onblur="this.placeholder = 'ID'" style="border : none; border-bottom-style : solid; background-color : transparent;">
 					</div>
 					<div class="form-group col-md-12">
 						<input type="password" class="form-control" id="name" name="pw"
 							placeholder="PASSWARD" onfocus="this.placeholder = ''"
-							onblur="this.placeholder = 'PASSWARD'">
+							onblur="this.placeholder = 'PASSWARD'" style="border : none; border-bottom-style : solid; background-color : transparent;">
 					</div>
 					<div class="col-lg-12 text-center">
-						<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">
+						<button type="submit" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">
 							로그인</button>
-						<button type="button" class="main_btn text-uppercase" style="border:0 solid black;"
-							onclick="goJoin()">회원가입</button>
+						<button type="button" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;" 
+							onclick="goJoin()">회원가입</button> 
 					</div>
 				</form>
 
@@ -212,14 +316,14 @@
 				<div class="col-lg-5 offset-lg-1">
 					<div class="right-content">
 						<div class="main_title" align="center">
-							<h1>毛어때</h1>
-							<p>바쁜 현대인을 위한 탈모 자가진단 서비스</p>
-							<p>탈모 고민하지 말고 毛어때와 함께!</p>
+							<p style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 20px;">바쁜 현대인을 위한 탈모 자가진단 서비스</p>
+							<p style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 20px;">탈모 고민하지 말고 毛어때와 함께!</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!--================ End Popular Place Area =================-->
 
@@ -340,8 +444,7 @@
 	<!--================ End footer Area  =================-->
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- 
 	<script src="${cpath}/resources/js/jquery-3.2.1.min.js"></script>
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -355,13 +458,14 @@
 		src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="${cpath}/resources/vendors/jquery-ui/jquery-ui.js"></script>
 	<script src="${cpath}/resources/js/jquery.ajaxchimp.min.js"></script>
-	<!--  <script src="${cpath}/resources/js/mail-script.js"></script> -->
+	  <script src="${cpath}/resources/js/mail-script.js"></script> 
 	<script
 		src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
 	<script
 		src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
-	<script src="${cpath}/resources/js/theme.js"></script>
+	<script src="${cpath}/resources/js/theme.js"></script> -->
+	
 </body>
 
 </html>

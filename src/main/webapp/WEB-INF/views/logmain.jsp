@@ -37,8 +37,16 @@
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
 <script type="text/javascript">
-	
+	function goMain() {
+		location.href = "${cpath}/logmain.do"
+	}
 </script>
+
+<style>
+.row d-flex {
+background-color: white;
+}
+</style>
 </head>
 
 <body>
@@ -46,9 +54,7 @@
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -60,6 +66,8 @@
 						</form>
 				</li>
 				<li><a href="execution.do">
+				</a></li>
+				<li><a href="${cpath}/execution.do">
 						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
@@ -72,6 +80,8 @@
 						</form>
 				</li>
 				<li>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
@@ -84,6 +94,8 @@
 						</form>
 				</li>
 				<li>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
@@ -126,6 +138,7 @@
 		</div>
 	</section>
 
+
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
@@ -142,12 +155,12 @@
 				<div class="row align-items-center justify-content-center">
 					<div class="col-lg-5 offset-lg-1">
 						<div class="left-content">
-							<img class="img1 img-fluid" src="${cpath}/img/popular/img1.jpg"
+							<img class="img1 img-fluid" src="${cpath}/img/popular/img_1.png"
 								alt=""> <img class="img2 img-fluid"
 								src="${cpath}/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg"
 								alt=""> <img class="img1 img-fluid"
-								src="${cpath}/resources/img/popular/img1.jpg" alt=""> <img
+								src="${cpath}/resources/img/popular/img_1.png" alt=""> <img
 								class="img2 img-fluid"
 								src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
 								class="img3 img-fluid"
@@ -194,6 +207,7 @@
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="submit" value="남성형 탈모 분석">
 										</div>
+									</form>
 								</h5>
 								<p>남성형 탈모 분석에 대한 설명</p>
 							</div>
