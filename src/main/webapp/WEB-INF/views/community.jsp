@@ -50,7 +50,16 @@ margin:auto;
 }
 .mb-30{
 text-align:center;
+
 }
+.com-table{
+
+border-left:0px;
+border-right:0px;
+margin:auto;
+}
+
+
 </style>
 </head>
 
@@ -135,26 +144,29 @@ text-align:center;
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="section-top-border">
-			<h2 class="mb-30 title_color">커뮤니티</h2>
-			<div class="progress-table-wrap">
-				<div class="progress-table">
-					<div class="table-head">
-						<div class="country">제목</div>
-						<div class="visit">작성자</div>
-						<div class="percentage" >날짜</div>
-					</div>
-					<c:forEach var="vo2" items="${list}">
-						<div class="table-row">
-							<div class="country">
-								<a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a>
-							</div>
-							<div class="visit">${vo2.id}</div>
-							<div class="percentage">${vo2.day}</div>
-						</div>
-					</c:forEach>
-					<div class="button-group-area mt-10">
-						<form action="${cpath}/community.do" method="post">
-							<input type="text" name="search">
+		<h2 class="mb-30 title_color">
+		<img src="${cpath}/resources/img/com17.png" alt=""></h2><br>
+	<table class="com-table">
+		<tr style="border-bottom:1px solid #edf3fd;color:black; ">
+	      	<td><h6>제목</h6></td>
+			<td style="padding-left:100px;"><h6>작성자</h6></td>
+			<td style="padding-left:100px;"><h6>날짜</h6></td>
+		</tr>
+		<c:forEach var="vo2" items="${list}">
+		<tr>
+			<td><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></td>
+			<td style="padding-left:100px;">${vo2.id}</td>
+			<td style="padding-left:100px;">${vo2.day}</td>
+			<br>
+		</c:forEach>
+		</tr>
+	</table>	
+		<br>
+	
+			
+					<div class="button-group-area mt-10" style="text-align:center;">
+						<form  action="${cpath}/community.do" method="post">
+							<input  type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
 							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
 								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">글쓰기</a>
