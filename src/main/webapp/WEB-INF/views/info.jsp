@@ -148,10 +148,10 @@ text-align: center;
 	<div class="button-group-area mt-40" align="center">
 				<a href="${cpath}/infoList.do" class="genric-btn default circle" target="f1">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="${cpath}/main.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="#" class="genric-btn success-border circle">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="#" class="genric-btn info-border circle">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="#" class="genric-btn warning-border circle">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="#" class="genric-btn danger-border circle">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
 			<iframe id="iframe" align="cneter" name="f1" display="block" vertical-align="bottom" width=650
