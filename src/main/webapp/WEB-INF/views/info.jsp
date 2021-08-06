@@ -162,15 +162,15 @@ text-align: center;
 	
 	<div class="button-group-area mt-40" align="center">
 				<a href="${cpath}/infoList.do" class="genric-btn default circle" target="f1">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/main.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList2.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList3.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList4.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList5.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList6.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
 			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
-					height=300 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
+					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color">탈모 예방법</h1>

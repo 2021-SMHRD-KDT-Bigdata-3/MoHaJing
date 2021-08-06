@@ -255,4 +255,29 @@ public class MoController {
 		return "infoList";
 	}
 
+	@RequestMapping("/infoList2.do")
+	public String infoList2() {
+		return "infoList2";
+	}
+	
+	@RequestMapping("/infoList3.do")
+	public String infoList3() {
+		return "infoList3";
+	}
+	
+	@RequestMapping("/infoList4.do")
+	public String infoList4() {
+		return "infoList4";
+	}
+	
+	@RequestMapping("/infoList5.do")
+	public String infoList5() {
+		return "infoList5";
+	}
+	
+	@RequestMapping("/infoList6.do")
+	public String infoList6() {
+		return "infoList6";
+	}
+
 }

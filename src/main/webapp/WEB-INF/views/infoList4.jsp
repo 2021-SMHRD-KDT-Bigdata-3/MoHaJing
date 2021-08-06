@@ -60,13 +60,11 @@ text-align: center;
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">남성형 탈모</h3>
+			<h3 class="text-heading title_color">휴지기 탈모</h3>
 			<p class="sample-text">
-				<span><b>유전적 소인</b>(우성유전) 때문에 발생하며, 증상은 20대 후반에서 30대 남자의 
-				 <b>양측 전두부</b> 및 <b>두정부</b>에 탈모가 시작되어 점차 확대되며 개인에 따라 어느 정도의 차이는 있으나
-				 전두부나 두정부의 모발이 <b>소실</b>되지만, 측두부나 후두부의 모발은 <b>빠지지 않고 남아 있는 것</b>이 보통이다. 
-				 탈모 부위에 <b>처음</b>에는 가늘고 약한 모발이 나오다가 결국에는 소실되며, <b>솜털</b>은 계속 자란다. 
-				 <b>여성</b>에서도 남성형 탈모증이 생길 수 있다.</span>
+				<span>장티푸스와 같은 <b>병</b>이나 <b>항암제</b> 등 <b>약물복용</b>으로 인하여 퇴행기를 거치지 않고 성장기에서 
+				바로 <b>휴지기</b>로 넘어가는 형태로서, 특정 부위가 아닌 <b>전체적</b>으로 머릿수가 감소하는 형태를 말한다. 
+				<b>휴지기 탈모</b>에는 산후, 출생 후, 열병 후, 약물성 휴지기 탈모 등이 있다.</span>
 			</p>
 		</div>
 	</section>

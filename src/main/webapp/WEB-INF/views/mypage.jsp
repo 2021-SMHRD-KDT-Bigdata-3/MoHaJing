@@ -165,8 +165,7 @@
 	
 	</table><br>
 	
-                        
-                            <div class="form-group form-check " align=" center";>
+    						<div class="form-group form-check" align="center">
                             <h4 class="check-align">✔ 체크리스트</h4>
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
@@ -202,7 +201,6 @@
 								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
-                            
                             </div>
                             <button type="submit" class="main_btn">
                                	정보수정하기
