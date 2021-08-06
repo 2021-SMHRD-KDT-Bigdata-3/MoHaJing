@@ -137,38 +137,36 @@
 	<!--================ Start banner section =================-->
 	
 	<div class="comment-form">
-                       <h1 class="my-title">myPage</h1><br><br>
+                       <h1 class="my-title">
+					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
 	
 	
 	<table class="mypageinfo">
 	<tr>
 	<td>아이디</td>
-	<td><input  type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
+	<td><input type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'"></td>
 	</tr>
 	<tr>
 	<td>패스워드</td>
-	<td><input  type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+	<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
 	</tr>
 	<tr>
 	<td>이름</td>
-	<td><input 
- type="text" value=" ${vo.name}"  placeholder="${vo.name}" class=""
-                                	 name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
+	<td> ${vo.name}</td>
 	</tr>
 	<tr>
 	<td>나이</td>
-	<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
-                                         onblur="this.placeholder = ''"></td>
+	<td>${vo.age}</td>
 	</tr>
 	<tr>
 	<td>성별</td>
 	<td>${vo.gender}</td>
 	</tr>
 	
-	</table>
+	</table><br>
 	
                         
                             <div class="form-group form-check " align=" center";>
