@@ -31,16 +31,18 @@
 	<script type="text/javascript">
 	function getJson(){
 		$.ajax({
-			url: "${cpath}/infoList.do",
+			url: "${cpath}/info.do",
 			type :"get",
 			dataType: "html",
-			success: function(result){
-				$("#ajax").html(result);
-				alert("통신 데이터 값 : " + result);
-			},
+			success: resultHtml,
 			error : function(){
 				alert("error");}
 		});
+	}
+	function resultHtml(data){
+		var result = "<iframe id='iframe' name='f1'>";
+		result+="</iframe>"
+		${"#ajax"}.html(result);
 	}
 	
 	
@@ -51,6 +53,19 @@ text-align: center;
 }
 .lnr-arrow-right:before {
 	content: "";
+}
+#iframe {
+	display: block;
+	vertical-align: bottom;
+	vertical-align: bottom;
+	width: 650; 
+	height: 300;
+	scrolling: no; 
+	frameborder: 0; 
+	framespacing: 0; 
+	marginheight: 0; 
+	marginwidth: 0;
+	vspace: 0;
 }
 	</style>
 	
@@ -154,9 +169,8 @@ text-align: center;
 				<a href="${cpath}/infoList.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="cneter" name="f1" display="block" vertical-align="bottom" width=650
+			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
 					height=300 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
-			
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color">탈모 예방법</h1>
