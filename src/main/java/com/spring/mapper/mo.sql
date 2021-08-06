@@ -1,4 +1,4 @@
-select * from mo_comment;
+select * from mo_info;
 
 drop table mo_comment
 
@@ -12,13 +12,14 @@ checknum int(5) not null
 );
 
 CREATE TABLE mo_board(
-no int not null auto_increment,
+no int not null auto_increment primary key,
 id varchar(50),
 title varchar(50) not null,
 content varchar(1000) not null,
 file varchar(100),
-day datetime,
+day datetime
 );
+select * from mo_board;
 
 CREATE TABLE mo_comment(
 no int not null,
@@ -65,6 +66,9 @@ commit;
 insert into mo_member(id, pw, name, gender, age, checknum)
 values("test", "test", "테스트", "여", 20, 5);
 select * from mo_member;
+
+insert into mo_info(category, cause, sign, plan)
+values("test", "test", "test", "test")
 
 
 insert into mo_board(id, title, content, file, day)

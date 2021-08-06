@@ -135,9 +135,7 @@ margin:auto;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn"> <img
-						src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
