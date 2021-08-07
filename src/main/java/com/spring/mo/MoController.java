@@ -38,8 +38,6 @@ import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 import com.spring.mapper.TestVO;
 import com.spring.service.CommentService;
-
-import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -301,7 +299,6 @@ public class MoController {
 		return "flasktest";
 	}
 
-
 	@RequestMapping("/result.do")
 	public String result() {
 		return "result";
@@ -330,7 +327,6 @@ public class MoController {
 	public String infoList6() {
 		return "infoList6";
 	}
-<<<<<<< HEAD
 
 	@RequestMapping("/executionList.do")
 	public String executionList() {
@@ -341,8 +337,6 @@ public class MoController {
 	public String executionList2() {
 		return "executionList2";
 	}
-=======
 	
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 }
