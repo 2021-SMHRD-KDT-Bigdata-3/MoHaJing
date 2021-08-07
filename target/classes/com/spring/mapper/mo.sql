@@ -92,14 +92,19 @@ ALTER TABLE `mo_deep` ADD `no` int FIRST;
 select * from mo_deep;
 
 DROP TABLE mo_deep1;
+
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
 id varchar(50),
-img varchar(100) not null
+img varchar(100) not null,
+result varchar(10),
+percent int,
+category varchar(5),
+date datetime
 );
 
 DELETE TABLE mo_deep1;
 
 select * from mo_deep1;
-ALTER TABLE `mo_deep1` ADD 'result' varchar(10) FIRST;
+ALTER TABLE `mo_deep1` ADD 'percent' int not null;
 select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';

@@ -177,9 +177,10 @@ public class MoController {
 
 	// 분석2 : 파일 업로드하고 진단시작 버튼있는 페이지로 가는거임
 	@RequestMapping("/execution2.do")
-	public String execution2(String id, Model model) {
+	public String execution2(String id, String category, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
 		model.addAttribute("vo", vo);
+		model.addAttribute("category", category);
 		return "execution2";
 	}
 	
