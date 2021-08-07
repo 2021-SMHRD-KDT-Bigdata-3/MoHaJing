@@ -65,7 +65,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
 	<style>
 	.checkList1{
 	border: 1px solid ;
@@ -99,9 +99,9 @@
    </section>
 
 	<!--================ Start banner section =================-->
-	<section class="home-banner-area relative">
-		<div class="container-fluid">
-			<div class="row d-flex align-items-center justify-content-center">
+	<section class="package-search-area">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
 				<div class="contact-form-section">
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
 							<div class="form-group col-md-12">

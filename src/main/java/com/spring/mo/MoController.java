@@ -326,4 +326,13 @@ public class MoController {
 		return "infoList6";
 	}
 
+	@RequestMapping("/executionList.do")
+	public String executionList() {
+		return "executionList";
+	}
+	
+	@RequestMapping("/executionList2.do")
+	public String executionList2() {
+		return "executionList2";
+	}
 }

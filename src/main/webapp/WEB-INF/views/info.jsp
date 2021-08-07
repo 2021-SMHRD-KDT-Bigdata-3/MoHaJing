@@ -168,7 +168,7 @@ text-align: center;
 				<a href="${cpath}/infoList6.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
+			<iframe id="iframe" align="cneter" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=650
 					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
 			<section class="sample-text-area">
 		<div class="container">
