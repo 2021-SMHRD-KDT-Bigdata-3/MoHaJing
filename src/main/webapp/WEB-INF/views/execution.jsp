@@ -28,23 +28,6 @@
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
-	function getJson(){
-		$.ajax({
-			url: "${cpath}/info.do",
-			type :"get",
-			dataType: "html",
-			success: resultHtml,
-			error : function(){
-				alert("error");}
-		});
-	}
-	function resultHtml(data){
-		var result = "<iframe id='iframe' name='f1'>";
-		result+="</iframe>"
-		${"#ajax"}.html(result);
-	}
-	
-	
 	</script>
 	<style>
 .text-heading{
@@ -52,19 +35,6 @@ text-align: center;
 }
 .lnr-arrow-right:before {
 	content: "";
-}
-#iframe {
-	display: block;
-	vertical-align: bottom;
-	vertical-align: bottom;
-	width: 650; 
-	height: 300;
-	scrolling: no; 
-	frameborder: 0; 
-	framespacing: 0; 
-	marginheight: 0; 
-	marginwidth: 0;
-	vspace: 0;
 }
 	</style>
 	
@@ -163,7 +133,7 @@ text-align: center;
 					<div class="single_counter">
 						<div class="info-content">
 							<div class="thumb">
-								<a href="${cpath}/executionList.do" target="f1">
+								<a href="${cpath}/executionList2.do" target="f1">
 									<h4>M자탈모</h4>
 								</a>							
 							</div>
@@ -171,8 +141,9 @@ text-align: center;
 					</div>
 				</div>
 			</div>
-			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
-					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
+			<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650
+					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
+			</iframe>
 		</div>
 	</section>
 	<!-- End Sample Area -->

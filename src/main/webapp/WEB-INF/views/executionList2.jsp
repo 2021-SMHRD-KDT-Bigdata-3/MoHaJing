@@ -41,7 +41,7 @@
  	padding-top: 20px;
   }
   .blog_post h4 {
-    line-height: 36px;
+    line-height: 20px;
     color: #222222;
     font-weight: 600;
     transition: all 0.3s linear; 
@@ -57,17 +57,16 @@
 </head>	
 
 <body>
-	<c:forEach var="vo" items="">
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
 				<img src="${cpath}/resources/img/blog/main-blog/m-blog-1.jpg" alt="">
-					<h4>2021.08.07</h4>
-					<h4>원형탈모</h4>
-					<h4>2단계</h4>
+					<h4>유형</h4>
+					<h4>분석날짜</h4>
+					<h4>결과</h4>
+					<h4>퍼센트</h4>
 			</div>
 		</div>
 	</div>
-	</c:forEach>
 </body>
 </html>
