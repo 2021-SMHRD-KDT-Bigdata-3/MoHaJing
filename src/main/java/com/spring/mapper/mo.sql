@@ -92,3 +92,13 @@ id varchar(50),
 img varchar(100) not null
 );
 
+select * from mo_deep1
+drop TABLE mo_deep1;
+
+create table mo_deep1(
+no int not null auto_increment primary key,
+id varchar(50),
+img varchar(100) not null,
+result varchar(10),
+date datetime
+);
