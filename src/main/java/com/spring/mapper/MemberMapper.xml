@@ -99,15 +99,15 @@
     <select id="deepSelect" parameterType="int" resultType="com.spring.mapper.DeepVO">
         select * from mo_deep where no = #{no}
     </select>
-    
-    <!-- 아이디로 M 딥러닝결과 select
-    <select id="idDeepSelect" resultType="com.spring.mapper.Deep1VO">
-        select * from mo_deep1 where id = #{id} and cetegory = #{category}
-    </select>
-     -->
+
     <!-- 테스트중2 -->
     <select id="fileTest2" parameterType="String" resultType="com.spring.mapper.TestVO">
         select * from mo_test where id = #{id}
+    </select>
+    
+    <!-- 체크박스 select TEST -->
+    <select id="checkSelect" resultType="com.spring.mapper.CheckVO">
+        select * from mo_check
     </select>
     
 </mapper>

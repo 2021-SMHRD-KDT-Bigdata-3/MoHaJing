@@ -154,7 +154,11 @@ margin: auto;
 						
 						<div class="table-row">
 							<div class="country"> ${vo.id}</div>
+<<<<<<< HEAD
 							<div class="visit"><img src="/deep/${deep1.img}" style="width:200px;"/></div>
+=======
+							<div class="visit"><img src="/img/${deep1.img}" /></div>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 							<div class="visit">${deep1.result}</div>
 							<div class="visit">${deep1.no}</div>
 							<div class="visit">${deep1.percent}</div>

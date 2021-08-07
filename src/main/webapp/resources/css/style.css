@@ -1087,7 +1087,7 @@ button:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 25px 20px;
     font-size: 13px;
-    background: #ffffff;
+    background: #f7f7f7;
     border-radius: 0; }
     .contact-form-section .contact-form-area .form-control.placeholder {
       color: #000000 !important; }

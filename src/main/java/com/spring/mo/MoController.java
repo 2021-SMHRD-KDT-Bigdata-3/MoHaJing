@@ -30,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
+import com.spring.mapper.CheckVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
 import com.spring.mapper.DeepVO;
@@ -169,7 +170,9 @@ public class MoController {
 
 	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
-	public String consulting() {
+	public String consulting(String id, Model model) {
+		MemberVO vo = memberMapper.mypage(id);
+		model.addAttribute("vo", vo);
 		return "consulting";
 
 	}
@@ -255,8 +258,9 @@ public class MoController {
 	}
 	
 	@RequestMapping("/check.do")
-	public String check(String id, Model model) {
-		
+	public String check(CheckVO vo, Model model) {
+		CheckVO check = memberMapper.checkSelect();
+		model.addAttribute("result", check);
 		return "loading"; // 체크박스 제대로 표현되는지 확인하는 페이지
 	}
 	
