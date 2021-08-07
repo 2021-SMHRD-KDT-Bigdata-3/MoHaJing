@@ -34,50 +34,10 @@
 			location.href="${cpath}/join.do";
 		}
 	</script>
-	<style>
-		.form-control:focus{
-			border-color : white !important;
-		}
-	</style>
-	
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="${cpath}/resources/img/favicon.png"
-	type="image/png">
-<title>毛어떄</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/linericon/style.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/animate-css/animate.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/popup/magnific-popup.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-<!-- main css -->
-<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-<script>
-	function goJoin() {
-		location.href = "${cpath}/join.do";
-	}
-	function goMain() {
-		location.href = "${cpath}/logmain.do"
-	}
-</script>
 <style>
+	.form-control:focus{
+		border-color : white !important;
+	}
 .class{
 	position: sticky;
 }
@@ -244,7 +204,7 @@
 	</section>-->
 	<!--================ Start banner section =================-->
 
-
+	.
 	<div class="hair" align="center" style="margin-top : 100px;">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="">
 	</div>
