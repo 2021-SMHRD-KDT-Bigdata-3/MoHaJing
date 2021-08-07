@@ -153,6 +153,7 @@
 	box-shadow:120px 0 0 0 rgba(255,255,255,0.2) inset,
 	-120px 0 0 0 rgba(255,255,255,0,2) inset;
 }
+
 </style>
 
 
@@ -231,7 +232,7 @@
 	</div> -->
 	<!--================ End Canvus Menu Area =================-->
 
-	<!-- <section class="top-btn-area">
+	<!-- <section class="top-btn-area" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

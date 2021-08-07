@@ -7,7 +7,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,7 +48,6 @@
      z-index: 1; }
    
    </style>
-=======
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,7 +79,8 @@
   		location.href="${cpath}/main.do";
   	}
 	</script>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
+	
+	
 </head>
 
 <body>
@@ -89,7 +88,7 @@
    <!--================ Canvus Menu Area =================-->
    <!--================ End Canvus Menu Area =================-->
 
-   <section class="top-btn-area">
+   <section class="top-btn-area" >
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
@@ -101,7 +100,6 @@
       </div>
    </section>
 
-<<<<<<< HEAD
    <!--================ Start banner section =================-->
    <section class="home-banner-area relative">
       <div class="container-fluid">
@@ -186,7 +184,7 @@
                      </div>
                   </form>
             </div>
-=======
+
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
@@ -268,7 +266,6 @@
 							</div>
 						</form>
 				</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 
          <div class="col-lg-6 col-md-6 header-left">
                <img  src="${cpath}/resources/img/banner/banner-img.jpg" alt="">

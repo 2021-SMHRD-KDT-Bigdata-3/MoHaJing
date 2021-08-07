@@ -40,6 +40,11 @@ h1{
 text-align: center;
 font-size: 60px;
 }	
+.top-btn-area{
+position:fixed;
+top:0px;
+right:0px;
+}
 </style>
 	
 </head>	
@@ -117,7 +122,7 @@ font-size: 60px;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>

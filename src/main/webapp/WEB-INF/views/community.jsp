@@ -58,7 +58,11 @@ border-left:0px;
 border-right:0px;
 margin:auto;
 }
-
+.logo{
+position:fixed;
+top:50px;
+right:50px;
+}
 
 </style>
 </head>
@@ -134,7 +138,7 @@ margin:auto;
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-12 logo">
 					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
