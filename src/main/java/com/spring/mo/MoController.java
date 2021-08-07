@@ -53,9 +53,7 @@ public class MoController {
 	@RequestMapping("/execution.do")
 	public String execution(String id, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
-		Deep1VO deep = memberMapper.idDeepSelect(id);
 		model.addAttribute("vo", vo); // 회원정보 add
-		model.addAttribute("deep", deep); // 딥러닝 결과 add
 		return "execution";
 	}
 
@@ -337,12 +335,16 @@ public class MoController {
 	}
 
 	@RequestMapping("/executionList.do")
-	public String executionList() {
+	public String executionList(Deep1VO vo, Model model) {
+		List<Deep1VO> list = memberMapper.idDeepSelect(vo);
+		model.addAttribute("list", list);
 		return "executionList";
 	}
 	
 	@RequestMapping("/executionList2.do")
-	public String executionList2() {
+	public String executionList2(Deep1VO vo, Model model) {
+		List<Deep1VO> list = memberMapper.idDeepSelect(vo);
+		model.addAttribute("list", list);
 		return "executionList2";
 	}
 	

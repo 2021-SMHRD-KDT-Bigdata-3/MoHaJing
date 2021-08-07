@@ -57,14 +57,16 @@
 </head>	
 
 <body>
-	<c:forEach var="deep" items="${deep}">
+	<c:forEach var="deep" items="${list}">
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
-				<img src="${cpath}/resources/img/blog/main-blog/m-blog-1.jpg" alt="">
+				<img src="/deep/${deep.img}" />
 					<h4>${deep.date}</h4>
-					<h4>원형탈모</h4>
-					<h4>2단계</h4>
+					<h4>${deep.result}</h4>
+					<h4>${deep.category}</h4>
+					<h4>${deep.percent}</h4>
+					<br/>
 			</div>
 		</div>
 	</div>
