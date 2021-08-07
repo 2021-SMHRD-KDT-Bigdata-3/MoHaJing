@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
-	<input type="file" name="img" value="${deep1.img}">
-	<input type="submit" value="확인"/>
+<h1>여기는 체크박스 제대로 출력되는지 확인하는 곳</h1>
 </body>
 </html>

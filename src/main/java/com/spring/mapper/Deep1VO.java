@@ -14,5 +14,6 @@ public class Deep1VO {
 	private String result;
 	private float percent;
 	private String category;
+	private String date;
 
 }

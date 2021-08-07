@@ -238,6 +238,8 @@ background-color: white;
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
 										<div class="form-group col-md-12">
 											<input type="hidden" name="id" value="${vo.id}">
+											<input type="hidden" name="category" value="M">
+											<input class="form-control" type="submit" style="border:0 solid black" value="M자 탈모 분석">
 											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>
@@ -262,6 +264,8 @@ background-color: white;
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
 										<div class="form-group col-md-12">
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
+											<input class="form-control" type="hidden" name="category" value="O">
+											<input class="form-control" type="submit" style="border:0 solid black" value="남성형 탈모 분석">
 											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>

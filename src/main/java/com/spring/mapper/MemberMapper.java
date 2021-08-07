@@ -3,6 +3,7 @@ package com.spring.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 public interface MemberMapper {
 	
@@ -52,7 +53,8 @@ public interface MemberMapper {
 	public Deep1VO deep1Select(int no);
 	
 	// 아이디로 딥러닝결과 select
-	public Deep1VO idDeepSelect(String id);
+	@Select("select * from mo_deep1 where id = #{id} and category = #{category}")
+	public List<Deep1VO> idDeepSelect(Deep1VO vo);
 	
 	// 딥러닝결과 insert
 	public void deepInsert(DeepVO vo);
@@ -63,4 +65,6 @@ public interface MemberMapper {
 	// 테스트중2
 	public TestVO fileTest2(String id);
 	
+	// 아이디로 체크박스 select
+	public CheckVO checkSelect(String id);
 }
