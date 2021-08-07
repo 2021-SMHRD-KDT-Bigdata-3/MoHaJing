@@ -57,12 +57,12 @@
 </head>	
 
 <body>
-	<c:forEach var="vo" items="">
+	<c:forEach var="deep" items="${deep}">
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
 				<img src="${cpath}/resources/img/blog/main-blog/m-blog-1.jpg" alt="">
-					<h4>2021.08.07</h4>
+					<h4>${deep.date}</h4>
 					<h4>원형탈모</h4>
 					<h4>2단계</h4>
 			</div>
