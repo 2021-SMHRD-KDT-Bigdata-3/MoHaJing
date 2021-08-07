@@ -7,99 +7,88 @@
 <html lang="en">
 
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="${cpath}/resources/img/favicon.png"
-	type="image/png">
-<title>毛어떄</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/linericon/style.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/animate-css/animate.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/popup/magnific-popup.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
-<link rel="stylesheet"
-	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-<!-- main css -->
-<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-<script type="text/javascript">
-	function goMain() {
-		location.href = "${cpath}/logmain.do"
-	}
-</script>
-
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
+	<title>毛어떄</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	
 <style>
-.row d-flex {
-background-color: white;
-}
+ .row,.title_color{
+	max-width:80%;
+	margin : auto;
+	
+ }
+
 </style>
+	
+</head>	
 </head>
 
 <body>
-	
-<!--================ Offcanvus Menu Area =================-->
+
+	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li>
-						<form action="${cpath}/logmain.do" method="post">
+				<li><a href="${cpath}/logmain.do">
+						<form action="logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</li>
-				<li>
-						<form action="${cpath}/execution.do" method="post">
+				</a></li>
+				<li><a href="${cpath}/execution.do">
+						<form action="execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</li>
-				<li>
-						<form action="${cpath}/community.do" method="post">
+				</a></li>
+				<li><a href="${cpath}/community.do">
+						<form action="community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</li>
-				<li>
+				</a></li>
+				<li><a href="${cpath}/consulting.do">
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</li>
-				<li>
-						<form action="${cpath}/info.do" method="post">
+				</a></li>
+				<li><a href="${cpath}/info.do">
+						<form action="info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</li>
-				<li>
+				</a></li>
+				<li><a href="${cpath}/mypage.do">
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</li>
-				<li>
-					<form action="${cpath}/main.do" method="post">
+				</a></li>
+				<li><a href="${cpath}/main.do">
+					<form action="main.do" method="post">
 						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
-				</li>
+				</a></li>
 			</ul>
 		</div>
 	</div>
@@ -125,88 +114,48 @@ background-color: white;
 		</div>
 	</section>
 
-
 	<!--================ Start banner section =================-->
-	<section class="home-banner-area relative">
+	<section class="popular-place-area section_gap">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-			</div>
-		</div>
-	</section>
-	<!--================ End banner section =================-->
-
-	<!--================ Start Popular Place Area =================-->
-	<section class="amenities-area section_gap">
-		<div class="popular-place-area section_gap">
-			<div class="container">
-				<div class="row align-items-center justify-content-center">
-					<div class="col-lg-5 offset-lg-1">
-						<div class="left-content">
-							<img class="img1 img-fluid" src="${cpath}/img/popular/img_1.png"
-								alt=""> <img class="img2 img-fluid"
-								src="${cpath}/img/popular/img2.jpg" alt=""> <img
-								class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg"
-								alt=""> <img class="img1 img-fluid"
-								src="${cpath}/resources/img/popular/img_1.png" alt=""> <img
-								class="img2 img-fluid"
-								src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
-								class="img3 img-fluid"
-								src="${cpath}/resources/img/popular/img3.jpg" alt="">
-						</div>
+				<div class="header-right col-lg-6 col-md-6">
+					<h1>
+					진단 기록 관리
+					</h1>
+					<div class="counter_area">
+							<div class="top-two">
+					<!-- single counter -->
+								<div class="single_counter">
+									<div class="thumb">
+									</div>
+									<div class="info-content">
+										<h4><a href="${cpath}/executionList.do" target="f1">원형탈모</a></h4>
+									</div>
+								</div>
+								<div class="single_counter">
+									<div class="thumb">
+										<img src="img/popular/icon1.png" alt="">
+									</div>
+									<div class="info-content">
+										<h4>M자탈모</h4>
+									</div>
+								</div>
+							</div>
 					</div>
+					<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650
+					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
+				</div>
 
-					<!-- 사진촬영 클릭하면 사진촬영 페이지로 넘어가야 함 -->
-
-					<!-- single-blog -->
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities">
-							<div class="amenities-thumb">
-								<img class="img-fluid" src="${cpath}/resources/img/ame1.jpg" alt="">
-							</div>
-							<div class="amenities-details">
-								<div class="amenities-meta"></div>
-								<h5>
-									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
-											<input type="hidden" name="id" value="${vo.id}">
-											<input class="form-control" type="submit" style="border:0 solid black" value="M자 탈모 분석">
-										</div>
-									</form>
-								</h5>
-								<p align="center"><b>M자 탈모</b> 분석에 대한 설명</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- 앨범에서 가져오기 클릭하면 앨범에서 카져오기 페이지로 넘어갸야 함 -->
-
-					<!-- single-blog -->
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities">
-							<div class="amenities-thumb">
-								<img class="img-fluid" src="${cpath}/resources/img/ame2.jpg" alt="">
-							</div>
-							<div class="amenities-details">
-								<div class="amenities-meta"></div>
-								<h5>
-									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
-											<input class="form-control" type="hidden" name="id" value="${vo.id}">
-											<input class="form-control" type="submit" style="border:0 solid black" value="남성형 탈모 분석">
-										</div>
-									</form>
-								</h5>
-								<p align="center"><b>남성형 탈모</b> 분석에 대한 설명</p>
-							</div>
-						</div>
+				<div class="col-lg-6 col-md-6 header-left">
+					<div class="">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End Popular Place Area =================-->
-
-	<!--================ start footer Area  =================-->
+	<!--================ End banner section =================-->
+	
+<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
@@ -272,22 +221,14 @@ background-color: white;
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instafeed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="${cpath}/resources/img/instagram/i1.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i2.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i3.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i4.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i5.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i6.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i7.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i8.jpg"
-								alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i1.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i2.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i3.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i4.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i5.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i6.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i7.jpg" alt=""></li>
+							<li><img src="${cpath}/resources/img/instagram/i8.jpg" alt=""></li>
 						</ul>
 					</div>
 				</div>
@@ -329,21 +270,16 @@ background-color: white;
 	<script src="${cpath}/resources/js/popper.js"></script>
 	<script src="${cpath}/resources/js/bootstrap.min.js"></script>
 	<script src="${cpath}/resources/js/stellar.js"></script>
-	<script
-		src="${cpath}/resources/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script
-		src="${cpath}/resources/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="${cpath}/resources/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="${cpath}/resources/vendors/isotope/imagesloaded.pkgd.min.js"></script>
 	<script src="${cpath}/resources/vendors/isotope/isotope-min.js"></script>
-	<script
-		src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="${cpath}/resources/vendors/jquery-ui/jquery-ui.js"></script>
 	<script src="${cpath}/resources/js/jquery.ajaxchimp.min.js"></script>
 	<script src="${cpath}/resources/js/mail-script.js"></script>
-	<script
-		src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
+	<script src="${cpath}/resources/vendors/popup/jquery.magnific-popup.min.js"></script>
 	<script src="${cpath}/resources/vendors/swiper/js/swiper.min.js"></script>
-	<script
-		src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
+	<script src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
 </body>
 

@@ -38,8 +38,6 @@ import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 import com.spring.mapper.TestVO;
 import com.spring.service.CommentService;
-
-import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -309,7 +307,6 @@ public class MoController {
 		return "flasktest";
 	}
 
-
 	@RequestMapping("/result.do")
 	public String result() {
 		return "result";
@@ -339,5 +336,15 @@ public class MoController {
 		return "infoList6";
 	}
 
+	@RequestMapping("/executionList.do")
+	public String executionList() {
+		return "executionList";
+	}
+	
+	@RequestMapping("/executionList2.do")
+	public String executionList2() {
+		return "executionList2";
+	}
+	
 
 }

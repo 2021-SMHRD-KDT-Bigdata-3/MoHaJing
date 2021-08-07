@@ -133,7 +133,7 @@
 
 	<!--================ Start banner section =================-->
 	
-	<div class="comment-form">
+	<div class="comment-form" align="center">
                        <h1 class="my-title">
 					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
