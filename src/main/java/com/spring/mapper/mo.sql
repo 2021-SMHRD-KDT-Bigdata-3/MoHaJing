@@ -91,27 +91,15 @@ select * from mo_board where title like '%test%' or content like '%test%';
 ALTER TABLE `mo_deep` ADD `no` int FIRST;
 select * from mo_deep;
 
-DROP TABLE mo_deep1;
 
-CREATE TABLE mo_deep1 (
-no int not null auto_increment primary key,
-id varchar(50),
-img varchar(100) not null,
-result varchar(10),
-percent float,
-category varchar(5),
-date datetime
-);
 
 DROP TABLE mo_deep1;
 
-CREATE TABLE mo_deep1 (
-no int not null auto_increment primary key,
-id varchar(50),
-img varchar(100) not null,
-result varchar(10),
-date datetime
-);
+select * from mo_deep1
+drop TABLE mo_deep1;
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
+
+
 
 DROP TABLE mo_deep1;
 
@@ -146,6 +134,7 @@ no7 int,
 no8 int,
 no9 int,
 no10 int
+
 
 DROP TABLE mo_deep1;
 
