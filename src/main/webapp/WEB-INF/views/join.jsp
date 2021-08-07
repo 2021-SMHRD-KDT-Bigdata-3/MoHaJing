@@ -65,7 +65,7 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
 	<style>
 	.checkList1{
 	border: 1px solid ;
