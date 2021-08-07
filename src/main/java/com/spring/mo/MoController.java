@@ -53,7 +53,11 @@ public class MoController {
 	private MemberMapper memberMapper;
 
 	@RequestMapping("/execution.do")
-	public String execution() {
+	public String execution(String id, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		Deep1VO deep = memberMapper.idDeepSelect(id);
+		model.addAttribute("vo", vo); // 회원정보 add
+		model.addAttribute("deep", deep); // 딥러닝 결과 add
 		return "execution";
 	}
 
@@ -326,5 +330,6 @@ public class MoController {
 	public String infoList6() {
 		return "infoList6";
 	}
+	
 
 }
