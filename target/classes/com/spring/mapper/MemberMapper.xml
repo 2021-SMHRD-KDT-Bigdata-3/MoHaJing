@@ -97,7 +97,12 @@
     
     <!-- 딥러닝결과 select -->
     <select id="deepSelect" parameterType="int" resultType="com.spring.mapper.DeepVO">
-        select * from mo_depp where no = #{no}
+        select * from mo_deep where no = #{no}
+    </select>
+    
+    <!-- 아이디로 딥러닝결과 select -->
+    <select id="idDeepSelect" parameterType="String" resultType="com.spring.mapper.Deep1VO">
+        select * from mo_deep1 where id = #{id}
     </select>
     
     <!-- 테스트중2 -->

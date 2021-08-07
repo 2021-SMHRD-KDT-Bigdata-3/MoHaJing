@@ -73,7 +73,7 @@ text-align: center;
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">

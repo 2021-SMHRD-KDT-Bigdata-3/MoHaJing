@@ -54,7 +54,13 @@
 		}
 	}
 </script>
-
+           <script>
+            $(function(){
+                $('#camera').change(function(e){
+                    $('#pic').attr('src', URL.createObjectURL(e.target.files[0]));
+                });
+            });
+        </script>
 </head>
 </head>
 
@@ -147,7 +153,7 @@
 				</div>
 				<div class="button-group-area mt-40">
 						<!-- <input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" /> -->
-						<input type='file' onchange="readURL(this);" name="img" class="genric-btn disable circle" />
+						<input type='file' onchange="readURL(this);" capture="camera" name="img" class="genric-btn disable circle" accept="image/*" id="camera"/>
 				</div>
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
@@ -166,6 +172,7 @@
 		<div class="container">
 		<input type="hidden" name="id"
 				value="${vo.id}">
+			<input type="hidden" name="category" value="${category}">
 			<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
 				value="진단시작">  -->
 			<input type="submit" value="확인"/>
