@@ -226,7 +226,7 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities" style="height:460px; margin-top:20px;">
+						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/m_start.gif" alt="">
 							</div>
@@ -252,7 +252,7 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities" style="height:410px;">
+						<div class="single-amenities" style="height:80%;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/o_start.gif" alt="">
 							</div>

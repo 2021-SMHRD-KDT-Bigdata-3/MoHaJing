@@ -136,7 +136,15 @@ margin: auto;
 					<img src="${cpath}/resources/img/success.gif" alt="" style="max-height: initial; margin-top: -20%;">
 				</div>
 			<br><br>
+						 <div class="result_tb" align="center" style="margin-top: -10%;">
+						 	<table>
+						 		<tr style="border-bottom-style: outset; border-width:1px; border-color: lightgrey;"><img src="/deep/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
+						 		<tr><th style="font-size: 20px;">${deep1.id}님의 머리상태는...</th></tr>
+						 		<tr><td style="text-align=center;">${deep1.result}입니다!</td></tr>
+						 	</table><br><br><br>
+						 </div>
 						 
+						 <!--  
 						 <div class="progress-table" style="margin-top: -20%;">
 						<div class="table-head">
 							<div class="country"><h5>개선할점</h5></div>
@@ -146,15 +154,16 @@ margin: auto;
 						
 						<div class="table-row">
 							<div class="country"> ${vo.id}</div>
-							<div class="visit"><img src="/deep/${deep1.img}" /></div>
+							<div class="visit"><img src="/deep/${deep1.img}" style="width:200px;"/></div>
 							<div class="visit">${deep1.result}</div>
 							<div class="visit">${deep1.no}</div>
 							<div class="visit">${deep1.percent}</div>
 							<div class="visit">${deep1.category}</div>
 						</div>
 						
+						
 						</div>
-						 
+						 -->
 				<a  border="1px soild white" class="btn_result" href="index.html">저장하기</a><br>
 				<a  border="1px soild white"  class="btn_result" href="elements.html">다시 진단하기</a>
 						
