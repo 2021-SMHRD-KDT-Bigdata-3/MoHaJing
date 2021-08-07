@@ -124,7 +124,7 @@ text-align: center;
 					<div class="single_counter">
 						<div class="info-content">
 							<div class="thumb">
-								<a href="${cpath}/executionList.do" target="f1">
+								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" target="f1">
 									<h4>원형탈모</h4>
 								</a>
 							</div>
@@ -133,7 +133,7 @@ text-align: center;
 					<div class="single_counter">
 						<div class="info-content">
 							<div class="thumb">
-								<a href="${cpath}/executionList2.do" target="f1">
+								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" target="f1">
 									<h4>M자탈모</h4>
 								</a>							
 							</div>

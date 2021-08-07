@@ -93,9 +93,11 @@ select * from mo_deep;
 
 
 
+DROP TABLE mo_deep1;
 
 select * from mo_deep1
 drop TABLE mo_deep1;
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 
 
 
@@ -113,6 +115,25 @@ date datetime
 ALTER TABLE user mo_deep1 percent float
 
 DELETE TABLE mo_deep1;
+
+select * from mo_deep1;
+ALTER TABLE `mo_deep1` ADD 'percent' int not null;
+select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
+show tables;
+show full columns from mo_recommand;
+
+create table mo_check(
+id varchar(50),
+no1 int not null,
+no2 int,
+no3 int,
+no4 int,
+no5 int,
+no6 int,
+no7 int,
+no8 int,
+no9 int,
+no10 int
 
 
 DROP TABLE mo_deep1;

@@ -57,16 +57,19 @@
 </head>	
 
 <body>
+	<c:forEach var="deep" items="${list}">
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
-				<img src="${cpath}/resources/img/blog/main-blog/m-blog-1.jpg" alt="">
-					<h4>유형</h4>
-					<h4>분석날짜</h4>
-					<h4>결과</h4>
-					<h4>퍼센트</h4>
+				<img src="/deep/${deep.img}" />
+					<h4>${deep.date}</h4>
+					<h4>${deep.result}</h4>
+					<h4>${deep.category}</h4>
+					<h4>${deep.percent}</h4>
+					<br/>
 			</div>
 		</div>
 	</div>
+	</c:forEach>
 </body>
 </html>
