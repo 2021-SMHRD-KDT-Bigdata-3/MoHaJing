@@ -25,75 +25,107 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	function getJson(){
+		$.ajax({
+			url: "${cpath}/info.do",
+			type :"get",
+			dataType: "html",
+			success: resultHtml,
+			error : function(){
+				alert("error");}
+		});
+	}
+	function resultHtml(data){
+		var result = "<iframe id='iframe' name='f1'>";
+		result+="</iframe>"
+		${"#ajax"}.html(result);
+	}
 	
-<style>
- .row,.title_color{
-	max-width:80%;
-	margin : auto;
 	
- }
-
-</style>
+	</script>
+	<style>
+.text-heading{
+text-align: center;
+}
+.lnr-arrow-right:before {
+	content: "";
+}
+#iframe {
+	display: block;
+	vertical-align: bottom;
+	vertical-align: bottom;
+	width: 650; 
+	height: 300;
+	scrolling: no; 
+	frameborder: 0; 
+	framespacing: 0; 
+	marginheight: 0; 
+	marginwidth: 0;
+	vspace: 0;
+}
+	</style>
 	
-</head>	
 </head>
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</a></li>
-				<li><a href="execution.do">
-						<form action="execution.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
-
-<!--================ Canvus Menu Area =================-->
+	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
 			<div class="toggle_icon" title="Menu Bar">
@@ -107,121 +139,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	
-	<!--================ Start banner section =================-->
-	<section class="home-banner-area common-banner relative">
-		<div class="container-fluid">
-			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
-					<h1>
-						
-					Take Pictures
-					</h1>
-					<p class="pt-20">
-						We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to day also
-						asks us to remain physically young. Young at heart.
-					</p>
-					<div class="page-link-wrap">
-						<div class="page_link">
-							<a href="index.html">New</a>
-							<a href="elements.html">Image</a>
-						</div>
-						<img src="img/next.png" alt="">
-					</div>
-				</div>
 
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End banner section =================-->
-
-
-	<!-- Start Sample Area -->
+ <!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">사진 촬영 가이드</h3>
-			<p class="sample-text">
-				Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short
-				film
-				to show off their creative prowess. Many have great ideas and want to “wow” the<sup>Superscript</sup> scene, or
-				video
-				renters with their big project. But once you have the<sub>Subscript</sub> “in the can” (no easy feat), how do you
-				move
-				from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked hand-written title inside a
-				secondhand
-				CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting
-				on
-				your doorstep? You need to create eye-popping artwork and have your project replicated. Using a reputable full
-				service
-				DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a
-				professional
-				end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication
-				results:
-
-			</p>
+			<h1 class="text-heading title_color">진단 기록 관리</h1>
+			<div class="counter_area" align="center">
+				<div class="top-two">
+					<div class="single_counter">
+						<div class="info-content">
+							<div class="thumb">
+								<a href="${cpath}/executionList.do" target="f1">
+									<h4>원형탈모</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="single_counter">
+						<div class="info-content">
+							<div class="thumb">
+								<a href="${cpath}/executionList.do" target="f1">
+									<h4>M자탈모</h4>
+								</a>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
+					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
 		</div>
 	</section>
 	<!-- End Sample Area -->
 	
-	<div class="section-top-border">
-				<h3 class="title_color">Image Gallery</h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g1.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g3.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="${cpath}/resources/img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g4.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="${cpath}/resources/img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="${cpath}/resources/img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(${cpath}/resources/img/elements/g8.jpg);"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-	
-	
-<!--================ start footer Area  =================-->
+	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
@@ -350,3 +306,8 @@
 </body>
 
 </html>
+ 
+ 
+</body>
+</html>
+

@@ -53,7 +53,9 @@ date datetime,
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
 id varchar(50),
-img varchar(100) not null
+img varchar(100) not null,
+result varchar(10),
+date datetime
 );
 
 insert into mo_deep1(id, img)
@@ -86,12 +88,22 @@ alter table mo_board drop foreign key mo_board_ibfk_1;
 select * from mo_board;
 select * from mo_board where title like '%test%' or content like '%test%';
 
+ALTER TABLE `mo_deep` ADD `no` int FIRST;
+select * from mo_deep;
+
+DROP TABLE mo_deep1;
+
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
 id varchar(50),
-img varchar(100) not null
+img varchar(100) not null,
+result varchar(10),
+percent float,
+category varchar(5),
+date datetime
 );
 
+<<<<<<< HEAD
 DROP TABLE mo_deep1;
 
 CREATE TABLE mo_deep1 (
@@ -113,6 +125,15 @@ percent int,
 category varchar(5),
 date datetime
 );
+=======
+ALTER TABLE user mo_deep1 percent float
+
+DELETE TABLE mo_deep1;
+
+select * from mo_deep1;
+ALTER TABLE `mo_deep1` ADD 'percent' int not null;
+select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 
 DROP TABLE mo_deep1;
 

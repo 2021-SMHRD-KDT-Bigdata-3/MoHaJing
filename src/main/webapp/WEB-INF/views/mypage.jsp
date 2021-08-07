@@ -60,57 +60,55 @@
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</a></li>
-				<li><a href="execution.do">
-						<form action="execution.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</a></li>
+				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</a></li>
+				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do">
-					<form action="main.do" method="post">
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
 						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
-				</a></li>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -130,8 +128,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -139,7 +136,7 @@
 
 	<!--================ Start banner section =================-->
 	
-	<div class="comment-form">
+	<div class="comment-form" align="center">
                        <h1 class="my-title">
 					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
@@ -172,6 +169,7 @@
 	</table><br>
 	
                         
+    						<div class="form-group form-check" align="center">
                             <h4 class="check-align">✔ 체크리스트</h4>
                             <div class="form-group form-check " align=" center";>
                             <div class="switch-wrap d-flex justify-content-between ">
@@ -210,6 +208,7 @@
 							</div>
                             
                             </div><br>
+                            </div>
                             <button type="submit" class="main_btn">
                                	정보수정하기
                             </button>

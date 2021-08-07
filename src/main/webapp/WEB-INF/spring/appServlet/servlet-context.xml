@@ -20,6 +20,8 @@
 	
 	<!-- 외부폴더 이미지 불러오기 테스트 -->
 	<resources mapping="/img/**" location="file:///C:/upload/" />
+	<resources mapping="/deep/**" location="file:///C:/Users/smhrd/Desktop/3차프로젝트/딥러닝/baldness_test/" />
+	
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
 		in the /WEB-INF/views directory -->

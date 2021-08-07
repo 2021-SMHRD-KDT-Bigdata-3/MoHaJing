@@ -32,13 +32,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.spring.mapper.BoardVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
+import com.spring.mapper.DeepVO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 import com.spring.mapper.TestVO;
 import com.spring.service.CommentService;
-
-import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -52,7 +51,11 @@ public class MoController {
 	private MemberMapper memberMapper;
 
 	@RequestMapping("/execution.do")
-	public String execution() {
+	public String execution(String id, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		Deep1VO deep = memberMapper.idDeepSelect(id);
+		model.addAttribute("vo", vo); // 회원정보 add
+		model.addAttribute("deep", deep); // 딥러닝 결과 add
 		return "execution";
 	}
 
@@ -142,7 +145,8 @@ public class MoController {
 	// 게시글 입력 페이지 보기
 	@RequestMapping("/writeBoard.do")
 	public String writeBoard(String id, Model model) {
-		model.addAttribute("id", id); // 현재 로그인한 아이디
+		MemberVO vo = memberMapper.logmain(id);
+		model.addAttribute("vo", vo);
 		return "writeBoard";
 	}
 
@@ -175,9 +179,10 @@ public class MoController {
 
 	// 분석2 : 파일 업로드하고 진단시작 버튼있는 페이지로 가는거임
 	@RequestMapping("/execution2.do")
-	public String execution2(String id, Model model) {
+	public String execution2(String id, String category, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
 		model.addAttribute("vo", vo);
+		model.addAttribute("category", category);
 		return "execution2";
 	}
 	
@@ -190,7 +195,7 @@ public class MoController {
 		return "result";
 	}
 	*/
-
+	/*
 	// 진단용 이미지 업로드 넘어가는 페이지
 	@RequestMapping("/deep1.do")
 	public String deep1(Deep1VO deep1, Model model) throws IOException {
@@ -208,8 +213,40 @@ public class MoController {
 		memberMapper.deep1(deep1); // 사용자 아이디, 이미지 insert
 		Deep1VO deep1Result = memberMapper.deep1Select(deep1); // 사용자 아이디, 이미지, 시퀀스 select
 		model.addAttribute("deep1", deep1Result);
+		return "result2";
+	}*/
+	
+	@RequestMapping("/deep1.do")
+	public String deep1(String no, Model model) {
+		System.out.println(no);
+		int num = Integer.parseInt(no);
+		Deep1VO deep1 = memberMapper.deep1Select(num); // 딥러닝 분석 결과
+		MemberVO vo = memberMapper.logmain(deep1.getId()); // 회원정보
+		model.addAttribute("deep1", deep1);
+		model.addAttribute("vo", vo);
+		return "result2";
+	}
+	
+	
+	/*
+	// loading.jsp --> result.jsp 이동할거임
+	@RequestMapping("/result.jsp")
+	public String result(Deep1VO deep1, String category, String step, float percent, Model model) {
+		DeepVO deep = null;
+		deep.setNo(deep1.getNo());
+		deep.setId(deep1.getId());
+		deep.setImg(deep1.getImg());
+		deep.setCategory(category);
+		deep.setStep(step);
+		deep.setPercent(percent);
+		memberMapper.deepInsert(deep); // 고유번호, 아이디, 이미지이름, 탈모유형, 탈모단계, 확률 insert
+		DeepVO deepResult = memberMapper.deepSelect(deep1.getNo()); // 고유번호로 결과 select (이게 사용자에게 뿌려줄 결과)
+		MemberVO vo = memberMapper.logmain(deep1.getId()); // 로그인한 사용자 정보
+		model.addAttribute("vo", vo);
+		model.addAttribute("result", deepResult);
 		return "result";
 	}
+	*/
 	
 	// 이미지 띄우기 테스트중
 	@RequestMapping("/fileTest2.do")
@@ -254,5 +291,52 @@ public class MoController {
 	public String infoList() {
 		return "infoList";
 	}
+
+	// 플라스크 테스트
+	@RequestMapping("/flaskget.do")
+	public String flasktest(String id, Model model) {
+		model.addAttribute("id", id);
+		return "flasktest";
+	}
+
+	@RequestMapping("/result.do")
+	public String result() {
+		return "result";
+	}	
+	@RequestMapping("/infoList2.do")
+	public String infoList2() {
+		return "infoList2";
+	}
+	
+	@RequestMapping("/infoList3.do")
+	public String infoList3() {
+		return "infoList3";
+	}
+	
+	@RequestMapping("/infoList4.do")
+	public String infoList4() {
+		return "infoList4";
+	}
+	
+	@RequestMapping("/infoList5.do")
+	public String infoList5() {
+		return "infoList5";
+	}
+	
+	@RequestMapping("/infoList6.do")
+	public String infoList6() {
+		return "infoList6";
+	}
+
+	@RequestMapping("/executionList.do")
+	public String executionList() {
+		return "executionList";
+	}
+	
+	@RequestMapping("/executionList2.do")
+	public String executionList2() {
+		return "executionList2";
+	}
+	
 
 }
