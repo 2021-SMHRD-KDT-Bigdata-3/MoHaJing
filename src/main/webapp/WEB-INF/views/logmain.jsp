@@ -36,6 +36,10 @@
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
 <script type="text/javascript">
 	function goMain() {
 		location.href = "${cpath}/logmain.do"
@@ -45,6 +49,69 @@
 <style>
 .row d-flex {
 background-color: white;
+}
+
+.gif_div{
+	max-width: 400px;
+	max-hieght: 300px;
+	overflow: hidden;
+}
+
+.gif_div img{
+	max-width: initial;
+	margin-left: -10%;
+	margin-top: -30%;
+}
+
+.exp{
+	font-family: 'Gowun Dodum', sans-serif;
+	font-size: 17px
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
 }
 </style>
 </head>
@@ -122,7 +189,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px;">
 				</div>
 			</div>
 		</div>
@@ -138,7 +205,7 @@ background-color: white;
 	<!--================ End banner section =================-->
 
 	<!--================ Start Popular Place Area =================-->
-	<section class="amenities-area section_gap">
+	<section class="amenities-area section_gap" style="margin-top:-100px;">
 		<div class="popular-place-area section_gap">
 			<div class="container">
 				<div class="row align-items-center justify-content-center">
@@ -161,21 +228,23 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities">
-							<div class="amenities-thumb">
-								<img class="img-fluid" src="${cpath}/resources/img/ame1.jpg" alt="">
+						<div class="single-amenities" style="height:430px; margin-top:20px;">
+							<div class="gif_div">
+								<img class="gif_css" src="${cpath}/resources/img/m_start.gif" alt="">
 							</div>
-							<div class="amenities-details">
+							<div class="amenities-details" style="margin-top:-30%;">
 								<div class="amenities-meta"></div>
+								<p class="exp">정면에서 봤을 때 머리카락과 이마가 맞닿은 경계선이 M자 모양으로 변한 상태입니다. 양쪽 관자놀이의 머리카락 경계선이 뒤로 밀려나면서 탈모가 진행된다는 특징이 있습니다.
+								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
 										<div class="form-group col-md-12">
 											<input type="hidden" name="id" value="${vo.id}">
-											<input class="form-control" type="submit" value="M자 탈모 분석">
+											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
-								<p>M자 탈모 분석에 대한 설명</p>
+								
 							</div>
 						</div>
 					</div>
@@ -184,21 +253,23 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities">
-							<div class="amenities-thumb">
-								<img class="img-fluid" src="${cpath}/resources/img/ame2.jpg" alt="">
+						<div class="single-amenities" style="height:400px;">
+							<div class="gif_div">
+								<img class="gif_css" src="${cpath}/resources/img/o_start.gif" alt="">
 							</div>
-							<div class="amenities-details">
+							<div class="amenities-details" style="margin-top: -30%">
 								<div class="amenities-meta"></div>
+								<p class="exp">정해진 곳 없이 정수리, 뒤통수, 옆 통수 등의 부위에서 지름 1~5cm의 원 모양으로 머리카락이 빠지는 증상입니다.
+								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
 										<div class="form-group col-md-12">
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
-											<input class="form-control" type="submit" value="남성형 탈모 분석">
+											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
-								<p>남성형 탈모 분석에 대한 설명</p>
+								
 							</div>
 						</div>
 					</div>
