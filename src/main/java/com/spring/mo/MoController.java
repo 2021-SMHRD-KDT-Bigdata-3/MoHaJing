@@ -250,13 +250,21 @@ public class MoController {
 	}
 	*/
 	
-	// 이미지 띄우기 테스트중
+	
+	// 체크박스 테스트중
+	
 	@RequestMapping("/fileTest2.do")
-	public String fileTest2(String id, Model model) {
-		TestVO vo = memberMapper.fileTest2(id);
-		model.addAttribute("vo", vo);
+	public String fileTest2() {
 		return "fileTest2";
 	}
+	
+	@RequestMapping("/check.do")
+	public String check(String id, Model model) {
+		
+		return "loading"; // 체크박스 제대로 표현되는지 확인하는 페이지
+	}
+	
+	
 
 	// 진단기록화면
 	@RequestMapping("/record.do")
@@ -330,6 +338,6 @@ public class MoController {
 	public String infoList6() {
 		return "infoList6";
 	}
-	
+
 
 }

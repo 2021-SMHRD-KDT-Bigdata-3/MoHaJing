@@ -110,3 +110,19 @@ DELETE TABLE mo_deep1;
 select * from mo_deep1;
 ALTER TABLE `mo_deep1` ADD 'percent' int not null;
 select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
+show tables;
+show full columns from mo_recommand;
+
+create table mo_check(
+id varchar(50),
+no1 int not null,
+no2 int,
+no3 int,
+no4 int,
+no5 int,
+no6 int,
+no7 int,
+no8 int,
+no9 int,
+no10 int
+);

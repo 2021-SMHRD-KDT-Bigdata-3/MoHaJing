@@ -63,4 +63,6 @@ public interface MemberMapper {
 	// 테스트중2
 	public TestVO fileTest2(String id);
 	
+	// 아이디로 체크박스 select
+	public CheckVO checkSelect(String id);
 }

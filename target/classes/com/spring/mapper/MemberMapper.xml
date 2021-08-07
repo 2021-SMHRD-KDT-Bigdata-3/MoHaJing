@@ -110,4 +110,15 @@
         select * from mo_test where id = #{id}
     </select>
     
+    <!-- 아이디와 체크박스 insert -->
+    <insert id="checkInsert">
+        insert into mo_check
+        values = (#{}, #{}, #{}, #{}, #{}, #{}, #{}, #{}, #{}, )
+    </insert>
+    
+    <!-- 아이디로 체크박스 select -->
+    <select id="checkSelect" parameterType="String" resultType="com.spring.mapper.CheckVO">
+        select * from mo_check where id = #{id}
+    </select>
+    
 </mapper>
