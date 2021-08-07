@@ -224,7 +224,7 @@ body {
 	</div>
 	<div class="logo" align="center">
 		<img src="${cpath}/resources/img/logo4.png" alt="">
-	</div>
+	</div><br>
 	
 	<section class="home-banner-area relative" style="background-color: rgba(255, 255, 255, 0.01)">
 		<div class="col-lg-8 col-md-8">

@@ -169,7 +169,9 @@ public class MoController {
 
 	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
-	public String consulting() {
+	public String consulting(String id, Model model) {
+		MemberVO vo = memberMapper.mypage(id);
+		model.addAttribute("vo", vo);
 		return "consulting";
 
 	}
