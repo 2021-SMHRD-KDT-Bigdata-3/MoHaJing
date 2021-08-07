@@ -39,6 +39,7 @@
 	width:400px;
 	padding-top:10px;
 	border-radius:2%;
+	margin:auto;
 	}
 	.name{
 	margin-left:15px;
@@ -50,7 +51,9 @@
 	.mypageinfo{
 	margin:auto;
 	}
+	.check-align{
 	
+	}
 	</style>
 	
 </head>
@@ -142,8 +145,7 @@
 	<table class="mypageinfo">
 	<tr>
 	<td>아이디</td>
-	<td><input type="text" name="id" value="${vo.id}"placeholder=" ${vo.id}"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'"></td>
+	<td>${vo.id}</td>
 	</tr>
 	<tr>
 	<td>패스워드</td>
@@ -156,7 +158,8 @@
 	</tr>
 	<tr>
 	<td>나이</td>
-	<td>${vo.age}</td>
+	<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+                                         onblur="this.placeholder = ''"></td>
 	</tr>
 	<tr>
 	<td>성별</td>
@@ -165,8 +168,10 @@
 	
 	</table><br>
 	
+                        
     						<div class="form-group form-check" align="center">
                             <h4 class="check-align">✔ 체크리스트</h4>
+                            <div class="form-group form-check " align=" center";>
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
@@ -201,6 +206,8 @@
 								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
 							</div>
+                            
+                            </div><br>
                             </div>
                             <button type="submit" class="main_btn">
                                	정보수정하기

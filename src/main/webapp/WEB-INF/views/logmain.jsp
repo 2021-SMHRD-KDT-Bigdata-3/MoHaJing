@@ -46,6 +46,11 @@
 .row d-flex {
 background-color: white;
 }
+.top-btn-area{
+position:fixed;
+top:0px;
+right:0px;
+}
 </style>
 </head>
 
