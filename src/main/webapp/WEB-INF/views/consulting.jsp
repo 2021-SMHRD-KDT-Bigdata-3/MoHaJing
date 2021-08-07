@@ -43,7 +43,7 @@
 	padding:5px;
  }
 .btn-reply:hover{
-	padding: 6px;
+	padding: 5px;
 	background-color: #ffc107;
  }
 	
@@ -145,33 +145,33 @@ border-right:0px;
 	<table class="table1">
 	<tr >
 	<td style="padding-top:20px;"><h5>상담사</h5></td>
-	<td style="padding-top:20px;"><h5>약력</h5></td>
-	<td style="padding-top:20px;"><h5>상담신청하기</h5></td>
+	<td style="padding-top:20px;"align="center";><h5>약력</h5></td>
+	<td style="padding-top:20px;"><h5>채팅하기</h5></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
-	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;"></td>
+	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
-	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;"></td>
+	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
-	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;"></td>
+	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
-	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;"></td>
+	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;">Emilly Blunt</td>
-	<td style="padding-right:10px;">December 4, 2017 at 3:12 pm<br>Never say goodbye till the end comes!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>신청하기</butten></a></td>
+	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;"></td>
+	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
+	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
 	</tr>
 	
 	

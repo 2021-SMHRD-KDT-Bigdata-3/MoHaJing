@@ -79,6 +79,7 @@
   		location.href="${cpath}/main.do";
   	}
 	</script>
+
 </head>
 
 <body>
@@ -86,7 +87,7 @@
    <!--================ Canvus Menu Area =================-->
    <!--================ End Canvus Menu Area =================-->
 
-   <section class="top-btn-area">
+   <section class="top-btn-area" >
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
@@ -97,6 +98,93 @@
          </div>
       </div>
    </section>
+
+
+   <!--================ Start banner section =================-->
+   <section class="home-banner-area relative">
+      <div class="container-fluid">
+         <div class="row d-flex align-items-center justify-content-center">
+            <div class="contact-form-section">
+               <form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/joinTry.do" method="post">
+                  <h1 align="center">
+                     <img src="${cpath}/resources/img/logo3.png" alt="">
+                  </h1><br><br>
+                     <div class="form-group col-md-12">
+                        <input style="width:250px;" type="text" class="form-control" name="id" placeholder="ID"
+                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'">
+                     </div>
+                     <div class="form-group col-md-12">
+                        <input style="width:250px;" type="password" class="form-control" name="pw" placeholder="PASSWARD"
+                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'PASSWARD'">
+                     </div>
+                     <div class="form-group col-md-12">
+                        <input style="width:250px;" type="text" class="form-control" name="name" placeholder="이름"
+                         onfocus="this.placeholder = ''" onblur="this.placeholder = '이름'">
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between col-md-12">
+                        <p>남성</p>
+                        <div class="primary-radio">
+                           <input type="radio" id="primary-radio" name="gender" value="man">
+                           <label for="primary-radio"></label>
+                        </div>
+                        <p>여성</p>
+                        <div class="primary-radio">
+                           <input type="radio" id="default-radio" name="gender" value="woman">
+                           <label for="default-radio"></label>
+                        </div>
+                     </div>
+                     <div class="form-group col-md-12">
+                        <input style="width:250px; type="text" class="form-control" id="name" name="age" placeholder="나이"
+                         onfocus="this.placeholder = ''" onblur="this.placeholder = '나이'">
+                     </div>
+                     <div class="form-group col-md-12"></div>
+                     <h4 style="padding-left:10px;"align="left">checkList</h4>
+                  <div class="checkList1">
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>01. 이마가 점점 넓어지는 느낌이다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>02. 가늘고 힘없는 머리가 많이 빠진다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>03. 하루에 80개 이상 모발이 빠진다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>04. 비듬이 많아지거나 두피가 가렵다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>05. 모발이 가늘고 부드러워진다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>08. 몸의 털이 갑자기 굵어진다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>09. 이마와 정수리 부분이 유난히 번들거린다</p>
+                     </div>
+                     <div class="switch-wrap d-flex justify-content-between">
+                        <p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
+                     </div>
+                        
+                     <div class="form-group col-md-12">
+                        <input style="width:250px;" type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수"
+                         onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
+                     </div>
+                  </div>   
+                  <br>
+                     <div class="col-lg-12 text-center">
+                        <button type="submit" class="main_btn text-uppercase">
+                           회원가입
+                        </button>
+                     </div>
+                  </form>
+            </div>
+
 
 	<!--================ Start banner section =================-->
 	<section class="package-search-area">

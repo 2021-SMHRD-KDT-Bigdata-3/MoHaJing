@@ -40,6 +40,11 @@ h1{
 text-align: center;
 font-size: 60px;
 }	
+.top-btn-area{
+position:fixed;
+top:0px;
+right:0px;
+}
 </style>
 	
 </head>	

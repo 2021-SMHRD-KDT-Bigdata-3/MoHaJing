@@ -190,7 +190,7 @@ border-right:0px;
 			</div>
 		</div>
 	</section>
-
+<br>
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">

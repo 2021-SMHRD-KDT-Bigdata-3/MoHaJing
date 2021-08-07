@@ -36,12 +36,59 @@
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 <style>
 .row, .title_color {
 	max-width: 80%;
 	margin: auto;
 }
+
+.upload_button, .container{
+	display:inline-block;
+	margin-right: 10px;
+}
+
+.upload_button label, .container label{
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radious: .25em;
+	
+	color: black;
+	background-color: lightgrey;
+	border-radius: 15px;
+	font-family: 'Gowun Dodum', sans-serif; 
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.upload_button label{
+}
+.container label{
+	margin-left: 42%;
+}
+
+.upload_button input[type="file"], .container input[type="submit"]{
+	position:absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: reat(0,0,0,0);
+	border: 0;
+}
+
+
 </style>
 <script type="text/javascript">
 	function readURL(input) {
@@ -53,6 +100,32 @@
 			reader.readAsDataURL(input.files[0]);
 		}
 	}
+	
+	function readImage(input) {
+		// 인풋 태그에 파일이 있는 경우
+		if (input.files && input.files[0]){
+			
+			// 파일 인스턴스 생성
+			const reader = new FileReader()
+			
+			// 이미지가 로드된 경우
+			reader.onload = e => {
+				const previewImage = document.getElementById("preview_image")
+				previewImage.src = e.target.result;
+			}
+			
+			// reader가 이미지를 읽도록 하기
+			reader.readAsDataURL(input.files[0])
+			
+		}
+		
+	}
+	
+	// input file에 change 이벤트 부여
+	const inputImage = document.getElementById("upload_file")
+	inputImage.addEventListener("change", e => {
+		readImage(e.target)
+	})
 </script>
            <script>
             $(function(){
@@ -134,7 +207,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 100; margin-left:-35px;">
 				</div>
 			</div>
 		</div>
@@ -144,41 +217,34 @@
 <%-- 	<form action="${cpath}/deep1.do" onsubmit="flask(); method="post" id="form1" runat="server" enctype="multipart/form-data"> --%>
 <!-- <form method="post" id="form1" runat="server" enctype="multipart/form-data"> -->
 <form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
-	<section class="home-banner-area common-banner relative">
+	<section class="home-banner-area common-banner relative" style="z-index: 1;">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
+				<div class="picture" style="max-width: 400px; max-height: 350px; overflow: hidden;">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-						<img id="blah" src="#" alt="진단할 사진을 넣어주세요" />
+						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-10%; margin-top:-10%"/>
 				</div>
-				<div class="button-group-area mt-40">
+				<div class="upload_button">
+					<label for="upload_file">
+						업로드
+					</label>
 						<!-- <input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" /> -->
-						<input type='file' onchange="readURL(this);" capture="camera" name="img" class="genric-btn disable circle" accept="image/*" id="camera"/>
+						<input type='file' onchange="readURL(this);" name="img" id="upload_file" class="genric-btn disable circle"/>
 				</div>
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100"
-							src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
-					</div>
+				<div class="container">
+					<input type="hidden" name="id"
+							value="${vo.id}">
+						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
+						value="진단시작">  -->
+					<label for="up_confirm">확인</label>
+					<input type="submit" id="up_confirm" value="확인" />
 				</div>
 			</div>
 		</div>
 	</section>
+</form>
 	<!--================ End banner section =================-->
-
-
-	<!-- Start Sample Area -->
-	<section class="sample-text-area">
-		<div class="container">
-		<input type="hidden" name="id"
-				value="${vo.id}">
-			<input type="hidden" name="category" value="${category}">
-			<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
-				value="진단시작">  -->
-			<input type="submit" value="확인"/>
-		</div>
-	</section>
-	</form>
+<br><br><br>
 	<!-- End Sample Area -->
 
 
