@@ -234,6 +234,7 @@
 				<div class="container">
 					<input type="hidden" name="id"
 							value="${vo.id}">
+					<input type="hidden" name="category" value="${category}">
 						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
 						value="진단시작">  -->
 					<label for="up_confirm">확인</label>
