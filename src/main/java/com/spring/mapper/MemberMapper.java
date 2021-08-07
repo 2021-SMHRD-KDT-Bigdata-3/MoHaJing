@@ -49,7 +49,13 @@ public interface MemberMapper {
 	public void deep1(Deep1VO vo);
 	
 	// 사용자 아이다, 머리사진, 스퀀스 select
-	public Deep1VO deep1Select(Deep1VO vo);
+	public Deep1VO deep1Select(int no);
+	
+	// 딥러닝결과 insert
+	public void deepInsert(DeepVO vo);
+	
+	// 딥러닝결과 select
+	public DeepVO deepSelect(int no);
 	
 	// 테스트중2
 	public TestVO fileTest2(String id);

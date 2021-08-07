@@ -31,16 +31,18 @@
 	<script type="text/javascript">
 	function getJson(){
 		$.ajax({
-			url: "${cpath}/infoList.do",
+			url: "${cpath}/info.do",
 			type :"get",
 			dataType: "html",
-			success: function(result){
-				$("#ajax").html(result);
-				alert("통신 데이터 값 : " + result);
-			},
+			success: resultHtml,
 			error : function(){
 				alert("error");}
 		});
+	}
+	function resultHtml(data){
+		var result = "<iframe id='iframe' name='f1'>";
+		result+="</iframe>"
+		${"#ajax"}.html(result);
 	}
 	
 	
@@ -52,6 +54,19 @@ text-align: center;
 .lnr-arrow-right:before {
 	content: "";
 }
+#iframe {
+	display: block;
+	vertical-align: bottom;
+	vertical-align: bottom;
+	width: 650; 
+	height: 300;
+	scrolling: no; 
+	frameborder: 0; 
+	framespacing: 0; 
+	marginheight: 0; 
+	marginwidth: 0;
+	vspace: 0;
+}
 	</style>
 	
 </head>
@@ -61,56 +76,56 @@ text-align: center;
 	<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/execution.do">
-						<form action="execution.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
-
 	<!--================ Canvus Menu Area =================-->
 	<div class="canvus_menu">
 		<div class="container">
@@ -125,13 +140,12 @@ text-align: center;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="${cpath}/main.do" class="main_btn">
-						<img src="${cpath}/resources/img/logo3.png" alt="">
-					</a>
+					<img src="${cpath}/resources/img/logo3.png" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
+
  <!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
@@ -147,16 +161,15 @@ text-align: center;
 	
 	<div class="button-group-area mt-40" align="center">
 				<a href="${cpath}/infoList.do" class="genric-btn default circle" target="f1">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/main.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList2.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList3.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList4.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList5.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList6.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="cneter" name="f1" display="block" vertical-align="bottom" width=650
-					height=300 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
-			
+			<iframe id="iframe" align="cneter" name="f1" vertical-align="bottom" width=650
+					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color">탈모 예방법</h1>

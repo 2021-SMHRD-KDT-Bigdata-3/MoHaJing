@@ -50,63 +50,70 @@ margin:auto;
 }
 .mb-30{
 text-align:center;
+
 }
+.com-table{
+
+border-left:0px;
+border-right:0px;
+margin:auto;
+}
+
+
 </style>
 </head>
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</a></li>
-				<li><a href="execution.do">
-						<form action="execution.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</a></li>
+				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</a></li>
+				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do">
-					<form action="main.do" method="post">
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
 						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
 					</form>
-				</a></li>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -135,34 +142,34 @@ text-align:center;
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="section-top-border">
-			<h2 class="mb-30 title_color">커뮤니티</h2>
-			<div class="progress-table-wrap">
-				<div class="progress-table">
-					<div class="table-head">
-						<div class="country">제목</div>
-						<div class="visit">작성자</div>
-						<div class="percentage" >날짜</div>
-					</div>
-					<c:forEach var="vo2" items="${list}">
-						<div class="table-row">
-							<div class="country">
-								<a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a>
-							</div>
-							<div class="visit">${vo2.id}</div>
-							<div class="percentage">${vo2.day}</div>
-						</div>
-					</c:forEach>
-					<div class="button-group-area mt-10">
-						<form action="${cpath}/community.do" method="post">
-							<input type="text" name="search">
+		<h2 class="mb-30 title_color">
+		<img src="${cpath}/resources/img/com17.png" alt=""></h2><br>
+	<table class="com-table">
+		<tr style="border-bottom:1px solid #edf3fd;color:black; ">
+	      	<td><h6>제목</h6></td>
+			<td style="padding-left:100px;"><h6>작성자</h6></td>
+			<td style="padding-left:100px;"><h6>날짜</h6></td>
+		</tr>
+		<c:forEach var="vo2" items="${list}">
+		<tr>
+			<td><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></td>
+			<td style="padding-left:100px;">${vo2.id}</td>
+			<td style="padding-left:100px;">${vo2.day}</td>
+			<tr>
+		</c:forEach>
+	</table>	
+		<br>
+	
+			
+					<div class="button-group-area mt-10" style="text-align:center;">
+						<form  action="${cpath}/community.do" method="post">
+							<input  type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
 							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
 								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">글쓰기</a>
 						</form>
 					</div>
 				</div>
-			</div>
-		</div>
 	</section>
 
 	<!--================ End banner section =================-->

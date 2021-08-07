@@ -36,12 +36,59 @@
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 <style>
 .row, .title_color {
 	max-width: 80%;
 	margin: auto;
 }
+
+.upload_button, .container{
+	display:inline-block;
+	margin-right: 10px;
+}
+
+.upload_button label, .container label{
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radious: .25em;
+	
+	color: black;
+	background-color: lightgrey;
+	border-radius: 15px;
+	font-family: 'Gowun Dodum', sans-serif; 
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.upload_button label{
+}
+.container label{
+	margin-left: 42%;
+}
+
+.upload_button input[type="file"], .container input[type="submit"]{
+	position:absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: reat(0,0,0,0);
+	border: 0;
+}
+
+
 </style>
 <script type="text/javascript">
 	function readURL(input) {
@@ -53,6 +100,32 @@
 			reader.readAsDataURL(input.files[0]);
 		}
 	}
+	
+	function readImage(input) {
+		// 인풋 태그에 파일이 있는 경우
+		if (input.files && input.files[0]){
+			
+			// 파일 인스턴스 생성
+			const reader = new FileReader()
+			
+			// 이미지가 로드된 경우
+			reader.onload = e => {
+				const previewImage = document.getElementById("preview_image")
+				previewImage.src = e.target.result
+			}
+			
+			// reader가 이미지를 읽도록 하기
+			reader.readAsDataURL(input.files[0])
+			
+		}
+		
+	}
+	
+	// input file에 change 이벤트 부여
+	const inputImage = document.getElementById("upload_file")
+	inputImage.addEventListener("change", e => {
+		readImage(e.target)
+	})
 </script>
 
 </head>
@@ -60,54 +133,55 @@
 
 <body>
 
-	<!--================ Offcanvus Menu Area =================-->
+<!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<a href="${cpath}/main.do"> <img
-				src="${cpath}/resources/img/logo3.png" alt="">
-			</a>
+			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
-				<li><a href="${cpath}/logmain.do">
-						<form action="logmain.do" method="post">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
 						</form>
-				</a></li>
-				<li><a href="execution.do">
-						<form action="execution.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/community.do">
-						<form action="community.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/consulting.do">
-						<form action="consulting.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/info.do">
-						<form action="info.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/mypage.do">
-						<form action="mypage.do" method="post">
+				</li>
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
 						</form>
-				</a></li>
-				<li><a href="${cpath}/main.do"
-					class="genric-btn default-border">로그아웃 </a></li>
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+					</form>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -126,48 +200,45 @@
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12"></div>
+				<div class="col-lg-12">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 100; margin-left:-35px;">
+				</div>
 			</div>
 		</div>
 	</section>
-
 
 	<!--================ Start banner section =================-->
-	<form action="${cpath}/deep1.do" method="post" id="form1" runat="server" enctype="multipart/form-data">
-	<!-- form 액션속성 : 플라스크 연동하고 결과 창으로 이동 -->
-	<section class="home-banner-area common-banner relative">
+<%-- 	<form action="${cpath}/deep1.do" onsubmit="flask(); method="post" id="form1" runat="server" enctype="multipart/form-data"> --%>
+<!-- <form method="post" id="form1" runat="server" enctype="multipart/form-data"> -->
+<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
+	<section class="home-banner-area common-banner relative" style="z-index: 1;">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
+				<div class="picture" style="max-width: 400px; max-height: 350px; overflow: hidden;">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-						<img id="blah" src="#" alt="진단할 사진을 넣어주세요" />
+						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-10%; margin-top:-10%"/>
 				</div>
-				<div class="button-group-area mt-40">
-						<input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" />
+				<div class="upload_button">
+					<label for="upload_file">
+						업로드
+					</label>
+						<!-- <input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" /> -->
+						<input type='file' onchange="readURL(this);" name="img" id="upload_file" class="genric-btn disable circle"/>
 				</div>
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100"
-							src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
-					</div>
+				<div class="container">
+					<input type="hidden" name="id"
+							value="${vo.id}">
+						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
+						value="진단시작">  -->
+					<label for="up_confirm">확인</label>
+					<input type="submit" id="up_confirm" value="확인" />
 				</div>
 			</div>
 		</div>
 	</section>
+</form>
 	<!--================ End banner section =================-->
-
-
-	<!-- Start Sample Area -->
-	<section class="sample-text-area">
-		<div class="container">
-		<input type="hidden" name="id"
-				value="${vo.id}">
-			<input type="submit" class="genric-btn info-border circle arrowr"
-				value="진단시작"> 
-			<!-- 이거는 로그인한 사용자 id -->
-		</div>
-	</section>
-	</form>
+<br><br><br>
 	<!-- End Sample Area -->
 
 
@@ -310,6 +381,11 @@
 	<script
 		src="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.js"></script>
 	<script src="${cpath}/resources/js/theme.js"></script>
+	<script>
+		function flask(){
+		    alert('서브밋!');
+		};
+	</script>
 </body>
 
 </html>

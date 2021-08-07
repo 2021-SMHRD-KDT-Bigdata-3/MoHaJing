@@ -60,13 +60,10 @@ text-align: center;
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">남성형 탈모</h3>
+			<h3 class="text-heading title_color">원형 탈모</h3>
 			<p class="sample-text">
-				<span><b>유전적 소인</b>(우성유전) 때문에 발생하며, 증상은 20대 후반에서 30대 남자의 
-				 <b>양측 전두부</b> 및 <b>두정부</b>에 탈모가 시작되어 점차 확대되며 개인에 따라 어느 정도의 차이는 있으나
-				 전두부나 두정부의 모발이 <b>소실</b>되지만, 측두부나 후두부의 모발은 <b>빠지지 않고 남아 있는 것</b>이 보통이다. 
-				 탈모 부위에 <b>처음</b>에는 가늘고 약한 모발이 나오다가 결국에는 소실되며, <b>솜털</b>은 계속 자란다. 
-				 <b>여성</b>에서도 남성형 탈모증이 생길 수 있다.</span>
+				<span><b>모모 세포의</b> 기능이 잠시 <b>정지</b>되면서 특정 부분의 머리카락이 탈모 되는 현상을 말한다. 
+				남성형 탈모와 달리 탈모 된 곳에 가는 털도 <b>남아 있지 않으며</b> 원형탈모 초기에는 <b>두피</b>가 빨갛다.</span>
 			</p>
 		</div>
 	</section>
