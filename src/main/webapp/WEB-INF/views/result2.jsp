@@ -163,6 +163,8 @@ margin: auto;
 							<div class="visit"><img src="/deep/${deep1.img}" /></div>
 							<div class="visit">${deep1.result}</div>
 							<div class="visit">${deep1.no}</div>
+							<div class="visit">${deep1.percent}</div>
+							<div class="visit">${deep1.category}</div>
 						</div>
 						
 						</div>

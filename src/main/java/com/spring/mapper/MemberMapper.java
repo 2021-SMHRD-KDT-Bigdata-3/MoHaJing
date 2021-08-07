@@ -51,6 +51,9 @@ public interface MemberMapper {
 	// 사용자 아이다, 머리사진, 스퀀스 select
 	public Deep1VO deep1Select(int no);
 	
+	// 아이디로 딥러닝결과 select
+	public Deep1VO idDeepSelect(String id);
+	
 	// 딥러닝결과 insert
 	public void deepInsert(DeepVO vo);
 	

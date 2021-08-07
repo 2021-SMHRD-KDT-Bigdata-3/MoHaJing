@@ -38,8 +38,6 @@ import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
 import com.spring.mapper.TestVO;
 import com.spring.service.CommentService;
-
-import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
 @Log4j
@@ -53,7 +51,11 @@ public class MoController {
 	private MemberMapper memberMapper;
 
 	@RequestMapping("/execution.do")
-	public String execution() {
+	public String execution(String id, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		Deep1VO deep = memberMapper.idDeepSelect(id);
+		model.addAttribute("vo", vo); // 회원정보 add
+		model.addAttribute("deep", deep); // 딥러닝 결과 add
 		return "execution";
 	}
 
@@ -177,9 +179,10 @@ public class MoController {
 
 	// 분석2 : 파일 업로드하고 진단시작 버튼있는 페이지로 가는거임
 	@RequestMapping("/execution2.do")
-	public String execution2(String id, Model model) {
+	public String execution2(String id, String category, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
 		model.addAttribute("vo", vo);
+		model.addAttribute("category", category);
 		return "execution2";
 	}
 	
@@ -296,7 +299,6 @@ public class MoController {
 		return "flasktest";
 	}
 
-
 	@RequestMapping("/result.do")
 	public String result() {
 		return "result";
@@ -325,5 +327,16 @@ public class MoController {
 	public String infoList6() {
 		return "infoList6";
 	}
+
+	@RequestMapping("/executionList.do")
+	public String executionList() {
+		return "executionList";
+	}
+	
+	@RequestMapping("/executionList2.do")
+	public String executionList2() {
+		return "executionList2";
+	}
+	
 
 }

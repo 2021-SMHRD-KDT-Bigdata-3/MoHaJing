@@ -111,7 +111,7 @@
 			// 이미지가 로드된 경우
 			reader.onload = e => {
 				const previewImage = document.getElementById("preview_image")
-				previewImage.src = e.target.result
+				previewImage.src = e.target.result;
 			}
 			
 			// reader가 이미지를 읽도록 하기
@@ -127,7 +127,13 @@
 		readImage(e.target)
 	})
 </script>
-
+           <script>
+            $(function(){
+                $('#camera').change(function(e){
+                    $('#pic').attr('src', URL.createObjectURL(e.target.files[0]));
+                });
+            });
+        </script>
 </head>
 </head>
 

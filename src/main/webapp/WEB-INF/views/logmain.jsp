@@ -242,7 +242,6 @@ background-color: white;
 										</div>
 									</form>
 								</h5>
-								
 							</div>
 						</div>
 					</div>
@@ -267,7 +266,6 @@ background-color: white;
 										</div>
 									</form>
 								</h5>
-								
 							</div>
 						</div>
 					</div>
