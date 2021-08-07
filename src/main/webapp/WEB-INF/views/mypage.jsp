@@ -54,6 +54,7 @@
 	.check-align{
 	
 	}
+
 	</style>
 	
 </head>
@@ -169,7 +170,6 @@
 	</table><br>
 	
                         
-    						<div class="form-group form-check" align="center">
                             <h4 class="check-align">✔ 체크리스트</h4>
                             <div class="form-group form-check " align=" center";>
                             <div class="switch-wrap d-flex justify-content-between ">
@@ -209,12 +209,12 @@
                             
                             </div><br>
                             </div>
-                            <button type="submit" class="main_btn">
+                            <button  type="submit" class="main_btn">
                                	정보수정하기
                             </button>
                         </form>
                     </div>
-	
+					
 	
 	
 	
