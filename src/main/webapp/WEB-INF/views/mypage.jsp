@@ -26,16 +26,16 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/scss/_button.scss?after">
 	<style>
 	.comment-form{
-	background-color: white;
-	margin : auto;
+	background-color:transparent;
 	border:1px solid white;
 	
 	}
 	.form-check{
 	border:1px solid #E6E6E6;
-	background-color:#FFFFFF;
+	background-color:transparent;
 	width:400px;
 	padding-top:10px;
 	border-radius:2%;
@@ -51,18 +51,30 @@
 	.mypageinfo{
 	margin:auto;
 	}
-	.check-align{
-	
+	.top-btn-area{
+	position:fixed;
+	top:0px;
+	right:0px;
 	}
-
+	.main_btn{
+	margin:auto;
+	}
+	.main_btn:hover{
+	background-color:#ffc107;
+	}
+	.check-title1{
+	text-align:left;
+	margin-left:40px;
+	margin-top:40px;
+	margin-bottom:-10px;
+	}
 	</style>
 	
 </head>
 
 <body>
-
 <!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu"  >
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
@@ -124,12 +136,13 @@
 		</div>
 	</div>
 	<!--================ End Canvus Menu Area =================-->
+	
 
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" ">
 				</div>
 			</div>
 		</div>
@@ -138,40 +151,41 @@
 	<!--================ Start banner section =================-->
 	
 	<div class="comment-form" align="center">
+	
                        <h1 class="my-title">
-					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
+					<img src="${cpath}/resources/img/mypage3.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
 	
 	
 	<table class="mypageinfo">
-	<tr>
-	<td>아이디</td>
-	<td>${vo.id}</td>
-	</tr>
-	<tr>
-	<td>패스워드</td>
-	<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+		<tr>
+			<td>아이디</td>
+			<td>${vo.id}</td>
+		</tr>
+		<tr>
+			<td>패스워드</td>
+			<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
-	</tr>
-	<tr>
-	<td>이름</td>
-	<td> ${vo.name}</td>
-	</tr>
-	<tr>
-	<td>나이</td>
-	<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td> ${vo.name}</td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
                                          onblur="this.placeholder = ''"></td>
-	</tr>
-	<tr>
-	<td>성별</td>
-	<td>${vo.gender}</td>
-	</tr>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td>${vo.gender}</td>
+		</tr>
 	
-	</table><br>
+	</table>
 	
-                        
-                            <h4 class="check-align">✔ 체크리스트</h4>
-                            <div class="form-group form-check " align=" center";>
+                        	<div class="check-title1">
+                            <h3>checkList</h3></div>
+                            <div  style="padding-top:10" class="form-group form-check " align=" center";>
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
@@ -208,15 +222,13 @@
 							</div>
                             
                             </div><br>
-                            </div>
-                            <button  type="submit" class="main_btn">
+                        
+                            	<button style="color:#007bff" type="submit" class="main_btn" >
                                	정보수정하기
-                            </button>
+                           		</button>
                         </form>
                     </div>
 					
-	
-	
 	
 <!--================ start footer Area  =================-->
 	<footer class="footer-area">

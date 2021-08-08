@@ -92,7 +92,7 @@
          <div class="row">
             <div class="col-lg-12">
                <a href="${cpath}/main.do" class="main_btn">
-                  <img src="${cpath}/resources/img/logo3.png" alt="">
+                  <img src="${cpath}/resources/img/logo4.png" alt="">
                </a>
             </div>
          </div>
