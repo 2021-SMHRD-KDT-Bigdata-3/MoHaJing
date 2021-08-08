@@ -126,8 +126,7 @@ margin: auto;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<a href="http://localhost:8081/mo/logmain.do?id=${vo.id}&&pw=${vo.pw}"><img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-10%;">
-					</a>
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-10%;">
 				</div>
 			</div>
 		</div>
