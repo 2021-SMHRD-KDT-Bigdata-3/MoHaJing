@@ -67,7 +67,9 @@ right:50px;
 }
 .section-top-border{
 border: 1px solid white;
+padding: 10px;
 }
+
 </style>
 </head>
 

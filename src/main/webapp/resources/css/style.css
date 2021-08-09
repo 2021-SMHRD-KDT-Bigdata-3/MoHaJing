@@ -2573,7 +2573,7 @@ h6 {
     overflow-x: scroll; } }
 .progress-table {
   background: #ffffff;
-  padding: 15px 300px 30px 50px;
+  padding: 15px 350px 10px 10px;
   min-width: 800px; }
 
 .progress-table .serial {

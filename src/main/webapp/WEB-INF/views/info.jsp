@@ -167,6 +167,53 @@ text-align: center;
 max-width:80%;
 margin:auto;
 }
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+	background-color: transparent;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : gray;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
 	</style>
 	
 </head>
@@ -260,6 +307,7 @@ margin:auto;
 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
 	<!-- End Sample Area -->
 	
+
 	<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
 				<a href="${cpath}/infoList.do" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold;">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
 				<a href="${cpath}/infoList2.do" target="f1" class="hover1 hover3" id="woman" style="border:0 solid black; color: #FF9999; font-size: 15px; font-weight : bold;">여성형탈모<span class="lnr lnr-arrow-right"></span></a>

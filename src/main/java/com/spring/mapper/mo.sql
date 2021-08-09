@@ -204,3 +204,20 @@ insert into mo_recommand(category, food, plan)
 values("M", "김치, 청국장, 된장과 같은 발효음식", "빗질은 부드럽고 굵은 빗을 사용하기");
 insert into mo_recommand(category, plan)
 values("M", "영양분을 충분히 섭취하기");
+select * from mo_deep1;
+
+ALTER TABLE `mo_member` DROP `checknum`;
+
+create table mo_check(
+id varchar(50),
+no1 int,
+no2 int,
+no3 int,
+no4 int,
+no5 int,
+no6 int,
+no7 int,
+no8 int,
+no9 int,
+no10 int
+);

@@ -113,7 +113,7 @@ padding:10px;
     background-color: #f9f9f9;
 }
 .progress-table .table-row {
-  padding: 10px;
+  padding: 1px;
   border-top: 1px solid #edf3fd;
   display: flex; 
   flex-direction: row;
@@ -124,9 +124,62 @@ padding:10px;
 .country{
 padding-left:20px;
 }
-.serial{
 
+.gif_div{
+	max-width: 500px;
+	max-hieght: 300px;
+	overflow: hidden;
+	object-fit: scale-down;
 }
+
+.gif_div img{
+	max-width: initial;
+	margin-left: -10%;
+	margin-top: -30%;  
+	object-fit: cover;
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
 </style>
 </head>
 
@@ -216,32 +269,30 @@ padding-left:20px;
 							<div class="country"><h4>${vo2.title}</h4></div>
 						</div>
 						<div class="table-row">
-							<div class="country">${vo2.id}</div>
-							<div class="country">${vo2.day}</div>
+							<div class="country" style="float: left;">${vo2.id}</div><div style="float: left;">${vo2.day}</div>
 						</div>
-						<div class="table-head">
-							<div class="country">
-								<img src="/img/${vo2.file}" />
-							</div>
+						<div class="gif_div">
+							<img class="gif_css" src="/img/${vo2.file}" />
 						</div>
 						<div class="table-head" align="left">
 							<div>${vo2.content}</div>
 						</div>
+							<br><br>
 						<div class="table-head">
 							<table class="comment1" align="center">
 								<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
 									<th colspan="2" style="width:400px">댓글</th>
 									<th></th>
-									<th style="padding-left:160px; ">작성자</th>
+									<th style="padding: 10px;">작성자</th>
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-									<td colspan="2" style="width:400px">
-										<div>${list.content}</div>
+									<td colspan="2" style="width: 400px">
+										<div style="font-size: 10px;">${list.content}</div>
 									</td>
 									<td></td>
-									<td style="padding-left:160px;">
-										<div class="country">${list.id}</div>
+									<td style="padding: 10px;">
+										<div class="country" style="font-size: 12px;">${list.id}</div>
 									</td>
 								</tr>
 							</c:forEach>
@@ -254,7 +305,7 @@ padding-left:20px;
 									<input type="text" name="content"> 
 									<input type="hidden" name="no" value="${vo2.no}"> 
 									<input type="hidden" name="id" value="${vo.id}">
-									<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">댓글달기</button>
+									<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">등록</button>
 									<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">목록</a>
 								</div>
 							</form>
