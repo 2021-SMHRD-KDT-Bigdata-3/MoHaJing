@@ -25,7 +25,9 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 <style>
  .row,.title_color{
 	max-width:80%;
@@ -138,10 +140,24 @@ margin: auto;
 			<br><br>
 						 <div class="result_tb" align="center" style="margin-top: -10%;">
 						 	<table>
-						 		<tr style="border-bottom-style: outset; border-width:1px; border-color: lightgrey;"><img src="/deep/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
-						 		<tr><th style="font-size: 20px;">${deep1.id}님의 머리상태는...</th></tr>
-						 		<tr><td style="text-align=center;">${deep1.result}입니다!</td></tr>
-						 	</table><br><br><br>
+						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/deep/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
+						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 	</table>
+						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+						 	<table>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">맛있는거를 많이 먹으세요</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">짜장면</td></tr>
+						 	</table>
+						 	<br><br><br>
 						 </div>
 						 
 						 <!--  
@@ -154,11 +170,7 @@ margin: auto;
 						
 						<div class="table-row">
 							<div class="country"> ${vo.id}</div>
-<<<<<<< HEAD
-							<div class="visit"><img src="/deep/${deep1.img}" style="width:200px;"/></div>
-=======
 							<div class="visit"><img src="/img/${deep1.img}" /></div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 							<div class="visit">${deep1.result}</div>
 							<div class="visit">${deep1.no}</div>
 							<div class="visit">${deep1.percent}</div>
