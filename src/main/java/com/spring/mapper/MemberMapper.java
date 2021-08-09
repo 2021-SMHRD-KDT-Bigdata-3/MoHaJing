@@ -69,7 +69,7 @@ public interface MemberMapper {
 	public void checkInsert(CheckVO vo);
 	
 	// 체크박스 select TEST
-	public CheckVO checkSelect();
+	public CheckVO checkSelect(String id);
 	
 	// 체크박스 update TEST
 	public void checkUpdate(CheckVO vo);

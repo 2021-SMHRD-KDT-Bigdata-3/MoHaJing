@@ -124,7 +124,7 @@ show full columns from mo_recommand;
 drop table mo_check;
 TRUNCATE mo_check;
 create table mo_check(
-no int not null auto_increment primary key,
+id varchar(50),
 no1 int,
 no2 int,
 no3 int,
@@ -137,7 +137,7 @@ no9 int,
 no10 int
 );
 select * from mo_check;
-
+select * from mo_member;
 DROP TABLE mo_deep1;
 
 CREATE TABLE mo_deep1 (

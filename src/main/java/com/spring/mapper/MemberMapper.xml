@@ -107,17 +107,17 @@
     
     <!-- 체크박스 insert TEST -->
     <insert id="checkInsert" parameterType="com.spring.mapper.CheckVO">
-        insert into mo_check(no1, no2, no3, no4, no5, no6, no7, no8, no9, no10) values(#{no1}, #{no2}, #{no3}, #{no4}, #{no5}, #{no6}, #{no7}, #{no8}, #{no9}, #{no10})
+        insert into mo_check(id, no1, no2, no3, no4, no5, no6, no7, no8, no9, no10) values(#{id}, #{no1}, #{no2}, #{no3}, #{no4}, #{no5}, #{no6}, #{no7}, #{no8}, #{no9}, #{no10})
     </insert>
     
     <!-- 체크박스 select TEST -->
-    <select id="checkSelect" resultType="com.spring.mapper.CheckVO">
-        select * from mo_check
+    <select id="checkSelect" parameterType="String" resultType="com.spring.mapper.CheckVO">
+        select * from mo_check where id = #{id}
     </select>
     
     <!-- 체크박스 update TEST -->
     <update id="checkUpdate" parameterType="com.spring.mapper.CheckVO">
-        update mo_check set no1 = #{no1}, no2 = #{no2}, no3 = #{no3}, no4 = #{no4}, no5 = #{no5}, no6 = #{no6}, no7 = #{no7}, no8 = #{no8}, no9 = #{no9}, no10 = #{no10}
+        update mo_check set no1 = #{no1}, no2 = #{no2}, no3 = #{no3}, no4 = #{no4}, no5 = #{no5}, no6 = #{no6}, no7 = #{no7}, no8 = #{no8}, no9 = #{no9}, no10 = #{no10} where id = #{id}
     </update>
     
 </mapper>
