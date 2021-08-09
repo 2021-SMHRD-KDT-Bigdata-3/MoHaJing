@@ -251,17 +251,29 @@ public class MoController {
 	
 	
 	// 체크박스 테스트중
-	
+	// 체크박스 페이지 가기
 	@RequestMapping("/fileTest2.do")
 	public String fileTest2() {
 		return "fileTest2";
 	}
-	
-	@RequestMapping("/check.do")
+	// 체크박스 insert
+	@RequestMapping("/checkInsert.do")
 	public String check(CheckVO vo, Model model) {
+		memberMapper.checkInsert(vo);
+		return "redirect:/checkSelect.do";
+	}
+	// 체크박스 select
+	@RequestMapping("/checkSelect.do")
+	public String check(Model model) {
 		CheckVO check = memberMapper.checkSelect();
 		model.addAttribute("result", check);
-		return "loading"; // 체크박스 제대로 표현되는지 확인하는 페이지
+		return "loading";
+	}
+	// 체크박스 update
+	@RequestMapping("/checkUpdate.do")
+	public String checkUpdate(CheckVO vo, Model model) {
+		memberMapper.checkUpdate(vo);
+		return "redirect:/checkSelect.do";
 	}
 	
 	

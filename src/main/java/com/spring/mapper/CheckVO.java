@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class CheckVO {
 
+	private int no;
 	private int no1;
 	private int no2;
 	private int no3;

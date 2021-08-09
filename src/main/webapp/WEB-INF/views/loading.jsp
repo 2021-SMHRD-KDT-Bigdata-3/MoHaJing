@@ -20,5 +20,30 @@ ${result.no7}<br/>
 ${result.no8}<br/>
 ${result.no9}<br/>
 ${result.no10}<br/>
+
+<form action="${cpath}/checkUpdate.do" method = "post">
+<!-- <input type="hidden" name="id" value="test"> -->
+
+	
+	
+
+
+
+<c:set var="no1" value="${result.no1}"/>
+<input type="checkbox" name="no1" <c:if test="${no1 eq '1'}">checked</c:if> >
+
+<input type="checkbox" name="no2" value="1" checked="${result.no2}">질문2<br/>
+<input type="checkbox" name="no3" value="1" checked="${result.no3}">질문3<br/>
+<input type="checkbox" name="no4" value="1" checked="${result.no4}">질문4<br/>
+<input type="checkbox" name="no5" value="1" checked="${result.no5}">질문5<br/>
+<input type="checkbox" name="no6" value="1" checked="${result.no6}">질문6<br/>
+<input type="checkbox" name="no7" value="1" checked="${result.no7}">질문7<br/>
+<input type="checkbox" name="no8" value="1" checked="${result.no8}">질문8<br/>
+<input type="checkbox" name="no9" value="1" checked="${result.no9}">질문9<br/>
+<input type="checkbox" name="no10" value="1" checked="${result.no10}">질문10<br/>
+<input type="hidden" name="no" value="${result.no}">
+<input type="submit">
+</form>
+
 </body>
 </html>

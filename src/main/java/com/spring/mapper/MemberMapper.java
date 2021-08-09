@@ -65,6 +65,12 @@ public interface MemberMapper {
 	// 테스트중2
 	public TestVO fileTest2(String id);
 	
+	// 체크박스 insert TEST
+	public void checkInsert(CheckVO vo);
+	
 	// 체크박스 select TEST
 	public CheckVO checkSelect();
+	
+	// 체크박스 update TEST
+	public void checkUpdate(CheckVO vo);
 }
