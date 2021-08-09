@@ -140,7 +140,7 @@ margin: auto;
 			<br><br>
 						 <div class="result_tb" align="center" style="margin-top: -10%;">
 						 	<table>
-						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/deep/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
+						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>

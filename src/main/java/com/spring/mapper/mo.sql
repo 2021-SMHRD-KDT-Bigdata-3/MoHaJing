@@ -119,7 +119,7 @@ select * from mo_deep1;
 ALTER TABLE `mo_deep1` ADD 'percent' int not null;
 select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
 show tables;
-show full columns from mo_deep;
+show full columns from mo_recommand;
 
 drop table mo_check;
 TRUNCATE mo_member;
@@ -152,3 +152,6 @@ date datetime
 
 
 ALTER TABLE `mo_member` DROP `checknum`;
+
+select * from mo_recommand;
+select * from mo_deep1;
