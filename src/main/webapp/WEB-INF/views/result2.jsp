@@ -148,19 +148,17 @@ margin: auto;
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
 						 	<table>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="plan" items="${plans}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${plan.plan}</td></tr>
-						 		</c:forEach>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="food" items="${foods}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${food.food}</td></tr>
-						 		</c:forEach>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">
+						 			<a href="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" target="f1">개선방안</a>
+						 			<a href="${cpath}/resultList2.do?id=${deep1.id}&category=${deep1.category}" target="f1">추천식품</a>
+						 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" target="f1">체크리스트관련</a>
+						 		</td></tr>
 						 	</table>
+						 	<br><br>
+						 	<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650 height=400 
+						 		scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
+						 		margin-top: -5%; z-index: 100;">
+						 	</iframe>
 						 	<br><br><br>
 						 </div>
 						 
