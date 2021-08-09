@@ -73,4 +73,10 @@ public interface MemberMapper {
 	
 	// 체크박스 update TEST
 	public void checkUpdate(CheckVO vo);
+	
+	// 추천음식 select
+	public List<RecommandVO> foodSelect(String category); 
+	
+	// 추천음식 select
+	public List<RecommandVO> planSelect(String category); 
 }
