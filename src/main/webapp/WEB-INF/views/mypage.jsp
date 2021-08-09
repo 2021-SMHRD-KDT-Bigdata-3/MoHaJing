@@ -25,17 +25,15 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
+	<link rel="stylesheet" href="${cpath}/resources/scss/_button.scss?after">
 	<style>
 	.comment-form{
-	background-color: white;
-	margin : auto;
-	border:1px solid white;
-	
+	background-color:transparent;
 	}
 	.form-check{
-	border:1px solid #E6E6E6;
-	background-color:#FFFFFF;
+	border: transparent;
+	background-color:transparent;
 	width:400px;
 	padding-top:10px;
 	border-radius:2%;
@@ -51,17 +49,79 @@
 	.mypageinfo{
 	margin:auto;
 	}
-	.check-align{
-	
+	.top-btn-area{
+	position:fixed;
+	top:0px;
+	right:0px;
 	}
-	</style>
+
+	.check-title1{
+	text-align:left;
+	margin-left:40px;
+	margin-top:40px;
+	margin-bottom:-10px;
+	}
+	body {
+	background: url(${cpath}/resources/img/hair_bg.jpg)
+}
+	.mypage_img {
+	background: transparent;}
+	.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 2px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : black;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 90%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+
+	.form-control:focus{
+		border-color : white !important;
+	}
+</style>
 	
 </head>
 
 <body>
-
 <!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu"  >
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo3.png" alt="">
 		</div>
@@ -123,12 +183,13 @@
 		</div>
 	</div>
 	<!--================ End Canvus Menu Area =================-->
+	
 
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" ">
 				</div>
 			</div>
 		</div>
@@ -137,41 +198,42 @@
 	<!--================ Start banner section =================-->
 	
 	<div class="comment-form" align="center">
+	
                        <h1 class="my-title">
-					<img src="${cpath}/resources/img/mypage10.png" alt=""></h1>
+					<img class="mypage_img" src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
 	
 	
 	<table class="mypageinfo">
-	<tr>
-	<td>아이디</td>
-	<td>${vo.id}</td>
-	</tr>
-	<tr>
-	<td>패스워드</td>
-	<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
-	</tr>
-	<tr>
-	<td>이름</td>
-	<td> ${vo.name}</td>
-	</tr>
-	<tr>
-	<td>나이</td>
-	<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
-                                         onblur="this.placeholder = ''"></td>
-	</tr>
-	<tr>
-	<td>성별</td>
-	<td>${vo.gender}</td>
-	</tr>
+		<tr>
+			<td>아이디</td>
+			<td>${vo.id}</td>
+		</tr>
+		<tr>
+			<td>패스워드</td>
+			<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
+                                        style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td> ${vo.name}</td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+                                         onblur="this.placeholder = ''" style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td>${vo.gender}</td>
+		</tr>
 	
-	</table><br>
+	</table>
 	
-                        
-    						<div class="form-group form-check" align="center">
-                            <h4 class="check-align">✔ 체크리스트</h4>
-                            <div class="form-group form-check " align=" center";>
+                        	<div class="check-title1">
+                            <h3>checkList</h3></div>
+                            <div  style="padding-top:10" class="form-group form-check " align=" center";>
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
@@ -203,20 +265,18 @@
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
 							<div class="form-group col-md-12">
-								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
+								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'" style="width:250px; border : none; border-bottom-style : solid; background-color : transparent;" >
 							</div>
                             
                             </div><br>
-                            </div>
-                            <button type="submit" class="main_btn">
+                        
+                            	<button  type="submit" class="hover1"style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;" >
                                	정보수정하기
-                            </button>
+                           		</button>
                         </form>
                     </div>
-	
-	
-	
+					
 	
 <!--================ start footer Area  =================-->
 	<footer class="footer-area">

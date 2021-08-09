@@ -37,6 +37,8 @@
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<link rel="stylesheet" href="${cpath}/resources/scss/_button.scss?after">
+	<style>
 <script>
 	function goWrite(id) {
 		location.href = "${cpath}/writeBoard.do?id=" + id;
@@ -58,12 +60,14 @@ border-left:0px;
 border-right:0px;
 margin:auto;
 }
-.logo{
+.col-lg-12 logo{
 position:fixed;
 top:50px;
 right:50px;
 }
-
+.section-top-border{
+border: 1px solid white;
+}
 </style>
 </head>
 
@@ -169,8 +173,8 @@ right:50px;
 						<form  action="${cpath}/community.do" method="post">
 							<input  type="text" name="search">
 							<input type="hidden" name="id" value="${vo.id}">
-							<input type="submit" value="검색" class="genric-btn info-border radius" style="border:0 solid black;">
-								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">글쓰기</a>
+							<input type="submit" value="검색"  class="genric-btn info-border radius" style="border:0 solid black; ;">
+								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black; ">글쓰기</a>
 						</form>
 					</div>
 				</div>

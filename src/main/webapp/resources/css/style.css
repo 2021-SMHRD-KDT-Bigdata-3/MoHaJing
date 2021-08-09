@@ -296,7 +296,7 @@ button:focus {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     display: inline-block;
-    background: #ffffff; }
+    background: transparent; }
     .canvus_menu .toggle_icon span {
       height: 2px;
       width: 30px;
@@ -1934,7 +1934,7 @@ button:focus {
 .comment-form {
   background: #fafaff;
   text-align: center;
-  border: 1px solid #eee;
+  border: 1px solid transparent;
   padding: 47px 30px 43px;
   margin-top: 50px;
   margin-bottom: 40px; }
@@ -3296,7 +3296,7 @@ h6 {
   z-index: 222;
   display: inline-block;
   text-align: center;
-  color: #38a4ff;
+  color: transparent;
   font-size: 12px;
   font-weight: 500;
   line-height: 48px;

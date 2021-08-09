@@ -83,6 +83,7 @@
 
 .hover1:hover, .hover1:focus, .hover1:active{
 	letter-spacing : 5px;
+	background-color: transparent;
 }
 
 .hover1:after, .hover1:before{

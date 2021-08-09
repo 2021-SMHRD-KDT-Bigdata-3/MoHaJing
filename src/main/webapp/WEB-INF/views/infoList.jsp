@@ -48,9 +48,14 @@
 	<style>
 .text-heading{
 text-align: center;
+
 }
 .lnr-arrow-right:before {
 	content: "";
+}
+.sample-text-area{
+max-width:80%;
+margin:auto;
 }
 	</style>
 	
