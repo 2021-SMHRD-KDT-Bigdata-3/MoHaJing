@@ -83,7 +83,6 @@
 
 .hover1:hover, .hover1:focus, .hover1:active{
 	letter-spacing : 5px;
-	background-color: transparent;
 }
 
 .hover1:after, .hover1:before{
@@ -204,7 +203,7 @@
 		</div>
 	</section>-->
 	<!--================ Start banner section =================-->
-
+<br>
 
 	<div class="hair" align="center" style="margin-top : 100px;">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="">

@@ -268,8 +268,10 @@ public class MoController {
 
 	// 마이페이지 정보 수정 기능
 	@RequestMapping("/updateMypage.do")
-	public String updateMypage(MemberVO vo) {
+	public String updateMypage(MemberVO vo, CheckVO check) {
+		System.out.println(vo.getId());
 		memberMapper.updateMypage(vo);
+		memberMapper.checkUpdate(check);
 		return "redirect:/mypage.do?id=" + vo.getId();
 	}
 

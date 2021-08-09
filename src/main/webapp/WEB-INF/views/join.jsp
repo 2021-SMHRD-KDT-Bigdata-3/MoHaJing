@@ -286,13 +286,13 @@ body {
 									<p><input type="checkbox" name="no10" value="1">
 									10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 								</div>
-								
+							<!-- 	
 							<div class="form-group col-md-12">
 								<input type="text" class="form-control" id="name" name="checknum"
 								placeholder="해당 항목 갯수" onfocus="this.placeholder = ''"
 								onblur="this.placeholder = '해당 항목 갯수'" style="border : none; border-bottom-style : solid; background-color : #f4f4f4;">
 							</div> 
-							
+							 -->
 						</div>	
 					<div class="col-lg-12 text-center">
 						<button type="submit" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">회원가입</button> 

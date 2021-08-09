@@ -100,7 +100,7 @@ drop TABLE mo_deep1;
 
 
 
-DROP TABLE mo_deep1;
+DROP TABLE mo_deep;
 
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
@@ -119,10 +119,10 @@ select * from mo_deep1;
 ALTER TABLE `mo_deep1` ADD 'percent' int not null;
 select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
 show tables;
-show full columns from mo_recommand;
+show full columns from mo_deep;
 
 drop table mo_check;
-TRUNCATE mo_check;
+TRUNCATE mo_member;
 create table mo_check(
 id varchar(50),
 no1 int,
@@ -149,3 +149,6 @@ percent float,
 category varchar(5),
 date datetime
 );
+
+
+ALTER TABLE `mo_member` DROP `checknum`;
