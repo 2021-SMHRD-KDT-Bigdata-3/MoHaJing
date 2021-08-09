@@ -71,6 +71,53 @@ text-align: center;
 max-width:80%;
 margin:auto;
 }
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+	background-color: transparent;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : gray;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
 	</style>
 	
 </head>
@@ -164,12 +211,12 @@ margin:auto;
 	<!-- End Sample Area -->
 	
 	<div class="button-group-area mt-40" align="center">
-				<a href="${cpath}/infoList.do" class="genric-btn default circle" target="f1">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList2.do" target="f1" class="genric-btn primary-border circle" id="woman">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList3.do" class="genric-btn success-border circle" target="f1">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList4.do" class="genric-btn info-border circle" target="f1">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList5.do" class="genric-btn warning-border circle" target="f1">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList6.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList.do" class="hover1" target="f1" style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;">남성형탈모<span class="lnr lnr-arrow-right" ></span></a>
+				<a href="${cpath}/infoList2.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList3.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList4.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList5.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList6.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
 			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=480
