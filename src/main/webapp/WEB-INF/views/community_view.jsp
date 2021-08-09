@@ -35,7 +35,6 @@
 	href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
 <link rel="stylesheet"
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-<<<<<<< HEAD
 <!-- main css -->
 <link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
 <script>
@@ -48,7 +47,6 @@ function goViewComm(id){
 }
 </script>
 
-=======
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
 
@@ -60,9 +58,8 @@ function goViewComm(id){
 		function goViewComm(id){
 			location.href="${cpath}/viewComment.do?id="+id;
 		}
-	</script>
-</head>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
+</script>
+	
 <style>
 h4 {
 	font-size: 30px;
@@ -99,7 +96,6 @@ border-left:0px;
 border-right:0px;
 width: 400px;
 }
-<<<<<<< HEAD
 
 td{
 padding:10px;
@@ -125,14 +121,12 @@ padding:10px;
   }
 
 
-=======
 .country{
 padding-left:20px;
 }
 .serial{
 
 }
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 </style>
 </head>
 
