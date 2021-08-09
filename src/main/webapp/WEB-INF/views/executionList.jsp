@@ -31,17 +31,22 @@
 	margin : auto;
  }
  .blog_post img {
- 	max-width: 60%;
- 	float: left;
- 	margin-right:30px;
- 	vertical-align: text-bottom;
+	max-width: 40%;
+	width: 300px;
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+    vertical-align: text-bottom;
  }
  .blog_post {
  	float: left;
- 	padding-top: 20px;
+    padding-top: 20px;
+    width: 500px;
+    max-width:80%;
+	margin:auto;
   }
   .blog_post h4 {
-    line-height: 36px;
+    line-height: 20px;
     color: #222222;
     font-weight: 600;
     transition: all 0.3s linear; 
@@ -52,7 +57,11 @@
   .blog_post p {
     margin-bottom: 26px; 
     }
-
+h4{
+ font-family: 'Gowun Dodum', sans-serif; 
+ color: black; 
+ font-size: 15px; 
+}
 </style>
 </head>	
 
@@ -61,7 +70,7 @@
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
-				<img src="/img/${deep.img}" />
+				<img src="/img/${deep.img}"/>
 					<h4>${deep.date}</h4>
 					<h4>${deep.result}</h4>
 					<h4>${deep.category}</h4>

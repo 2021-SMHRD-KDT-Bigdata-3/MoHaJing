@@ -116,4 +116,14 @@
         update mo_check set no1 = #{no1}, no2 = #{no2}, no3 = #{no3}, no4 = #{no4}, no5 = #{no5}, no6 = #{no6}, no7 = #{no7}, no8 = #{no8}, no9 = #{no9}, no10 = #{no10} where id = #{id}
     </update>
     
+    <!-- 추천음식 select -->
+    <select id="foodSelect" parameterType="String" resultType="com.spring.mapper.RecommandVO">
+        select food from mo_recommand where category = #{category}
+    </select>
+    
+    <!-- 행동사항 select -->
+    <select id="planSelect" parameterType="String" resultType="com.spring.mapper.RecommandVO">
+        select plan from mo_recommand where category = #{category}
+    </select>
+    
 </mapper>

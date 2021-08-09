@@ -37,6 +37,7 @@ import com.spring.mapper.DeepVO;
 import com.spring.mapper.InfoVO;
 import com.spring.mapper.MemberMapper;
 import com.spring.mapper.MemberVO;
+import com.spring.mapper.RecommandVO;
 import com.spring.mapper.TestVO;
 import com.spring.service.CommentService;
 import lombok.extern.log4j.Log4j;
@@ -224,7 +225,11 @@ public class MoController {
 		int num = Integer.parseInt(no);
 		Deep1VO deep1 = memberMapper.deep1Select(num); // 딥러닝 분석 결과
 		MemberVO vo = memberMapper.logmain(deep1.getId()); // 회원정보
+		List<RecommandVO> foods = memberMapper.foodSelect(deep1.getCategory()); // 추천음식
+		List<RecommandVO> plans = memberMapper.planSelect(deep1.getCategory()); // 행동사항
 		model.addAttribute("deep1", deep1);
+		model.addAttribute("foods", foods);
+		model.addAttribute("plans", plans);
 		model.addAttribute("vo", vo);
 		return "result2";
 	}

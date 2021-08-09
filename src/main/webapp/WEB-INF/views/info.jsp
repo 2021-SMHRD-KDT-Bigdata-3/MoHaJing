@@ -35,23 +35,6 @@
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
-	function getJson(){
-		$.ajax({
-			url: "${cpath}/info.do",
-			type :"get",
-			dataType: "html",
-			success: resultHtml,
-			error : function(){
-				alert("error");}
-		});
-	}
-	function resultHtml(data){
-		var result = "<iframe id='iframe' name='f1'>";
-		result+="</iframe>"
-		${"#ajax"}.html(result);
-	}
-	
-	
 	</script>
 	<style>
 .text-heading{

@@ -49,6 +49,14 @@
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-
+ 	</servlet-mapping>
+	<!-- 	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>SSL Forward</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>  -->
 </web-app>
