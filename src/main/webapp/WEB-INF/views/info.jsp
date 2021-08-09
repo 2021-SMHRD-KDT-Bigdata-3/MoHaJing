@@ -163,6 +163,10 @@ text-align: center;
 }
 
 
+.sample-text-area,.button-group-area{
+max-width:80%;
+margin:auto;
+}
 	</style>
 	
 </head>

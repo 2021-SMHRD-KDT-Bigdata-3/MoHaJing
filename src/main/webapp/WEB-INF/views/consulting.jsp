@@ -49,11 +49,18 @@
 	
 .table1{
 margin : auto;
-
-border:1px solid #6c757d;
+max-width:80%;
+border:1px solid black;
 border-left:0px;
 border-right:0px;
-
+}
+.top-btn-area{
+	position:fixed;
+	top:0px;
+	right:0px;
+}
+.consul{
+color:black;
 }
 	</style>
 	
@@ -129,7 +136,7 @@ border-right:0px;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -143,35 +150,35 @@ border-right:0px;
 	
 
 	<table class="table1">
-	<tr >
-	<td style="padding-top:20px;"><h5>상담사</h5></td>
-	<td style="padding-top:20px;"align="center";><h5>약력</h5></td>
-	<td style="padding-top:20px;"><h5>채팅하기</h5></td>
+	<tr style=" border-bottom:1px solid black; background-color:#f8f9fa">
+		<td style="padding-top:10px;"  align="center"><h5 class="consul">상담사</h5></td>
+		<td style="padding-top:10px; padding-left:50px;"align="center";><h5 class="consul">상담분야</h5></td>
+		<td style="padding-top:10px; padding-left:40px;padding-right:30px;"align="center"><h5 class="consul">상담하기</h5></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;"></td>
-	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
+		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;"><br>Emilly Blunt</td>
+		<td style="padding-left:50px;"class="consul">임상심리</td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;"></td>
-	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
+		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;"><br>Elsie Cunningham</td>
+		<td style="padding-left:50px;"class="consul">탈모센터</td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;"></td>
-	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
+		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;"><br>Annie Stephens</td>
+		<td style="padding-left:50px;"class="consul">피부과</td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;"></td>
-	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
+		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;"><br>Maria Luna</td>
+		<td style="padding-left:50px;"class="consul">한의원</td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
 	</tr>
 	<tr height="100px">
-	<td style="padding-right:10px;"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;"></td>
-	<td style="padding-right:10px;">Emilly Blunt<br>드림 헤어라인 모발이식 대표원장<br>실력에 자만하지 않고 항상 연구하는 드림헤어라인입니다!</td>
-	<td style="padding-right:10px;"><a href="" class="btn-reply text-uppercase"><butten>채팅하기</butten></a></td>
+		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;"><br>Ina Hayes</td>
+		<td style="padding-left:40px;"class="consul">정신의학과</td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
 	</tr>
 	
 	
