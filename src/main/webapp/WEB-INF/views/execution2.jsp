@@ -71,6 +71,10 @@
 	font-weight: bold;
 }
 
+.upload_button{
+	
+}
+
 .upload_button label{
 }
 .container label{
@@ -91,41 +95,23 @@
 
 </style>
 <script type="text/javascript">
+	
 	function readURL(input) {
-		if (input.files && input.files[0]) {
-			var reader = new FileReader();
-			reader.onload = function(e) {
-				$('#blah').attr('src', e.target.result).width(300);
-			}
-			reader.readAsDataURL(input.files[0]);
+		 if (input.files && input.files[0]) {
+		  var reader = new FileReader();
+		  
+		  reader.onload = function (e) {
+		   $('#preview_image').attr('src', e.target.result);  
+		  }
+		  
+		  reader.readAsDataURL(input.files[0]);
+		  }
 		}
-	}
-	
-	function readImage(input) {
-		// 인풋 태그에 파일이 있는 경우
-		if (input.files && input.files[0]){
-			
-			// 파일 인스턴스 생성
-			const reader = new FileReader()
-			
-			// 이미지가 로드된 경우
-			reader.onload = e => {
-				const previewImage = document.getElementById("preview_image")
-				previewImage.src = e.target.result;
-			}
-			
-			// reader가 이미지를 읽도록 하기
-			reader.readAsDataURL(input.files[0])
-			
-		}
-		
-	}
-	
-	// input file에 change 이벤트 부여
-	const inputImage = document.getElementById("upload_file")
-	inputImage.addEventListener("change", e => {
-		readImage(e.target)
-	})
+		 
+		// 이벤트를 바인딩해서 input에 파일이 올라올때 위의 함수를 this context로 실행합니다.
+		$("#upload_file").change(function(){
+		   readURL(this);
+		});
 </script>
            <script>
             $(function(){
@@ -222,7 +208,8 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="picture" style="max-width: 400px; max-height: 350px; overflow: hidden;">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-10%; margin-top:-10%"/>
+						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-20%; margin-top:-20%"/>
+						<img src="#" alt="" id="preview_image2" />
 				</div>
 				<div class="upload_button">
 					<label for="upload_file">
