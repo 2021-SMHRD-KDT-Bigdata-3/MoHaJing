@@ -26,6 +26,12 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -63,10 +69,10 @@ margin:auto;
 <body>
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">노화성 탈모</h3>
-			<p class="sample-text">
-				<span><b>피부 노화</b>와 함께 진행되어 발생하는 탈모로서 인간의
+		<div class="container" style="max-width: 75%;">
+			<h3 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">노화성 탈모</h3>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">
+				<span>&nbsp&nbsp&nbsp&nbsp<b>피부 노화</b>와 함께 진행되어 발생하는 탈모로서 인간의
 				 각종 호르몬 생산이 <b>감량</b>되는 시점부터 눈에 띄게 진행되는 탈모를 말한다.</span>
 			</p>
 		</div>

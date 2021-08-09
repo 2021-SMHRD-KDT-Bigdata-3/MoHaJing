@@ -6,8 +6,8 @@
     
     <!-- 회원가입 -->
     <insert id="joinTry" parameterType="com.spring.mapper.MemberVO">
-        insert into mo_member(id, pw, name, gender, age, checknum)
-        values(#{id}, #{pw}, #{name}, #{gender}, #{age}, #{checknum})
+        insert into mo_member(id, pw, name, gender, age)
+        values(#{id}, #{pw}, #{name}, #{gender}, #{age})
     </insert>
     
     <!-- 로그인 -->
@@ -52,10 +52,11 @@
         values(#{no}, #{id}, #{content}, now())
     </insert>
     
-    <!-- 댓글삭제 -->
+    <!-- 댓글삭제
     <delete id="delete" parameterType="int">
         delete from mo_comment where no = #{no}
     </delete>
+     -->
     
     <!-- 게시글 입력 -->
     <insert id="insertBoard" parameterType="com.spring.mapper.BoardVO">
@@ -70,7 +71,7 @@
     
     <!-- 마이페이지 정보 수정 -->
     <update id="updateMypage" parameterType="com.spring.mapper.MemberVO">
-        update mo_member set pw = #{pw}, age = #{age}, checknum = #{checknum} where id = #{id}
+        update mo_member set pw = #{pw}, age = #{age} where id = #{id}
     </update>
     
     <!-- 탈모 기본정보 출력 -->
@@ -100,14 +101,19 @@
         select * from mo_deep where no = #{no}
     </select>
 
-    <!-- 테스트중2 -->
-    <select id="fileTest2" parameterType="String" resultType="com.spring.mapper.TestVO">
-        select * from mo_test where id = #{id}
-    </select>
+    <!-- 체크박스 insert TEST -->
+    <insert id="checkInsert" parameterType="com.spring.mapper.CheckVO">
+        insert into mo_check(id, no1, no2, no3, no4, no5, no6, no7, no8, no9, no10) values(#{id}, #{no1}, #{no2}, #{no3}, #{no4}, #{no5}, #{no6}, #{no7}, #{no8}, #{no9}, #{no10})
+    </insert>
     
     <!-- 체크박스 select TEST -->
-    <select id="checkSelect" resultType="com.spring.mapper.CheckVO">
-        select * from mo_check
+    <select id="checkSelect" parameterType="String" resultType="com.spring.mapper.CheckVO">
+        select * from mo_check where id = #{id}
     </select>
+    
+    <!-- 체크박스 update TEST -->
+    <update id="checkUpdate" parameterType="com.spring.mapper.CheckVO">
+        update mo_check set no1 = #{no1}, no2 = #{no2}, no3 = #{no3}, no4 = #{no4}, no5 = #{no5}, no6 = #{no6}, no7 = #{no7}, no8 = #{no8}, no9 = #{no9}, no10 = #{no10} where id = #{id}
+    </update>
     
 </mapper>

@@ -8,7 +8,6 @@ public class MemberVO {
 	private String name;
 	private String gender;
 	private int age;
-	private int checknum;
 	
 
 }

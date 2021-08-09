@@ -26,6 +26,12 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -63,10 +69,10 @@ margin:auto;
 <body>
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">원형 탈모</h3>
-			<p class="sample-text">
-				<span><b>모모 세포의</b> 기능이 잠시 <b>정지</b>되면서 특정 부분의 머리카락이 탈모 되는 현상을 말한다. 
+		<div class="container" style="max-width: 75%;">
+			<h3 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">원형 탈모</h3>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">
+				<span>&nbsp&nbsp&nbsp&nbsp<b>모모 세포의</b> 기능이 잠시 <b>정지</b>되면서 특정 부분의 머리카락이 탈모 되는 현상을 말한다. 
 				남성형 탈모와 달리 탈모 된 곳에 가는 털도 <b>남아 있지 않으며</b> 원형탈모 초기에는 <b>두피</b>가 빨갛다.</span>
 			</p>
 		</div>
