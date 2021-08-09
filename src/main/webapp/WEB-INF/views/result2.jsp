@@ -150,12 +150,16 @@ margin: auto;
 						 	<table>
 						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">맛있는거를 많이 먹으세요</td></tr>
+						 		<c:forEach var="plan" items="${plans}">
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${plan.plan}</td></tr>
+						 		</c:forEach>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">짜장면</td></tr>
+						 		<c:forEach var="food" items="${foods}">
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${food.food}</td></tr>
+						 		</c:forEach>
 						 	</table>
 						 	<br><br><br>
 						 </div>
