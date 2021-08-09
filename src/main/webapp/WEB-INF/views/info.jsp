@@ -67,6 +67,10 @@ text-align: center;
 	marginwidth: 0;
 	vspace: 0;
 }
+.sample-text-area,.button-group-area{
+max-width:80%;
+margin:auto;
+}
 	</style>
 	
 </head>
@@ -168,8 +172,8 @@ text-align: center;
 				<a href="${cpath}/infoList6.do" class="genric-btn danger-border circle" target="f1">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=650
-					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0></iframe>
+			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=480
+					 height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace= 0></iframe>
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color">탈모 예방법</h1>

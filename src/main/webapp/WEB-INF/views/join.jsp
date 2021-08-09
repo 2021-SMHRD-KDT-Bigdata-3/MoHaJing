@@ -196,27 +196,6 @@ body {
 	</div>
 	<!--================ End Offcanvus Menu Area =================-->
 
-	<!--================ Canvus Menu Area =================-->
-	<!-- <div class="canvus_menu">
-		<div class="container">
-			<div class="toggle_icon" title="Menu Bar">
-				<span></span>
-			</div>
-		</div>
-	</div> -->
-	<!--================ End Canvus Menu Area =================-->
-
-	<!-- <section class="top-btn-area" >
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
-					
-				</div>
-			</div>
-		</div>
-	</section>-->
-	<!--================ Start banner section =================-->
 
 	.
 	<div class="hair" align="center" style="margin-top : 100px;">
