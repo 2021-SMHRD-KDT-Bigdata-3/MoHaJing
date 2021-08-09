@@ -134,7 +134,6 @@ border-right:0px;
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-
 					<div class="progress-table">
 						<div class="table-head" align="left">
 							<div class="serial">제목</div>
@@ -182,8 +181,8 @@ border-right:0px;
 							<input type="text" name="content"> <input type="hidden"
 								name="no" value="${vo2.no}"> <input type="hidden"
 								name="id" value="${vo.id}">
-							<button type="submit" class="main_btn text-uppercase">댓글달기</button>
-							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase">목록</a>
+							<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">댓글달기</button>
+							<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">목록</a>
 						</div>
 					</form>
 				</div>

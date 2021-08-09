@@ -72,7 +72,7 @@ right:50px;
 <!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<img src="${cpath}/resources/img/logo3.png" alt="">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
