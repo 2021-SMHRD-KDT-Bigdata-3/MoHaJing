@@ -124,9 +124,7 @@ padding:10px;
 .country{
 padding-left:20px;
 }
-.serial{
 
-}
 </style>
 </head>
 
@@ -216,8 +214,7 @@ padding-left:20px;
 							<div class="country"><h4>${vo2.title}</h4></div>
 						</div>
 						<div class="table-row">
-							<div class="country">${vo2.id}</div>
-							<div class="country">${vo2.day}</div>
+							<div class="country" style="float: left;">${vo2.id}</div><div style="float: left;">${vo2.day}</div>
 						</div>
 						<div class="table-head">
 							<div class="country">
@@ -227,20 +224,21 @@ padding-left:20px;
 						<div class="table-head" align="left">
 							<div>${vo2.content}</div>
 						</div>
+							<br><br>
 						<div class="table-head">
 							<table class="comment1" align="center">
 								<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
 									<th colspan="2" style="width:400px">댓글</th>
 									<th></th>
-									<th style="padding-left:160px; ">작성자</th>
+									<th style="padding: 10px;">작성자</th>
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-									<td colspan="2" style="width:400px">
+									<td colspan="2" style="width: 400px">
 										<div>${list.content}</div>
 									</td>
 									<td></td>
-									<td style="padding-left:160px;">
+									<td style="padding: 10px;">
 										<div class="country">${list.id}</div>
 									</td>
 								</tr>
