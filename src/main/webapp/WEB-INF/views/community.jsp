@@ -60,7 +60,7 @@ border-left:0px;
 border-right:0px;
 margin:auto;
 }
-.logo{
+.col-lg-12 logo{
 position:fixed;
 top:50px;
 right:50px;

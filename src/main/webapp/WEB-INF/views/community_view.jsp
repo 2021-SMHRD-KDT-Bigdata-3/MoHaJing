@@ -34,6 +34,8 @@
 <link rel="stylesheet"
 	href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 <link rel="stylesheet" href="${cpath}/resources/css/style.css">
+<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+
 <script type="text/javascript">
 		function goComm(id){
 			location.href="${cpath}/community.do?id="+id;
@@ -50,6 +52,12 @@ text-align: center;
 border:1px solid #6c757d;
 border-left:0px;
 border-right:0px;
+}
+.country{
+padding-left:20px;
+}
+.serial{
+
 }
 </style>
 

@@ -25,16 +25,14 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
 	<link rel="stylesheet" href="${cpath}/resources/scss/_button.scss?after">
 	<style>
 	.comment-form{
 	background-color:transparent;
-	border:1px solid white;
-	
 	}
 	.form-check{
-	border:1px solid #E6E6E6;
+	border: transparent;
 	background-color:transparent;
 	width:400px;
 	padding-top:10px;
@@ -56,19 +54,68 @@
 	top:0px;
 	right:0px;
 	}
-	.main_btn{
-	margin:auto;
-	}
-	.main_btn:hover{
-	background-color:#ffc107;
-	}
+
 	.check-title1{
 	text-align:left;
 	margin-left:40px;
 	margin-top:40px;
 	margin-bottom:-10px;
 	}
-	</style>
+	body {
+	background: url(${cpath}/resources/img/hair_bg.jpg)
+}
+	.mypage_img {
+	background: transparent;}
+	.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 2px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : black;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 90%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+
+	.form-control:focus{
+		border-color : white !important;
+	}
+</style>
 	
 </head>
 
@@ -153,7 +200,7 @@
 	<div class="comment-form" align="center">
 	
                        <h1 class="my-title">
-					<img src="${cpath}/resources/img/mypage3.png" alt=""></h1>
+					<img class="mypage_img" src="${cpath}/resources/img/mypage10.png" alt=""></h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
 	
 	
@@ -165,7 +212,8 @@
 		<tr>
 			<td>패스워드</td>
 			<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''"></td>
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
+                                        style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
 		</tr>
 		<tr>
 			<td>이름</td>
@@ -174,7 +222,7 @@
 		<tr>
 			<td>나이</td>
 			<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
-                                         onblur="this.placeholder = ''"></td>
+                                         onblur="this.placeholder = ''" style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
 		</tr>
 		<tr>
 			<td>성별</td>
@@ -217,13 +265,13 @@
 								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
 							<div class="form-group col-md-12">
-								<input style=" width:250px; background-color:#F2EFFB;"type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
-								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'">
+								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
+								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'" style="width:250px; border : none; border-bottom-style : solid; background-color : transparent;" >
 							</div>
                             
                             </div><br>
                         
-                            	<button style="color:#007bff" type="submit" class="main_btn" >
+                            	<button  type="submit" class="hover1"style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;" >
                                	정보수정하기
                            		</button>
                         </form>
