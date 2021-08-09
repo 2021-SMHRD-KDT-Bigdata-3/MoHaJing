@@ -180,8 +180,8 @@ margin: auto;
 						
 						</div>
 						 -->
-				<a  border="1px soild white" class="btn_result" href="index.html">저장하기</a><br>
-				<a  border="1px soild white"  class="btn_result" href="elements.html">다시 진단하기</a>
+				<!--   <a  border="1px soild white" class="btn_result" href="index.html">저장하기</a><br>-->
+				<!--  <a  border="1px soild white"  class="btn_result" href="elements.html">다시 진단하기</a> -->
 						
 	</section>
 	

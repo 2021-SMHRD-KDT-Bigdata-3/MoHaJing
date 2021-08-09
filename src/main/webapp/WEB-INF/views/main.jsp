@@ -203,13 +203,8 @@
 		</div>
 	</section>-->
 	<!--================ Start banner section =================-->
-<<<<<<< HEAD
 .
 
-=======
-
-	.
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 	<div class="hair" align="center" style="margin-top : 100px;">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="">
 	</div>

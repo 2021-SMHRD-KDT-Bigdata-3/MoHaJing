@@ -26,6 +26,12 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -59,12 +65,12 @@ text-align: center;
 <body>
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">여성형 탈모</h3>
-			<p class="sample-text">
-				<span><b>여성형 탈모증</b>은 주로 나이 든 여성에서 모발이 가늘어지고 모발 수가 줄어드는 증상을 말하며 대부분 <b>윗머리 부위</b>에 
+		<div class="container" style="max-width: 75%;">
+			<h3 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">여성형 탈모</h3>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">
+				<span>&nbsp&nbsp&nbsp&nbsp<b>여성형 탈모증</b>은 주로 나이 든 여성에서 모발이 가늘어지고 모발 수가 줄어드는 증상을 말하며 대부분 <b>윗머리 부위</b>에 
 				나타납니다. 그러나 남성형 탈모와는 달리 <b>앞머리선의 후퇴</b>는 보이지 않고 탈모부위가 완전한 모발 소실로 진행되지도 
-				않습니다. <b>초경 이후</b>에는 어느 시기에나 생길 수 있으며 분만 후나 영양부족, 호르몬 이상 등으로 인해 <b>발생</b>되어 질 수 있습니다.
+				않습니다. <br><b>&nbsp&nbsp&nbsp&nbsp초경 이후</b>에는 어느 시기에나 생길 수 있으며 분만 후나 영양부족, 호르몬 이상 등으로 인해 <b>발생</b>되어 질 수 있습니다.
 				대부분의 환자들은 40-50대에 처음으로 탈모를 호소하며, 나이가 들수록 탈모의 빈도와 정도가 증가하게 됩니다.</span>
 			</p>
 		</div>

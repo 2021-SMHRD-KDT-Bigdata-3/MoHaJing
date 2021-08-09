@@ -26,6 +26,12 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -59,10 +65,10 @@ text-align: center;
 <body>
 	<!-- Start Sample Area -->
 	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">휴지기 탈모</h3>
-			<p class="sample-text">
-				<span>장티푸스와 같은 <b>병</b>이나 <b>항암제</b> 등 <b>약물복용</b>으로 인하여 퇴행기를 거치지 않고 성장기에서 
+		<div class="container" style="max-width: 75%;">
+			<h3 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">휴지기 탈모</h3>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">
+				<span>&nbsp&nbsp&nbsp&nbsp장티푸스와 같은 <b>병</b>이나 <b>항암제</b> 등 <b>약물복용</b>으로 인하여 퇴행기를 거치지 않고 성장기에서 
 				바로 <b>휴지기</b>로 넘어가는 형태로서, 특정 부위가 아닌 <b>전체적</b>으로 머릿수가 감소하는 형태를 말한다. 
 				<b>휴지기 탈모</b>에는 산후, 출생 후, 열병 후, 약물성 휴지기 탈모 등이 있다.</span>
 			</p>
