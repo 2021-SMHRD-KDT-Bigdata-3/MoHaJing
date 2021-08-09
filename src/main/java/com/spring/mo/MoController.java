@@ -30,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
+import com.spring.mapper.CheckVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
 import com.spring.mapper.DeepVO;
@@ -53,9 +54,7 @@ public class MoController {
 	@RequestMapping("/execution.do")
 	public String execution(String id, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
-		Deep1VO deep = memberMapper.idDeepSelect(id);
 		model.addAttribute("vo", vo); // 회원정보 add
-		model.addAttribute("deep", deep); // 딥러닝 결과 add
 		return "execution";
 	}
 
@@ -171,7 +170,9 @@ public class MoController {
 
 	// 1:1대화창 보기
 	@RequestMapping("/consulting.do")
-	public String consulting() {
+	public String consulting(String id, Model model) {
+		MemberVO vo = memberMapper.mypage(id);
+		model.addAttribute("vo", vo);
 		return "consulting";
 
 	}
@@ -248,13 +249,22 @@ public class MoController {
 	}
 	*/
 	
-	// 이미지 띄우기 테스트중
+	
+	// 체크박스 테스트중
+	
 	@RequestMapping("/fileTest2.do")
-	public String fileTest2(String id, Model model) {
-		TestVO vo = memberMapper.fileTest2(id);
-		model.addAttribute("vo", vo);
+	public String fileTest2() {
 		return "fileTest2";
 	}
+	
+	@RequestMapping("/check.do")
+	public String check(CheckVO vo, Model model) {
+		CheckVO check = memberMapper.checkSelect();
+		model.addAttribute("result", check);
+		return "loading"; // 체크박스 제대로 표현되는지 확인하는 페이지
+	}
+	
+	
 
 	// 진단기록화면
 	@RequestMapping("/record.do")
@@ -329,12 +339,16 @@ public class MoController {
 	}
 
 	@RequestMapping("/executionList.do")
-	public String executionList() {
+	public String executionList(Deep1VO vo, Model model) {
+		List<Deep1VO> list = memberMapper.idDeepSelect(vo);
+		model.addAttribute("list", list);
 		return "executionList";
 	}
 	
 	@RequestMapping("/executionList2.do")
-	public String executionList2() {
+	public String executionList2(Deep1VO vo, Model model) {
+		List<Deep1VO> list = memberMapper.idDeepSelect(vo);
+		model.addAttribute("list", list);
 		return "executionList2";
 	}
 	
