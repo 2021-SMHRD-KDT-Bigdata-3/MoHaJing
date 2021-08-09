@@ -142,7 +142,7 @@ text-align: center;
 				</div>
 			</div>
 			<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650
-					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
+					height=400 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
 			</iframe>
 		</div>
 	</section>

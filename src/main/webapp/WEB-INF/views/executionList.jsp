@@ -61,7 +61,7 @@
 	<div class="container">
 		<div class="col-md-9">
 			<div class="blog_post">
-				<img src="/img/${deep.img}" />
+				<img src="/img/${deep.img}"/>
 					<h4>${deep.date}</h4>
 					<h4>${deep.result}</h4>
 					<h4>${deep.category}</h4>
