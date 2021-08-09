@@ -72,7 +72,8 @@ public class MoController {
 
 	// 회원가입 시도
 	@RequestMapping("/joinTry.do")
-	public String joinTry(MemberVO vo) {
+	public String joinTry(MemberVO vo, CheckVO check) {
+		memberMapper.checkInsert(check);
 		memberMapper.joinTry(vo);
 		return "redirect:/main.do";
 	}
@@ -249,23 +250,6 @@ public class MoController {
 	}
 	*/
 	
-	
-	// 체크박스 테스트중
-	
-	@RequestMapping("/fileTest2.do")
-	public String fileTest2() {
-		return "fileTest2";
-	}
-	
-	@RequestMapping("/check.do")
-	public String check(CheckVO vo, Model model) {
-		CheckVO check = memberMapper.checkSelect();
-		model.addAttribute("result", check);
-		return "loading"; // 체크박스 제대로 표현되는지 확인하는 페이지
-	}
-	
-	
-
 	// 진단기록화면
 	@RequestMapping("/record.do")
 	public String record() {
@@ -276,14 +260,18 @@ public class MoController {
 	@RequestMapping("/mypage.do")
 	public String mypage(String id, Model model) {
 		MemberVO vo = memberMapper.mypage(id);
+		CheckVO check = memberMapper.checkSelect(id);
 		model.addAttribute("vo", vo);
+		model.addAttribute("check", check);
 		return "mypage";
 	}
 
 	// 마이페이지 정보 수정 기능
 	@RequestMapping("/updateMypage.do")
-	public String updateMypage(MemberVO vo) {
+	public String updateMypage(MemberVO vo, CheckVO check) {
+		System.out.println(vo.getId());
 		memberMapper.updateMypage(vo);
+		memberMapper.checkUpdate(check);
 		return "redirect:/mypage.do?id=" + vo.getId();
 	}
 

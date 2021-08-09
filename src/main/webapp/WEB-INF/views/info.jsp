@@ -26,6 +26,12 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -67,6 +73,96 @@ text-align: center;
 	marginwidth: 0;
 	vspace: 0;
 }
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover2:hover:after, .hover2:hover:before{
+	border-color : #99CCFF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover3:hover:after, .hover3:hover:before{
+	border-color : #FF9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover4:hover:after, .hover4:hover:before{
+	border-color : #CC99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover5:hover:after, .hover5:hover:before{
+	border-color : #CCCC99;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover6:hover:after, .hover6:hover:before{
+	border-color : #CC9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover7:hover:after, .hover7:hover:before{
+	border-color : #FF99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+
 .sample-text-area,.button-group-area{
 max-width:80%;
 margin:auto;
@@ -191,7 +287,7 @@ margin:auto;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px;">
 				</div>
 			</div>
 		</div>
@@ -200,34 +296,36 @@ margin:auto;
  <!-- Start Sample Area -->
 	<section class="sample-text-area">
 		<div class="container">
-			<h1 class="text-heading title_color">탈모 기본 정보</h1>
-			<p class="sample-text">
-				<b>탈모란</b> 신체의 털, 그중에서도 특히 머리카락이 부족한 상태를 일컫는다.<i>남성형탈모증</i>의 경우 현대의학으로는 별다른 해결책이 없으며 완벽한 치료방법이 현재까지 확실치 않아 탈모 현상의 진행을 늦춰줄 뿐이며, 
-				근본적인 치료제 또한 아직 나오지 않은 상태이다. 특히  <b>20</b>,<b>30대 젊은이</b>, 또는 <b>여성</b>에게  나타나는 탈모는 심한 우울증을 불러 일으키며, 구직과 결혼 및 사회생활에 상당히 부정적인 영향을 끼칠 수 있다.
+			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">탈모 기본 정보</h1>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 15px; margin-top: 10%;">
+				&nbsp&nbsp&nbsp&nbsp<b>탈모란</b> 신체의 털, 그중에서도 특히 머리카락이 부족한 상태를 일컫는다.<i>남성형탈모증</i>의 경우 현대의학으로는 별다른 해결책이 없으며 완벽한 치료방법이 현재까지 확실치 않아 탈모 현상의 진행을 늦춰줄 뿐이며, 
+				근본적인 치료제 또한 아직 나오지 않은 상태이다.<br> &nbsp&nbsp&nbsp&nbsp특히  <b>20</b>,<b>30대 젊은이</b>, 또는 <b>여성</b>에게  나타나는 탈모는 심한 우울증을 불러 일으키며, 구직과 결혼 및 사회생활에 상당히 부정적인 영향을 끼칠 수 있다.
  				부모세대에서 자식세대로 대물림되는 유전적인 성향이 상당히 강한 질환이다.</span>
 			</p>
 		</div>
 	</section>
+	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
 	<!-- End Sample Area -->
 	
-	<div class="button-group-area mt-40" align="center">
-				<a href="${cpath}/infoList.do" class="hover1" target="f1" style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;">남성형탈모<span class="lnr lnr-arrow-right" ></span></a>
-				<a href="${cpath}/infoList2.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList3.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList4.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList5.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
-				<a href="${cpath}/infoList6.do" class="hover1" target="f1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
+
+	<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
+				<a href="${cpath}/infoList.do" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold;">남성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList2.do" target="f1" class="hover1 hover3" id="woman" style="border:0 solid black; color: #FF9999; font-size: 15px; font-weight : bold;">여성형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList3.do" class="hover1 hover4" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList4.do" class="hover1 hover5" target="f1" style="border:0 solid black; color: #CCCC99; font-size: 15px; font-weight : bold;">휴지기탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList5.do" class="hover1 hover6" target="f1" style="border:0 solid black; color: #CC9999; font-size: 15px; font-weight : bold;">노화성 탈모<span class="lnr lnr-arrow-right"></span></a>
+				<a href="${cpath}/infoList6.do" class="hover1 hover7" target="f1" style="border:0 solid black; color: #FF99FF; font-size: 15px; font-weight : bold;">지루성탈모<span class="lnr lnr-arrow-right"></span></a>
 			</div>
 			<br>
-			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=480
-					 height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0  vspace= 0></iframe>
+			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=650
+					height=400 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; margin-top: -5%; z-index: 100;"></iframe>
 			<section class="sample-text-area">
 		<div class="container">
-			<h1 class="text-heading title_color">탈모 예방법</h1>
-			<p class="sample-text">
-				식습관, 모발 관리 습관의 개선, 스트레스, 술, 담배 같은 <b>악화 요인</b>은 차단할 수 있어야 한다. 
-				음식은 단백질과 비타민, 미네랄이 풍부한 음식을 골고루 섭취하는 것이 좋고 <i>무리한 다이어트</i>는 하지 않아야 한다.
-				 또한 모발에 쌓인 먼지와 피지는 모공을 막아 탈모를 악화시킬 수 있으므로 외출 후 머리를 바로 감는 것이 좋다. 
+			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold; margin-top: -10%">탈모 예방법</h1>
+			<p class="sample-text" style="font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 15px; margin-top:10%;">
+				&nbsp&nbsp&nbsp&nbsp식습관, 모발 관리 습관의 개선, 스트레스, 술, 담배 같은 <b>악화 요인</b>은 차단할 수 있어야 한다. 
+				음식은 단백질과 비타민, 미네랄이 풍부한 음식을 골고루 섭취하는 것이 좋고 <i>무리한 다이어트</i>는 하지 않아야 한다.<br>
+				 &nbsp&nbsp&nbsp&nbsp또한 모발에 쌓인 먼지와 피지는 모공을 막아 탈모를 악화시킬 수 있으므로 외출 후 머리를 바로 감는 것이 좋다. 
 				 더불어 머리를 감을 때 화학 성분이 두피를 자극할 수 있으므로 거품을 낸 채 오랫동안 방치하면 안되고, 
 				 머리를 감은 후 선풍기나 드라이기 찬바람을 이용해 말리는 것이 중요하다. 머리는 매일 감아야 두피의 이물질을 제거할 수 있다. 
 				 하루 한번 감는다면 저녁에 감는 것이 낮동안 쌓인 먼지를 없앨 수 있기 때문에 좋다.

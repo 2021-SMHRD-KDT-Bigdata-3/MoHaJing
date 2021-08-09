@@ -97,11 +97,10 @@ DROP TABLE mo_deep1;
 
 select * from mo_deep1
 drop TABLE mo_deep1;
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 
 
 
-DROP TABLE mo_deep1;
+DROP TABLE mo_deep;
 
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
@@ -114,7 +113,7 @@ date datetime
 );
 ALTER TABLE user mo_deep1 percent float
 
-DELETE TABLE mo_deep1;
+DELETE TABLE mo_no_check;
 
 select * from mo_deep1;
 ALTER TABLE `mo_deep1` ADD 'percent' int not null;
@@ -123,7 +122,9 @@ show tables;
 show full columns from mo_recommand;
 
 drop table mo_check;
+TRUNCATE mo_member;
 create table mo_check(
+id varchar(50),
 no1 int,
 no2 int,
 no3 int,
@@ -136,7 +137,7 @@ no9 int,
 no10 int
 );
 select * from mo_check;
-
+select * from mo_member;
 DROP TABLE mo_deep1;
 
 CREATE TABLE mo_deep1 (
@@ -148,3 +149,9 @@ percent float,
 category varchar(5),
 date datetime
 );
+
+
+ALTER TABLE `mo_member` DROP `checknum`;
+
+select * from mo_recommand;
+select * from mo_deep1;

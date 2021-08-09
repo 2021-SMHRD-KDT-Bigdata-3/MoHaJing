@@ -233,44 +233,77 @@
 	
                         	<div class="check-title1">
                             <h3>checkList</h3></div>
-                            <div  style="padding-top:10" class="form-group form-check " align=" center";>
+                            <div  style="padding-top:10" class="form-group form-check " align="center">
                             <div class="switch-wrap d-flex justify-content-between ">
-								<p>01. 이마가 점점 넓어지는 느낌이다</p>
+								<p>
+								<c:set var="no1" value="${check.no1}"/>
+								<input type="checkbox" name="no1" value="1" <c:if test="${no1 eq '1'}">checked</c:if> >
+								01. 이마가 점점 넓어지는 느낌이다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>02. 가늘고 힘없는 머리가 많이 빠진다</p>
+								<p>
+								<c:set var="no2" value="${check.no2}"/>
+								<input type="checkbox" name="no2" value="1" <c:if test="${no2 eq '1'}">checked</c:if> >
+								02. 가늘고 힘없는 머리가 많이 빠진다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>03. 하루에 80개 이상 모발이 빠진다</p>
+								<p>
+								<c:set var="no3" value="${check.no3}"/>
+								<input type="checkbox" name="no3" value="1" <c:if test="${no3 eq '1'}">checked</c:if> >
+								03. 하루에 80개 이상 모발이 빠진다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>04. 비듬이 많아지거나 두피가 가렵다</p>
+								<p>
+								<c:set var="no4" value="${check.no4}"/>
+								<input type="checkbox" name="no4" value="1" <c:if test="${no4 eq '1'}">checked</c:if> >
+								04. 비듬이 많아지거나 두피가 가렵다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>05. 모발이 가늘고 부드러워진다</p>
+								<p>
+								<c:set var="no5" value="${check.no5}"/>
+								<input type="checkbox" name="no5" value="1" <c:if test="${no5 eq '1'}">checked</c:if> >
+								05. 모발이 가늘고 부드러워진다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
+								<p>
+								<c:set var="no6" value="${check.no6}"/>
+								<input type="checkbox" name="no6" value="1" <c:if test="${no6 eq '1'}">checked</c:if> >
+								06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
+								<p>
+								<c:set var="no7" value="${check.no7}"/>
+								<input type="checkbox" name="no7" value="1" <c:if test="${no7 eq '1'}">checked</c:if> >
+								07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>08. 몸의 털이 갑자기 굵어진다</p>
+								<p>
+								<c:set var="no8" value="${check.no8}"/>
+								<input type="checkbox" name="no8" value="1" <c:if test="${no8 eq '1'}">checked</c:if> >
+								08. 몸의 털이 갑자기 굵어진다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>09. 이마와 정수리 부분이 유난히 번들거린다</p>
+								<p>
+								<c:set var="no9" value="${check.no9}"/>
+								<input type="checkbox" name="no9" value="1" <c:if test="${no9 eq '1'}">checked</c:if> >
+								09. 이마와 정수리 부분이 유난히 번들거린다</p>
 							</div>
 							<div class="switch-wrap d-flex justify-content-between">
-								<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
+								<p>
+								<c:set var="no10" value="${check.no10}"/>
+								<input type="checkbox" name="no10" value="1" <c:if test="${no10 eq '1'}">checked</c:if> >
+								10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 							</div>
+							
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="${vo.checknum}"
+								<!-- 
+								<input type="text" class="form-control" name="checknum" placeholder="해당하는 항목 수" value="?"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = '해당하는 항목 수'" style="width:250px; border : none; border-bottom-style : solid; background-color : transparent;" >
+								 -->  
 							</div>
-                            
+                             
                             </div><br>
-                        
+                        <input type="hidden" name="id" value="${vo.id}">
                             	<button  type="submit" class="hover1"style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;" >
                                	정보수정하기
                            		</button>

@@ -53,7 +53,9 @@ body {
   color: #777777; }
   
 h1,
-h2,
+h2 {
+	
+},
 h3,
 h4 {
 	font-size: 24px;
@@ -2571,7 +2573,7 @@ h6 {
     overflow-x: scroll; } }
 .progress-table {
   background: #ffffff;
-  padding: 15px 50px 30px 50px;
+  padding: 15px 350px 10px 10px;
   min-width: 800px; }
 
 .progress-table .serial {
@@ -2593,14 +2595,15 @@ h6 {
 
 .progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
   color: #222222;
-  line-height: 40px;
+  line-height: 100px;
   text-transform: uppercase;
   font-weight: 500; }
 
 .progress-table .table-row {
-  padding: 30px 0;
+  padding: 10px 0;
   border-top: 1px solid #edf3fd;
-  display: flex; }
+  display: flex; 
+  }
 
 .progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
   display: flex;

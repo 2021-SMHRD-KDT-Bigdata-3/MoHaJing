@@ -210,7 +210,7 @@ body {
 			<div class="row d-flex align-items-center justify-content-center" style="height: 300px;">
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
-					id="myForm" action="${cpath}/logmain.do" method="post">
+					id="myForm" action="${cpath}/joinTry.do" method="post">
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
@@ -247,44 +247,55 @@ body {
 						<h4 style="padding-left:10px;"align="left">CheckList</h4>
 							<div class="checkList1">
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>01. 이마가 점점 넓어지는 느낌이다</p>
+									<p><input type="checkbox" name="no1" value="1">
+									01. 이마가 점점 넓어지는 느낌이다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>02. 가늘고 힘없는 머리가 많이 빠진다</p>
+									<p><input type="checkbox" name="no2" value="1">
+									02. 가늘고 힘없는 머리가 많이 빠진다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>03. 하루에 80개 이상 모발이 빠진다</p>
+									<p><input type="checkbox" name="no3" value="1">
+									03. 하루에 80개 이상 모발이 빠진다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>04. 비듬이 많아지거나 두피가 가렵다</p>
+									<p><input type="checkbox" name="no4" value="1">
+									04. 비듬이 많아지거나 두피가 가렵다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>05. 모발이 가늘고 부드러워진다</p>
+									<p><input type="checkbox" name="no5" value="1">
+									05. 모발이 가늘고 부드러워진다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
+									<p><input type="checkbox" name="no6" value="1">
+									06. 두피를 눌러보면 가벼운 통증이 느껴진다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
+									<p><input type="checkbox" name="no7" value="1">
+									07. 앞머리와 뒷머리의 굵기 차이가 많이 난다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>08. 몸의 털이 갑자기 굵어진다</p>
+									<p><input type="checkbox" name="no8" value="1">
+									08. 몸의 털이 갑자기 굵어진다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>09. 이마와 정수리 부분이 유난히 번들거린다</p>
+									<p><input type="checkbox" name="no9" value="1">
+									09. 이마와 정수리 부분이 유난히 번들거린다</p>
 								</div>
 								<div class="switch-wrap d-flex justify-content-between">
-									<p>10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
+									<p><input type="checkbox" name="no10" value="1">
+									10. 두피에 피지량이 갑자기 늘어난 것 같다</p>
 								</div>
+							<!-- 	
 							<div class="form-group col-md-12">
 								<input type="text" class="form-control" id="name" name="checknum"
 								placeholder="해당 항목 갯수" onfocus="this.placeholder = ''"
 								onblur="this.placeholder = '해당 항목 갯수'" style="border : none; border-bottom-style : solid; background-color : #f4f4f4;">
-							</div>
+							</div> 
+							 -->
 						</div>	
 					<div class="col-lg-12 text-center">
-						<button type="button" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;" 
-							onclick="goJoin()">회원가입</button> 
+						<button type="submit" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">회원가입</button> 
 					</div>
 				</form>
 				<div class="col-lg-6 col-md-6 header-left">
