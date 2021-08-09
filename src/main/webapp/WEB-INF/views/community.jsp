@@ -132,17 +132,15 @@ right:50px;
 		</div>
 	</div>
 	<!--================ End Canvus Menu Area =================-->
-
 	<section class="top-btn-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 logo">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="">
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area relative">
 		<div class="section-top-border">

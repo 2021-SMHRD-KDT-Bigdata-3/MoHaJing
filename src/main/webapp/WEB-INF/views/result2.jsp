@@ -25,7 +25,9 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 <style>
  .row,.title_color{
 	max-width:80%;
@@ -59,7 +61,7 @@ margin: auto;
 <!--================ Offcanvus Menu Area =================-->
 	<div class="side_menu">
 		<div class="logo">
-			<img src="${cpath}/resources/img/logo3.png" alt="">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -124,34 +126,42 @@ margin: auto;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-10%;">
 				</div>
 			</div>
 		</div>
 	</section>
 	
-	
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area common-banner relative">
-		<div class="container-fluid">
-			<div class="row d-flex align-items-center justify-content-center">
-				<div class="header-right col-lg-6 col-md-6">
-					<br><br>
-					<h1>
-                    Self-diagnosis Result
-					</h1>
-					
+				<div style="max-height: 300px; overflow: hidden;"> 
+					<img src="${cpath}/resources/img/success.gif" alt="" style="max-height: initial; margin-top: -20%;">
 				</div>
-
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100" src="${cpath}/resources/img/banner/banner-img1.jpg" alt="">
-					</div>
-				</div>
-			</div>
 			<br><br>
+						 <div class="result_tb" align="center" style="margin-top: -10%;">
+						 	<table>
+						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/deep/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
+						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 	</table>
+						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+						 	<table>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">맛있는거를 많이 먹으세요</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">짜장면</td></tr>
+						 	</table>
+						 	<br><br><br>
+						 </div>
 						 
-						 <div class="progress-table">
+						 <!--  
+						 <div class="progress-table" style="margin-top: -20%;">
 						<div class="table-head">
 							<div class="country"><h5>개선할점</h5></div>
 							<div class="visit"><h5>병원진료여부</h5></div>
@@ -160,22 +170,19 @@ margin: auto;
 						
 						<div class="table-row">
 							<div class="country"> ${vo.id}</div>
-							<div class="visit"><img src="/deep/${deep1.img}" /></div>
+							<div class="visit"><img src="/img/${deep1.img}" /></div>
 							<div class="visit">${deep1.result}</div>
 							<div class="visit">${deep1.no}</div>
 							<div class="visit">${deep1.percent}</div>
 							<div class="visit">${deep1.category}</div>
 						</div>
 						
+						
 						</div>
-					</div>
-				</div>
-			</div>
-						 
+						 -->
 				<a  border="1px soild white" class="btn_result" href="index.html">저장하기</a><br>
 				<a  border="1px soild white"  class="btn_result" href="elements.html">다시 진단하기</a>
 						
-			</div>
 	</section>
 	
 	<!--================ End banner section =================-->
@@ -184,7 +191,7 @@ margin: auto;
 
 	
 <!--================ start footer Area  =================-->
-	<footer class="footer-area">
+	<footer class="footer-area" style="margin-top: 100%;">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">

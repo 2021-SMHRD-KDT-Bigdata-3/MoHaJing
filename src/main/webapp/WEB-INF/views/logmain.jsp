@@ -226,7 +226,7 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities" style="height:430px; margin-top:20px;">
+						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/m_start.gif" alt="">
 							</div>
@@ -239,7 +239,6 @@ background-color: white;
 										<div class="form-group col-md-12">
 											<input type="hidden" name="id" value="${vo.id}">
 											<input type="hidden" name="category" value="M">
-											<input class="form-control" type="submit" style="border:0 solid black" value="M자 탈모 분석">
 											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>
@@ -252,7 +251,7 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="single-amenities" style="height:400px;">
+						<div class="single-amenities" style="height:80%;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/o_start.gif" alt="">
 							</div>
@@ -265,7 +264,6 @@ background-color: white;
 										<div class="form-group col-md-12">
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="hidden" name="category" value="O">
-											<input class="form-control" type="submit" style="border:0 solid black" value="남성형 탈모 분석">
 											<input class="form-control" type="submit" value="분석하기">
 										</div>
 									</form>

@@ -203,8 +203,7 @@
 		</div>
 	</section>-->
 	<!--================ Start banner section =================-->
-	
-	.
+.
 	<div class="hair" align="center" style="margin-top : 100px;">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="">
 	</div>
