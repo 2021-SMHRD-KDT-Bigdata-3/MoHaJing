@@ -207,20 +207,7 @@ background-color: white;
 		<div class="popular-place-area section_gap">
 			<div class="container">
 				<div class="row align-items-center justify-content-center">
-					<div class="col-lg-5 offset-lg-1">
-						<div class="left-content">
-							<img class="img1 img-fluid" src="${cpath}/img/popular/img_1.png"
-								alt=""> <img class="img2 img-fluid"
-								src="${cpath}/img/popular/img2.jpg" alt=""> <img
-								class="img3 img-fluid" src="${cpath}/img/popular/img3.jpg"
-								alt=""> <img class="img1 img-fluid"
-								src="${cpath}/resources/img/popular/img_1.png" alt=""> <img
-								class="img2 img-fluid"
-								src="${cpath}/resources/img/popular/img2.jpg" alt=""> <img
-								class="img3 img-fluid"
-								src="${cpath}/resources/img/popular/img3.jpg" alt="">
-						</div>
-					</div>
+					
 
 					<!-- 사진촬영 클릭하면 사진촬영 페이지로 넘어가야 함 -->
 
