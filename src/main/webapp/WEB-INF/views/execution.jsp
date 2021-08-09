@@ -36,6 +36,142 @@ text-align: center;
 .lnr-arrow-right:before {
 	content: "";
 }
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover2:hover:after, .hover2:hover:before{
+	border-color : #99CCFF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover3:hover:after, .hover3:hover:before{
+	border-color : #FF9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover4:hover:after, .hover4:hover:before{
+	border-color : #CC99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover5:hover:after, .hover5:hover:before{
+	border-color : #CCCC99;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover6:hover:after, .hover6:hover:before{
+	border-color : #CC9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover7:hover:after, .hover7:hover:before{
+	border-color : #FF99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+	background-color: transparent;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : gray;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
 	</style>
 	
 </head>
@@ -116,35 +252,19 @@ text-align: center;
 	</section>
 
  <!-- Start Sample Area -->
-	<section class="sample-text-area">
-		<div class="container">
-			<h1 class="text-heading title_color">진단 기록 관리</h1>
-			<div class="counter_area" align="center">
+	<section class="sample-text-area" align="center">
+			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">진단 기록 관리</h1>
 				<div class="top-two">
 					<div class="single_counter">
-						<div class="info-content">
-							<div class="thumb">
-								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" target="f1">
-									<h4>원형탈모</h4>
-								</a>
+							<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
+								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold;">M자탈모<span class="lnr lnr-arrow-right"></span></a>
 							</div>
-						</div>
-					</div>
-					<div class="single_counter">
-						<div class="info-content">
-							<div class="thumb">
-								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" target="f1">
-									<h4>M자탈모</h4>
-								</a>							
-							</div>
-						</div>
 					</div>
 				</div>
-			</div>
 			<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650
-					height=350 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
+					height=400 scrolling="yes" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
 			</iframe>
-		</div>
 	</section>
 	<!-- End Sample Area -->
 	
