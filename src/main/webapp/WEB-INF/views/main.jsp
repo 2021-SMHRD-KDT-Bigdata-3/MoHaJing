@@ -10,6 +10,9 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-signin-scope" content="profile email">
+	<meta name ="google-signin-client_id" 
+		content="777945930804-scu398nmc9q4qfap8fme6osb70m3pp2u.apps.googleusercontent.com">
 	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
 	<title>毛어때</title>
 	<!-- Bootstrap CSS -->
@@ -28,7 +31,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-		
+	<!-- sns연동 스크립트 파일불러오기 -->
+	<script type="text/javascript" src="${cpath}/resources/js/naver.js" charset="utf-8"></script>	
+	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!-- 카카오 클라이언트 키 초기화설정 -->
+	<script>
+        // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('11f152af3c0010575ee7f3016cb0eaa1');
+
+        // SDK 초기화 여부를 판단합니다.
+        console.log(Kakao.isInitialized());
+    </script>	
 	<script>
 		function goJoin(){
 			location.href="${cpath}/join.do";
@@ -120,6 +134,7 @@
 </head>
 
 <body>
+
 <div class="bg" style="background-image : url(${cpath}/resources/img/hair_bg.jpg)">
 	<!--================ Offcanvus Menu Area =================-->
 	<!-- <div class="side_menu">
@@ -235,8 +250,97 @@
 						<button type="button" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;" 
 							onclick="goJoin()">회원가입</button> 
 					</div>
+					<!-- 네이버 버튼 -->
+					<div id="naver_id_login"></div>
+					<!-- 카카오 버튼 -->
+					<a id="custom-login-btn" href="javascript:loginWithKakao()">
+					  <img
+					    src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+					    width="222"
+					  />
+					</a>
+					<!-- 구글 버튼 -->
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
 				</form>
+				<!-- sns연동 자바스크립트코드 -->
+				
+				<script type="text/javascript">
+					//모바일, PC 구분하는코드
+					function device_check() {
+					    // 디바이스 종류 설정
+					    var pc_device = "win16|win32|win64|mac|macintel";
+					 
+					    // 접속한 디바이스 환경
+					    var this_device = navigator.platform;
+					 
+					    if ( this_device ) {
+					 
+					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+					            return "http://172.30.1.28:8081/mo/logmain.do?id=naver&pw=naver";
+					        } else {
+					        	return "http://localhost:8081/mo/logmain.do?id=naver&pw=naver";
+					        }
+					 
+					    }
+					}
+				</script>
+				<!-- 네이버 로그인 자바스크립트 코드 -->
+				<script type="text/javascript">
+					
+					var naver_id_login = new naver_id_login("IS4Oj4O6Hz9J2KVtifmj", device_check());
+					
+					
+					var state = naver_id_login.getUniqState();
+					naver_id_login.setButton("white", 3,40);
+					naver_id_login.setDomain(".service.com");
+					naver_id_login.setState(state);
+					naver_id_login.setPopup();
+					naver_id_login.init_naver_id_login();
+				</script>
+				<!-- 네이버 사용자정보 가져오는코드 -->
+				<script type="text/javascript">
+					// 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
+					function naverSignInCallback() {
+						// naver_id_login.getProfileData('프로필항목명');
+						// 프로필 항목은 개발가이드를 참고하시기 바랍니다.
+						alert(naver_id_login.getProfileData('email'));
+						alert(naver_id_login.getProfileData('nickname'));
+						alert(naver_id_login.getProfileData('age'));
+					}
+				
+				
+					// 네이버 사용자 프로필 조회
+					naver_id_login.get_naver_userprofile("naverSignInCallback()");
+					
+				</script>
+				<!-- 카카오 로그인 자바스크립트 코드 -->
+				<script type="text/javascript">
+				 
+				  function loginWithKakao() {
+				    Kakao.Auth.authorize({
+				      redirectUri: device_check()
+				    })
+				  }
+				  
 
+				</script>
+				<!-- 구글 로그인 자바스크립트 코드 -->
+				<script>
+				      function onSignIn(googleUser) {
+				        // Useful data for your client-side scripts:
+				        var profile = googleUser.getBasicProfile();
+				        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+				        console.log('Full Name: ' + profile.getName());
+				        console.log('Given Name: ' + profile.getGivenName());
+				        console.log('Family Name: ' + profile.getFamilyName());
+				        console.log("Image URL: " + profile.getImageUrl());
+				        console.log("Email: " + profile.getEmail());
+				
+				        // The ID token you need to pass to your backend:
+				        var id_token = googleUser.getAuthResponse().id_token;
+				        console.log("ID Token: " + id_token);
+				      }
+				</script>
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
 						<img class="img-fluid w-100"

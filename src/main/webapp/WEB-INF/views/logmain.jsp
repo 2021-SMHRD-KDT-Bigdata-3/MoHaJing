@@ -44,6 +44,7 @@
 	function goMain() {
 		location.href = "${cpath}/logmain.do"
 	}
+	history.replaceState({}, null, location.pathname);
 </script>
 
 <style>
