@@ -204,9 +204,9 @@ margin:auto;
 <body>
 
 	<!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu" style="background-color: rgba(245, 245, 245, 0.8); width: 200px;">
 		<div class="logo">
-			<img src="${cpath}/resources/img/logo3.png" alt="">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -214,42 +214,42 @@ margin:auto;
 						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="메인">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="진단기록관리">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="커뮤니티">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="1대1 상담">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="탈모정보">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="마이페이지">
 						</form>
 				</li>
 				<li>
 					<form action="${cpath}/main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="로그아웃">
 					</form>
 				</li>
 			</ul>
@@ -315,7 +315,7 @@ margin:auto;
 			</p>
 		</div>
 	</section>
-			
+			</div>
 	
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
@@ -421,7 +421,6 @@ margin:auto;
 					</div>
 				</div>
 			</div>
-		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 
