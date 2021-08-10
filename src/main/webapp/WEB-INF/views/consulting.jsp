@@ -148,8 +148,10 @@ color:black;
 	</section>
 
 	<!--================ Start banner section =================-->
-	
-	  <div class="comments-area">
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -11.5%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
+	  <div class="comments-area" style="margin-top: 15%;">
             <img class = "comment_title``````````````"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
 		</div>
 	

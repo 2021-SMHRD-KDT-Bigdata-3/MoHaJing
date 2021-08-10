@@ -187,7 +187,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-1%;">
 				</div>
 			</div>
 		</div>
@@ -195,12 +195,12 @@ background-color: white;
 
 
 	<!--================ Start banner section =================-->
-	<section class="home-banner-area relative">
+	<!-- <section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--================ End banner section =================-->
 
 	<!--================ Start Popular Place Area =================-->
@@ -214,6 +214,9 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -38%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/m_start.gif" alt="">
