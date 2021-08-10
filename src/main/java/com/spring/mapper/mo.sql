@@ -290,7 +290,7 @@ plan varchar(1000)
 );
 
 select * from mo_deep1;
- select no, id, img, result, percent, category, date(date) from mo_deep1;
+select no, id, img, result, percent, category, date(date) as date from mo_deep1;
 insert into mo_deep1(id, img, result, percent, category, date)
 values("test", "img", "M", 1.0, "M", curdate());
 
