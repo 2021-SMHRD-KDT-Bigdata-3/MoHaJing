@@ -251,13 +251,13 @@
 					</div>
 					<div class="col-lg-12 text-center">
 						<!-- 네이버 버튼 -->
-						<div id="naver_id_login" width="250px" height="40px" style="width: 250px; height: 40px"></div>
+						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px"></div>
 						<!-- 카카오 버튼 -->
-						<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 250px; height: 40px">
-						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="250px" height="40px"/>
+						<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 185px; height: 40px">
+						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="185px" height="40px"/>
 						</a>
 						<!-- 구글 버튼 -->
-						<div class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 250px; height: 40px"></div>
+						<div style="padding-left: 33px;"><div align="center" class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 185px; height: 40px"></div></div>
 					</div>
 				</form>
 				
@@ -309,6 +309,7 @@
 					naver_id_login.setState(state);
 					naver_id_login.setPopup();
 					naver_id_login.init_naver_id_login();
+					
 				</script>
 				<!-- 네이버 사용자정보 가져오는코드 -->
 				<script type="text/javascript">
