@@ -121,6 +121,8 @@ select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
 show tables;
 show full columns from mo_recommand;
 
+select * from mo_check;
+
 drop table mo_check;
 TRUNCATE mo_recommand;
 create table mo_check(
@@ -176,7 +178,7 @@ values("O", "블루베리");
 insert into mo_recommand(category, food)
 values("O", "두피 염을 예방하는 면역력을 키워주는 음식 등");
 
-
+select * from mo_member;
 
 insert into mo_recommand(category, food, plan)
 values("M", "채소", "아침먹기");
@@ -220,7 +222,6 @@ no7 int,
 no8 int,
 no9 int,
 no10 int
-<<<<<<< HEAD
 );
 
 ALTER TABLE mo_recommand MODIFY food varchar(1000);
@@ -275,6 +276,3 @@ insert into mo_recommand(category, food, plan)
 values("M", "김치, 청국장, 된장과 같은 발효음식", "빗질은 부드럽고 굵은 빗을 사용하기");
 insert into mo_recommand(category, plan)
 values("M", "영양분을 충분히 섭취하기");
-=======
-);
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
