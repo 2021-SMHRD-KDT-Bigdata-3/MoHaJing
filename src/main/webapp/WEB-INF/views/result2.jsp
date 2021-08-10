@@ -309,8 +309,8 @@ margin: auto;
 						 		</td></tr>
 						 	</table>
 						 	<br><br>
-						 	<div style="padding-left:40px; width:450px;">
-						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=500 height=400 
+						 	<div style="padding-left:60px; width:450px;">
+						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=450 height=400 
 						 		scrolling="yes" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
 						 		margin-top: -5%; z-index: 100;">
 						 	</iframe>
