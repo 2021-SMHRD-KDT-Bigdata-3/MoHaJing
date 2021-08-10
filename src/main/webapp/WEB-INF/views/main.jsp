@@ -84,7 +84,6 @@
 	color: #fff;
 	font-size: 16px; 
 	line-height: 45px; 
-	margin-right:3em; 
 	max-width: 120px; 
 	text-decoration: none; 
 	text-transform: uppercase; 
@@ -252,10 +251,10 @@
 					<br>
 					<div style="text-align: center !important; padding-right: 10px;" >
 						<!-- 네이버 버튼 -->
-						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px"></div>
+						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px; margin-bottom : 10px;"></div>
 						<!-- 카카오 버튼 -->
 						<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 185px; height: 40px">
-						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="185px" height="40px"/>
+						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="185px" height="40px" style = "margin-bottom: 10px"/>
 						</a>
 						<!-- 구글 버튼 -->
 						<div style="padding-left: 33px;"><div align="center" class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 185px; height: 40px"></div></div>
@@ -314,18 +313,18 @@
 				</script>
 				<!-- 네이버 사용자정보 가져오는코드 -->
 				<script type="text/javascript">
+					naver_id_login.get_naver_userprofile("naverSignInCallback()");
 					// 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
 					function naverSignInCallback() {
 						// naver_id_login.getProfileData('프로필항목명');
-						// 프로필 항목은 개발가이드를 참고하시기 바랍니다.
-						alert(naver_id_login.getProfileData('email'));
-						alert(naver_id_login.getProfileData('nickname'));
-						alert(naver_id_login.getProfileData('age'));
+						// 프로필 항목은 개발가이드를 참고하시기 바랍니다.이메일을 db에 저장
+						console.log(naver_id_login.getProfileData('id'));
+	
 					}
 				
 				
 					// 네이버 사용자 프로필 조회
-					naver_id_login.get_naver_userprofile("naverSignInCallback()");
+					
 					
 				</script>
 				<!-- 카카오 로그인 자바스크립트 코드 -->
@@ -333,11 +332,30 @@
 				 
 				  function loginWithKakao() {
 				    Kakao.Auth.authorize({
-				      redirectUri: device_check()
+				      redirectUri: device_check(),
+				      scope: 'account_email'
 				    })
 				  }
 				  
 
+				</script>
+				<script type="text/javascript">
+					Kakao.API.request({
+					    url: '/v2/user/scopes',
+					    data: {
+					        scopes: ["account_email"]
+					    },
+					    success: function(response) {
+					        console.log(response);
+					    },
+					    fail: function(error) {
+					        console.log(error);
+					    }
+					});
+				
+				
+				
+				
 				</script>
 				<!-- 구글 로그인 자바스크립트 코드 -->
 				<script>
