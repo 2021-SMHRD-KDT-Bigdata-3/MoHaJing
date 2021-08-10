@@ -188,6 +188,22 @@ margin: auto;
 }
 
 </style>
+
+<script type="text/javascript">
+/* function result(result){
+	String result2 = null;
+	if(result.equals("M1")){
+		result2 = "1";
+	}else if(){
+		
+	}
+	
+	
+} */
+
+
+</script>
+
 	
 </head>	
 
@@ -279,7 +295,7 @@ margin: auto;
 						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: black;"><b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.category}</b>자 탈모 <b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}</b>단계입니다!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
@@ -293,10 +309,12 @@ margin: auto;
 						 		</td></tr>
 						 	</table>
 						 	<br><br>
-						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=650 height=400 
-						 		scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
+						 	<div style="padding-left:60px; width:450px;">
+						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=450 height=400 
+						 		scrolling="yes" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
 						 		margin-top: -5%; z-index: 100;">
 						 	</iframe>
+						 	</div>
 						 	<br><br><br>
 						 </div>
 						 
@@ -331,6 +349,7 @@ margin: auto;
 
 	
 <!--================ start footer Area  =================-->
+	<footer class="footer-area" style="margin-top: 290%;">
 	<footer class="footer-area" style="margin-top: 150%;">
 		<div class="container">
 			<div class="row footer-top">

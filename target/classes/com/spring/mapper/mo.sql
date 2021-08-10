@@ -98,9 +98,12 @@ DROP TABLE mo_deep1;
 select * from mo_deep1
 drop TABLE mo_deep1;
 
-
+select * from mo_recommand;
+drop table mo_recommand;
 
 DROP TABLE mo_deep;
+
+select * from mo_deep1
 
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
@@ -220,7 +223,10 @@ no7 int,
 no8 int,
 no9 int,
 no10 int
+no10 int
 );
+
+select * from mo_recommand;
 
 ALTER TABLE mo_recommand MODIFY food varchar(1000);
 ALTER TABLE mo_recommand MODIFY plan varchar(1000);
