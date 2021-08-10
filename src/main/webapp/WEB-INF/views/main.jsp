@@ -250,7 +250,7 @@
 							onclick="goJoin()">회원가입</button> 
 					</div>
 					<br>
-					<div class="col-lg-12 text-center">
+					<div style="text-align: center !important; padding-right: 10px;" >
 						<!-- 네이버 버튼 -->
 						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px"></div>
 						<!-- 카카오 버튼 -->
