@@ -25,6 +25,11 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -253,12 +258,12 @@ text-align: center;
 
  <!-- Start Sample Area -->
 	<section class="sample-text-area" align="center">
-			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">진단 기록 관리</h1>
-				<div class="top-two">
+			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;"><img src="${cpath}/resources/img/record1.gif" alt="" style="margin-top:-40%"></h1>
+				<div class="top-two" style="margin-top: -5%;">
 					<div class="single_counter">
-							<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
-								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold;">M자탈모<span class="lnr lnr-arrow-right"></span></a>
+							<div class="button-group-area mt-40" align="center" style="z-index: 1; margin-left: 8%;" >
+								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold; font-family: 'Gowun Dodum', sans-serif;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold; font-family: 'Gowun Dodum', sans-serif;">M자탈모<span class="lnr lnr-arrow-right"></span></a>
 							</div>
 					</div>
 				</div>

@@ -27,6 +27,10 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css?after">
 	<link rel="stylesheet" href="${cpath}/resources/scss/_button.scss?after">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
 	<style>
 	.comment-form{
 	background-color:transparent;
@@ -199,12 +203,12 @@
 	
 	<div class="comment-form" align="center">
 	
-                       <h1 class="my-title">
-					<img class="mypage_img" src="${cpath}/resources/img/mypage10.png" alt=""></h1>
+                       <h1 class="my-title" style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 40px; font-weight: bold; margin-top: 10%;">
+					<img src="${cpath}/resources/img/setting.png" alt="" width="40px"/>마이페이지</h1>
                         <form class="form_area" action="${cpath}/updateMypage.do" method="post">
 	
 	
-	<table class="mypageinfo">
+	<table class="mypageinfo" style="margin-top: 10%; color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 18px;">
 		<tr>
 			<td>아이디</td>
 			<td>${vo.id}</td>
@@ -213,7 +217,7 @@
 			<td>패스워드</td>
 			<td><input type="password" placeholder="PASSWORD" class="" name="pw" value="${vo.pw}"
                                         onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
-                                        style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
+                                        style="border : none; border-bottom-style : solid; background-color : transparent; border-radius: .35rem; border-color: grey; text-align: center;"></td>
 		</tr>
 		<tr>
 			<td>이름</td>
@@ -221,8 +225,8 @@
 		</tr>
 		<tr>
 			<td>나이</td>
-			<td><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
-                                         onblur="this.placeholder = ''" style="border : none; border-bottom-style : solid; background-color : transparent;"></td>
+			<td align="center"><input  type="text" class="" placeholder="AGE" name="age" value="${vo.age}"
+                                         onblur="this.placeholder = ''" style="border : none; border-bottom-style : solid; background-color : transparent; border-radius: .35rem; border-color: grey; text-align: center;"></td>
 		</tr>
 		<tr>
 			<td>성별</td>
@@ -231,9 +235,9 @@
 	
 	</table>
 	
-                        	<div class="check-title1">
-                            <h3>checkList</h3></div>
-                            <div  style="padding-top:10" class="form-group form-check " align="center">
+                        	<div class="check-title1" style="margin-top: 20%;">
+                            <h3 style="color: orange; font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">Check List</h3></div>
+                            <div  style="padding-top:10; color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 17px; margin-top: 5%;" class="form-group form-check " align="center">
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>
 								<c:set var="no1" value="${check.no1}"/>
@@ -304,7 +308,7 @@
                              
                             </div><br>
                         <input type="hidden" name="id" value="${vo.id}">
-                            	<button  type="submit" class="hover1"style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;" >
+                            	<button  type="submit" class="hover1"style="margin-left: 10%; border:0 solid black; color: black; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; font-weight : bold;" >
                                	정보수정하기
                            		</button>
                         </form>
