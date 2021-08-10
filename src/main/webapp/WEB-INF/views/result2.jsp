@@ -188,6 +188,22 @@ margin: auto;
 }
 
 </style>
+
+<script type="text/javascript">
+/* function result(result){
+	String result2 = null;
+	if(result.equals("M1")){
+		result2 = "1";
+	}else if(){
+		
+	}
+	
+	
+} */
+
+
+</script>
+
 	
 </head>	
 
@@ -279,10 +295,32 @@ margin: auto;
 						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: black;"><b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.category}</b>자 탈모 <b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}</b>단계입니다!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+<<<<<<< HEAD
+						 	<table style="max-width: 85%;">
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 50px;">생활습관을 바꿔보자!</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<c:forEach var="plan" items="${plans}" varStatus="status">
+						 		<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${plan.plan}</td></tr>
+						 		</c:forEach>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		</table>
+						 		<!-- <tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr> -->
+						 		<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+						 		<table>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 50px;">식습관을 바꿔보자!</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<c:forEach var="food" items="${foods}" varStatus="status">
+						 		<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${food.food}</td></tr>
+						 		</c:forEach>
+=======
 						 	<table>
 						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">
 						 			<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
@@ -291,6 +329,7 @@ margin: auto;
 							 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">체크리스트관련</a>
 						 			</div>
 						 		</td></tr>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						 	</table>
 						 	<br><br>
 						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=650 height=400 
@@ -331,7 +370,11 @@ margin: auto;
 
 	
 <!--================ start footer Area  =================-->
+<<<<<<< HEAD
+	<footer class="footer-area" style="margin-top: 290%;">
+=======
 	<footer class="footer-area" style="margin-top: 150%;">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
