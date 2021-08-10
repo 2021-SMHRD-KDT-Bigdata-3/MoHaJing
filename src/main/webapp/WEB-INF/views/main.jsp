@@ -251,16 +251,16 @@
 							onclick="goJoin()">회원가입</button> 
 					</div>
 					<!-- 네이버 버튼 -->
-					<div id="naver_id_login"></div>
+					<div id="naver_id_login" width="185px" height="40px" style="width: 222px; height: 38px"></div>
 					<!-- 카카오 버튼 -->
-					<a id="custom-login-btn" href="javascript:loginWithKakao()">
+					<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 222px; height: 38px">
 					  <img
 					    src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
 					    width="222"
 					  />
 					</a>
 					<!-- 구글 버튼 -->
-					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+					<div class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 222px; height: 38px"></div>
 				</form>
 				<!-- sns연동 자바스크립트코드 -->
 				

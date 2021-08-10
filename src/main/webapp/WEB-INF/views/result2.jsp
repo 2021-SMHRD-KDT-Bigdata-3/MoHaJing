@@ -51,6 +51,142 @@ padding: 6px;
 max-width: 80%;
 margin: auto;
 }
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover2:hover:after, .hover2:hover:before{
+	border-color : #99CCFF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover3:hover:after, .hover3:hover:before{
+	border-color : #FF9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover4:hover:after, .hover4:hover:before{
+	border-color : #CC99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover5:hover:after, .hover5:hover:before{
+	border-color : #CCCC99;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover6:hover:after, .hover6:hover:before{
+	border-color : #CC9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover7:hover:after, .hover7:hover:before{
+	border-color : #FF99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+	background-color: transparent;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : gray;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
 </style>
 
 <script type="text/javascript">
@@ -163,6 +299,7 @@ margin: auto;
 						 		<tr><td style="color: white;	">.</td></tr>
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+<<<<<<< HEAD
 						 	<table style="max-width: 85%;">
 						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 50px;">생활습관을 바꿔보자!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
@@ -183,7 +320,22 @@ margin: auto;
 						 		<c:forEach var="food" items="${foods}" varStatus="status">
 						 		<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${food.food}</td></tr>
 						 		</c:forEach>
+=======
+						 	<table>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">
+						 			<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
+							 			<a href="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">개선방안</a>
+							 			<a href="${cpath}/resultList2.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">추천식품</a>
+							 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">체크리스트관련</a>
+						 			</div>
+						 		</td></tr>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						 	</table>
+						 	<br><br>
+						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=650 height=400 
+						 		scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
+						 		margin-top: -5%; z-index: 100;">
+						 	</iframe>
 						 	<br><br><br>
 						 </div>
 						 
@@ -218,7 +370,11 @@ margin: auto;
 
 	
 <!--================ start footer Area  =================-->
+<<<<<<< HEAD
 	<footer class="footer-area" style="margin-top: 290%;">
+=======
+	<footer class="footer-area" style="margin-top: 150%;">
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
@@ -247,53 +403,6 @@ margin: auto;
 					</div>
 				</div>
 
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price
-							mediocre print and graphic.</p>
-						<div class="" id="mc_embed_signup">
-
-							<form target="_blank" novalidate="true"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="form-inline">
-
-								<div class="d-flex flex-row">
-
-									<input class="form-control" name="EMAIL"
-										placeholder="Enter Email" onfocus="this.placeholder = ''"
-										onblur="this.placeholder = 'Enter Email '" required=""
-										type="email">
-
-
-									<button class="click-btn btn btn-default">
-										<i class="fa fa-paper-plane" aria-hidden="true"></i>
-									</button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a"
-											tabindex="-1" value="" type="text">
-									</div>
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instafeed</h6>
-						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="${cpath}/resources/img/instagram/i1.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i2.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i3.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i4.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i5.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i6.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i7.jpg" alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i8.jpg" alt=""></li>
-						</ul>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div
@@ -309,7 +418,7 @@ margin: auto;
 							</script>
 							All rights reserved | This template is made with <i
 								class="fa fa-heart-o" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
+								href="https://colorlib.com" target="_blank"></a>
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</p>
 					</div>

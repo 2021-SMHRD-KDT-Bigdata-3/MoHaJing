@@ -98,9 +98,12 @@ DROP TABLE mo_deep1;
 select * from mo_deep1
 drop TABLE mo_deep1;
 
-
+select * from mo_recommand;
+drop table mo_recommand;
 
 DROP TABLE mo_deep;
+
+select * from mo_deep1
 
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
@@ -220,8 +223,9 @@ no7 int,
 no8 int,
 no9 int,
 no10 int
-<<<<<<< HEAD
 );
+
+select * from mo_recommand;
 
 ALTER TABLE mo_recommand MODIFY food varchar(1000);
 ALTER TABLE mo_recommand MODIFY plan varchar(1000);
@@ -275,6 +279,3 @@ insert into mo_recommand(category, food, plan)
 values("M", "김치, 청국장, 된장과 같은 발효음식", "빗질은 부드럽고 굵은 빗을 사용하기");
 insert into mo_recommand(category, plan)
 values("M", "영양분을 충분히 섭취하기");
-=======
-);
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
