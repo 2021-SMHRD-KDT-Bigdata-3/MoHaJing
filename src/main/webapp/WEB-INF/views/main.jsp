@@ -396,7 +396,7 @@
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<div class="right-content">
-						<div class="main_title" align="center">
+						<div class="main_title" align="center" style="margin-top:10%;">
 							<p style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 20px;">바쁜 현대인을 위한 탈모 자가진단 서비스</p>
 							<p style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 20px;">탈모 고민하지 말고 毛어때와 함께!</p>
 						</div>
