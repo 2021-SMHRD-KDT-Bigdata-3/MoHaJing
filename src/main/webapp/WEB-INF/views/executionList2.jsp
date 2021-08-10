@@ -25,6 +25,10 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
 <style>
  .row,.title_color{
 	max-width:80%;
@@ -69,12 +73,12 @@ h4{
 	<c:forEach var="deep" items="${list}">
 	<div class="container">
 		<div class="col-md-9">
-			<div class="blog_post">
+			<div class="blog_post" style="font-family: 'Gowun Dodum', sans-serif;">
 				<img src="/img/${deep.img}" />
-					<h4>${deep.date}</h4>
-					<h4>${deep.result}</h4>
-					<h4>${deep.category}</h4>
-					<h4>${deep.percent}</h4>
+					<h4>진단 일시: ${deep.date}</h4>
+					<h4>탈모 유형: ${deep.category}자</h4>
+					<h4>진행 상태: ${deep.result}단계</h4>
+					<h4>분석 정확도: ${deep.percent}</h4>
 					<br/>
 			</div>
 		</div>

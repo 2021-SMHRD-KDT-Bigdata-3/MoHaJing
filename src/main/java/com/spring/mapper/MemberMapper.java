@@ -53,7 +53,7 @@ public interface MemberMapper {
 	public Deep1VO deep1Select(int no);
 	
 	// 아이디로 딥러닝결과 select
-	@Select("select * from mo_deep1 where id = #{id} and category = #{category}")
+	@Select("select no, id, img, result, percent, category, date(date) as date from mo_deep1 where id = #{id} and category = #{category}")
 	public List<Deep1VO> idDeepSelect(Deep1VO vo);
 	
 	// 딥러닝결과 insert
