@@ -57,10 +57,13 @@ margin: auto;
 <body>
 
 	<section class="home-banner-area common-banner relative">
-		<div class="result_tb" align="center" style="margin-top: -10%;">
+		<div class="result_tb" align="center" style="margin-top: -10%; style="padding-left: 40px">
 			<table>
-				<c:forEach var="food" items="${foods}">
-					<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${food.food}</td></tr>
+				<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under; padding-top: 50px;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 600px;">식습관을 바꿔보자!</td></tr>
+				<tr><td style="color: white;	">.</td></tr>
+				<tr><td style="color: white;	">.</td></tr>
+				<c:forEach var="food" items="${foods}" varStatus="status">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${food.food}</td></tr>
 				</c:forEach>
 			</table>
  		</div>

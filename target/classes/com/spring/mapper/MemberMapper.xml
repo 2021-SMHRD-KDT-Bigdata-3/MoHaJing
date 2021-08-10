@@ -87,7 +87,7 @@
     
     <!-- 사용자 아이다, 머리사진, 스퀀스 select -->
     <select id="deep1Select" parameterType="int" resultType="com.spring.mapper.Deep1VO">
-        select * from mo_deep1 where no = #{no}
+        select no, id, img, result, percent, category, date(date) from mo_deep1 where no = #{no}
     </select>
     
     <!-- 딥러닝결과 insert -->
