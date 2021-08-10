@@ -137,6 +137,9 @@ padding-left:20px;
 	margin-left: -10%;
 	margin-top: -30%;  
 	object-fit: cover;
+	width: 500px;
+	height: 300px;
+	margin: auto;
 }
 
 .hover1{
@@ -279,16 +282,17 @@ padding-left:20px;
 						</div>
 							<br><br>
 						<div class="table-head">
-							<table class="comment1" align="center">
+							<table class="comment1" align="center" >
 								<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
-									<th colspan="2" style="width:400px">댓글</th>
+									<th colspan="2" style="width:400px; height:50px;">댓글</th>
 									<th></th>
 									<th style="padding: 10px;">작성자</th>
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-									<td colspan="2" style="width: 400px">
+									<td colspan="2" style="width: 400px; height:50px">
 										<div style="font-size: 10px;">${list.content}</div>
+										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
 									<td style="padding: 10px;">
