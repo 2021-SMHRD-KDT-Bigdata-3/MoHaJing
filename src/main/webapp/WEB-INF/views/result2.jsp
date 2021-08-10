@@ -52,6 +52,22 @@ max-width: 80%;
 margin: auto;
 }
 </style>
+
+<script type="text/javascript">
+/* function result(result){
+	String result2 = null;
+	if(result.equals("M1")){
+		result2 = "1";
+	}else if(){
+		
+	}
+	
+	
+} */
+
+
+</script>
+
 	
 </head>	
 
@@ -143,22 +159,29 @@ margin: auto;
 						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: black;"><b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.category}</b>자 탈모 <b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}</b>단계입니다!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
-						 	<table>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
+						 	<table style="max-width: 85%;">
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 50px;">생활습관을 바꿔보자!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="plan" items="${plans}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${plan.plan}</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<c:forEach var="plan" items="${plans}" varStatus="status">
+						 		<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${plan.plan}</td></tr>
 						 		</c:forEach>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
+						 		</table>
+						 		<!-- <tr><td style="color: white;	">.</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr> -->
+						 		<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+						 		<table>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 50px;">식습관을 바꿔보자!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="food" items="${foods}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${food.food}</td></tr>
+						 		<tr><td style="color: white;	">.</td></tr>
+						 		<c:forEach var="food" items="${foods}" varStatus="status">
+						 		<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${food.food}</td></tr>
 						 		</c:forEach>
 						 	</table>
 						 	<br><br><br>
@@ -195,7 +218,7 @@ margin: auto;
 
 	
 <!--================ start footer Area  =================-->
-	<footer class="footer-area" style="margin-top: 100%;">
+	<footer class="footer-area" style="margin-top: 290%;">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
