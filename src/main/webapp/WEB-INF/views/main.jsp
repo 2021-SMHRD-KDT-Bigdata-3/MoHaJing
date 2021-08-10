@@ -249,6 +249,7 @@
 						<button type="button" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;" 
 							onclick="goJoin()">회원가입</button> 
 					</div>
+					<br>
 					<div class="col-lg-12 text-center">
 						<!-- 네이버 버튼 -->
 						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px"></div>
