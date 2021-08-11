@@ -161,27 +161,27 @@ color:black;
 		<td style="padding-top:10px; padding-left:50px;"align="center";><h5 class="consul" style="font-weight: bold;">상담분야</h5></td>
 		<td style="padding-top:10px; padding-left:40px;padding-right:30px;"align="center"><h5 class="consul" style="font-weight: bold;">상담하기</h5></td>
 	</tr>
-	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
+	<tr height="100px" style="border-bottom: 1px solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;"><br>Emilly Blunt</td>
 		<td style="padding-left:50px;"class="consul">임상심리</td>
 		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
+	<tr height="100px" style="border-bottom: 1px solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;"><br>Elsie Cunningham</td>
 		<td style="padding-left:50px;"class="consul">탈모센터</td>
 		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
+	<tr height="100px" style="border-bottom: 1px solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;"><br>Annie Stephens</td>
 		<td style="padding-left:50px;"class="consul">피부과</td>
 		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
+	<tr height="100px" style="border-bottom: 1px solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;"><br>Maria Luna</td>
 		<td style="padding-left:50px;"class="consul">한의원</td>
 		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
+	<tr height="100px" style="border-bottom: 1px solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;"><br>Ina Hayes</td>
 		<td style="padding-left:40px;"class="consul">정신의학과</td>
 		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
