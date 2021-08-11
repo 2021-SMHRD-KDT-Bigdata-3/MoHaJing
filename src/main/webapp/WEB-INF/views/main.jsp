@@ -84,7 +84,6 @@
 	color: #fff;
 	font-size: 16px; 
 	line-height: 45px; 
-	margin-right:3em; 
 	max-width: 120px; 
 	text-decoration: none; 
 	text-transform: uppercase; 
@@ -233,7 +232,6 @@
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
 					id="myForm" action="${cpath}/logmain.do" method="post">
-				
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
@@ -250,20 +248,35 @@
 						<button type="button" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;" 
 							onclick="goJoin()">회원가입</button> 
 					</div>
-					<!-- 네이버 버튼 -->
-					<div id="naver_id_login"></div>
-					<!-- 카카오 버튼 -->
-					<a id="custom-login-btn" href="javascript:loginWithKakao()">
-					  <img
-					    src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
-					    width="222"
-					  />
-					</a>
-					<!-- 구글 버튼 -->
-					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+					<br>
+					<div style="text-align: center !important; padding-right: 10px;" >
+						<!-- 네이버 버튼 -->
+						<div id="naver_id_login" width="250px" height="40px" style=" width: 250px; height: 40px; margin-bottom : 10px;"></div>
+						<!-- 카카오 버튼 -->
+						<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 185px; height: 40px">
+						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="185px" height="40px" style = "margin-bottom: 10px"/>
+						</a>
+						<!-- 구글 버튼 -->
+						<div style="padding-left: 33px;"><div align="center" class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 185px; height: 40px"></div></div>
+					</div>
 				</form>
-				<!-- sns연동 자바스크립트코드 -->
 				
+				<!-- sns연동 자바스크립트코드 -->
+				<div class="col-lg-6 col-md-6 header-left">
+					<div class="">
+						<img class="img-fluid w-100"
+							src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
+					</div>
+					<div class="video-popup d-flex align-items-center">
+						<a class="play-video video-play-button animate"
+							href="https://www.youtube.com/watch?v=KUln2DXU5VE"
+							data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s">
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+	</section>
 				<script type="text/javascript">
 					//모바일, PC 구분하는코드
 					function device_check() {
@@ -296,21 +309,22 @@
 					naver_id_login.setState(state);
 					naver_id_login.setPopup();
 					naver_id_login.init_naver_id_login();
+					
 				</script>
 				<!-- 네이버 사용자정보 가져오는코드 -->
 				<script type="text/javascript">
+					naver_id_login.get_naver_userprofile("naverSignInCallback()");
 					// 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
 					function naverSignInCallback() {
 						// naver_id_login.getProfileData('프로필항목명');
-						// 프로필 항목은 개발가이드를 참고하시기 바랍니다.
-						alert(naver_id_login.getProfileData('email'));
-						alert(naver_id_login.getProfileData('nickname'));
-						alert(naver_id_login.getProfileData('age'));
+						// 프로필 항목은 개발가이드를 참고하시기 바랍니다.이메일을 db에 저장
+						console.log(naver_id_login.getProfileData('id'));
+	
 					}
 				
 				
 					// 네이버 사용자 프로필 조회
-					naver_id_login.get_naver_userprofile("naverSignInCallback()");
+					
 					
 				</script>
 				<!-- 카카오 로그인 자바스크립트 코드 -->
@@ -318,11 +332,30 @@
 				 
 				  function loginWithKakao() {
 				    Kakao.Auth.authorize({
-				      redirectUri: device_check()
+				      redirectUri: device_check(),
+				      scope: 'account_email'
 				    })
 				  }
 				  
 
+				</script>
+				<script type="text/javascript">
+					Kakao.API.request({
+					    url: '/v2/user/scopes',
+					    data: {
+					        scopes: ["account_email"]
+					    },
+					    success: function(response) {
+					        console.log(response);
+					    },
+					    fail: function(error) {
+					        console.log(error);
+					    }
+					});
+				
+				
+				
+				
 				</script>
 				<!-- 구글 로그인 자바스크립트 코드 -->
 				<script>
@@ -341,23 +374,6 @@
 				        console.log("ID Token: " + id_token);
 				      }
 				</script>
-				<div class="col-lg-6 col-md-6 header-left">
-					<div class="">
-						<img class="img-fluid w-100"
-							src="${cpath}/resources/img/banner/banner-img.jpg" alt="">
-					</div>
-					
-					<div class="video-popup d-flex align-items-center">
-						<a class="play-video video-play-button animate"
-							href="https://www.youtube.com/watch?v=KUln2DXU5VE"
-							data-animate="zoomIn" data-duration="1.5s" data-delay="0.1s">
-							<span></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!--================ End banner section =================-->
 
 	<!--================ Start Popular Place Area =================-->

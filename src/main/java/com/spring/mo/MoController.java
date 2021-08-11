@@ -235,6 +235,33 @@ public class MoController {
 	}
 	
 	
+	@RequestMapping("/resultList.do")
+	public String resultList(Deep1VO vo, Model model) {
+		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
+		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
+		model.addAttribute("foods", foods);
+		model.addAttribute("plans", plans);
+		return "resultList";
+	}
+	
+	@RequestMapping("/resultList2.do")
+	public String resultList2(Deep1VO vo, Model model) {
+		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
+		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
+		model.addAttribute("foods", foods);
+		model.addAttribute("plans", plans);
+		return "resultList2";
+	}
+	
+	@RequestMapping("/resultList3.do")
+	public String resultList3(Deep1VO vo, Model model) {
+		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
+		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
+		model.addAttribute("foods", foods);
+		model.addAttribute("plans", plans);
+		return "resultList3";
+	}
+	
 	/*
 	// loading.jsp --> result.jsp 이동할거임
 	@RequestMapping("/result.jsp")
@@ -344,6 +371,7 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "executionList2";
 	}
+
 	
 
 }

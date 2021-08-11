@@ -51,7 +51,159 @@ padding: 6px;
 max-width: 80%;
 margin: auto;
 }
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : grey;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover2:hover:after, .hover2:hover:before{
+	border-color : #99CCFF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover3:hover:after, .hover3:hover:before{
+	border-color : #FF9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover4:hover:after, .hover4:hover:before{
+	border-color : #CC99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover5:hover:after, .hover5:hover:before{
+	border-color : #CCCC99;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover6:hover:after, .hover6:hover:before{
+	border-color : #CC9999;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover7:hover:after, .hover7:hover:before{
+	border-color : #FF99FF;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover1{
+	background-color: transparent;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	color: #fff;
+	font-size: 16px; 
+	line-height: 45px; 
+	margin-right:3em; 
+	max-width: 120px; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	vertical-align: middle;
+	
+	letter-spacing: 0; 
+	-webkit-transition: all .28s ease-in-out; 
+	transition: all .28s ease-in-out;
+}
+
+.hover1:hover, .hover1:focus, .hover1:active{
+	letter-spacing : 5px;
+	background-color: transparent;
+}
+
+.hover1:after, .hover1:before{
+	border: 1px solid rgba(255, 255, 255, 0);
+	bottom: 0;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+	width: 0;
+}
+.hover1:hover:after, .hover1:hover:before{
+	border-color : gray;
+	-webkit-transition : width 350ms ease-in-out;
+	transition: width 350ms ease-in-out;
+	width: 70%
+}
+
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
 </style>
+
+<script type="text/javascript">
+/* function result(result){
+	String result2 = null;
+	if(result.equals("M1")){
+		result2 = "1";
+	}else if(){
+		
+	}
+	
+	
+} */
+
+
+</script>
+
 	
 </head>	
 
@@ -143,24 +295,26 @@ margin: auto;
 						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}입니다!</td></tr>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: black;"><b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.category}</b>자 탈모 <b style="display: inline; font-family: 'Gowun Dodum', sans-serif; font-size: 15px; color: orange;">${deep1.result}</b>단계입니다!</td></tr>
 						 		<tr><td style="color: white;	">.</td></tr>
 						 	</table>
 						 	<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
 						 	<table>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">개선방안</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="plan" items="${plans}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${plan.plan}</td></tr>
-						 		</c:forEach>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">추천식품</td></tr>
-						 		<tr><td style="color: white;	">.</td></tr>
-						 		<c:forEach var="food" items="${foods}">
-						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 15px;">${food.food}</td></tr>
-						 		</c:forEach>
+						 		<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold;">
+						 			<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
+							 			<a href="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">개선방안</a>
+							 			<a href="${cpath}/resultList2.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">추천식품</a>
+							 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">체크리스트관련</a>
+						 			</div>
+						 		</td></tr>
 						 	</table>
+						 	<br><br>
+						 	<div style="padding-left:60px; width:450px;">
+						 	<iframe id="iframe" src="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" align="center" name="f1" vertical-align="bottom" width=450 height=400 
+						 		scrolling="yes" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; 
+						 		margin-top: -5%; z-index: 100;">
+						 	</iframe>
+						 	</div>
 						 	<br><br><br>
 						 </div>
 						 
@@ -194,8 +348,6 @@ margin: auto;
 
 
 	
-<!--================ start footer Area  =================-->
-
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
@@ -262,6 +414,7 @@ margin: auto;
 		
 	</footer>
 	<!--================ End footer Area  =================-->
+
 
 
 	<!-- Optional JavaScript -->

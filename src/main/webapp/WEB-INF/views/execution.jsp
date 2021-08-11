@@ -245,7 +245,7 @@ text-align: center;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo3.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -262,7 +262,7 @@ text-align: center;
 							</div>
 					</div>
 				</div>
-			<iframe id="iframe" align="center" name="f1" vertical-align="bottom" width=650
+			<iframe id="iframe" src="${cpath}/executionList.do?category=O&id=${vo.id}" align="center" name="f1" vertical-align="bottom" width=480
 					height=400 scrolling="yes" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0>
 			</iframe>
 	</section>

@@ -98,9 +98,12 @@ DROP TABLE mo_deep1;
 select * from mo_deep1
 drop TABLE mo_deep1;
 
-
+select * from mo_recommand;
+drop table mo_recommand;
 
 DROP TABLE mo_deep;
+
+select * from mo_deep1
 
 CREATE TABLE mo_deep1 (
 no int not null auto_increment primary key,
@@ -224,6 +227,8 @@ no9 int,
 no10 int
 );
 
+select * from mo_recommand;
+
 ALTER TABLE mo_recommand MODIFY food varchar(1000);
 ALTER TABLE mo_recommand MODIFY plan varchar(1000);
 
@@ -276,3 +281,33 @@ insert into mo_recommand(category, food, plan)
 values("M", "김치, 청국장, 된장과 같은 발효음식", "빗질은 부드럽고 굵은 빗을 사용하기");
 insert into mo_recommand(category, plan)
 values("M", "영양분을 충분히 섭취하기");
+
+
+
+create table mo_checkrecommand(
+no varchar(5),
+cause varchar(1000),
+plan varchar(1000)
+);
+
+select * from mo_deep1;
+select no, id, img, result, percent, category, date(date) as date from mo_deep1;
+insert into mo_deep1(id, img, result, percent, category, date)
+values("test", "img", "M", 1.0, "M", curdate());
+
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no2", "머리카락이 가늘어지면서 부드러워지고 힘이 없는 것은 영양공급에 문제가 있다는 뜻이다. 얇아진 머리카락은 빠지기도 쉬워 탈모 가능성이 매우 높다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
+insert into mo_checkrecommand(no, cause)
+values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
