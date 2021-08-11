@@ -198,6 +198,12 @@ padding-left:20px;
 	-120px 0 0 0 rgba(255,255,255,0,2) inset;
 }
 
+.section-top-border {
+    padding: 50px 0;
+    background: #ffffff;
+    border-top: 0px dotted #eee;
+}
+
 </style>
 </head>
 
@@ -267,7 +273,7 @@ padding-left:20px;
 	</div> -->
 	<!--================ End Canvus Menu Area =================-->
 
-				<div class="col-lg-12 logo" style="position: fixed; z-index: 1000; margin-left:80%; margin-top: -6% ">
+				<div class="col-lg-12 logo" style="position: fixed; z-index: 1000; margin-left:80%; margin-top: -6%; padding-left: 420px;">
 					<img src="${cpath}/resources/img/logo4.png" alt="" >
 				</div>
 
@@ -278,16 +284,16 @@ padding-left:20px;
 				<div class="header-right col-lg-6 col-md-6">
 					<div class="progress-table" style="font-family: 'Gowun Dodum', sans-serif; color: black;">
 						<div class="table-head">
-							<div class="country"><h4>${vo2.title}</h4></div>
+							<div align="center"><h4>${vo2.title}</h4></div>
 						</div>
 						<div class="table-row">
 							<div class="country" style="float: left;">${vo2.id}</div><div style="float: left;">${vo2.day}</div>
 						</div>
 						<div class="gif_div">
-							<img class="gif_css" src="/img/${vo2.file}" />
+							<img class="gif_css" style="padding:20px;" src="/img/${vo2.file}" />
 						</div>
-						<div class="table-head" align="left" style="max-width: 80%;">
-							<div>${vo2.content}</div>
+						<div class="table-head" align="left">
+							<div style="padding-left: 10px;">${vo2.content}</div>
 						</div>
 							<br><br>
 						<div class="table-head">
@@ -308,12 +314,8 @@ padding-left:20px;
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-								
-								
-									<td colspan="2" style="width: 100px">
-									
-									
-										<div style="font-size: 10px;">${list.content}</div>
+									<td colspan="2" style="width: 400px; height:50px">
+										<div style="font-size: 12px;">${list.content}</div>
 										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
