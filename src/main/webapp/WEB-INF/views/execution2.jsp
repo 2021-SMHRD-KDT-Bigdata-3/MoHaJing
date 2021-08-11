@@ -116,6 +116,8 @@
 		$("#upload_file").change(function(){
 		   readURL(this);
 		});
+		
+
 </script>
            <script>
             $(function(){

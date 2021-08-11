@@ -352,7 +352,7 @@ margin: auto;
 
 	
 	<!--================ start footer Area  =================-->
-	<footer class="footer-area">
+	<footer class="footer-area" style="margin-top: 150%;">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
