@@ -211,19 +211,19 @@
 <div class="hair" align="center">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -21%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
+<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
 	<!-- 
-<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">  -->
-<form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data"> 
+<form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data">   -->
 	<section class="home-banner-area common-banner relative" style="z-index: 1;">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="picture" style="max-width: 400px; max-height: 350px; overflow: hidden;">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-20%; margin-top:-20%"/>
+						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-8%; margin-top:-20%"/>
 						<img src="#" alt="" id="preview_image2" />
 				</div>
-				<div class="upload_button">
-					<label for="upload_file">
+				<div class="upload_button"  style="width:100%; word-break:break-all;word-wrap:break-word; margin-top:1%;">
+					<label for="upload_file" style="margin-left: 47%;">
 						업로드
 					</label>
 						<!-- <input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" /> -->
@@ -235,11 +235,13 @@
 					<input type="hidden" name="category" value="${category}">
 						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
 						value="진단시작">  -->
-					<label for="up_confirm">확인</label>
+					<label for="up_confirm" style="margin-left: 49%;">확인</label>
 					<input type="submit" id="up_confirm" value="확인" />
 				</div>
+				
+				</div>
 			</div>
-		</div>
+		
 	</section>
 </form>
 	<!--================ End banner section =================-->

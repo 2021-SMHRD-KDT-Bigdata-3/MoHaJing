@@ -53,6 +53,19 @@ public class MoController {
 	@Autowired
 	private MemberMapper memberMapper;
 
+	// 로그인 시도
+	@RequestMapping("/logmain.do")
+	public String logmain(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
+		MemberVO vo = memberMapper.logmain(id);
+		if (pw.equals(vo.getPw())) {
+			// 로그인성공 --> 회원정보 전달
+			model.addAttribute("vo", vo);
+			return "logmain";
+		} else {
+			// 로그인실패 --> 메인창으로 다시 go
+			return "redirect:/main.do";
+		}
+	}
 	@RequestMapping("/execution.do")
 	public String execution(String id, Model model) {
 		MemberVO vo = memberMapper.logmain(id);
@@ -95,19 +108,6 @@ public class MoController {
 			}
 		}
 
-	// 로그인 시도
-	@RequestMapping("/logmain.do")
-	public String logmain(@RequestParam("id") String id, @RequestParam("pw") String pw, Model model) {
-		MemberVO vo = memberMapper.logmain(id);
-		if (pw.equals(vo.getPw())) {
-			// 로그인성공 --> 회원정보 전달
-			model.addAttribute("vo", vo);
-			return "logmain";
-		} else {
-			// 로그인실패 --> 메인창으로 다시 go
-			return "redirect:/main.do";
-		}
-	}
 
 	// 게시글 전체 목록 보기
 	@RequestMapping("/community.do")
