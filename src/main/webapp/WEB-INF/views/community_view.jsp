@@ -210,13 +210,20 @@ padding-left:20px;
 	-120px 0 0 0 rgba(255,255,255,0,2) inset;
 }
 
+.section-top-border {
+    padding: 50px 0;
+    background: #ffffff;
+    border-top: 0px dotted #eee;
+}
+
 </style>
 </head>
 
 <body>
 
 
-	<div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
+<!--================ Offcanvus Menu Area =================-->
+	<%-- <div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
@@ -266,28 +273,24 @@ padding-left:20px;
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> --%>
 	<!--================ End Offcanvus Menu Area =================-->
 
-   <!--================ Canvus Menu Area =================-->
-   <div class="canvus_menu">
-      <div class="container">
-         <div class="toggle_icon" title="Menu Bar">
-            <span></span>
-         </div>
-      </div>
-   </div>
-   <!--================ End Canvus Menu Area =================-->
 
-   <section class="top-btn-area">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12 logo">
-               <img src="${cpath}/resources/img/logo3.png" alt="">
-            </div>
-         </div>
-      </div>
-   </section>
+	<!--================ Canvus Menu Area =================-->
+	<!-- <div class="canvus_menu">
+		<div class="container">
+			<div class="toggle_icon" title="Menu Bar">
+				<span></span>
+			</div>
+		</div>
+	</div> -->
+	<!--================ End Canvus Menu Area =================-->
+
+
+				<div class="col-lg-12 logo" style="position: fixed; z-index: 1000; margin-left:80%; margin-top: -6%; padding-left: 420px;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" >
+				</div>
 
 
 	<!--================ Start banner section =================-->
@@ -295,36 +298,49 @@ padding-left:20px;
 		<div class="section-top-border">
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="header-right col-lg-6 col-md-6">
-					<div class="progress-table">
+					<div class="progress-table" style="font-family: 'Gowun Dodum', sans-serif; color: black;">
 						<div class="table-head">
-							<div class="country"><h4>${vo2.title}</h4></div>
+							<div align="center"><h4>${vo2.title}</h4></div>
 						</div>
 						<div class="table-row">
 							<div class="country" style="float: left;">${vo2.id}</div><div style="float: left;">${vo2.day}</div>
 						</div>
 						<div class="gif_div">
-							<img class="gif_css" src="/img/${vo2.file}" />
+							<img class="gif_css" style="padding:20px;" src="/img/${vo2.file}" />
 						</div>
 						<div class="table-head" align="left">
-							<div>${vo2.content}</div>
+							<div style="padding-left: 10px;">${vo2.content}</div>
 						</div>
 							<br><br>
 						<div class="table-head">
 							<table class="comment1" align="center" >
 								<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
-									<th colspan="2" style="width:400px; height:50px;">댓글</th>
-									<th></th>
-									<th style="padding: 10px;">작성자</th>
+
+
+
+									<th colspan="2" style="width:100px; ">댓글</th>
+									<td></td>
+									<th style="padding: 0px;">작성자</th>
+
+
+
+
+
+
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
 									<td colspan="2" style="width: 400px; height:50px">
-										<div style="font-size: 10px;">${list.content}</div>
+										<div style="font-size: 12px;">${list.content}</div>
 										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
+									
+									
+										
+										
 									<td style="padding: 10px;">
-										<div class="country" style="font-size: 12px;">${list.id}</div>
+										<div style="font-size: 12px;">${list.id}</div>
 									</td>
 								</tr>
 							</c:forEach>

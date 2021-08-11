@@ -305,6 +305,7 @@ margin:auto;
 			<br>
 			<iframe id="iframe" align="center" src="${cpath}/infoList.do" name="f1" vertical-align="bottom" width=650
 					height=450 scrolling="no" frameborder=0 framespacing=0 marginheight=0 marginwidth=0 vspace= 0 style="margin-left: -18%; margin-top: -5%; z-index: 100;"></iframe>
+			<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
 			<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold; margin-top: -10%">탈모 예방법</h1>

@@ -238,7 +238,7 @@
 	</table>
 	
                         	<div class="check-title1" style="margin-top: 20%;">
-                            <h3 style="color: orange; font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">Check List</h3></div>
+                            <h3 style="color: orange; font-family: 'Gowun Dodum', sans-serif; font-weight: bold; text-decoration: underline; text-underline-position:under; font-size: 19px;">Check List</h3></div>
                             <div  style="padding-top:10; color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 17px; margin-top: 5%;" class="form-group form-check " align="center">
                             <div class="switch-wrap d-flex justify-content-between ">
 								<p>

@@ -268,6 +268,7 @@ public class MoController {
 		return "resultList2";
 	}
 	/*
+	 작동 확인용 코드
 	@RequestMapping("/resultList3.do")
 	public String resultList3(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());

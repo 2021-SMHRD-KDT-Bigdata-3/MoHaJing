@@ -219,14 +219,14 @@
 	<!--================ Start banner section =================-->
 <br>
 
-	<div class="hair" align="center" style="margin-top : 100px;">
+	<div class="hair" align="center" style="margin-top : 80px;">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="">
 	</div>
 	<div class="logo" align="center">
 		<img src="${cpath}/resources/img/logo4.png" alt="">
 	</div>
 	
-	<section class="home-banner-area relative" style="background-color: rgba(255, 255, 255, 0.01)">
+	<section class="home-banner-area relative" style="background-color: rgba(255, 255, 255, 0.01); margin-top: 10px;">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center" style="height: 300px;">
 				<form
@@ -285,8 +285,8 @@
 				 		map = "logmain.do?id=naver&pw=naver";
 				 		
 				 	}else{
-				 		map = "join.do?sns=yes";
-				 		 
+				 		//map = "join.do?sns=yes";
+				 		map = "logmain.do?id=naver&pw=naver"; 
 				 	}
 				 	
 				 	

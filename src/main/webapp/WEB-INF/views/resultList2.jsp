@@ -58,7 +58,7 @@ margin: auto;
 
 	<section class="home-banner-area common-banner relative">
 		<div class="result_tb" align="center" style="margin-top: -10%; style="padding-left: 40px">
-			<table>
+			<table style="max-width: 85%;">
 				<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under; padding-top: 50px;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 600px;">식습관을 바꿔보자!</td></tr>
 				<tr><td style="color: white;	">.</td></tr>
 				<tr><td style="color: white;	">.</td></tr>
