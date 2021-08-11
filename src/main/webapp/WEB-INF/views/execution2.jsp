@@ -116,6 +116,8 @@
 		$("#upload_file").change(function(){
 		   readURL(this);
 		});
+		
+
 </script>
            <script>
             $(function(){
@@ -210,8 +212,8 @@
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -21%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
 	<!-- 
-<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data"> -->
-<form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data">
+<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">  -->
+<form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data"> 
 	<section class="home-banner-area common-banner relative" style="z-index: 1;">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">

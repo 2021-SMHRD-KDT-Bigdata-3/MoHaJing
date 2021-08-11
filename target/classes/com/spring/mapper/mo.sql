@@ -329,7 +329,7 @@ insert into mo_member(id, pw, name, gender, age)
 values("naver", "naver", "테스트", "여", 20);
 
 select * from mo_deep1;
-delete from mo_deep1 where no = 43;
+delete from mo_deep1 where no = 47;
 drop table mo_board;
 insert into mo_board(id, title, content, day)
 values("doyean", "머리카락이 점점얇아져요..", "몇년전에 비해 머리카락이 많이 얇아졌어요. 병원가봐야 하나요??", now());

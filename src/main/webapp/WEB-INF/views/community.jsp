@@ -211,14 +211,14 @@ padding: 10px;
 		<h2 class="mb-30 title_color">
 		<img src="${cpath}/resources/img/com17.png" alt=""></h2><br>
 	<table class="com-table" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">
-		<tr style="border-bottom:1px solid #edf3fd;color:black; ">
-	      	<td><h6>제목</h6></td>
-			<td style="padding-left:100px;"><h6 style="width:50px;">작성자</h6></td>
-			<td style="padding-left:100px;"><h6>날짜</h6></td>
+		<tr style="border-bottom:1px solid rgba(200, 200, 200, 0.8);color:black;">
+	      	<td><h6 style="font-weight: bold;">제목</h6></td>
+			<td style="padding-left:100px;"><h6 style="width:50px; font-weight: bold;">작성자</h6></td>
+			<td style="padding-left:100px;"><h6 style="font-weight: bold;">날짜</h6></td>
 		</tr>
 		<c:forEach var="vo2" items="${list}">
 		<tr>
-			<td><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></td>
+			<td style="width:100px;"><a href="${cpath}/community_view.do?no=${vo2.no}&id=${vo.id}">${vo2.title}</a></td>
 			<td style="padding-left:100px;">${vo2.id}</td>
 			<td style="padding-left:100px;">${vo2.day}</td>
 			<tr>
@@ -230,11 +230,11 @@ padding: 10px;
 					<div class="button-group-area mt-10" style="text-align:center;">
 
 						<form  action="${cpath}/community.do" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px;">
-							<a href="${cpath}/writeBoard.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black; ">글쓰기</a>
-							<br>
-							<input  type="text" name="search">
+							<a href="${cpath}/writeBoard.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black; font-weight: bold;">글쓰기</a>
+							<br><br>
+							<input  type="text" name="search" style="height: 28px;">
 							<input type="hidden" name="id" value="${vo.id}">
-							<input type="submit" value="검색"  class="genric-btn info-border radius" style="border:0 solid black; ;">
+							<input type="submit" value="검색"  class="genric-btn info-border radius" style="border:0 solid black; font-weight: bold;">
 								
 						</form>
 					</div>

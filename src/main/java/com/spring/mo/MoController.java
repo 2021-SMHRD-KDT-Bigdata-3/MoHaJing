@@ -404,7 +404,10 @@ public class MoController {
 		memberMapper.snsjoin(vo);
 		return "redirect:/main.do?sns=yes";
 	}
-
+	@RequestMapping("/chatting.do")
+	public void chatting() {
+		
+	}
 	
 
 }
