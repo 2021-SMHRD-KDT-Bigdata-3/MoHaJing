@@ -120,9 +120,9 @@ background-color: white;
 <body>
 	
 <!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
 		<div class="logo">
-			<img src="${cpath}/resources/img/logo3.png" alt="">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -130,42 +130,42 @@ background-color: white;
 						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="메인">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="진단기록관리">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="커뮤니티">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="1대1 상담">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="탈모정보">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="마이페이지">
 						</form>
 				</li>
 				<li>
 					<form action="${cpath}/main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="로그아웃">
 					</form>
 				</li>
 			</ul>
@@ -187,7 +187,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-1%;">
 				</div>
 			</div>
 		</div>
@@ -195,12 +195,12 @@ background-color: white;
 
 
 	<!--================ Start banner section =================-->
-	<section class="home-banner-area relative">
+	<!-- <section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--================ End banner section =================-->
 
 	<!--================ Start Popular Place Area =================-->
@@ -214,6 +214,9 @@ background-color: white;
 
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -38%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/m_start.gif" alt="">

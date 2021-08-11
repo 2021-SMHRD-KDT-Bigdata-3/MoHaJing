@@ -25,6 +25,11 @@
 	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -179,9 +184,9 @@ text-align: center;
 <body>
 
 <!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
 		<div class="logo">
-			<img src="${cpath}/resources/img/logo3.png" alt="">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
 		<div class="button-group-area mt-10">
 			<ul class="list menu-left">
@@ -189,42 +194,42 @@ text-align: center;
 						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="메인">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="진단기록관리">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="커뮤니티">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="1대1 상담">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="탈모정보">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="마이페이지">
 						</form>
 				</li>
 				<li>
 					<form action="${cpath}/main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="로그아웃">
 					</form>
 				</li>
 			</ul>
@@ -245,20 +250,23 @@ text-align: center;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-21%; margin-top: -1%">
 				</div>
 			</div>
 		</div>
 	</section>
 
  <!-- Start Sample Area -->
-	<section class="sample-text-area" align="center">
-			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">진단 기록 관리</h1>
-				<div class="top-two">
+ <div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -7%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
+	<section class="sample-text-area" align="center" style="margin-top:10%;">
+			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;"><img src="${cpath}/resources/img/record1.gif" alt="" style="margin-top:-40%"></h1>
+				<div class="top-two" style="margin-top: -5%;">
 					<div class="single_counter">
-							<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
-								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
-								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold;">M자탈모<span class="lnr lnr-arrow-right"></span></a>
+							<div class="button-group-area mt-40" align="center" style="z-index: 1; margin-left: 8%;" >
+								<a href="${cpath}/executionList.do?category=O&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #99CCFF; font-size: 15px; font-weight : bold; font-family: 'Gowun Dodum', sans-serif;">원형탈모<span class="lnr lnr-arrow-right"></span></a>
+								<a href="${cpath}/executionList2.do?category=M&id=${vo.id}" class="hover1 hover2" target="f1" style="border:0 solid black; color: #CC99FF; font-size: 15px; font-weight : bold; font-family: 'Gowun Dodum', sans-serif;">M자탈모<span class="lnr lnr-arrow-right"></span></a>
 							</div>
 					</div>
 				</div>

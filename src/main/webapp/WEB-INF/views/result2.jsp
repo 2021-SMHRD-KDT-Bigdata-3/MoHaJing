@@ -211,7 +211,7 @@ margin: auto;
 <body>
 
 <!--================ Offcanvus Menu Area =================-->
-	<div class="side_menu">
+	<div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
 		<div class="logo">
 			<img src="${cpath}/resources/img/logo4.png" alt="">
 		</div>
@@ -221,42 +221,42 @@ margin: auto;
 						<form action="${cpath}/logmain.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
 								type="hidden" name="pw" value="${vo.pw}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="메인">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/execution.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="진단기록관리">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/community.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="커뮤니티">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/consulting.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="1대1 상담">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/info.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="탈모정보">
 						</form>
 				</li>
 				<li>
 						<form action="${cpath}/mypage.do" method="post">
 							<input type="hidden" name="id" value="${vo.id}"> <input
-								type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="마이페이지">
 						</form>
 				</li>
 				<li>
 					<form action="${cpath}/main.do" method="post">
-						<input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="로그아웃">
 					</form>
 				</li>
 			</ul>
@@ -286,11 +286,14 @@ margin: auto;
 	
 	<!--================ Start banner section =================-->
 	<section class="home-banner-area common-banner relative">
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -10%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 				<div style="max-height: 300px; overflow: hidden;"> 
-					<img src="${cpath}/resources/img/success.gif" alt="" style="max-height: initial; margin-top: -20%;">
+					<img src="${cpath}/resources/img/success.gif" alt="" style="max-height: initial; margin-top: -25%;">
 				</div>
 			<br><br>
-						 <div class="result_tb" align="center" style="margin-top: -10%;">
+						 <div class="result_tb" align="center" style="margin-top: -20%;">
 						 	<table>
 						 		<tr style="border-bottom-style: dotted; border-width:1px; border-color: black;"><img src="/img/${deep1.img}" style="width:200px; margin-bottom: 10px;"/></tr>
 						 		<tr><th style="font-size: 20px; margin-top: 10%; font-family: 'Gowun Dodum', sans-serif;">${deep1.id}님의 머리상태는...</th></tr>

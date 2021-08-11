@@ -295,7 +295,7 @@ body {
 							 -->
 						</div>	
 					<div class="col-lg-12 text-center">
-						<button type="submit" class="hover1" style="border:0 solid black; color: grey; font-size: 15px; font-weight : bold;">회원가입</button> 
+						<button type="submit" class="hover1" style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;">회원가입</button> 
 					</div>
 				</form>
 				<div class="col-lg-6 col-md-6 header-left">
