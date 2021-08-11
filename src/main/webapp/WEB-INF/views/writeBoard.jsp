@@ -110,6 +110,9 @@
 	</section>
 
 	<!--================ Start banner section =================-->
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -15%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div> 
 	<section class="home-banner-area relative">
 		<div class="container-fluid">
 			<div class="row d-flex align-items-center justify-content-center">
@@ -123,7 +126,7 @@
 							</div>
 							 <div class="col-md-6">
     	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="content" id="message" rows="8"  style="width:360px;"placeholder="글 내용"></textarea>
+                           	     	<textarea class="form-control" name="content" id="message" rows="8" style="width: 407px;" placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
