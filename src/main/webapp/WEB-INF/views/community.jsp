@@ -163,7 +163,7 @@ padding: 10px;
 	<table class="com-table" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">
 		<tr style="border-bottom:1px solid #edf3fd;color:black; ">
 	      	<td><h6>제목</h6></td>
-			<td style="padding-left:100px;"><h6>작성자</h6></td>
+			<td style="padding-left:100px;"><h6 style="width:50px;">작성자</h6></td>
 			<td style="padding-left:100px;"><h6>날짜</h6></td>
 		</tr>
 		<c:forEach var="vo2" items="${list}">

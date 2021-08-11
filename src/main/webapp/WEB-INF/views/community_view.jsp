@@ -317,8 +317,12 @@ padding-left:20px;
 										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
-									<td style="padding: 0px;">
-										<div class="country" style="font-size: 12px;">${list.id}</div>
+									
+									
+										
+										
+									<td style="padding: 10px;">
+										<div style="font-size: 12px;">${list.id}</div>
 									</td>
 								</tr>
 							</c:forEach>

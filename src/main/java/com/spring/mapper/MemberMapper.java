@@ -82,4 +82,9 @@ public interface MemberMapper {
 	
 	// 체크박스 원인 select
 	public List<CheckRecommandVO> checkRecommandSelect();
+	
+	// 아이디 중복체크
+	public int idCheck(String id);
+	// sns 계정 연동 select
+	public void snsjoin(MemberVO vo);
 }

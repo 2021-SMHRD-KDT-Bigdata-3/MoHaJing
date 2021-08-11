@@ -79,6 +79,20 @@ public class MoController {
 		memberMapper.joinTry(vo);
 		return "redirect:/main.do";
 	}
+	
+	// 아이디 중복체크
+		@RequestMapping("/idCheck.do")
+		public String idCheck(String id, Model model) {
+			int count = memberMapper.idCheck(id);
+			if(count==1) { // 아이디가 중복되면
+				System.out.println(count);
+				model.addAttribute("count", count);
+				return "redirect:/join.do";
+			}else { // 아이디가 중복되지 않으면
+				model.addAttribute("id", id);
+				return "redirect:/join.do";
+			}
+		}
 
 	// 로그인 시도
 	@RequestMapping("/logmain.do")
@@ -254,6 +268,7 @@ public class MoController {
 		return "resultList2";
 	}
 	/*
+	 작동 확인용 코드
 	@RequestMapping("/resultList3.do")
 	public String resultList3(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
@@ -381,7 +396,13 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "executionList2";
 	}
-	
+	// sns회원가입 시도
+	@RequestMapping("/snsjoin.do")
+	public String snsjoin(MemberVO vo, CheckVO check) {
+		memberMapper.checkInsert(check);
+		memberMapper.snsjoin(vo);
+		return "redirect:/main.do?sns=yes";
+	}
 
 	
 

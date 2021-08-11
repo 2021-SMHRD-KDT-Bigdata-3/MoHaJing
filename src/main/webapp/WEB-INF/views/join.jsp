@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
-
+<c:set var="sns" value="${param.sns}" />
 <!doctype html>
 <html lang="en">
 
@@ -204,13 +204,29 @@ body {
 	<div class="logo" align="center">
 		<img src="${cpath}/resources/img/logo4.png" alt="">
 	</div><br>
+	<!-- sns회원가입 구분 jstl 코드 -->
+	<c:choose>
 	
+	
+	
+	    <c:when test="${sns eq 'yes'}">
+	        <c:set var="mapping" value="snsjoin.do"/>
+	    </c:when>	
+	    <c:otherwise>
+	        <c:set var="mapping" value="joinTry.do"/>
+	    </c:otherwise>
+	
+	
+	</c:choose>
 	<section class="home-banner-area relative" style="background-color: rgba(255, 255, 255, 0.01)">
 		<div class="col-lg-8 col-md-8">
 			<div class="row d-flex align-items-center justify-content-center" style="height: 300px;">
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
-					id="myForm" action="${cpath}/joinTry.do" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">
+					id="myForm" action="${cpath}/${mapping}" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">
+					
+					<!-- id="myForm" action="${cpath}/joinTry.do" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;"> -->
+					
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
@@ -296,6 +312,7 @@ body {
 							 -->
 						</div>	
 					<div class="col-lg-12 text-center">
+						<input type="hidden" name='sns' value="${sns}"/>
 						<button type="submit" class="hover1" style="border:0 solid black; color: black; font-size: 15px; font-weight : bold;">회원가입</button> 
 					</div>
 				</form>
