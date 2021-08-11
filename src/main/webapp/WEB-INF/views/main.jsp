@@ -285,8 +285,8 @@
 				 		map = "logmain.do?id=naver&pw=naver";
 				 		
 				 	}else{
-				 		map = "join.do?sns=yes";
-				 		 
+				 		//map = "join.do?sns=yes";
+				 		map = "logmain.do?id=naver&pw=naver"; 
 				 	}
 				 	
 				 	
