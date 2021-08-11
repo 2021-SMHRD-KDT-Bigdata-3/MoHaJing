@@ -187,6 +187,16 @@ padding-left:20px;
 	transition: width 350ms ease-in-out;
 	width: 70%
 }
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover2:hover{
+	color : grey;
+	box-shadow:120px 0 0 0 rgba(255,255,255,0.2) inset,
+	-120px 0 0 0 rgba(255,255,255,0,2) inset;
+}
 
 </style>
 </head>
@@ -310,12 +320,13 @@ padding-left:20px;
 						<div class="table-head">
 							<br>
 							<form action="${cpath}/writeComment.do" method="post">
-								<div class="col-lg-12 text-center">
-									<input type="text" name="content"> 
+								<div class="col-lg-12 text-center" style="padding-top: 10px;">
+									<input type="text" name="content" placeholder="댓글작성" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = '댓글작성'" style="width: 230px; border:1 solid black; height: 50px; padding-top: 10px;">
 									<input type="hidden" name="no" value="${vo2.no}"> 
 									<input type="hidden" name="id" value="${vo.id}">
-									<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">등록</button>
-									<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">목록</a>
+									<button type="submit" class="genric-btn info-border radius" style="border:0 solid black;">등록</button>
+									<a href="${cpath}/community.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black;">목록</a>
 								</div>
 							</form>
 						</div>
