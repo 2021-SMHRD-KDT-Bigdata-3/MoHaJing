@@ -79,6 +79,20 @@ public class MoController {
 		memberMapper.joinTry(vo);
 		return "redirect:/main.do";
 	}
+	
+	// 아이디 중복체크
+		@RequestMapping("/idCheck.do")
+		public String idCheck(String id, Model model) {
+			int count = memberMapper.idCheck(id);
+			if(count==1) { // 아이디가 중복되면
+				System.out.println(count);
+				model.addAttribute("count", count);
+				return "redirect:/join.do";
+			}else { // 아이디가 중복되지 않으면
+				model.addAttribute("id", id);
+				return "redirect:/join.do";
+			}
+		}
 
 	// 로그인 시도
 	@RequestMapping("/logmain.do")
