@@ -89,6 +89,7 @@ public class MoController {
 				model.addAttribute("count", count);
 				return "redirect:/join.do";
 			}else { // 아이디가 중복되지 않으면
+				model.addAttribute("count", count);
 				model.addAttribute("id", id);
 				return "redirect:/join.do";
 			}
