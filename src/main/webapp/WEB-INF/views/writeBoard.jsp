@@ -117,17 +117,17 @@
 					<form class="contact-form-area contact-page-form contact-form text-right" id="myForm" action="${cpath}/insertBoard.do" method="post" enctype="multipart/form-data">
 							<!-- 로그인한 사용자의 아이디 -->
 							<input type="hidden" name="id" value="${vo.id}">
-							<div class="form-group col-md-12">
+							<div class="form-group col-md-12"  style="width:390px; margin-left:30px;">
 								<input type="text" class="form-control" id="name" name="title" placeholder="제목" onfocus="this.placeholder = ''"
 								 onblur="this.placeholder = '제목'">
 							</div>
 							 <div class="col-md-6">
-    	                        <div class="form-group">
-                           	     	<textarea class="form-control" name="content" id="message" rows="8"  style="width:360px;"placeholder="글 내용"></textarea>
+    	                        <div class="form-group" align="center">
+                           	     	<textarea  class="form-control" name="content" id="message" rows="8"  style="width:360px;"placeholder="글 내용"></textarea>
                           	  	</div>
                        		 </div>
                        		 <!-- 첨부파일 공간 필요 name="file" -->
-                       		 <div class="col-lg-12 text-center">
+                       		 <div class="col-lg-12 text-center" style="margin-left:30px;">
                        		 	<input type="file" name="uploadFile" class="form-control" style="border:0 solid black">
 								<button type="submit" class="main_btn text-uppercase" style="border:0 solid black">
 									작성완료

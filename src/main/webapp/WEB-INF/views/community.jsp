@@ -220,13 +220,16 @@ padding: 10px;
 	
 			
 					<div class="button-group-area mt-10" style="text-align:center;">
-						<form  action="${cpath}/community.do" method="post">
-							<input  type="text" name="search">
-							<input type="hidden" name="id" value="${vo.id}">
-							<input type="submit" value="검색"  class="hover1 hover2" style="border:0 solid black; color: black; font-size: 15px; font-weight : bold; margin:0px;">
-								<a href="${cpath}/writeBoard.do?id=${vo.id}" class="hover1 hover2" style="border:0 solid black; color: #DA81F5; font-size: 15px; font-weight : bold;">글쓰기</a>
-						</form>
-					</div>
+                  <form  action="${cpath}/community.do" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px;">
+                     <a href="${cpath}/writeBoard.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black; ">글쓰기</a>
+                     <br>
+                     <input  type="text" name="search">
+                     <input type="hidden" name="id" value="${vo.id}">
+                     <input type="submit" value="검색"  class="genric-btn info-border radius" style="border:0 solid black; ;">
+                        
+                  </form>
+               </div>
+
 				</div>
 	</section>
 
@@ -245,7 +248,7 @@ padding: 10px;
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Mambers</h6>
+						<h6>Members</h6>
 						<div class="row">
 							<ul class="col footer-nav">
 								<li><a href="index.html">Areum Kim</a></li>
