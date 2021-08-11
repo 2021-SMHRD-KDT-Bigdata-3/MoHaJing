@@ -43,13 +43,12 @@
 	}
 .btn-reply{
 	margin-left:20px;
-	border:1px solid blue;
 	border-radius:10%;
 	padding:5px;
  }
 .btn-reply:hover{
 	padding: 5px;
-	background-color: #ffc107;
+	background-color: #6495ED;
  }
 	
 .table1{
@@ -156,36 +155,36 @@ color:black;
 		</div>
 	
 
-	<table class="table1" style="font-family: 'Gowun Dodum', sans-serif; color: black;">
-	<tr style=" border-bottom:1px solid black; background-color:#f8f9fa">
-		<td style="padding-top:10px;"  align="center"><h5 class="consul">상담사</h5></td>
-		<td style="padding-top:10px; padding-left:50px;"align="center";><h5 class="consul">상담분야</h5></td>
-		<td style="padding-top:10px; padding-left:40px;padding-right:30px;"align="center"><h5 class="consul">상담하기</h5></td>
+	<table class="table1" style="border-top: 1px solid rgba(180, 180, 180, 0.8); font-family: 'Gowun Dodum', sans-serif; color: black;">
+	<tr style="border-bottom:0px solid black; background-color:#f8f9fa;">
+		<td style="padding-top:10px;"  align="center"><h5 class="consul" style="font-weight: bold;">상담사</h5></td>
+		<td style="padding-top:10px; padding-left:50px;"align="center";><h5 class="consul" style="font-weight: bold;">상담분야</h5></td>
+		<td style="padding-top:10px; padding-left:40px;padding-right:30px;"align="center"><h5 class="consul" style="font-weight: bold;">상담하기</h5></td>
 	</tr>
-	<tr height="100px">
+	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c1.jpg" alt="" style="padding-right:10px;"><br>Emilly Blunt</td>
 		<td style="padding-left:50px;"class="consul">임상심리</td>
-		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px">
+	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c2.jpg" alt="" style="padding-right:10px;"><br>Elsie Cunningham</td>
 		<td style="padding-left:50px;"class="consul">탈모센터</td>
-		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px">
+	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c3.jpg" alt="" style="padding-right:10px;"><br>Annie Stephens</td>
 		<td style="padding-left:50px;"class="consul">피부과</td>
-		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px">
+	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c4.jpg" alt="" style="padding-right:10px;"><br>Maria Luna</td>
 		<td style="padding-left:50px;"class="consul">한의원</td>
-		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
-	<tr height="100px">
+	<tr height="100px" style="border-bottom: solid; border-color: rgba(200, 200, 200, 0.7);">
 		<td style="padding-right:10px;"align="center"><img src="${cpath}/resources/img/blog/c5.jpg" alt="" style="padding-right:10px;"><br>Ina Hayes</td>
 		<td style="padding-left:40px;"class="consul">정신의학과</td>
-		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase"><butten>신청</butten></a></td>
+		<td style="padding-right:10px;padding-left:40px;"><a href="" class="btn-reply text-uppercase" style="font-weight: bold;"><butten>신청</butten></a></td>
 	</tr>
 	
 	

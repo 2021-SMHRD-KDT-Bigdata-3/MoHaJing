@@ -45,9 +45,12 @@
 		location.href = "${cpath}/logmain.do"
 	}
 	history.replaceState({}, null, location.pathname);
+	
 </script>
 
 <style>
+
+
 .row d-flex {
 background-color: white;
 }
@@ -114,6 +117,59 @@ background-color: white;
 	bottom: auto;
 	top: 0;
 }
+
+.upload_button, .container{
+	display:inline-block;
+	margin-right: 10px;
+}
+
+.upload_button label, .container label{
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radious: .25em;
+	
+	color: black;
+	background-color: lightgrey;
+	border-radius: 15px;
+	font-family: 'Gowun Dodum', sans-serif; 
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.upload_button{
+	
+}
+
+.upload_button label{
+}
+.container label{
+	margin-left: 42%;
+}
+
+.upload_button input[type="file"], .container input[type="submit"]{
+	position:absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: reat(0,0,0,0);
+	border: 0;
+}
+
+.container label:hover{
+	background-color: grey;
+
+}
+
 </style>
 </head>
 
@@ -187,7 +243,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-1%;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-5%;">
 				</div>
 			</div>
 		</div>
@@ -215,7 +271,7 @@ background-color: white;
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="hair" align="center">
-		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -38%; width: 60px; height: auto; background-size; contain; padding:0;">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -48%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
 						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
@@ -227,10 +283,11 @@ background-color: white;
 								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
+										<div class="form-group col-md-12 wrap container" align="center">
 											<input type="hidden" name="id" value="${vo.id}">
 											<input type="hidden" name="category" value="M">
-											<input class="form-control" type="submit" value="분석하기">
+											<label for="up_confirm" style="margin-left: -1%;">분석하기</label>
+											<input class="button" id="up_confirm" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
@@ -252,10 +309,11 @@ background-color: white;
 								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
+										<div class="form-group col-md-12 container" align="center">
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="hidden" name="category" value="O">
-											<input class="form-control" type="submit" value="분석하기">
+											<label for="up_confirm2"  style="margin-left: -1%;">분석하기</label>
+											<input class="" id="up_confirm2" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
