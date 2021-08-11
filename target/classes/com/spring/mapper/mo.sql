@@ -325,3 +325,4 @@ insert into mo_member(id, pw, name, gender, age)
 values("naver", "naver", "테스트", "여", 20);
 
 select * from mo_member;
+select * from mo_check;
