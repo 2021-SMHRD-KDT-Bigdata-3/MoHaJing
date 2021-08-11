@@ -30,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
+import com.spring.mapper.CheckRecommandVO;
 import com.spring.mapper.CheckVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
@@ -237,9 +238,9 @@ public class MoController {
 	
 	@RequestMapping("/resultList.do")
 	public String resultList(Deep1VO vo, Model model) {
-		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
+		//List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
 		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
-		model.addAttribute("foods", foods);
+		//model.addAttribute("foods", foods);
 		model.addAttribute("plans", plans);
 		return "resultList";
 	}
@@ -247,18 +248,27 @@ public class MoController {
 	@RequestMapping("/resultList2.do")
 	public String resultList2(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
-		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
+		//List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
 		model.addAttribute("foods", foods);
-		model.addAttribute("plans", plans);
+		//model.addAttribute("plans", plans);
 		return "resultList2";
 	}
-	
+	/*
 	@RequestMapping("/resultList3.do")
 	public String resultList3(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
 		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
 		model.addAttribute("foods", foods);
 		model.addAttribute("plans", plans);
+		return "resultList3";
+	}
+	*/
+	@RequestMapping("/resultList3.do")
+	public String resultList3(Deep1VO vo, Model model) {
+		CheckVO check = memberMapper.checkSelect(vo.getId());
+		List<CheckRecommandVO> list = memberMapper.checkRecommandSelect();
+		model.addAttribute("check", check); // 회원이 체크한거
+		model.addAttribute("list", list); // 체크박스에 해당하는 원인
 		return "resultList3";
 	}
 	
@@ -371,6 +381,7 @@ public class MoController {
 		model.addAttribute("list", list);
 		return "executionList2";
 	}
+	
 
 	
 
