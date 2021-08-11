@@ -193,7 +193,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 100; margin-left:-35px;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 100; margin-left:-35px; margin-top: -4%;">
 				</div>
 			</div>
 		</div>
@@ -202,6 +202,9 @@
 	<!--================ Start banner section =================-->
 <%-- 	<form action="${cpath}/deep1.do" onsubmit="flask(); method="post" id="form1" runat="server" enctype="multipart/form-data"> --%>
 <!-- <form method="post" id="form1" runat="server" enctype="multipart/form-data"> -->
+<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -21%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 <form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
 	<section class="home-banner-area common-banner relative" style="z-index: 1;">
 		<div class="container-fluid">

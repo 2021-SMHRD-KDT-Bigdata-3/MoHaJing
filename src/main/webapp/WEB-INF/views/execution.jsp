@@ -250,14 +250,17 @@ text-align: center;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-21%; margin-top: -1%">
 				</div>
 			</div>
 		</div>
 	</section>
 
  <!-- Start Sample Area -->
-	<section class="sample-text-area" align="center">
+ <div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -7%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
+	<section class="sample-text-area" align="center" style="margin-top:10%;">
 			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;"><img src="${cpath}/resources/img/record1.gif" alt="" style="margin-top:-40%"></h1>
 				<div class="top-two" style="margin-top: -5%;">
 					<div class="single_counter">

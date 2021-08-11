@@ -200,7 +200,9 @@
 	</section>
 
 	<!--================ Start banner section =================-->
-	
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -7%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 	<div class="comment-form" align="center">
 	
                        <h1 class="my-title" style="color : black; font-family: 'Gowun Dodum', sans-serif; font-size: 40px; font-weight: bold; margin-top: 10%;">

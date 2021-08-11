@@ -289,9 +289,9 @@
 					    if ( this_device ) {
 					 
 					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-					            return "http://172.30.1.28:8081/mo/logmain.do?id=naver&pw=naver";
+					            return "http://172.30.1.28:8081/mo/join.do?sns=yes";
 					        } else {
-					        	return "http://localhost:8081/mo/logmain.do?id=naver&pw=naver";
+					        	return "http://localhost:8081/mo/join.do?sns=yes";
 					        }
 					 
 					    }

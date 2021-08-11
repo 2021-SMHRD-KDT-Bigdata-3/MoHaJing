@@ -277,6 +277,9 @@ margin:auto;
 	</section>
 
  <!-- Start Sample Area -->
+ <div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -7%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
 	<section class="sample-text-area">
 		<div class="container">
 			<h1 class="text-heading title_color" style="font-family: 'Gowun Dodum', sans-serif; font-weight: bold;">탈모 기본 정보</h1>

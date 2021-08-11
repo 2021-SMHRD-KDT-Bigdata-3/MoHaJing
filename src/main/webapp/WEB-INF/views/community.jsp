@@ -153,6 +153,9 @@ padding: 10px;
 		</div>
 	</section>
 	<!--================ Start banner section =================-->
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -15%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div> 
 	<section class="home-banner-area relative">
 		<div class="section-top-border">
 		<h2 class="mb-30 title_color">
