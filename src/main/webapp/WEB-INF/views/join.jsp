@@ -210,7 +210,7 @@ body {
 			<div class="row d-flex align-items-center justify-content-center" style="height: 300px;">
 				<form
 					class="contact-form-area contact-page-form contact-form text-right"
-					id="myForm" action="${cpath}/joinTry.do" method="post">
+					id="myForm" action="${cpath}/joinTry.do" method="post" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">
 					<div class="form-group col-md-12">
 						<input type="text" class="form-control" id="name" name="id"
 							placeholder="ID" onfocus="this.placeholder = ''"
@@ -244,7 +244,8 @@ body {
 							</div>
 					</div>
 					<div class="form-group col-md-12"></div>
-						<h4 style="padding-left:10px;"align="left">CheckList</h4>
+					<br>
+						<h4 style="padding-left:10px; color: orange; text-decoration: underline; text-underline-position:under; font-weight: bold;" align="left">CheckList</h4>
 							<div class="checkList1">
 								<div class="switch-wrap d-flex justify-content-between">
 									<p><input type="checkbox" name="no1" value="1">

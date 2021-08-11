@@ -156,7 +156,7 @@ color:black;
 		</div>
 	
 
-	<table class="table1">
+	<table class="table1" style="font-family: 'Gowun Dodum', sans-serif; color: black;">
 	<tr style=" border-bottom:1px solid black; background-color:#f8f9fa">
 		<td style="padding-top:10px;"  align="center"><h5 class="consul">상담사</h5></td>
 		<td style="padding-top:10px; padding-left:50px;"align="center";><h5 class="consul">상담분야</h5></td>

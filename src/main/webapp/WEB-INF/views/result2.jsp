@@ -176,7 +176,7 @@ margin: auto;
 	width: 0;
 }
 .hover1:hover:after, .hover1:hover:before{
-	border-color : gray;
+	border-color : #99CCFF;
 	-webkit-transition : width 350ms ease-in-out;
 	transition: width 350ms ease-in-out;
 	width: 70%
@@ -307,7 +307,7 @@ margin: auto;
 						 			<div class="button-group-area mt-40" align="center" style="z-index: 1;" >
 							 			<a href="${cpath}/resultList.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">개선방안</a>
 							 			<a href="${cpath}/resultList2.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">추천식품</a>
-							 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">체크리스트관련</a>
+							 			<a href="${cpath}/resultList3.do?id=${deep1.id}&category=${deep1.category}" class="hover1 hover2" style="border:0 solid black;color: #99CCFF;font-size: 15px;font-weight : bold;width: 100px;height: 40px;" target="f1">체크리스트</a>
 						 			</div>
 						 		</td></tr>
 						 	</table>
