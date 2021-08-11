@@ -79,11 +79,11 @@ h4{
 					<h4>탈모 유형: ${deep.category}자</h4>
 					<h4>진행 상태: ${deep.result}단계</h4>
 					<h4>
-					<c:set var="percent" value="${deep.percent}">
-					</c:set>
-					${String.format("%.2f", percent*100)}%
-					<!-- <h4>분석 정확도: ${deep.percent}</h4> -->
-					</h4>
+               <c:set var="percent" value="${deep.percent}">
+               </c:set>
+               분석 정확도: ${String.format("%.2f", percent*100)}%
+               <!-- <h4>분석 정확도: ${deep.percent}</h4> -->
+               </h4>
 					<br/>
 			</div>
 		</div>
