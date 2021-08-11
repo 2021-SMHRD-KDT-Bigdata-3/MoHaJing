@@ -273,7 +273,7 @@ padding-left:20px;
 	</div> -->
 	<!--================ End Canvus Menu Area =================-->
 
-				<div class="col-lg-12 logo" style="position: fixed; z-index: 1000; margin-left:80%; margin-top: -6% ">
+				<div class="col-lg-12 logo" style="position: fixed; z-index: 1000; margin-left:80%; margin-top: -6%; padding-left: 420px;">
 					<img src="${cpath}/resources/img/logo4.png" alt="" >
 				</div>
 
@@ -292,13 +292,8 @@ padding-left:20px;
 						<div class="gif_div">
 							<img class="gif_css" style="padding:20px;" src="/img/${vo2.file}" />
 						</div>
-<<<<<<< HEAD
 						<div class="table-head" align="left">
 							<div style="padding-left: 10px;">${vo2.content}</div>
-=======
-						<div class="table-head" align="left" style="max-width: 80%;">
-							<div>${vo2.content}</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 						</div>
 							<br><br>
 						<div class="table-head">
@@ -319,17 +314,8 @@ padding-left:20px;
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-<<<<<<< HEAD
 									<td colspan="2" style="width: 400px; height:50px">
 										<div style="font-size: 12px;">${list.content}</div>
-=======
-								
-								
-									<td colspan="2" style="width: 100px">
-									
-									
-										<div style="font-size: 10px;">${list.content}</div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
 										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
