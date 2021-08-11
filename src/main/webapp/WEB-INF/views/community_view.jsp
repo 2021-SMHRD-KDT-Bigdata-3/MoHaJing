@@ -142,6 +142,9 @@ padding-left:20px;
 	margin-left: -10%;
 	margin-top: -30%;  
 	object-fit: cover;
+	width: 500px;
+	height: 300px;
+	margin: auto;
 }
 
 .hover1{
@@ -183,6 +186,16 @@ padding-left:20px;
 	-webkit-transition : width 350ms ease-in-out;
 	transition: width 350ms ease-in-out;
 	width: 70%
+}
+.hover1:hover:before{
+	bottom: auto;
+	top: 0;
+}
+
+.hover2:hover{
+	color : grey;
+	box-shadow:120px 0 0 0 rgba(255,255,255,0.2) inset,
+	-120px 0 0 0 rgba(255,255,255,0,2) inset;
 }
 
 </style>
@@ -284,16 +297,17 @@ padding-left:20px;
 						</div>
 							<br><br>
 						<div class="table-head">
-							<table class="comment1" align="center">
+							<table class="comment1" align="center" >
 								<tr style="border-bottom:1px solid #6c757d; color:#343a40;background-color:#FAFAFA">
-									<th colspan="2" style="width:400px">댓글</th>
+									<th colspan="2" style="width:400px; height:50px;">댓글</th>
 									<th></th>
 									<th style="padding: 10px;">작성자</th>
 								</tr>
 							<c:forEach items="${list}" var="list">
 								<tr>
-									<td colspan="2" style="width: 400px">
+									<td colspan="2" style="width: 400px; height:50px">
 										<div style="font-size: 10px;">${list.content}</div>
+										<span style="font-size: 8px">${list.day}</span>
 									</td>
 									<td></td>
 									<td style="padding: 10px;">
@@ -306,12 +320,13 @@ padding-left:20px;
 						<div class="table-head">
 							<br>
 							<form action="${cpath}/writeComment.do" method="post">
-								<div class="col-lg-12 text-center">
-									<input type="text" name="content"> 
+								<div class="col-lg-12 text-center" style="padding-top: 10px;">
+									<input type="text" name="content" placeholder="댓글작성" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = '댓글작성'" style="width: 230px; border:1 solid black; height: 50px; padding-top: 10px;">
 									<input type="hidden" name="no" value="${vo2.no}"> 
 									<input type="hidden" name="id" value="${vo.id}">
-									<button type="submit" class="main_btn text-uppercase" style="border:0 solid black;">등록</button>
-									<a href="${cpath}/community.do?id=${vo.id}" class="main_btn text-uppercase" style="border:0 solid black;">목록</a>
+									<button type="submit" class="genric-btn info-border radius" style="border:0 solid black;">등록</button>
+									<a href="${cpath}/community.do?id=${vo.id}" class="genric-btn info-border radius" style="border:0 solid black;">목록</a>
 								</div>
 							</form>
 						</div>
