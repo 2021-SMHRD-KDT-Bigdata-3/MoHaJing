@@ -311,7 +311,7 @@ padding-left:20px;
 									</td>
 									<td></td>
 									<td style="padding: 10px;">
-										<div class="country" style="font-size: 12px;">${list.id}</div>
+										<div style="font-size: 12px;">${list.id}</div>
 									</td>
 								</tr>
 							</c:forEach>
