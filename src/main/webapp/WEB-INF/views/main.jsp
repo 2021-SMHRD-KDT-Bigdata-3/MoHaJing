@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
-
+<c:set var="sns" value="${param.sns}" />
 <!doctype html>
 <html lang="en">
 
@@ -279,19 +279,34 @@
 	</section>
 				<script type="text/javascript">
 					//모바일, PC 구분하는코드
+					var sns = '<c:out value="${sns}"/>';
+				 	var map = "";
+				 	if(sns == 'yes'){
+				 		map = "logmain.do?id=naver&pw=naver";
+				 		
+				 	}else{
+				 		map = "join.do?sns=yes";
+				 		 
+				 	}
+				 	
+				 	
 					function device_check() {
+						
 					    // 디바이스 종류 설정
 					    var pc_device = "win16|win32|win64|mac|macintel";
 					 
 					    // 접속한 디바이스 환경
 					    var this_device = navigator.platform;
-					 
+					    
+					 	// sns 계정연동 체크
+						
+
 					    if ( this_device ) {
 					 
 					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-					            return "http://172.30.1.28:8081/mo/join.do?sns=yes";
+					            return "http://172.30.1.28:8081/mo/"+map;
 					        } else {
-					        	return "http://localhost:8081/mo/join.do?sns=yes";
+					        	return "http://localhost:8081/mo/"+map;
 					        }
 					 
 					    }
