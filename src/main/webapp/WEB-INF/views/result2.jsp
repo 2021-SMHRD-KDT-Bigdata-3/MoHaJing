@@ -352,8 +352,8 @@ margin: auto;
 
 	
 	<!--================ start footer Area  =================-->
-	<footer class="footer-area" style="margin-top: 150%;">
-		<div class="container">
+	<footer class="footer-area" style="margin-top: 200%;">
+		<div class="container" style="margin-top: 100%;">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
