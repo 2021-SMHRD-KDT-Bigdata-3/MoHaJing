@@ -124,6 +124,8 @@ select no from mo_deep1 where id = 'test' and img = '210806_161220_47.png';
 show tables;
 show full columns from mo_recommand;
 
+select * from mo_check;
+
 drop table mo_check;
 TRUNCATE mo_recommand;
 create table mo_check(
@@ -158,6 +160,7 @@ select * from mo_recommand;
 ALTER TABLE mo_recommand MODIFY food varchar(1000);
 ALTER TABLE mo_recommand MODIFY plan varchar(1000);
 
+
 select * from mo_deep1;
 
 ALTER TABLE `mo_member` DROP `checknum`;
@@ -173,7 +176,6 @@ no6 int,
 no7 int,
 no8 int,
 no9 int,
-no10 int
 no10 int
 );
 
@@ -289,6 +291,7 @@ insert into mo_checkrecommand(no, cause)
 values("no9", "정수리 탈모의 원인: 무리한 식이요법 또는 잘못된 식습관으로 인한 영양 불균형, 출산·월경과 같은 호르몬 이상, 수면 부족, 스트레스로 인한 면역력 저하, 자율신경계 이상, 갱년기에 나타나는 호르몬 불균형 등이 있다.");
 insert into mo_checkrecommand(no, cause)
 values("no10", "피지가 많아지면 모공을 막고, 염증을 유발해 두피 건강을 나쁘게 한다. 지루성 피부염은 피지 과다 분비를 자극해 두피의 영양공급을 막아 모발이 잘 자라지 못하고 가늘어지다가 결국 탈모로 이어질 수 있다.");
+
 values("no8", "남성호르몬이 증가하면 수염과 털의 성장을 촉진시킨다. 문제는 남성호르몬이 머리카락의 성장은 억제한다는 사실이다. 남성호르몬이 증가하면 정수리나 앞머리 부위의 머리카락이 가늘어지거나 빠질 수 있다.
 간혹 털을 밀수록 털이 굵어진다고 믿기도 하는데, 이는 사실이 아니다. 털을 밀 경우 털이 이전보다 굵게 자라는 게 아니라 가는 두께의 윗부분 털이 잘리면서 새로 자라는 털이 더 굵게 보이는 것일 뿐이다. 제모를 해도 모근을 완전히 제거하지 않으면 털의 굵은 단면은 남아 있고, 털 또한 이전의 두께로 다시 자란다.");
 insert into mo_checkrecommand(no, cause)
@@ -307,3 +310,11 @@ values("naver", "naver", "테스트", "여", 20);
 select * from mo_member;
 select * from mo_check;
 select food from mo_recommand where category = "M" and NOT food is NULL;
+
+alter table mo_member add sns varchar(100);
+ 
+insert into mo_member(id, pw, name, gender, age)
+values("naver", "naver", "테스트", "여", 20);
+
+
+

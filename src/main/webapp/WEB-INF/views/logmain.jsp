@@ -45,9 +45,12 @@
 		location.href = "${cpath}/logmain.do"
 	}
 	history.replaceState({}, null, location.pathname);
+	
 </script>
 
 <style>
+
+
 .row d-flex {
 background-color: white;
 }
@@ -114,6 +117,59 @@ background-color: white;
 	bottom: auto;
 	top: 0;
 }
+
+.upload_button, .container{
+	display:inline-block;
+	margin-right: 10px;
+}
+
+.upload_button label, .container label{
+	display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radious: .25em;
+	
+	color: black;
+	background-color: lightgrey;
+	border-radius: 15px;
+	font-family: 'Gowun Dodum', sans-serif; 
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.upload_button{
+	
+}
+
+.upload_button label{
+}
+.container label{
+	margin-left: 42%;
+}
+
+.upload_button input[type="file"], .container input[type="submit"]{
+	position:absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: reat(0,0,0,0);
+	border: 0;
+}
+
+.container label:hover{
+	background-color: grey;
+
+}
+
 </style>
 </head>
 
@@ -187,7 +243,7 @@ background-color: white;
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-1%;">
+					<img src="${cpath}/resources/img/logo4.png" alt="" style="position: fixed; z-index: 1; margin-left:-100px; margin-top:-5%;">
 				</div>
 			</div>
 		</div>
@@ -215,7 +271,7 @@ background-color: white;
 					<!-- single-blog -->
 					<div class="col-lg-4 col-md-6 col-sm-6">
 					<div class="hair" align="center">
-		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -38%; width: 60px; height: auto; background-size; contain; padding:0;">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -48%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
 						<div class="single-amenities" style="height:50%; margin-top:20px;">
 							<div class="gif_div">
@@ -227,10 +283,11 @@ background-color: white;
 								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
+										<div class="form-group col-md-12 wrap container" align="center">
 											<input type="hidden" name="id" value="${vo.id}">
 											<input type="hidden" name="category" value="M">
-											<input class="form-control" type="submit" value="분석하기">
+											<label for="up_confirm" style="margin-left: -1%;">분석하기</label>
+											<input class="button" id="up_confirm" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
@@ -252,10 +309,11 @@ background-color: white;
 								</p>
 								<h5>
 									<form class="contact-form-area contact-page-form contact-form text-right" action="${cpath}/execution2.do" method="post">
-										<div class="form-group col-md-12">
+										<div class="form-group col-md-12 container" align="center">
 											<input class="form-control" type="hidden" name="id" value="${vo.id}">
 											<input class="form-control" type="hidden" name="category" value="O">
-											<input class="form-control" type="submit" value="분석하기">
+											<label for="up_confirm2"  style="margin-left: -1%;">분석하기</label>
+											<input class="" id="up_confirm2" type="submit" value="분석하기">
 										</div>
 									</form>
 								</h5>
@@ -269,30 +327,31 @@ background-color: white;
 	<!--================ End Popular Place Area =================-->
 
 	<!--================ start footer Area  =================-->
+
+	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Crafted</h6>
-						<p>The world has become so fast paced that people don’t want
-							to stand by reading a page of information, they would much rather
-							look.</p>
+						<h6>About 毛하지</h6>
+						<p>This project team participated in the actual convergence project conducted 
+						by the Smart Human Resources Development Center and carried out the project.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Navigation Links</h6>
+						<h6>Mambers</h6>
 						<div class="row">
 							<ul class="col footer-nav">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="project.html">Project</a></li>
+								<li><a href="index.html">Areum Kim</a></li>
+								<li><a href="services.html">Doyeon Kim</a></li>
+								<li><a href="project.html">Hahyeong Kang</a></li>
 							</ul>
 							<ul class="col footer-nav">
-								<li><a href="team-members.html">Team Members</a></li>
-								<li><a href="blog-single.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="team-members.html">Hyobin Kim</a></li>
+								<li><a href="blog-single.html">Seungjun Moon</a></li>
+								<li><a href="contact.html">Hyosoon Yim</a></li>
 							</ul>
 						</div>
 					</div>
@@ -301,8 +360,7 @@ background-color: white;
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Newsletter</h6>
-						<p>For business professionals caught between high OEM price
-							mediocre print and graphic.</p>
+						
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true"
@@ -330,57 +388,10 @@ background-color: white;
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instafeed</h6>
-						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="${cpath}/resources/img/instagram/i1.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i2.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i3.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i4.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i5.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i6.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i7.jpg"
-								alt=""></li>
-							<li><img src="${cpath}/resources/img/instagram/i8.jpg"
-								alt=""></li>
-						</ul>
-					</div>
-				</div>
+
 			</div>
 		</div>
-		<div
-			class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div>
-						<p class="footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved | This template is made with <i
-								class="fa fa-heart-o" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-					<div class="footer-social d-flex align-items-center">
-						<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
-							class="fa fa-twitter"></i></a> <a href="#"><i
-							class="fa fa-dribbble"></i></a> <a href="#"><i
-							class="fa fa-behance"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</footer>
 	<!--================ End footer Area  =================-->
 

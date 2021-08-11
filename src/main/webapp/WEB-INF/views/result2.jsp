@@ -351,67 +351,73 @@ margin: auto;
 
 
 	
-<!--================ start footer Area  =================-->
-	<footer class="footer-area" style="margin-top: 290%;">
-	<footer class="footer-area" style="margin-top: 150%;">
+	<!--================ start footer Area  =================-->
+	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Crafted</h6>
-						<p>The world has become so fast paced that people don’t want
-							to stand by reading a page of information, they would much rather
-							look.</p>
+						<h6>About 毛하지</h6>
+						<p>This project team participated in the actual convergence project conducted 
+						by the Smart Human Resources Development Center and carried out the project.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Navigation Links</h6>
+						<h6>Mambers</h6>
 						<div class="row">
 							<ul class="col footer-nav">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="project.html">Project</a></li>
+								<li><a href="index.html">Areum Kim</a></li>
+								<li><a href="services.html">Doyeon Kim</a></li>
+								<li><a href="project.html">Hahyeong Kang</a></li>
 							</ul>
 							<ul class="col footer-nav">
-								<li><a href="team-members.html">Team Members</a></li>
-								<li><a href="blog-single.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="team-members.html">Hyobin Kim</a></li>
+								<li><a href="blog-single.html">Seungjun Moon</a></li>
+								<li><a href="contact.html">Hyosoon Yim</a></li>
 							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h6>Newsletter</h6>
+						
+						<div class="" id="mc_embed_signup">
+
+							<form target="_blank" novalidate="true"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="form-inline">
+
+								<div class="d-flex flex-row">
+
+									<input class="form-control" name="EMAIL"
+										placeholder="Enter Email" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Enter Email '" required=""
+										type="email">
+
+
+									<button class="click-btn btn btn-default">
+										<i class="fa fa-paper-plane" aria-hidden="true"></i>
+									</button>
+									<div style="position: absolute; left: -5000px;">
+										<input name="b_36c4fd991d266f23781ded980_aefe40901a"
+											tabindex="-1" value="" type="text">
+									</div>
+								</div>
+								<div class="info"></div>
+							</form>
 						</div>
 					</div>
 				</div>
 
 			</div>
 		</div>
-		<div
-			class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div>
-						<p class="footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved | This template is made with <i
-								class="fa fa-heart-o" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank"></a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-					<div class="footer-social d-flex align-items-center">
-						<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
-							class="fa fa-twitter"></i></a> <a href="#"><i
-							class="fa fa-dribbble"></i></a> <a href="#"><i
-							class="fa fa-behance"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</footer>
 	<!--================ End footer Area  =================-->
+
 
 
 	<!-- Optional JavaScript -->

@@ -341,31 +341,31 @@ padding-left:20px;
 
 	<!--================ End banner section =================-->
 
+
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>About Crafted</h6>
-						<p>The world has become so fast paced that people don’t want
-							to stand by reading a page of information, they would much rather
-							look.</p>
+						<h6>About 毛하지</h6>
+						<p>This project team participated in the actual convergence project conducted 
+						by the Smart Human Resources Development Center and carried out the project.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-footer-widget">
-						<h6>Navigation Links</h6>
+						<h6>Mambers</h6>
 						<div class="row">
 							<ul class="col footer-nav">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="project.html">Project</a></li>
+								<li><a href="index.html">Areum Kim</a></li>
+								<li><a href="services.html">Doyeon Kim</a></li>
+								<li><a href="project.html">Hahyeong Kang</a></li>
 							</ul>
 							<ul class="col footer-nav">
-								<li><a href="team-members.html">Team Members</a></li>
-								<li><a href="blog-single.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="team-members.html">Hyobin Kim</a></li>
+								<li><a href="blog-single.html">Seungjun Moon</a></li>
+								<li><a href="contact.html">Hyosoon Yim</a></li>
 							</ul>
 						</div>
 					</div>
@@ -374,6 +374,7 @@ padding-left:20px;
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h6>Newsletter</h6>
+
 						<p>For business professionals caught between high OEM price
 							mediocre print and graphic.</p>
 						<div class="" id="mc_embed_signup">
@@ -428,6 +429,7 @@ padding-left:20px;
 				</div>
 			</div>
 		</div>
+
 		<div
 			class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 			<div class="container">
