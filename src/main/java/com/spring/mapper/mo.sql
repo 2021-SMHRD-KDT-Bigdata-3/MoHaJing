@@ -318,3 +318,8 @@ values("no10", "피지가 많아지면 모공을 막고, 염증을 유발해 두
 
 select * from mo_checkrecommand;
 select food from mo_recommand where category = "M" and NOT food is NULL;
+
+alter table mo_member add sns varchar(100);
+
+insert into mo_member(id, pw, name, gender, age, checknum)
+values("naver", "naver", "테스트", "여", 20, 5);
