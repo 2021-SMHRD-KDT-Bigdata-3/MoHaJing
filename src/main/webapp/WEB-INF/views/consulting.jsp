@@ -7,25 +7,31 @@
 <html lang="en">
 
 <head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
-   <title>毛어떄</title>
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
-   <link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/animate-css/animate.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
-   <link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
-   <!-- main css -->
-   <link rel="stylesheet" href="${cpath}/resources/css/style.css">
-   <style>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="${cpath}/resources/img/favicon.png" type="image/png">
+	<title>毛어떄</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="${cpath}/resources/css/bootstrap.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/linericon/style.css">
+	<link rel="stylesheet" href="${cpath}/resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/popup/magnific-popup.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="${cpath}/resources/vendors/scroll/jquery.mCustomScrollbar.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="${cpath}/resources/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+	
+	
+	<style>
 .comment_title{
    width : 200px;
  }
@@ -66,59 +72,60 @@ border-right:0px;
 
 <body>
 
-   <!--================ Offcanvus Menu Area =================-->
-   <div class="side_menu">
-      <div class="logo">
-         <img src="${cpath}/resources/img/logo4.png" alt="">
-      </div>
-      <div class="button-group-area mt-10">
-         <ul class="list menu-left">
-            <li>
-                  <form action="${cpath}/logmain.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="hidden" name="pw" value="${vo.pw}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="메인">
-                  </form>
-            </li>
-            <li>
-                  <form action="${cpath}/execution.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="진단기록관리">
-                  </form>
-            </li>
-            <li>
-                  <form action="${cpath}/community.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="커뮤니티">
-                  </form>
-            </li>
-            <li>
-                  <form action="${cpath}/consulting.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="1대1 상담">
-                  </form>
-            </li>
-            <li>
-                  <form action="${cpath}/info.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="탈모정보">
-                  </form>
-            </li>
-            <li>
-                  <form action="${cpath}/mypage.do" method="post">
-                     <input type="hidden" name="id" value="${vo.id}"> <input
-                        type="submit" class="genric-btn default-border" style="border:0 solid black;" value="마이페이지">
-                  </form>
-            </li>
-            <li>
-               <form action="${cpath}/main.do" method="post">
-                  <input type="submit" class="genric-btn default-border" style="border:0 solid black;" value="로그아웃">
-               </form>
-            </li>
-         </ul>
-      </div>
-   </div>
-   <!--================ End Offcanvus Menu Area =================-->
+
+	<!--================ Offcanvus Menu Area =================-->
+	<div class="side_menu" style="background-color: rgba(240, 240, 240, 0.8); width: 200px;">
+		<div class="logo">
+			<img src="${cpath}/resources/img/logo4.png" alt="">
+		</div>
+		<div class="button-group-area mt-10">
+			<ul class="list menu-left">
+				<li>
+						<form action="${cpath}/logmain.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="hidden" name="pw" value="${vo.pw}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="메인">
+						</form>
+				</li>
+				<li>
+						<form action="${cpath}/execution.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="진단기록관리">
+						</form>
+				</li>
+				<li>
+						<form action="${cpath}/community.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="커뮤니티">
+						</form>
+				</li>
+				<li>
+						<form action="${cpath}/consulting.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="1대1 상담">
+						</form>
+				</li>
+				<li>
+						<form action="${cpath}/info.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="탈모정보">
+						</form>
+				</li>
+				<li>
+						<form action="${cpath}/mypage.do" method="post">
+							<input type="hidden" name="id" value="${vo.id}"> <input
+								type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="마이페이지">
+						</form>
+				</li>
+				<li>
+					<form action="${cpath}/main.do" method="post">
+						<input type="submit" class="genric-btn default-border" style="border:0 solid black; background: transparent; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 18px; font-weight: bold;" value="로그아웃">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--================ End Offcanvus Menu Area =================-->
 
    <!--================ Canvus Menu Area =================-->
    <div class="canvus_menu">
@@ -140,9 +147,12 @@ border-right:0px;
       </div>
    </section>
 
-   <!--================ Start banner section =================-->
-   
-     <div class="comments-area">
+
+	<!--================ Start banner section =================-->
+	<div class="hair" align="center">
+		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="z-index: 2; position: absolute; margin-left: -6%; margin-top : -11.5%; width: 60px; height: auto; background-size; contain; padding:0;">
+	</div>
+	  <div class="comments-area" style="margin-top: 15%;">
             <img class = "comment_title``````````````"src="${cpath}/resources/img/popular/con_img1.png" alt="">                    
       </div>
    

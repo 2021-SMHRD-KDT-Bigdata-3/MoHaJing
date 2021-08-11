@@ -30,6 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.mapper.BoardVO;
+import com.spring.mapper.CheckRecommandVO;
 import com.spring.mapper.CheckVO;
 import com.spring.mapper.CommentVO;
 import com.spring.mapper.Deep1VO;
@@ -78,6 +79,20 @@ public class MoController {
 		memberMapper.joinTry(vo);
 		return "redirect:/main.do";
 	}
+	
+	// 아이디 중복체크
+		@RequestMapping("/idCheck.do")
+		public String idCheck(String id, Model model) {
+			int count = memberMapper.idCheck(id);
+			if(count==1) { // 아이디가 중복되면
+				System.out.println(count);
+				model.addAttribute("count", count);
+				return "redirect:/join.do";
+			}else { // 아이디가 중복되지 않으면
+				model.addAttribute("id", id);
+				return "redirect:/join.do";
+			}
+		}
 
 	// 로그인 시도
 	@RequestMapping("/logmain.do")
@@ -237,9 +252,9 @@ public class MoController {
 	
 	@RequestMapping("/resultList.do")
 	public String resultList(Deep1VO vo, Model model) {
-		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
+		//List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
 		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
-		model.addAttribute("foods", foods);
+		//model.addAttribute("foods", foods);
 		model.addAttribute("plans", plans);
 		return "resultList";
 	}
@@ -247,18 +262,27 @@ public class MoController {
 	@RequestMapping("/resultList2.do")
 	public String resultList2(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
-		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
+		//List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
 		model.addAttribute("foods", foods);
-		model.addAttribute("plans", plans);
+		//model.addAttribute("plans", plans);
 		return "resultList2";
 	}
-	
+	/*
 	@RequestMapping("/resultList3.do")
 	public String resultList3(Deep1VO vo, Model model) {
 		List<RecommandVO> foods = memberMapper.foodSelect(vo.getCategory());
 		List<RecommandVO> plans = memberMapper.planSelect(vo.getCategory());
 		model.addAttribute("foods", foods);
 		model.addAttribute("plans", plans);
+		return "resultList3";
+	}
+	*/
+	@RequestMapping("/resultList3.do")
+	public String resultList3(Deep1VO vo, Model model) {
+		CheckVO check = memberMapper.checkSelect(vo.getId());
+		List<CheckRecommandVO> list = memberMapper.checkRecommandSelect();
+		model.addAttribute("check", check); // 회원이 체크한거
+		model.addAttribute("list", list); // 체크박스에 해당하는 원인
 		return "resultList3";
 	}
 	
@@ -370,6 +394,13 @@ public class MoController {
 		List<Deep1VO> list = memberMapper.idDeepSelect(vo);
 		model.addAttribute("list", list);
 		return "executionList2";
+	}
+	// sns회원가입 시도
+	@RequestMapping("/snsjoin.do")
+	public String snsjoin(MemberVO vo, CheckVO check) {
+		memberMapper.checkInsert(check);
+		memberMapper.snsjoin(vo);
+		return "redirect:/main.do?sns=yes";
 	}
 
 	
