@@ -62,9 +62,57 @@ margin: auto;
 				<tr><td align="center" style="font-family: 'Gowun Dodum', sans-serif; font-size: 24px; font-weight: bold; text-decoration: underline; text-underline-position: under; padding-top: 50px;"><img src="${cpath}/resources/img/result2_sol.gif" alt="" style="max-height: 600px;">생활습관을 바꿔보자!</td></tr>
 				<tr><td style="color: white;	">.</td></tr>
 				<tr><td style="color: white;	">.</td></tr>
-				<c:forEach var="plan" items="${plans}" varStatus="status">
+				
+				<!--<c:forEach var="plan" items="${plans}" varStatus="status">
 				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">${status.count}. ${plan.plan}</td></tr>
 				</c:forEach>
+				-->
+				<c:set var="no1" value="${check.no1}"/>
+				<c:if test="${no1 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">1.<br>${list[0].cause}</td></tr>
+				</c:if>
+				<c:set var="no2" value="${check.no2}"/>
+				<c:if test="${no2 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">2.<br>${list[1].cause}</td></tr>
+				</c:if>
+				<c:set var="no3" value="${check.no3}"/>
+				<c:if test="${no3 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">3.<br>${list[2].cause}</td></tr>
+				</c:if>
+				<c:set var="no4" value="${check.no4}"/>
+				<c:if test="${no4 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">4.<br>${list[3].cause}</td></tr>
+				</c:if>
+				<c:set var="no5" value="${check.no5}"/>
+				<c:if test="${no5 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">5.<br>${list[4].cause}</td></tr>
+				</c:if>
+				<c:set var="no6" value="${check.no6}"/>
+				<c:if test="${no6 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">6.<br>${list[5].cause}</td></tr>
+				</c:if>
+				<c:set var="no7" value="${check.no7}"/>
+				<c:if test="${no7 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">7.<br>${list[6].cause}</td></tr>
+				</c:if>
+				<c:set var="no8" value="${check.no8}"/>
+				<c:if test="${no8 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">8.<br>${list[7].cause}</td></tr>
+				</c:if>
+				<c:set var="no9" value="${check.no9}"/>
+				<c:if test="${no9 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">9.<br>${list[8].cause}</td></tr>
+				</c:if>
+				<c:set var="no10" value="${check.no10}"/>
+				<c:if test="${no10 eq '1'}">
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">10.<br>${list[9].cause}</td></tr>
+				</c:if>
+				
+				
+				
+				
+				
+				
 				<tr><td style="color: white;	">.</td></tr>
 				<tr><td style="color: white;	">.</td></tr>
 			</table>

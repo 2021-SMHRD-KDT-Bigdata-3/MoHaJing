@@ -79,4 +79,7 @@ public interface MemberMapper {
 	
 	// 추천음식 select
 	public List<RecommandVO> planSelect(String category); 
+	
+	// 체크박스 원인 select
+	public List<CheckRecommandVO> checkRecommandSelect();
 }

@@ -118,12 +118,17 @@
     
     <!-- 추천음식 select -->
     <select id="foodSelect" parameterType="String" resultType="com.spring.mapper.RecommandVO">
-        select food from mo_recommand where category = #{category}
+        select food from mo_recommand where category = #{category} and NOT food is NULL
     </select>
     
     <!-- 행동사항 select -->
     <select id="planSelect" parameterType="String" resultType="com.spring.mapper.RecommandVO">
-        select plan from mo_recommand where category = #{category}
+        select plan from mo_recommand where category = #{category} and NOT plan is NULL
+    </select>
+    
+    <!-- 체크박스 원인 select -->
+    <select id="checkRecommandSelect" resultType="com.spring.mapper.CheckRecommandVO">
+        select * from mo_checkrecommand
     </select>
     
 </mapper>

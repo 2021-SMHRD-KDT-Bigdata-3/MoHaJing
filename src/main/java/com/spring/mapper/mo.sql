@@ -315,3 +315,6 @@ insert into mo_checkrecommand(no, cause)
 values("no9", "정수리 탈모의 원인: 무리한 식이요법 또는 잘못된 식습관으로 인한 영양 불균형, 출산·월경과 같은 호르몬 이상, 수면 부족, 스트레스로 인한 면역력 저하, 자율신경계 이상, 갱년기에 나타나는 호르몬 불균형 등이 있다.");
 insert into mo_checkrecommand(no, cause)
 values("no10", "피지가 많아지면 모공을 막고, 염증을 유발해 두피 건강을 나쁘게 한다. 지루성 피부염은 피지 과다 분비를 자극해 두피의 영양공급을 막아 모발이 잘 자라지 못하고 가늘어지다가 결국 탈모로 이어질 수 있다.");
+
+select * from mo_checkrecommand;
+select food from mo_recommand where category = "M" and NOT food is NULL;
