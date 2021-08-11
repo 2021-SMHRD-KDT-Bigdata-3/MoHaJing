@@ -304,7 +304,7 @@
 					    if ( this_device ) {
 					 
 					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-					            return "http://172.30.1.28:8081/mo/"+map;
+					            return "http://172.30.1.60:8081/mo/"+map;
 					        } else {
 					        	return "http://localhost:8081/mo/"+map;
 					        }

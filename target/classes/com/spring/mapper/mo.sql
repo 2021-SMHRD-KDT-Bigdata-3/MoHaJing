@@ -260,7 +260,6 @@ values("no6", "두피를 살짝 눌러도 욱신거리고 따끔거리는 통증
 insert into mo_checkrecommand(no, cause)
 values("no7", "탈모의 주범인 테스토스테론을 디하이드로테스토스테론으로 변화시키는 5알파-환원효소가 뒷머리보다는 앞머리에 더 많이 분포되어 있기 때문에 앞머리 탈모가 뒷머리보다 더 심하다. 뒷머리보다 앞머리나 정수리 부위의 머리카락이 가늘고, 더 많이 빠진다면 탈모치료가 필요할 수 있다.");
 insert into mo_checkrecommand(no, cause)
-<<<<<<< HEAD
 values("no1", "소위 이마가 벗겨지기 시작하면 탈모가 본격적으로 진행되는 것으로, 이마 헤어라인이 뒤로 후퇴하면서 이마가 점점 넓어지는 것은 유전적인 소인에 의한 탈모를 의심해볼 수 있다.");
 
 create table mo_checkrecommand(
@@ -290,7 +289,6 @@ insert into mo_checkrecommand(no, cause)
 values("no9", "정수리 탈모의 원인: 무리한 식이요법 또는 잘못된 식습관으로 인한 영양 불균형, 출산·월경과 같은 호르몬 이상, 수면 부족, 스트레스로 인한 면역력 저하, 자율신경계 이상, 갱년기에 나타나는 호르몬 불균형 등이 있다.");
 insert into mo_checkrecommand(no, cause)
 values("no10", "피지가 많아지면 모공을 막고, 염증을 유발해 두피 건강을 나쁘게 한다. 지루성 피부염은 피지 과다 분비를 자극해 두피의 영양공급을 막아 모발이 잘 자라지 못하고 가늘어지다가 결국 탈모로 이어질 수 있다.");
-=======
 values("no8", "남성호르몬이 증가하면 수염과 털의 성장을 촉진시킨다. 문제는 남성호르몬이 머리카락의 성장은 억제한다는 사실이다. 남성호르몬이 증가하면 정수리나 앞머리 부위의 머리카락이 가늘어지거나 빠질 수 있다.
 간혹 털을 밀수록 털이 굵어진다고 믿기도 하는데, 이는 사실이 아니다. 털을 밀 경우 털이 이전보다 굵게 자라는 게 아니라 가는 두께의 윗부분 털이 잘리면서 새로 자라는 털이 더 굵게 보이는 것일 뿐이다. 제모를 해도 모근을 완전히 제거하지 않으면 털의 굵은 단면은 남아 있고, 털 또한 이전의 두께로 다시 자란다.");
 insert into mo_checkrecommand(no, cause)
@@ -299,7 +297,6 @@ insert into mo_checkrecommand(no, cause)
 values("no10", "피지가 많아지면 모공을 막고, 염증을 유발해 두피 건강을 나쁘게 한다. 지루성 피부염은 피지 과다 분비를 자극해 두피의 영양공급을 막아 모발이 잘 자라지 못하고 가늘어지다가 결국 탈모로 이어질 수 있다.");
 
 select * from mo_checkrecommand;
-<<<<<<< HEAD
 select food from mo_recommand where category = "M" and NOT food is NULL;
 
 alter table mo_member add sns varchar(100);
@@ -309,7 +306,4 @@ values("naver", "naver", "테스트", "여", 20);
 
 select * from mo_member;
 select * from mo_check;
-=======
 select food from mo_recommand where category = "M" and NOT food is NULL;
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/MoHaJing.git

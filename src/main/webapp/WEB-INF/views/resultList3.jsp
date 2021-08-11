@@ -69,43 +69,43 @@ margin: auto;
 				-->
 				<c:set var="no1" value="${check.no1}"/>
 				<c:if test="${no1 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">1.<br>${list[0].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 이마가 점점 넓어지는 느낌인가요?<br>${list[0].cause}</td></tr>
 				</c:if>
 				<c:set var="no2" value="${check.no2}"/>
 				<c:if test="${no2 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">2.<br>${list[1].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 가늘고 힘없는 머리가 많이 빠지나요?<br>${list[1].cause}</td></tr>
 				</c:if>
 				<c:set var="no3" value="${check.no3}"/>
 				<c:if test="${no3 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">3.<br>${list[2].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 하루에 80개 이상 모발이 빠지나요?<br>${list[2].cause}</td></tr>
 				</c:if>
 				<c:set var="no4" value="${check.no4}"/>
 				<c:if test="${no4 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">4.<br>${list[3].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 비듬이 많아지거나 두피가 가렵나요?<br>${list[3].cause}</td></tr>
 				</c:if>
 				<c:set var="no5" value="${check.no5}"/>
 				<c:if test="${no5 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">5.<br>${list[4].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 모발이 가늘고 부드러워지나요?<br>${list[4].cause}</td></tr>
 				</c:if>
 				<c:set var="no6" value="${check.no6}"/>
 				<c:if test="${no6 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">6.<br>${list[5].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 두피를 눌러보면 가벼운 통증이 느껴지나요?<br>${list[5].cause}</td></tr>
 				</c:if>
 				<c:set var="no7" value="${check.no7}"/>
 				<c:if test="${no7 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">7.<br>${list[6].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 앞머리와 뒷머리의 굵기 차이가 많이 나나요?<br>${list[6].cause}</td></tr>
 				</c:if>
 				<c:set var="no8" value="${check.no8}"/>
 				<c:if test="${no8 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">8.<br>${list[7].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 몸의 털이 갑자기 굵어지나요?<br>${list[7].cause}</td></tr>
 				</c:if>
 				<c:set var="no9" value="${check.no9}"/>
 				<c:if test="${no9 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">9.<br>${list[8].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 이마와 정수리 부분이 유난히 번들거리나요?<br>${list[8].cause}</td></tr>
 				</c:if>
 				<c:set var="no10" value="${check.no10}"/>
 				<c:if test="${no10 eq '1'}">
-				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">10.<br>${list[9].cause}</td></tr>
+				<tr><td align="left" style="font-family: 'Gowun Dodum', sans-serif; font-size: 16px; color: black;">- 두피에 피지량이 갑자기 늘어난 것 같나요?<br>${list[9].cause}</td></tr>
 				</c:if>
 				
 				
