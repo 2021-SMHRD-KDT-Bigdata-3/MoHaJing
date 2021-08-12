@@ -7,6 +7,7 @@
 <html lang="en">
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -210,7 +211,8 @@
 				 	
 				 	
 					function device_check() {
-						
+						var theForm = document.imgform;
+
 					    // 디바이스 종류 설정
 					    var pc_device = "win16|win32|win64|mac|macintel";
 					 
@@ -223,14 +225,20 @@
 					    if ( this_device ) {
 					 
 					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
-					            return "http://172.30.1.15:8000/mo/result.do";
+					        	theForm.action = "http://172.30.1.15:8000/mo/result.do";
 					        } else {
-					        	return "http://localhost:8000/mo/result.do";
+					        	theForm.action = "http://localhost:8000/mo/result.do";
 					        }
 					 
 					    }
 					}
 					</script>
+		<script>
+			document.getElementById("imgform").action = device_check();
+			
+
+		
+		</script>
 	<!--================ Start banner section =================-->
 <%-- 	<form action="${cpath}/deep1.do" onsubmit="flask(); method="post" id="form1" runat="server" enctype="multipart/form-data"> --%>
 <!-- <form method="post" id="form1" runat="server" enctype="multipart/form-data"> -->
@@ -238,7 +246,7 @@
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -21%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
 
-<form action="javascript:this_device()" method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" name = "imgform">
 	<!-- 
 <form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data">   -->
 	<section class="home-banner-area common-banner relative" style="z-index: 1;">
@@ -246,8 +254,8 @@
 			<div class="row d-flex align-items-center justify-content-center">
 				<div class="picture" style="max-width: 400px; max-height: 350px; overflow: hidden;">
 					<!-- 여기가 이미지 업로드 했을 때 띄울 공간 -->
-						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; margin-left:-8%; margin-top:-20%"/>
-						<img src="#" alt="" id="preview_image2" />
+						<img src="${cpath}/resources/img/pictureplz.gif" alt="" id="preview_image" style="max-width: initial; object-fit: fill; max-width: 400px; max-height: 350px;"/>
+						<img src="#" alt="" id="preview_image2" style="object-fit: fill; max-width: 400px; max-height: 350px;"/>
 				</div>
 				<div class="upload_button"  style="width:100%; word-break:break-all;word-wrap:break-word; margin-top:1%;">
 					<label for="upload_file" style="margin-left: 47%;">
@@ -263,7 +271,7 @@
 						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
 						value="진단시작">  -->
 					<label for="up_confirm" style="margin-left: 49%;">확인</label>
-					<input type="submit" id="up_confirm" value="확인" />
+					<input type="submit" id="up_confirm" value="확인" onClick="device_check()"/>
 				</div>
 				
 				</div>
