@@ -256,8 +256,8 @@
 						<a id="custom-login-btn" href="javascript:loginWithKakao()" width="185px" height="40px" style="width: 185px; height: 40px">
 						  <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="185px" height="40px" style = "margin-bottom: 10px"/>
 						</a>
-						<!-- 구글 버튼 -->
-						<div style="padding-left: 33px;"><div align="center" class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 185px; height: 40px"></div></div>
+						<!-- 구글 버튼
+						<div style="padding-left: 33px;"><div align="center" class="g-signin2" data-onsuccess="onSignIn" width="185px" height="40px" style="width: 185px; height: 40px"></div></div> -->
 					</div>
 				</form>
 				
@@ -285,8 +285,8 @@
 				 		map = "logmain.do?id=naver&pw=naver";
 				 		
 				 	}else{
-				 		//map = "join.do?sns=yes";
-				 		map = "logmain.do?id=naver&pw=naver"; 
+				 		map = "join.do?sns=yes";
+				 		//map = "logmain.do?id=naver&pw=naver"; 
 				 	}
 				 	
 				 	

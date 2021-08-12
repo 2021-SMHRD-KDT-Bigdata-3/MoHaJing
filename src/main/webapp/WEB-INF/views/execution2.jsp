@@ -204,14 +204,41 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+					//모바일, PC 구분하는코드
 
+				 	
+				 	
+					function device_check() {
+						
+					    // 디바이스 종류 설정
+					    var pc_device = "win16|win32|win64|mac|macintel";
+					 
+					    // 접속한 디바이스 환경
+					    var this_device = navigator.platform;
+					    
+					 	// sns 계정연동 체크
+						
+
+					    if ( this_device ) {
+					 
+					        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+					            return "http://172.30.1.15:8000/mo/result.do";
+					        } else {
+					        	return "http://localhost:8000/mo/result.do";
+					        }
+					 
+					    }
+					}
+					</script>
 	<!--================ Start banner section =================-->
 <%-- 	<form action="${cpath}/deep1.do" onsubmit="flask(); method="post" id="form1" runat="server" enctype="multipart/form-data"> --%>
 <!-- <form method="post" id="form1" runat="server" enctype="multipart/form-data"> -->
 <div class="hair" align="center">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -21%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
-<form action="http://localhost:8000/mo/result.do" method="post" enctype="multipart/form-data">
+
+<form action="javascript:this_device()" method="post" enctype="multipart/form-data">
 	<!-- 
 <form action="http://172.30.1.60:8000/mo/result.do" method="post" enctype="multipart/form-data">   -->
 	<section class="home-banner-area common-banner relative" style="z-index: 1;">
