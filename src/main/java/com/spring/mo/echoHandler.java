@@ -10,7 +10,7 @@ import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
-
+/*
 @RequestMapping("/chatting.do")
 public class echoHandler extends TextWebSocketHandler{
     //세션 리스트
@@ -40,4 +40,4 @@ public class echoHandler extends TextWebSocketHandler{
         sessionList.remove(session);
         logger.info("{} 연결 끊김.", session.getId());
     }
-}
+}*/
