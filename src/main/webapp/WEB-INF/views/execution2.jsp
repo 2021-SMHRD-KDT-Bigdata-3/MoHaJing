@@ -258,7 +258,7 @@
 						<img src="#" alt="" id="preview_image2" style="object-fit: fill; max-width: 400px; max-height: 350px;"/>
 				</div>
 				<div class="upload_button"  style="width:100%; word-break:break-all;word-wrap:break-word; margin-top:1%;">
-					<label for="upload_file" style="margin-left: 47%;">
+					<label for="upload_file" style="margin-left: 43%;">
 						업로드
 					</label>
 						<!-- <input type='file' onchange="readURL(this);" name="uploadImg" class="genric-btn disable circle" /> -->
@@ -270,13 +270,46 @@
 					<input type="hidden" name="category" value="${category}">
 						<!-- <input type="submit" formaction="${cpath}/deep1.do" class="genric-btn info-border circle arrowr"
 						value="진단시작">  -->
-					<label for="up_confirm" style="margin-left: 49%;">확인</label>
+					<label for="up_confirm" style="margin-left: 45%;">확인</label>
 					<input type="submit" id="up_confirm" value="확인" onClick="device_check()"/>
 				</div>
 				
 				</div>
 			</div>
 		
+			<br><br>
+			<hr style="height: 3px; background-color: lightgrey; width: 90%; border: 0px;">
+			<br>
+			<div style="align: center;">
+				<h1 style="text-align: center; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 26px; font-weight: bold;">사진 가이드</h1>
+				<br><br>
+				<h1 style="margin-left: 8%; text-align: left; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 19px; text-decoration: underline; text-underline-position:under;">M자 분석 사진</h1><br>
+				<div style="align: center;">
+					<img src="${cpath}/resources/img/mpicture_guide.png" style="width:200px; align:center; margin-left: 28%;">
+				</div>
+				<br>
+				<div style="width: 90%">
+					<p class="" style="margin-left: 8%; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 17px;">
+						- 얼굴의 <b>정면</b>이 나오게 촬영을 해주세요.<br>
+						- <b>이마 라인</b>이 보이게 해주세요. <br>
+						- 앞머리가 있을 시, 손으로 <b>앞머리를 위로 올려</b> 이마 &nbsp&nbsp&nbsp라인이 보이게 해주세요.
+					</p>
+				</div>
+				<br><br>
+				<h1 style="margin-left: 8%; text-align: left; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 19px; text-decoration: underline; text-underline-position:under;">O자 분석 사진</h1><br>
+				<div style="align: center;">
+					<img src="${cpath}/resources/img/opicture_guide.png" style="width:200px; align:center; margin-left: 28%;">
+				</div>
+				<br>
+				<div style="width: 90%">
+					<p class="" style="margin-left: 8%; font-family: 'Gowun Dodum', sans-serif; color: black; font-size: 17px;">
+						- <b>정수리</b>가 나오는 방향 촬영을 해주세요.<br>
+						- <b>가마</b>가 보이게 촬영해주세요. <br>
+						- 너무 멀리 촬영하시지 마시고, 머리사진이 <b>화면에 적 &nbsp&nbsp&nbsp당히 가득차도록</b> 촬영해주세요.
+					</p>
+				</div>
+			</div>
+		</div>
 	</section>
 </form>
 	<!--================ End banner section =================-->
@@ -287,7 +320,7 @@
 	<!--================ start footer Area  =================-->
 
 	<!--================ start footer Area  =================-->
-	<footer class="footer-area">
+	<footer class="footer-area"  style="margin-top: 250%;">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-lg-3  col-md-6 col-sm-6">

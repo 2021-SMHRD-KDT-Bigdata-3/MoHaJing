@@ -269,7 +269,7 @@ background-color: white;
 					<!-- 사진촬영 클릭하면 사진촬영 페이지로 넘어가야 함 -->
 
 					<!-- single-blog -->
-					<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="col-lg-4 col-md-6">
 					<div class="hair" align="center">
 		<img src="${cpath}/resources/img/hair_logo1.png" alt="" style="margin-top : -48%; width: 60px; height: auto; background-size; contain; padding:0;">
 	</div>
@@ -298,7 +298,7 @@ background-color: white;
 					<!-- 앨범에서 가져오기 클릭하면 앨범에서 카져오기 페이지로 넘어갸야 함 -->
 
 					<!-- single-blog -->
-					<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="col-lg-4 col-md-6 ">
 						<div class="single-amenities" style="height:80%;">
 							<div class="gif_div">
 								<img class="gif_css" src="${cpath}/resources/img/o_start.gif" alt="">
